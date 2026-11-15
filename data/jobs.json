@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T16:51:06.718329+00:00",
+  "generated_at": "2026-11-15T17:33:29.809507+00:00",
   "jobs": [
     {
       "id": "ashby:horizon3ai:c87e8623-770a-489f-9ab1-1be4a37a3263",
@@ -28,7 +28,7 @@
       "compensation": null,
       "posted_at": "2026-09-14T13:49:00.006+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:ec9a5ca0-2a2d-4e1a-b338-4264cce36a9b",
@@ -57,7 +57,7 @@
       "compensation": null,
       "posted_at": "2026-10-23T14:56:37.374+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:58c8ebf7-da89-4daf-b1c9-172d43b284a5",
@@ -86,7 +86,7 @@
       "compensation": null,
       "posted_at": "2026-10-15T22:06:57.853+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:61bab297-9f6c-40d8-a7af-99ff61066943",
@@ -115,7 +115,7 @@
       "compensation": null,
       "posted_at": "2026-10-13T20:23:08.726+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:d9821af6-5ec8-41b7-b05e-bee2d29e2f16",
@@ -144,7 +144,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T20:32:13.245+00:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:d29ee5f3-2b4f-416f-8771-7c419e7db974",
@@ -173,7 +173,7 @@
       "compensation": null,
       "posted_at": "2026-09-14T15:40:06.719+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:94bb8459-8891-49f0-a111-2ae2fde02f52",
@@ -202,7 +202,7 @@
       "compensation": null,
       "posted_at": "2026-10-05T21:47:49.941+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:52c363ba-c46f-4731-a7dd-ac4da62a2a3c",
@@ -231,7 +231,7 @@
       "compensation": null,
       "posted_at": "2026-10-02T16:20:55.178+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:137d7079-5630-4cd5-890e-37c3b2995f79",
@@ -260,7 +260,7 @@
       "compensation": null,
       "posted_at": "2026-09-25T15:05:02.407+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:079c71cc-2203-46da-97d2-e39a6e9eb8c9",
@@ -289,7 +289,7 @@
       "compensation": null,
       "posted_at": "2026-09-24T20:08:23.961+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:64a3a2aa-eeed-4f86-95ca-716108e507a4",
@@ -318,7 +318,7 @@
       "compensation": null,
       "posted_at": "2026-09-25T15:41:41.281+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:71962aad-4e04-4d84-b374-2dd99491f238",
@@ -347,7 +347,7 @@
       "compensation": null,
       "posted_at": "2026-07-23T19:50:39.173+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:7a47e756-3a9a-4042-b114-bf05015e011c",
@@ -378,7 +378,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T22:10:33.473+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:1dc00e9e-6c83-4351-b217-c557e341f55b",
@@ -407,7 +407,7 @@
       "compensation": null,
       "posted_at": "2026-10-23T17:38:41.761+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:662880be-b680-4ade-b831-0d431747eadb",
@@ -436,7 +436,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T22:09:58.075+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:43741038-8827-496a-b53e-444b4630995a",
@@ -465,7 +465,7 @@
       "compensation": null,
       "posted_at": "2026-10-23T19:01:46.507+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:f8146886-3fb1-4c85-bb88-e6e8704dabce",
@@ -494,7 +494,7 @@
       "compensation": null,
       "posted_at": "2026-10-09T20:11:26.991+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:9981ea4d-1182-4458-a634-190ce0deacc9",
@@ -523,7 +523,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T19:48:49.073+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:0f7fb1d7-3ef4-46ec-8716-e747faf51623",
@@ -552,7 +552,7 @@
       "compensation": null,
       "posted_at": "2026-08-18T20:49:15.178+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:horizon3ai:4d1c1e5d-ea95-4832-9fe8-597def9ead7c",
@@ -581,7 +581,7 @@
       "compensation": null,
       "posted_at": "2026-10-07T14:44:26.634+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rise8:4527025007",
@@ -609,7 +609,7 @@
       "compensation": null,
       "posted_at": "2026-10-22T08:16:31-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rise8:4359627007",
@@ -637,7 +637,7 @@
       "compensation": null,
       "posted_at": "2026-06-29T11:58:28-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5291515007",
@@ -665,7 +665,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T17:51:06-05:00",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5224430007",
@@ -693,7 +693,7 @@
       "compensation": null,
       "posted_at": "2026-11-02T09:21:37-05:00",
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5229340007",
@@ -721,7 +721,7 @@
       "compensation": null,
       "posted_at": "2026-09-30T17:21:13-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5151114007",
@@ -749,7 +749,7 @@
       "compensation": null,
       "posted_at": "2026-09-30T17:21:13-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5203690007",
@@ -777,7 +777,7 @@
       "compensation": null,
       "posted_at": "2026-09-30T17:21:13-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5265580007",
@@ -805,7 +805,7 @@
       "compensation": null,
       "posted_at": "2026-10-29T15:25:30-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5291143007",
@@ -833,7 +833,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T12:18:29-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5277744007",
@@ -861,7 +861,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T19:01:33-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5266923007",
@@ -889,7 +889,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:07:01-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5151112007",
@@ -917,7 +917,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:42:27-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:5251905007",
@@ -945,7 +945,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T12:18:05-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:defenseunicorns:4661526007",
@@ -973,35 +973,7 @@
       "compensation": null,
       "posted_at": "2026-09-30T17:21:13-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
-    },
-    {
-      "id": "greenhouse:leolabsinc:4479465009",
-      "title": "Full Stack Software Engineer",
-      "company": "LeoLabs",
-      "company_tier": "standard",
-      "industries": [
-        "deftech"
-      ],
-      "url": "https://job-boards.greenhouse.io/leolabsinc/jobs/4479465009",
-      "source_ats": "greenhouse",
-      "priority": 2,
-      "umbrellas": [
-        "engineering"
-      ],
-      "roles": [
-        "full_stack"
-      ],
-      "level": "mid",
-      "location": "Remote",
-      "remote": true,
-      "department": "Software Engineering",
-      "description_html": "<p><span style=\"font-size: 12pt;\"><strong>Why LeoLabs?</strong></span></p>\n<p><span style=\"font-size: 12pt;\">At LeoLabs, we’re building the living map of activity in space. Through our proprietary global radar network and AI-enabled analytics platform, we collect millions of measurements daily on more than 25,000 objects in low Earth orbit (LEO). Our radar-powered intelligence protects billions in assets, monitors adversarial behavior, and ensures safe operations for commercial and government missions.</span></p>\n<p><span style=\"font-size: 12pt;\">We’re not just building technology, we are redefining global security, safety, and transparency in space. As orbital activity accelerates and threats grow more complex, LeoLabs is a trusted partner for Space Domain Awareness, Space Traffic Management, and Satellite Operations for top-tier space operators and allied defense organizations.</span></p>\n<p><span style=\"font-size: 12pt;\">If you're looking to work on mission-critical challenges at the forefront of aerospace, national security, and AI, your impact starts here.</span></p>\n<h3><span style=\"font-size: 12pt;\"><strong>&nbsp;</strong></span></h3>\n<h3><span style=\"font-size: 12pt;\"><strong>The Opportunity:</strong></span></h3>\n<p><span style=\"font-size: 12pt;\">We are seeking an experienced and highly motivated <strong>Full Stack Software Engineer</strong> to join our team at LeoLabs. You will be an integral contributor to our cross-functional Insights team. This is a highly collaborative team of approximately 8 engineers and a key part of the broader, 40-person software engineering organization. The Insights team is responsible for customer-facing analytics and integrations with customer systems. This includes user interfaces, integrations between APIs, deploying code to the cloud and to on-site environments, and LeoLabs’ data lake. The team leverages services built and maintained by other teams, including radar development and operations and catalog maintenance.</span></p>\n<p><span style=\"font-size: 12pt;\">You will be responsible for building and delivering business services, APIs and customer facing applications and integrations to support our mission.&nbsp; Your work will facilitate delivery of mission-critical data, empowering customers to make real-time operational decisions that protect and manage objects in low-earth orbit. This role requires solid hands-on experience in both API and service development and the development of rich, interactive user interfaces, with the ability to deliver features across both layers.</span></p>\n<p><span style=\"font-size: 12pt;\"><strong>Qualifications:</strong></span></p>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">B.S., M.S in Computer Science, Software Engineering, or equivalent experience</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proven experience (3+ years) as a Software Engineer in a fast-paced software development environment.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Extensive experience designing, building, testing, deploying and maintaining cloud-based software services and APIs, including those supporting customer-facing applications.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Solid experience designing, building and testing rich, interactive user interfaces using TypeScript or JavaScript, HTML, CSS and a modern front-end framework, including integration with back-end APIs and services.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Significant expertise in one or more of the following programming languages: Python, Go, C++.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong knowledge of software development and testing methodologies, best practices, and industry standards.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Experience with cloud environments like AWS/GCP/Azure.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Experience with databases like Postgres/MySQL.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Experience building message-driven applications with tools such as Kafka, RabbitMq and SQS.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Solid understanding of Agile workflows and principles.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong communication and interpersonal skills, with the ability to collaborate with various stakeholders.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Ability to work on-call outside of normal business hours during critical escalations.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Eligibility to obtain and maintain a U.S. Personnel Security Clearance</span></li>\n</ul>\n<h3><span style=\"font-size: 12pt;\">Preferred qualifications:</span></h3>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Familiarity with deploying and managing applications in Kubernetes, including container orchestration, scaling, and monitoring in cloud environments.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Background in Math/Physics, AI/ML, or Orbital mechanics.&nbsp;</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Active US security clearance.</span></li>\n</ul>\n<p>&nbsp;</p>\n<h3><span style=\"font-size: 12pt;\">Within 1 month, you’ll:</span></h3>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Complete our onboarding program designed to get you up to speed on our business, vision, and team.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Successfully set up local dev environment, tools, and access.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Attend sprint ceremonies and shadow code reviews to begin ramping up on Insights codebase and processes.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Complete first small, low-risk changes or documentation updates under guidance.</span></li>\n</ul>\n<h3><span style=\"font-size: 12pt;\">Within 3 months, you’ll:</span></h3>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Understand core architecture and dependencies for Insights products.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Begin tackling small-to-medium scoped features with coaching and mentoring support from peers.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Work comfortably within the team’s agile processes and contribute to task planning and estimation.</span></li>\n</ul>\n<h3><span style=\"font-size: 12pt;\">Within 6 months, you’ll:</span></h3>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Demonstrate solid grasp of team’s architecture, dependencies, and operational practices.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Actively contribute to software deliverables with some coaching and mentoring, consistently shipping well-tested, reliable code.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Own and drive deliverables to completion, including design and implementation of scoped work.</span></li>\n</ul>\n<h3><span style=\"font-size: 12pt;\">Within 12 months, you’ll:</span></h3>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Demonstrate full proficiency in the team’s tech stack and operational practices.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Deliver complex features end-to-end with minimal oversight.</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Act as a trusted peer through code reviews and helping shape technical discussions and decisions</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proactively identify continuous improvement opportunities across the codebase</span></li>\n</ul>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 12pt;\"><strong>Compensation</strong></span></p>\n<p><span style=\"font-size: 12pt;\">This position is benchmarked to San Francisco CA Bay Area with a base salary range of $$118,000–$$139,000 plus bonus and equity. Actual base salary will be determined based on the candidate’s work location, experience, skills, and other applicable factors.</span></p>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 12pt;\"><strong>Perks and Benefits</strong></span></p>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">100 USD monthly wellness benefit to support your health and well-being</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">$300 USD home office setup stipend, available for use within your first six months</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">$75 USD monthly home internet allowance, paid directly through your regular paycheck</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Individual Development Fund to support training, learning, and professional development</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Employee Recognition Program to celebrate contributions and achievements across the team</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Employee Referral Program so you can help us connect with great talent</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">And much more!</span></li>\n</ul>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 12pt;\"><strong>&nbsp;</strong></span></p>\n<p><span style=\"font-size: 12pt;\"><strong>ITAR Requirements</strong>&nbsp;</span></p>\n<p><span style=\"font-size: 12pt;\">To conform to U.S. Government space technology export regulations, including the International Traffic in Arms Regulations (ITAR) you must be eligible to obtain the required authorizations from the U.S. Department of State. More information regarding ITAR can be found at DDTC’s website. &nbsp;</span></p>\n<p><span style=\"font-size: 12pt;\"><strong>&nbsp;</strong></span></p>\n<p><span style=\"font-size: 12pt;\"><strong>Vendor Notification</strong></span></p>\n<p><span style=\"font-size: 12pt;\">LeoLabs does not engage external staffing agencies or third-party recruiting firms for this role. Unsolicited candidate submissions will not be considered.</span></p>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 12pt;\"><em>We are committed to maintaining a respectful and inclusive workplace where employees are valued for their skills, experience, and contributions. We are an equal opportunity employer and make employment decisions based on qualifications, skills, experience, and business needs, consistent with applicable law.</em></span></p>\n<p>&nbsp;</p>\n<p><em><strong>Accuracy of Application Information.</strong> LEOLABS requires applicants to provide truthful, accurate, and complete information throughout the hiring process, including in applications, résumés, interviews, and supporting materials. This requirement expressly includes representations concerning security clearance status, level, eligibility, and access. LEOLABS may verify such information through appropriate authorized channels. Any intentional falsification, material misrepresentation, or deliberate omission of material information will result in disqualification from further consideration or withdrawal of an employment offer and, if discovered after employment begins, may result in termination, subject to applicable law.</em></p>\n<p><span style=\"font-size: 12pt;\">#CJ</span></p>",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-13T16:26:39-05:00",
-      "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:leolabsinc:4444479009",
@@ -1029,7 +1001,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T08:39:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:leolabsinc:4444423009",
@@ -1057,7 +1029,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T08:39:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:leolabsinc:4290159009",
@@ -1085,7 +1057,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T08:39:44-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:raft:6239819004",
@@ -1113,7 +1085,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T13:29:58-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:raft:6240549004",
@@ -1141,7 +1113,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T13:29:58-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:raft:6221238004",
@@ -1169,7 +1141,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T13:29:58-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:raft:6234727004",
@@ -1197,7 +1169,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T10:36:35-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:Second-Front-Systems:e75017ca-8bfb-4c2f-bdce-b0f0cc8bf4ef",
@@ -1225,7 +1197,7 @@
       "compensation": "$150K – $160K • Offers Equity • Offers Bonus",
       "posted_at": "2026-10-27T15:11:26.237+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:Second-Front-Systems:2171c580-fc91-4c66-b39c-542219248bd0",
@@ -1253,7 +1225,7 @@
       "compensation": "€120K – €140K",
       "posted_at": "2026-10-14T18:16:28.122+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:Second-Front-Systems:543d5de7-d0c5-40b6-9437-5abef21f934e",
@@ -1281,7 +1253,7 @@
       "compensation": "$175K – $200K • Offers Equity • Offers Bonus",
       "posted_at": "2026-11-13T18:09:41.567+00:00",
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:Second-Front-Systems:346bd38d-0c08-409b-aa99-4f5b332a49d5",
@@ -1309,7 +1281,7 @@
       "compensation": "$120K – $145K • Offers Equity • Offers Bonus",
       "posted_at": "2026-08-21T14:30:09.484+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4749409005",
@@ -1337,7 +1309,7 @@
       "compensation": null,
       "posted_at": "2026-10-30T10:26:09-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4747399005",
@@ -1365,7 +1337,7 @@
       "compensation": null,
       "posted_at": "2026-10-23T20:22:36-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4731032005",
@@ -1393,7 +1365,7 @@
       "compensation": null,
       "posted_at": "2026-09-16T13:07:47-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4731035005",
@@ -1421,7 +1393,7 @@
       "compensation": null,
       "posted_at": "2026-09-16T13:08:01-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4746644005",
@@ -1449,7 +1421,7 @@
       "compensation": null,
       "posted_at": "2026-10-23T19:43:51-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4748158005",
@@ -1477,7 +1449,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T12:25:48-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4748154005",
@@ -1505,7 +1477,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T13:58:00-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:skylighthq:4753750005",
@@ -1533,7 +1505,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T14:16:24-05:00",
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5273908007",
@@ -1561,7 +1533,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T09:56:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5293427007",
@@ -1589,7 +1561,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T10:34:03-05:00",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5293446007",
@@ -1617,7 +1589,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T10:34:46-05:00",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5125334007",
@@ -1645,7 +1617,7 @@
       "compensation": null,
       "posted_at": "2026-07-02T13:21:18-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5249157007",
@@ -1673,7 +1645,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T09:57:55-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5196044007",
@@ -1701,7 +1673,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T19:33:29-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5239747007",
@@ -1729,7 +1701,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T09:59:22-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vannevarlabs:5051042007",
@@ -1757,7 +1729,7 @@
       "compensation": null,
       "posted_at": "2026-04-29T01:01:30-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:ff516ff4-2726-4c18-ae6e-681640d9c81d",
@@ -1785,7 +1757,7 @@
       "compensation": null,
       "posted_at": "2026-10-05T14:41:32.522+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:0759fd1f-945b-40a6-95e1-e498bcab2044",
@@ -1813,7 +1785,7 @@
       "compensation": null,
       "posted_at": "2026-10-09T19:17:00.592+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:0a11e3df-2212-419e-a1ff-dc501fa7a084",
@@ -1841,7 +1813,7 @@
       "compensation": null,
       "posted_at": "2026-10-09T20:54:13.379+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:6e7795dd-d927-484b-8979-9a7aab24e65a",
@@ -1869,7 +1841,7 @@
       "compensation": null,
       "posted_at": "2026-10-03T01:30:17.665+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:25e52edb-3d1a-43ab-a6d1-ad2a36f0c8ee",
@@ -1897,7 +1869,7 @@
       "compensation": null,
       "posted_at": "2026-10-06T15:54:01.199+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:99eb8a4c-81e1-413b-822f-dd27598207e0",
@@ -1925,7 +1897,7 @@
       "compensation": null,
       "posted_at": "2026-08-14T16:08:21.100+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:3bacd3c1-45d1-4337-a11b-a21569a51148",
@@ -1953,7 +1925,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T19:12:20.642+00:00",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:0b37fa60-5cbc-4b9a-84c9-4afe50634db7",
@@ -1981,7 +1953,7 @@
       "compensation": null,
       "posted_at": "2026-08-24T23:42:14.575+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:1password:86c4d000-e4f2-439f-be85-5018767e5cc1",
@@ -2009,7 +1981,7 @@
       "compensation": null,
       "posted_at": "2026-10-21T20:20:49.093+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:abnormalsecurity:7812768003",
@@ -2037,7 +2009,7 @@
       "compensation": null,
       "posted_at": "2026-10-20T17:21:02-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:abnormalsecurity:7974524003",
@@ -2065,7 +2037,7 @@
       "compensation": null,
       "posted_at": "2026-10-20T17:21:02-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:abnormalsecurity:8011780003",
@@ -2093,7 +2065,7 @@
       "compensation": null,
       "posted_at": "2026-10-20T17:21:02-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:abnormalsecurity:8107873003",
@@ -2121,7 +2093,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T09:40:22-05:00",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:abridge:5eaa14a4-004f-4b7a-a16c-590e67f561e7",
@@ -2149,7 +2121,7 @@
       "compensation": "$174K – $249K • Offers Equity",
       "posted_at": "2026-10-28T20:47:55.483+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:abridge:90b90681-9bcf-4808-b58a-9c582d85ecac",
@@ -2177,7 +2149,7 @@
       "compensation": "$155K – $185K • Offers Equity",
       "posted_at": "2026-09-30T20:04:04.442+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:abridge:0c29a63c-53e7-4b51-afd3-2123354eda7e",
@@ -2205,7 +2177,7 @@
       "compensation": "$155K – $185K • Offers Equity",
       "posted_at": "2026-09-30T20:04:36.162+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:acuitymd:6019042004",
@@ -2233,7 +2205,7 @@
       "compensation": null,
       "posted_at": "2026-09-22T12:39:41-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:acuitymd:6252967004",
@@ -2261,7 +2233,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T12:31:31-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:acuitymd:6239875004",
@@ -2289,7 +2261,7 @@
       "compensation": null,
       "posted_at": "2026-10-30T16:07:34-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:acuitymd:5920568004",
@@ -2317,7 +2289,7 @@
       "compensation": null,
       "posted_at": "2026-09-22T12:39:41-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:adaptivesecurity:547fef33-6371-4a49-9085-5810744f95b0",
@@ -2345,7 +2317,7 @@
       "compensation": null,
       "posted_at": "2026-10-13T18:42:28.365+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:ambiencehealthcare:ba2f7e00-3d1f-4c77-b60e-b2b45312c417",
@@ -2373,7 +2345,7 @@
       "compensation": "$169.2K – $235K • Offers Equity • Multiple Ranges",
       "posted_at": "2026-10-23T22:51:42.510+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:ambiencehealthcare:a8b59898-34b0-4272-83a0-d530af467004",
@@ -2401,7 +2373,7 @@
       "compensation": "$244K – $305K",
       "posted_at": "2026-03-17T05:04:27.910+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:cd8e8c4e-134c-4627-83d3-20c98b0751ce",
@@ -2429,7 +2401,7 @@
       "compensation": "$115K – $175K • Offers Equity",
       "posted_at": "2026-09-28T15:21:39.488+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:6fe494f7-6722-4d25-bb19-52ce07a4f5ce",
@@ -2457,7 +2429,7 @@
       "compensation": "$115K – $146K • Offers Equity",
       "posted_at": "2026-10-15T20:32:40.740+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:fed30048-08c1-413b-83e4-130e99be7d99",
@@ -2485,7 +2457,7 @@
       "compensation": "$160K – $250K",
       "posted_at": "2026-06-25T00:42:44.978+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:7e4f6635-1c5f-4244-a323-4ee37fafff62",
@@ -2513,7 +2485,7 @@
       "compensation": "$115K – $222K • Offers Equity",
       "posted_at": "2026-09-09T22:30:52.956+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:5cf4594e-9c85-4396-9385-f91335971aa7",
@@ -2541,7 +2513,7 @@
       "compensation": "$140K – $220K • Offers Equity",
       "posted_at": "2026-08-28T13:18:43.689+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:e57d6415-b9d5-428e-8d13-a97c83249385",
@@ -2569,7 +2541,7 @@
       "compensation": "$125K – $150K • Offers Equity",
       "posted_at": "2026-11-12T19:42:39.565+00:00",
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:157089b3-4d1f-4e24-b7c9-9909b992640c",
@@ -2597,7 +2569,7 @@
       "compensation": "$160K – $235K • Offers Equity",
       "posted_at": "2026-11-06T20:49:40.028+00:00",
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:f4c0ee25-b4d4-4f3d-b054-e9c1aeb56104",
@@ -2625,7 +2597,7 @@
       "compensation": "$200K – $275K • Offers Equity",
       "posted_at": "2026-09-21T18:16:26.492+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:6b3d1aa5-a987-4350-9b79-b14c6e297cdf",
@@ -2653,7 +2625,7 @@
       "compensation": "$138K – $208K • Offers Equity",
       "posted_at": "2026-10-17T00:31:29.685+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:c32e57cd-9787-4e1a-a9e9-d6cf8b45a44b",
@@ -2681,7 +2653,7 @@
       "compensation": "$180K – $220K",
       "posted_at": "2026-10-08T17:45:44.912+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:aa4c40d9-500f-42a7-b03a-f94bd42955fb",
@@ -2709,7 +2681,7 @@
       "compensation": "$190K – $252K • Offers Equity",
       "posted_at": "2026-10-14T16:23:19.458+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:6e43c9d2-0cf7-44c3-8cac-0339f1386724",
@@ -2737,7 +2709,7 @@
       "compensation": "$197K – $252K • Offers Equity",
       "posted_at": "2026-10-14T16:24:58.442+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:5a3658a5-39e3-42ad-9c2a-f5e4bfc23da3",
@@ -2765,7 +2737,7 @@
       "compensation": "$198.3K – $238K • Offers Equity",
       "posted_at": "2026-07-09T03:31:26.022+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:129325ce-77e6-4d2a-a24a-6726acb53749",
@@ -2793,7 +2765,7 @@
       "compensation": "$151K – $258K • Offers Equity",
       "posted_at": "2026-07-29T17:49:20.262+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:3036d5f2-5723-4ffb-8599-269435b35200",
@@ -2821,7 +2793,7 @@
       "compensation": "$140K – $160K • Offers Equity",
       "posted_at": "2026-08-22T00:47:30.444+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:4e7b038e-6c5d-4735-8bef-d8425b6985e3",
@@ -2849,7 +2821,7 @@
       "compensation": "$150K – $210K • Offers Equity",
       "posted_at": "2026-04-09T14:22:34.729+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:d8c0cc96-71cc-49da-b132-6dcdb58b9156",
@@ -2877,7 +2849,7 @@
       "compensation": "$200K – $250K • Offers Equity",
       "posted_at": "2026-07-08T18:29:50.088+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:566714d0-5a25-4680-9d51-d6eaca520635",
@@ -2905,7 +2877,7 @@
       "compensation": "$151.7K – $231.9K",
       "posted_at": "2026-10-09T17:46:08.886+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:f9926b5d-475a-42cc-bd6e-f39bae5d26a8",
@@ -2933,7 +2905,7 @@
       "compensation": "$175K – $250K • Offers Equity",
       "posted_at": "2026-11-03T23:14:36.796+00:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:7a6cae81-64fe-432f-8af8-7449d916f0db",
@@ -2961,7 +2933,7 @@
       "compensation": "$185K – $270K",
       "posted_at": "2026-07-23T16:41:07.936+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:84cd980d-ad01-4738-9cc8-ddc53d64f71d",
@@ -2989,7 +2961,7 @@
       "compensation": "$120K – $252K",
       "posted_at": "2026-08-14T00:37:29.917+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:bb2789bc-822d-4bfb-b4ea-f0d5940d62ec",
@@ -3017,7 +2989,7 @@
       "compensation": "$185K – $270K",
       "posted_at": "2026-10-27T21:33:36.294+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:2d428add-0d4c-4bdb-97b5-7b37e91b9526",
@@ -3045,7 +3017,7 @@
       "compensation": "$185K – $270K • Offers Commission",
       "posted_at": "2026-05-07T17:42:25.357+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:82523b1a-d267-412d-8f46-ac5dc29b2210",
@@ -3073,7 +3045,7 @@
       "compensation": "$200K – $250K • Offers Equity",
       "posted_at": "2026-07-29T20:23:32.135+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:33f86ea0-2506-4f7a-93c0-81086bbcf7e4",
@@ -3101,7 +3073,7 @@
       "compensation": "$93K – $108K • Offers Equity",
       "posted_at": "2026-09-24T23:17:57.108+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:932de549-2882-4c0d-aeca-b4a8ef5f1f41",
@@ -3129,7 +3101,7 @@
       "compensation": "$150K – $300K • Offers Equity",
       "posted_at": "2026-09-21T15:19:59.148+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:4eb54d3e-1528-416d-bed7-22cd2a79f03d",
@@ -3157,7 +3129,7 @@
       "compensation": "$190K – $260K • Offers Equity",
       "posted_at": "2026-10-06T15:43:38.480+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:0101ab30-af4e-44b3-8242-ae465936cc68",
@@ -3185,7 +3157,7 @@
       "compensation": "$185K – $260K",
       "posted_at": "2026-10-06T15:42:10.215+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:2d3fd355-9a70-4b15-893a-2ce719054d0b",
@@ -3213,7 +3185,7 @@
       "compensation": "$151K – $193.8K • Offers Equity",
       "posted_at": "2026-08-03T21:23:13.098+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:a15be01c-60ac-478d-ad46-f82d35295bb2",
@@ -3241,7 +3213,7 @@
       "compensation": "$165K – $270K • Offers Equity",
       "posted_at": "2026-11-03T23:13:31.132+00:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:1a123456-a863-4c06-a5e1-95d3b40ac99f",
@@ -3269,7 +3241,7 @@
       "compensation": "$154K – $230K • Offers Equity",
       "posted_at": "2026-02-10T21:11:21.755+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:ae5031f6-c041-47e4-961c-7ff138bb3108",
@@ -3297,7 +3269,7 @@
       "compensation": "$175K – $275K",
       "posted_at": "2026-03-28T00:01:32.776+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:981054d6-d6d9-4553-9db8-38e56939d3b8",
@@ -3325,7 +3297,7 @@
       "compensation": "$126K – $250K",
       "posted_at": "2026-03-25T15:07:08.274+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:ff77f315-2e95-49aa-94e8-84ffd3dcaa09",
@@ -3353,7 +3325,7 @@
       "compensation": "$165K – $270K • Offers Equity",
       "posted_at": "2026-11-03T23:13:28.775+00:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:2ab12242-c0a8-4b39-9f16-0acfd5cb26e5",
@@ -3381,7 +3353,7 @@
       "compensation": "$115K – $222K",
       "posted_at": "2026-02-23T19:13:04.011+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:4308e255-6028-4160-a3ac-40f035d3f4b5",
@@ -3409,7 +3381,7 @@
       "compensation": "$179K – $240K • Offers Equity",
       "posted_at": "2026-07-20T21:31:45.084+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:7102a672-b9aa-4f19-9b0f-81b6d2fb2e06",
@@ -3437,7 +3409,7 @@
       "compensation": "$115K – $222K • Offers Equity",
       "posted_at": "2026-07-20T20:43:18.036+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:c9dc10c9-a3e5-4e21-b10d-7514e095e5f1",
@@ -3465,7 +3437,7 @@
       "compensation": "$115K – $222K • Offers Equity",
       "posted_at": "2026-09-01T22:30:31.802+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:5df3e287-b422-4ff1-88d6-a1064dc444b0",
@@ -3493,7 +3465,7 @@
       "compensation": "$115K – $222K • Offers Equity",
       "posted_at": "2026-07-24T23:49:05.177+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:1593a478-6c36-44b5-8c84-b2184380c14a",
@@ -3521,7 +3493,7 @@
       "compensation": "$180K – $225K • Offers Equity",
       "posted_at": "2026-11-06T21:12:26.923+00:00",
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:applied:e10dc74a-12f8-42a3-94db-cf7e7ace9f61",
@@ -3549,7 +3521,7 @@
       "compensation": "$115K – $146K • Offers Equity",
       "posted_at": "2026-09-22T16:26:58.439+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:brinc:c581ceaf-2ffd-4b3c-9e19-1c96d842679a",
@@ -3577,7 +3549,7 @@
       "compensation": "$142K – $250K • Offers Equity",
       "posted_at": "2026-09-29T22:23:59.947+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:brinc:70da9956-a4b7-4b75-9fe0-3498683624da",
@@ -3605,7 +3577,7 @@
       "compensation": "$145K – $245K • Offers Equity",
       "posted_at": "2026-04-03T17:58:31.458+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:brinc:ae10f9da-6919-449e-b19c-b0a3f0a3ad2c",
@@ -3633,7 +3605,7 @@
       "compensation": "$102K – $158K • Offers Equity",
       "posted_at": "2026-11-13T00:11:27.959+00:00",
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:brinc:1aded6d5-6978-46b9-877c-b3c524ca7d39",
@@ -3661,7 +3633,7 @@
       "compensation": "$154K – $191K • Offers Equity",
       "posted_at": "2026-09-28T17:38:06.910+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:brinc:0e187504-1214-4c99-8249-115d6fd6d2bf",
@@ -3689,7 +3661,7 @@
       "compensation": "$150K – $190K • Offers Equity",
       "posted_at": "2026-11-13T00:24:37.611+00:00",
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:bayesianhealth:afb98055-5ebe-43a2-b319-ea0936a3b921",
@@ -3717,7 +3689,7 @@
       "compensation": null,
       "posted_at": "2026-04-27T15:56:40.803+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:bayesianhealth:93f2a18c-cd10-4e07-8990-15ba01beb7ef",
@@ -3745,7 +3717,7 @@
       "compensation": null,
       "posted_at": "2026-10-12T17:38:51.863+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:bayesianhealth:48eed0cc-2eaf-4c9d-a394-4efb14200b75",
@@ -3773,7 +3745,7 @@
       "compensation": null,
       "posted_at": "2024-12-19T14:22:50.971+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:a406ec65-85ac-4403-9943-1a9ce68d209f",
@@ -3801,7 +3773,7 @@
       "compensation": null,
       "posted_at": "2026-10-06T16:42:18.789+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:3b76459e-9521-4687-84a8-117b5b98a410",
@@ -3829,7 +3801,7 @@
       "compensation": null,
       "posted_at": "2026-05-11T22:10:05.478+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:23e88d6b-b9ff-4033-97d5-1e9e42958a66",
@@ -3857,7 +3829,7 @@
       "compensation": null,
       "posted_at": "2026-06-15T17:30:38.606+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:c1474396-cd2a-480a-b6ff-df10a4a044a0",
@@ -3885,7 +3857,7 @@
       "compensation": null,
       "posted_at": "2026-05-28T18:22:42.784+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:6695d8d8-54ee-4acf-9bd9-7d3e05264e51",
@@ -3913,7 +3885,7 @@
       "compensation": null,
       "posted_at": "2026-08-24T16:01:49.609+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:879a6a94-b522-4e6f-96d5-21badf82d69e",
@@ -3941,7 +3913,7 @@
       "compensation": null,
       "posted_at": "2026-05-28T18:22:47.408+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:1f6fd3be-7761-4031-a940-68cd5c3b0162",
@@ -3969,7 +3941,7 @@
       "compensation": null,
       "posted_at": "2026-07-22T15:48:42.346+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:0fd5d4d9-e011-4ec6-9976-c40ddcab8e30",
@@ -3997,7 +3969,7 @@
       "compensation": null,
       "posted_at": "2026-09-11T21:04:52.836+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:9ca9db89-70f6-4476-8998-f2e03ff6a247",
@@ -4025,7 +3997,7 @@
       "compensation": null,
       "posted_at": "2026-07-13T21:51:19.480+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:candidhealth:dedd92a6-2ba0-4d7e-b67c-559f486ab72d",
@@ -4053,7 +4025,7 @@
       "compensation": null,
       "posted_at": "2026-09-01T16:56:55.775+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:censys:8731018002",
@@ -4081,7 +4053,7 @@
       "compensation": null,
       "posted_at": "2026-09-03T11:05:32-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:censys:8731027002",
@@ -4109,7 +4081,7 @@
       "compensation": null,
       "posted_at": "2026-11-04T13:41:26-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:censys:8767260002",
@@ -4137,7 +4109,7 @@
       "compensation": null,
       "posted_at": "2026-10-19T15:27:10-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:censys:8643344002",
@@ -4165,7 +4137,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T15:08:34-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:chainguard:4712509006",
@@ -4194,7 +4166,7 @@
       "compensation": null,
       "posted_at": "2026-11-04T14:47:38-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:chainguard:4720603006",
@@ -4223,7 +4195,7 @@
       "compensation": null,
       "posted_at": "2026-11-05T10:40:19-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8242481",
@@ -4251,7 +4223,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8143649",
@@ -4279,7 +4251,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8354632",
@@ -4307,7 +4279,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T01:27:14-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8276299",
@@ -4335,7 +4307,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8274790",
@@ -4363,7 +4335,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8332008",
@@ -4391,7 +4363,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8328914",
@@ -4419,7 +4391,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8349301",
@@ -4447,7 +4419,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T04:21:17-05:00",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8354857",
@@ -4475,7 +4447,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8099018",
@@ -4503,7 +4475,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8256332",
@@ -4531,7 +4503,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:7629805",
@@ -4559,7 +4531,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T15:39:19-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8042034",
@@ -4587,7 +4559,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8221248",
@@ -4615,7 +4587,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8243552",
@@ -4643,7 +4615,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8346327",
@@ -4671,7 +4643,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8336559",
@@ -4701,7 +4673,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8166601",
@@ -4729,7 +4701,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8173954",
@@ -4757,7 +4729,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8349425",
@@ -4785,7 +4757,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8187634",
@@ -4813,7 +4785,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T20:42:56-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8312254",
@@ -4841,7 +4813,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8262000",
@@ -4869,7 +4841,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8234073",
@@ -4897,7 +4869,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8016569",
@@ -4925,7 +4897,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8255561",
@@ -4953,7 +4925,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8312256",
@@ -4981,7 +4953,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8264687",
@@ -5009,7 +4981,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8239323",
@@ -5037,7 +5009,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8248873",
@@ -5065,7 +5037,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T17:31:49-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cloudflare:8214726",
@@ -5093,7 +5065,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T19:03:42-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:commure:d5f91cfa-48ab-430d-b618-ba77c82c64a2",
@@ -5121,7 +5093,7 @@
       "compensation": "$130K – $180K • Offers Equity",
       "posted_at": "2026-08-19T20:28:52.233+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:commure:b8d40cf3-3bde-4aec-a2a9-ded988ab128f",
@@ -5149,7 +5121,7 @@
       "compensation": "$170K – $230K",
       "posted_at": "2026-10-28T17:18:03.156+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:commure:c1261830-47f0-430f-8593-6f9c1203f5e5",
@@ -5177,7 +5149,7 @@
       "compensation": "$170K – $230K • Offers Equity",
       "posted_at": "2026-08-19T20:45:24.055+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:commure:40896c39-a297-41f6-acdb-3d5e33a5c2b7",
@@ -5205,7 +5177,7 @@
       "compensation": "$120K – $160K • Offers Equity",
       "posted_at": "2026-08-20T20:46:02.346+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:commure:8134d3bd-9fcc-452a-96ed-4890a2de2e65",
@@ -5233,7 +5205,7 @@
       "compensation": "$170K – $198K • Offers Equity",
       "posted_at": "2026-11-13T22:35:39.471+00:00",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:commure:563c02e3-96c0-4838-adb7-be38faafe07b",
@@ -5261,7 +5233,7 @@
       "compensation": "$130K – $160K • Offers Equity",
       "posted_at": "2026-10-06T17:21:58.320+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:commure:8082621e-ac9c-4391-a24e-466b55751f84",
@@ -5289,7 +5261,7 @@
       "compensation": "$209K – $236K • Offers Equity",
       "posted_at": "2026-10-20T17:18:08.836+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:corelight:8347113",
@@ -5317,7 +5289,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T07:54:16-05:00",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cribl:6178374004",
@@ -5345,7 +5317,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T12:00:15-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:cribl:6230554004",
@@ -5373,7 +5345,7 @@
       "compensation": null,
       "posted_at": "2026-10-21T12:34:17-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:doppel:37ab548d-c4a2-4d62-b8f8-95c5fbde78f5",
@@ -5401,7 +5373,7 @@
       "compensation": "$130K – $275K • Offers Equity",
       "posted_at": "2026-08-12T14:23:42.629+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:doppel:de977d6f-43f4-4b20-9296-0ce052baac3c",
@@ -5429,7 +5401,7 @@
       "compensation": "$150K – $300K • Offers Equity",
       "posted_at": "2026-10-12T06:18:38.424+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:doppel:fa3bec7c-fd34-473e-809b-910e12796ad3",
@@ -5457,7 +5429,7 @@
       "compensation": "$120K – $160K • Offers Equity",
       "posted_at": "2026-09-23T22:27:31.981+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:elroyair:f1b5fc2f-7bcb-41be-b11d-aafdf09c9a8e",
@@ -5485,7 +5457,7 @@
       "compensation": null,
       "posted_at": "2026-10-19T19:59:34.145000+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:endorlabs:4750919005",
@@ -5513,7 +5485,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T18:50:54-05:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:endorlabs:4746734005",
@@ -5541,7 +5513,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T23:29:13-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:endorlabs:4749824005",
@@ -5569,7 +5541,7 @@
       "compensation": null,
       "posted_at": "2026-11-04T19:26:07-05:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:endorlabs:4751731005",
@@ -5597,7 +5569,7 @@
       "compensation": null,
       "posted_at": "2026-11-05T19:51:11-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:fastly:8220907",
@@ -5625,7 +5597,7 @@
       "compensation": null,
       "posted_at": "2026-10-30T08:54:53-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:fastly:8237486",
@@ -5653,7 +5625,7 @@
       "compensation": null,
       "posted_at": "2026-10-30T08:55:53-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:fastly:8237553",
@@ -5681,7 +5653,7 @@
       "compensation": null,
       "posted_at": "2026-10-30T08:56:05-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:fastly:8079946",
@@ -5709,7 +5681,7 @@
       "compensation": null,
       "posted_at": "2026-10-30T08:49:41-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:formhealth:5408991008",
@@ -5737,7 +5709,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T20:05:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:formhealth:5433743008",
@@ -5765,7 +5737,7 @@
       "compensation": null,
       "posted_at": "2026-09-28T11:34:47-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:galvanick:3a2537c3-adaf-459f-b280-5990e2b0f1a6",
@@ -5793,7 +5765,7 @@
       "compensation": null,
       "posted_at": "2026-01-07T00:33:53.979000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:garnerhealth:6105276004",
@@ -5821,7 +5793,7 @@
       "compensation": null,
       "posted_at": "2026-10-08T18:16:50-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:garnerhealth:6200765004",
@@ -5849,7 +5821,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T21:16:21-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:garnerhealth:6115981004",
@@ -5877,7 +5849,7 @@
       "compensation": null,
       "posted_at": "2026-09-26T01:01:04-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:garnerhealth:6107128004",
@@ -5905,7 +5877,7 @@
       "compensation": null,
       "posted_at": "2026-09-26T01:01:03-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:garnerhealth:6109854004",
@@ -5933,7 +5905,7 @@
       "compensation": null,
       "posted_at": "2026-09-26T01:01:03-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:Gray Swan AI:3d7e2604-92c1-4c93-b168-0683ed2990d1",
@@ -5961,7 +5933,7 @@
       "compensation": "$160K – $257K • Offers Equity • Offers Bonus",
       "posted_at": "2026-09-29T18:35:34.158+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:Gray Swan AI:6ffe05e0-8b6d-40e1-9d57-ada14010167e",
@@ -5989,7 +5961,7 @@
       "compensation": "$122.5K – $185K • Offers Equity • Offers Bonus",
       "posted_at": "2026-10-16T19:06:01.382+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:hackerone:458ddfb9-fe92-45f2-bd96-0de37488ed25",
@@ -6017,7 +5989,7 @@
       "compensation": "$200K – $256K • Offers Equity",
       "posted_at": "2026-10-27T21:06:18.727+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:harmattan-ai:3ee9867d-699f-400c-af16-0ceb0d1dbcac",
@@ -6045,7 +6017,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T15:54:03.588+00:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:harmattan-ai:4f6d9e72-9881-49ea-8be0-8e865e670310",
@@ -6073,7 +6045,7 @@
       "compensation": null,
       "posted_at": "2026-11-06T14:26:11.761+00:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:havocai:6ef8d155-1242-4d3d-881c-cbb4a2030a5c",
@@ -6101,7 +6073,7 @@
       "compensation": "$185K – $205K • Offers Equity • Offers Bonus",
       "posted_at": "2026-09-24T15:00:37.449+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:havocai:d159a734-8200-4200-8bfb-6df43f498e6f",
@@ -6129,7 +6101,7 @@
       "compensation": "$150K – $175K • Offers Equity • Offers Bonus",
       "posted_at": "2026-07-06T20:31:51.544+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:healthleap:c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
@@ -6157,7 +6129,7 @@
       "compensation": "$175K – $275K • Offers Equity",
       "posted_at": "2026-05-05T22:07:24.931+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:healthleap:f84a1776-ae77-4e01-8aea-10cdf441822a",
@@ -6185,7 +6157,7 @@
       "compensation": "$180K – $250K • Offers Equity",
       "posted_at": "2026-11-03T03:09:53.759+00:00",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:hellopatient:01134b55-bbf6-47e7-8402-0a702aeb9128",
@@ -6213,7 +6185,7 @@
       "compensation": "$110K – $145K • Offers Equity",
       "posted_at": "2026-11-11T16:29:44.251+00:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:hellopatient:aefdc89b-62b1-42dc-9ef5-d22342ca65bf",
@@ -6241,7 +6213,7 @@
       "compensation": "$110K – $145K • Offers Equity",
       "posted_at": "2026-11-11T16:29:51.962+00:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:helsing:4953562101",
@@ -6269,7 +6241,7 @@
       "compensation": null,
       "posted_at": "2026-08-31T14:29:36-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:helsing:4953565101",
@@ -6297,7 +6269,7 @@
       "compensation": null,
       "posted_at": "2026-08-31T14:30:08-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:huntress:8014855003",
@@ -6325,7 +6297,7 @@
       "compensation": null,
       "posted_at": "2026-11-06T15:34:51-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:huntress:8015561003",
@@ -6353,7 +6325,7 @@
       "compensation": null,
       "posted_at": "2026-11-06T15:34:51-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:huntress:8014352003",
@@ -6381,7 +6353,7 @@
       "compensation": null,
       "posted_at": "2026-11-06T15:34:51-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:huntress:7663059003",
@@ -6409,7 +6381,7 @@
       "compensation": null,
       "posted_at": "2026-11-06T15:34:51-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:includedhealth:6cc840fa-ca95-42f9-8e01-de6d143b3b1d",
@@ -6439,7 +6411,7 @@
       "compensation": null,
       "posted_at": "2026-09-04T21:19:16.841000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4425420009",
@@ -6467,7 +6439,7 @@
       "compensation": null,
       "posted_at": "2026-09-30T19:00:35-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4369729009",
@@ -6495,7 +6467,7 @@
       "compensation": null,
       "posted_at": "2026-08-20T10:46:46-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4450928009",
@@ -6523,7 +6495,7 @@
       "compensation": null,
       "posted_at": "2026-10-13T18:56:00-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4296021009",
@@ -6551,7 +6523,7 @@
       "compensation": null,
       "posted_at": "2026-09-11T11:21:28-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4091091009",
@@ -6579,7 +6551,7 @@
       "compensation": null,
       "posted_at": "2026-08-21T12:14:33-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4364146009",
@@ -6607,7 +6579,7 @@
       "compensation": null,
       "posted_at": "2026-09-09T10:29:59-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4091171009",
@@ -6635,7 +6607,7 @@
       "compensation": null,
       "posted_at": "2026-09-10T15:53:33-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4364101009",
@@ -6663,7 +6635,7 @@
       "compensation": null,
       "posted_at": "2026-10-20T12:27:39-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4106538009",
@@ -6691,7 +6663,7 @@
       "compensation": null,
       "posted_at": "2026-09-10T15:27:25-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4385755009",
@@ -6719,7 +6691,7 @@
       "compensation": null,
       "posted_at": "2026-08-27T15:47:39-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:keepersecurity:4437310009",
@@ -6747,7 +6719,7 @@
       "compensation": null,
       "posted_at": "2026-10-07T13:18:45-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:kitware:131535ab-7059-448c-bf96-0b2137008f57",
@@ -6775,7 +6747,7 @@
       "compensation": null,
       "posted_at": "2026-02-09T12:17:09.086000+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:kitware:2b798a3f-0c54-4ff9-8c3f-3d5144706939",
@@ -6803,7 +6775,7 @@
       "compensation": null,
       "posted_at": "2026-02-09T12:15:09.638000+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:kivo-health:c48b7afe-2f4b-4821-9561-87aa4663e483",
@@ -6831,7 +6803,7 @@
       "compensation": "$160K – $230K • 0.1% – 0.2%",
       "posted_at": "2026-09-29T20:39:48.855+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:komodohealth:8868143002",
@@ -6859,7 +6831,7 @@
       "compensation": null,
       "posted_at": "2026-10-05T10:08:23-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:komodohealth:8912047002",
@@ -6887,7 +6859,7 @@
       "compensation": null,
       "posted_at": "2026-10-23T13:57:15-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:komodohealth:8546790002",
@@ -6915,7 +6887,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T09:59:01-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:d976452a-4242-41a7-b401-490ccc64a05e",
@@ -6943,7 +6915,7 @@
       "compensation": null,
       "posted_at": "2026-04-23T10:02:12.611000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:7b24768b-80f8-4c43-88a6-a2336fa0f28a",
@@ -6971,7 +6943,7 @@
       "compensation": null,
       "posted_at": "2026-09-17T21:52:45.722000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:12b44bca-f78d-45c7-9dad-5bb7c45103a2",
@@ -6999,7 +6971,7 @@
       "compensation": null,
       "posted_at": "2026-07-30T17:30:15.251000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:d33ddfed-8c69-4e29-966b-0e190190cd6a",
@@ -7027,7 +6999,7 @@
       "compensation": null,
       "posted_at": "2026-06-09T21:41:55.258000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:4bfc8403-7569-44ae-9f6c-3e8763b3295e",
@@ -7055,7 +7027,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T17:41:17.744000+00:00",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:7b292bd9-545c-474c-b4fa-0593b6ef44e3",
@@ -7083,7 +7055,7 @@
       "compensation": null,
       "posted_at": "2026-08-08T20:42:15.294000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:aa8cbe55-b017-43d9-80b4-feecc2ef17a2",
@@ -7111,7 +7083,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T15:07:44.712000+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:lyrahealth:d4806b14-3818-4aca-af97-96bb88dd0b4c",
@@ -7139,7 +7111,7 @@
       "compensation": null,
       "posted_at": "2026-08-08T20:57:06.268000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4488055009",
@@ -7167,7 +7139,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T01:46:29-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4385342009",
@@ -7195,7 +7167,7 @@
       "compensation": null,
       "posted_at": "2026-10-07T14:32:57-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4464396009",
@@ -7223,7 +7195,7 @@
       "compensation": null,
       "posted_at": "2026-10-22T15:30:19-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4488058009",
@@ -7251,7 +7223,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T01:51:37-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4387877009",
@@ -7279,7 +7251,7 @@
       "compensation": null,
       "posted_at": "2026-09-02T15:08:00-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4459316009",
@@ -7307,7 +7279,7 @@
       "compensation": null,
       "posted_at": "2026-10-20T12:12:45-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4488051009",
@@ -7335,7 +7307,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T01:41:58-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4386836009",
@@ -7363,7 +7335,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T11:47:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:machindustries:4466802009",
@@ -7391,7 +7363,7 @@
       "compensation": null,
       "posted_at": "2026-10-26T12:17:01-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:materialsecurity:c22081a6-2d51-4030-9b6a-062e8a218cdb",
@@ -7419,7 +7391,7 @@
       "compensation": null,
       "posted_at": "2026-10-16T16:20:51.875+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:mavenclinic:8593006002",
@@ -7447,7 +7419,7 @@
       "compensation": null,
       "posted_at": "2026-08-04T12:59:04-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:mavenclinic:8860743002",
@@ -7475,7 +7447,7 @@
       "compensation": null,
       "posted_at": "2026-10-12T10:39:29-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:mavenclinic:8924628002",
@@ -7503,7 +7475,7 @@
       "compensation": null,
       "posted_at": "2026-10-29T17:25:03-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:mavenclinic:8599242002",
@@ -7531,7 +7503,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T14:24:15-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:medsien:5290453007",
@@ -7559,7 +7531,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T08:11:45-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:method.security:59d95000-941e-4362-aa6a-523f573dd560",
@@ -7587,7 +7559,7 @@
       "compensation": null,
       "posted_at": "2026-07-28T17:09:14.381+00:00",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:navapbc:4382009009",
@@ -7615,7 +7587,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T15:39:53-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:navapbc:4450583009",
@@ -7643,7 +7615,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T15:41:51-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:navapbc:4443978009",
@@ -7671,7 +7643,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T15:45:37-05:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:navapbc:4413424009",
@@ -7699,7 +7671,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T10:35:52-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:navapbc:4395330009",
@@ -7727,7 +7699,7 @@
       "compensation": null,
       "posted_at": "2026-10-27T11:59:42-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:opswat:4669508005",
@@ -7755,7 +7727,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T05:35:53-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:opswat:4718788005",
@@ -7783,7 +7755,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T05:35:53-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:opswat:4751785005",
@@ -7811,7 +7783,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T10:28:34-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:opswat:4540380005",
@@ -7839,7 +7811,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T09:38:43-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:opswat:4753232005",
@@ -7867,7 +7839,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T05:35:53-05:00",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:opswat:4654385005",
@@ -7895,7 +7867,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T05:35:53-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:opswat:4729995005",
@@ -7923,7 +7895,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T05:35:53-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:oddball:7990328003",
@@ -7951,7 +7923,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T11:32:15-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:oddball:8200470003",
@@ -7979,7 +7951,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:55:17-05:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:oddball:8012571003",
@@ -8007,7 +7979,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T11:34:07-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8157885",
@@ -8035,7 +8007,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:7977080",
@@ -8063,7 +8035,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8160475",
@@ -8091,7 +8063,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8347758",
@@ -8119,7 +8091,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8332523",
@@ -8147,7 +8119,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8282012",
@@ -8175,7 +8147,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8155421",
@@ -8203,7 +8175,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8196226",
@@ -8231,7 +8203,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8038929",
@@ -8261,7 +8233,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8072515",
@@ -8289,7 +8261,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8056315",
@@ -8317,7 +8289,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8213755",
@@ -8345,7 +8317,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T18:20:35-05:00",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8137951",
@@ -8373,7 +8345,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8022482",
@@ -8401,7 +8373,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8351434",
@@ -8429,35 +8401,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
-    },
-    {
-      "id": "greenhouse:okta:8249918",
-      "title": "Senior Product Manager, Okta for AI Agents",
-      "company": "Okta",
-      "company_tier": "standard",
-      "industries": [
-        "cybersecurity"
-      ],
-      "url": "https://www.okta.com/company/careers/opportunity/8249918?gh_jid=8249918",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "product"
-      ],
-      "roles": [
-        "product_manager"
-      ],
-      "level": "manager",
-      "location": "Bellevue, Washington; Chicago, Illinois; New York, New York; San Francisco, California; Washington, DC",
-      "remote": false,
-      "department": "Product Management-810",
-      "description_html": "<div class=\"content-intro\"><p><strong>Secure Every Identity, from AI to Human<br><br></strong>Identity is the key to unlocking the potential of AI. Okta secures AI by building the trusted, neutral infrastructure that enables organizations to safely embrace this new era. This work requires a relentless drive to solve complex challenges with real-world stakes. We are looking for builders and owners who operate with speed and urgency and execute with excellence.<br><br>This is an opportunity to do career-defining work. We're all in on this mission. If you are too, let's talk.</p></div><p>As a Senior Product Manager, Okta for AI Agents, you will drive the product strategy and execution for how Okta secures AI. As AI agents increasingly act on behalf of humans and organizations, the need for robust identity, permissions, and audibility has never been more critical. You will define how Okta secures this agentic future, building the capabilities that allow organizations to safely connect AI agents to their enterprise tools with strict, identity-driven governance. To achieve this, you will design, build, and launch core features spanning agent identity lifecycle management, dynamic permission scoping, delegated authorization, and comprehensive audit trails, directly shaping the underlying trust frameworks and APIs that power these secure workflows.</p>\n<p>&nbsp;</p>\n<p>Okta for AI Agents is a foundational new pillar for the company, acting as the critical trust layer that sits between automated, agentic workflows and the rigorous security posture our customers require for their enterprise systems. You will partner closely with engineering, design, other product teams, and cross-functional stakeholders across Okta's platform to ensure AI identity capabilities evolve strategically, including driving how agent access, oversight, and governance are rolled out and managed at scale.</p>\n<h2>Key Responsibilities</h2>\n<ul>\n<li><strong>Customer &amp; Stakeholder Engagement</strong>: Collaborate with AI platform developers, security architects, and internal stakeholders to distill feature asks, gather feedback, and ensure product-market fit for AI agent identity.</li>\n<li><strong>Product Scope</strong>: Define and own the product strategy and roadmap for AI agent-specific capabilities, including agent-to-agent authentication and delegated authority.</li>\n<li><strong>Roadmap Ownership</strong>: Identify and prioritize the development of new features such as dynamic session management for AI, \"on-behalf-of\" token exchange, and agent-specific audit logs.</li>\n<li><strong>Technical Collaboration</strong>: Work closely with engineering and architecture teams to define protocols (e.g., extensions to OAuth/OIDC) and deployment models that align with modern AI orchestration frameworks.</li>\n<li><strong>Delivery &amp; Execution</strong>: Drive cross-functional execution with design, engineering, and documentation teams to deliver high-quality features on time.</li>\n<li><strong>Market Awareness</strong>: Track industry trends in LLMs, agentic frameworks (e.g., LangChain, AutoGPT), and emerging AI security standards to develop differentiated solutions.</li>\n<li><strong>Data-Driven Insights</strong>: Leverage product data to continually improve agent lifecycle management and drive adoption within the developer community.</li>\n<li><strong>Subject Matter Expertise</strong>: Serve as the subject matter expert for AI Identity, enabling marketing and technical sales teams with the tools needed to position Okta for AI use cases.</li>\n</ul>\n<h2>Required Experience</h2>\n<ul>\n<li><strong>5+ years of technical product management experience</strong> in enterprise-scale SaaS products, or an equivalent background demonstrating core PM competencies.</li>\n<li><strong>Strong knowledge of Identity and Access Management (IAM)</strong> protocols such as OAuth2, OIDC, and SAML.</li>\n<li><strong>Deep understanding of API security</strong> and the developer experience for integrating security services.</li>\n<li><strong>Analytical and decisive</strong>: Ability to drive action even with incomplete or ambiguous information in the rapidly evolving AI landscape.</li>\n<li><strong>Excellent communication skills</strong>: Ability to work cross-functionally with research, design, engineering, and customer success teams.</li>\n<li><strong>Technical background</strong>: Bachelor’s degree in Computer Science, Computer Engineering, or equivalent experience that allows you to influence technical design decisions.</li>\n</ul>\n<h2>Preferred Experience</h2>\n<ul>\n<li><strong>Hands-on experience with AI/ML frameworks</strong> or building products that leverage Large Language Models (LLMs).</li>\n<li><strong>Experience with developer-centric products</strong>, such as building with SDKs, APIs, or no-code/low-code integration platforms.</li>\n<li><strong>Familiarity with Zero Trust architecture</strong> and how it applies to non-human entities and automated workloads.</li>\n<li><strong>Prior experience in a \"Zero to One\" product environment</strong>, launching new products from initial concept to GA.</li>\n<li><strong>Advanced degree</strong> in a technical or business field</li>\n</ul>\n<p>&nbsp;</p>\n<p>#P25841_3569318</p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"title\">The annual base salary range for this position for candidates located in the San Francisco Bay area is between:  </div><div class=\"pay-range\"><span>$189,000</span><span class=\"divider\">&mdash;</span><span>$260,000 USD</span></div></div><div class=\"pay-input\"><div class=\"description\"><p><span style=\"font-weight: 400;\">Below is the annual base salary range for candidates located in California (excluding San Francisco Bay Area), Colorado, Illinois, New York and Washington. Your actual base salary will depend on factors such as your skills, qualifications, experience, and work location. In addition, Okta offers equity (where applicable), bonus, and benefits, including health, dental and vision insurance, 401(k), flexible spending account, and paid leave (including PTO and parental leave) in accordance with our applicable plans and policies. To learn more about our Total Rewards program please visit: </span><a href=\"https://rewards.okta.com/us\"><span style=\"font-weight: 400;\">https://rewards.okta.com/us</span></a><span style=\"font-weight: 400;\">.&nbsp;&nbsp;&nbsp;<br></span></p></div><div class=\"title\">The annual base salary range for this position for candidates located in California (excluding San Francisco Bay Area), Colorado, Illinois, New York, and Washington is between:</div><div class=\"pay-range\"><span>$169,000</span><span class=\"divider\">&mdash;</span><span>$232,000 USD</span></div></div></div><div class=\"content-conclusion\"><p><strong>The Okta Experience</strong></p>\n<ul>\n<li><a href=\"http://rewards.okta.com\">Supporting Your Well-Being</a>&nbsp;</li>\n<li><a href=\"https://www.okta.com/company/okta-for-good/\">Driving Social Impact&nbsp;</a></li>\n<li><a href=\"https://www.okta.com/company/talent-connection-community/\">Developing Talent and Fostering Connection + Community</a></li>\n</ul>\n<p>We are intentional about connection. Our global community, spanning over 20 offices worldwide, is united by a drive to innovate. Your journey begins with an immersive, in-person onboarding experience designed to accelerate your impact and connect you to our mission and team from day one.<br><br>Okta is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, ancestry, marital status, age, physical or mental disability, or status as a protected veteran. We also consider for employment qualified applicants with arrest and convictions records, consistent with applicable laws.<br><br>If reasonable accommodation is needed to complete any part of the job application, interview process, or onboarding please&nbsp;<a href=\"https://docs.google.com/forms/d/1EfiEYZrIyhA2X4Fijk0R3RKYOzNoS3wtvyM4nhbZnXE/edit\">use this Form</a> to request an accommodation.<br><br>Notice for New York City Applicants &amp; Employees: Okta may use Automated Employment Decision Tools (AEDT), as defined by New York City Local Law 144, that use artificial intelligence, machine learning, or other automated processes to assist in our recruitment and hiring process. In accordance with NYC Local Law 144, if you are an applicant or employee residing in New York City, please&nbsp;<a href=\"https://talent.okta.com/new-york-city-aedt-notice.html\">click here</a> to view our full NYC AEDT Notice.</p></div>",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-13T16:59:18-05:00",
-      "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8268917",
@@ -8485,7 +8429,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8281947",
@@ -8513,7 +8457,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:7658254",
@@ -8541,7 +8485,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8335184",
@@ -8569,7 +8513,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:7575679",
@@ -8597,7 +8541,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8332521",
@@ -8625,7 +8569,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8159611",
@@ -8653,7 +8597,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:7917957",
@@ -8681,7 +8625,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8213700",
@@ -8709,7 +8653,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8247059",
@@ -8737,7 +8681,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8326116",
@@ -8765,7 +8709,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8248427",
@@ -8793,7 +8737,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8097489",
@@ -8821,7 +8765,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8281941",
@@ -8849,7 +8793,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:okta:8073066",
@@ -8877,7 +8821,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T16:59:18-05:00",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:ophelia:5442519008",
@@ -8905,7 +8849,7 @@
       "compensation": null,
       "posted_at": "2026-10-02T14:07:21-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:ophelia:5443572008",
@@ -8933,7 +8877,7 @@
       "compensation": null,
       "posted_at": "2026-10-16T16:43:09-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:ophelia:5442606008",
@@ -8961,7 +8905,7 @@
       "compensation": null,
       "posted_at": "2026-10-02T15:14:52-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:picogrid:406a5209-a27c-4340-83a0-ea3c26b515f3",
@@ -8989,7 +8933,7 @@
       "compensation": "$130K – $185K • Offers Equity • Offers Bonus",
       "posted_at": "2026-06-16T17:45:52.169+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:picogrid:e952a0e7-841c-4fb9-ac2e-a9bb2f35bce5",
@@ -9017,7 +8961,7 @@
       "compensation": "$170K – $195K • Offers Equity • Offers Bonus",
       "posted_at": "2026-07-30T23:08:11.132+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:primer:af6ad413-6e2f-4cb4-9e11-582b2d2e6c42",
@@ -9045,7 +8989,7 @@
       "compensation": null,
       "posted_at": "2026-06-16T18:55:32.716+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:quindar:f384450c-697b-427e-8930-58fc195016d2",
@@ -9073,7 +9017,7 @@
       "compensation": "$120K – $180K • Offers Equity",
       "posted_at": "2026-08-13T22:29:27.478+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:quindar:ab0f0994-3caf-4b52-b3c3-8bdaaf665134",
@@ -9101,7 +9045,7 @@
       "compensation": "$145K – $186K • Offers Equity",
       "posted_at": "2026-10-24T01:04:57.263+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:quindar:15f66bee-9ac9-487d-8726-2fad17cbd5c5",
@@ -9129,7 +9073,7 @@
       "compensation": "$120K – $180K • Offers Equity",
       "posted_at": "2026-10-28T21:13:08.751+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:quindar:dd8160d2-3ec2-442b-814e-af7a0304e791",
@@ -9157,7 +9101,7 @@
       "compensation": "$150K – $175K • Offers Equity",
       "posted_at": "2026-09-09T22:00:16.034+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:quindar:e054da24-1e14-4d63-a7c3-1847ff96a035",
@@ -9185,7 +9129,7 @@
       "compensation": "$80K – $100K • Offers Equity • $10K – $75K Commission",
       "posted_at": "2026-11-06T01:20:15.590+00:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:8274601",
@@ -9213,7 +9157,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T16:29:48-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:7939330",
@@ -9241,7 +9185,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T16:29:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:8130460",
@@ -9269,7 +9213,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T10:16:10-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:7942501",
@@ -9297,7 +9241,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T16:29:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:8225580",
@@ -9325,7 +9269,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T16:29:48-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:7423902",
@@ -9353,7 +9297,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T13:03:43-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:8327831",
@@ -9381,7 +9325,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T16:29:49-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:rubrik:7885055",
@@ -9409,7 +9353,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T16:29:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:scout-ai:3b639e39-abd7-4a0c-9bea-e1cd0a72db99",
@@ -9437,7 +9381,7 @@
       "compensation": "$45 – $65 per hour",
       "posted_at": "2026-10-23T21:21:33.568+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:scout-ai:91ae19c8-7c3a-4c11-be66-d75bcb885026",
@@ -9465,7 +9409,7 @@
       "compensation": "$165K – $215K • Offers Equity",
       "posted_at": "2026-10-30T16:18:20.283+00:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:scout-ai:74ccd303-02fc-4a3d-a3ab-63f924afc81b",
@@ -9493,7 +9437,7 @@
       "compensation": "$200K – $400K • Offers Equity",
       "posted_at": "2026-07-08T18:51:39.116+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:scout-ai:0e688473-bb28-44df-9320-5c883ed5feeb",
@@ -9521,7 +9465,7 @@
       "compensation": "$140K – $180K • Offers Equity",
       "posted_at": "2026-11-09T22:19:15.801+00:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:securityscorecard:8331199",
@@ -9550,7 +9494,7 @@
       "compensation": null,
       "posted_at": "2026-10-28T13:19:00-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:securityscorecard:8039043",
@@ -9579,7 +9523,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T17:23:30-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:semgrep:21496f9a-feaf-4c11-a83c-3b46c621b778",
@@ -9607,7 +9551,7 @@
       "compensation": null,
       "posted_at": "2026-02-02T21:01:29.033+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:semgrep:fedd22ca-0772-4660-99ca-484e89566094",
@@ -9635,7 +9579,7 @@
       "compensation": null,
       "posted_at": "2026-10-02T19:05:03.894+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:7551201003",
@@ -9663,7 +9607,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:09:21-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:7823203003",
@@ -9691,7 +9635,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:09:21-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:8046906003",
@@ -9719,7 +9663,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:09:21-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:8008762003",
@@ -9747,7 +9691,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:09:21-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:7805775003",
@@ -9775,7 +9719,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T13:46:09-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:7733958003",
@@ -9803,7 +9747,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:09:21-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:8040871003",
@@ -9831,7 +9775,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:09:21-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:sentinellabs:7966022003",
@@ -9859,7 +9803,7 @@
       "compensation": null,
       "posted_at": "2026-11-10T10:09:21-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:shift5:6218489004",
@@ -9887,7 +9831,7 @@
       "compensation": null,
       "posted_at": "2026-10-07T16:18:12-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:a7297edb-3ab2-4cb1-a587-d5c01c2d6abd",
@@ -9915,7 +9859,7 @@
       "compensation": null,
       "posted_at": "2026-08-11T22:06:22.959+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:0cb43260-c0d6-410d-8631-9b2017546b23",
@@ -9943,7 +9887,7 @@
       "compensation": null,
       "posted_at": "2026-08-31T20:23:30.516+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:dd943daa-5758-4e17-9bce-b657ddf242e5",
@@ -9971,7 +9915,7 @@
       "compensation": null,
       "posted_at": "2026-10-29T16:21:01.291+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:c020cb39-91e3-4686-8c66-8af0140f59ce",
@@ -9999,7 +9943,7 @@
       "compensation": null,
       "posted_at": "2026-08-25T22:25:28.982+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:89bb6fee-3cd2-4e0b-a1c2-c73de8c1f9bd",
@@ -10027,7 +9971,7 @@
       "compensation": null,
       "posted_at": "2026-10-22T19:44:53.854+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:c9e40dab-ae7d-4034-a335-b3e05d419672",
@@ -10055,7 +9999,7 @@
       "compensation": null,
       "posted_at": "2026-05-13T18:24:21.383+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:30e6972f-afe4-46d2-b453-9f93cf700006",
@@ -10083,7 +10027,7 @@
       "compensation": null,
       "posted_at": "2026-08-19T23:38:08.927+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:50bce7db-bc6f-435e-a7e1-f01e76fa1bf0",
@@ -10111,7 +10055,7 @@
       "compensation": null,
       "posted_at": "2026-10-05T23:43:29.006+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:c9bc66c4-b813-4ed8-b513-c77ccad59ccf",
@@ -10139,7 +10083,7 @@
       "compensation": null,
       "posted_at": "2026-09-03T15:28:02.018+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:92ba2906-0fb9-4416-95b7-03feb8c31626",
@@ -10167,7 +10111,7 @@
       "compensation": null,
       "posted_at": "2026-10-29T22:28:06.085+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:82512092-2488-46fc-81cf-ab2a68b8f552",
@@ -10195,7 +10139,7 @@
       "compensation": null,
       "posted_at": "2026-08-31T20:28:39.736+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:3d8ff033-c100-44b4-9ca4-d373d08d7f9a",
@@ -10223,7 +10167,7 @@
       "compensation": null,
       "posted_at": "2026-07-02T07:13:07.123+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:a013f5f3-1f05-4374-bdad-339521a7603e",
@@ -10251,7 +10195,7 @@
       "compensation": null,
       "posted_at": "2026-10-08T18:38:52.565+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:6dfd44a6-4e77-4cbf-a207-312299112ffb",
@@ -10279,7 +10223,7 @@
       "compensation": null,
       "posted_at": "2026-10-14T20:47:44.422+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:5655fbe3-66b0-4951-afdc-3b67f71e6938",
@@ -10307,7 +10251,7 @@
       "compensation": null,
       "posted_at": "2026-03-17T20:05:18.560+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:c3a4256a-4525-443c-81d0-6f69e7c24805",
@@ -10335,7 +10279,7 @@
       "compensation": null,
       "posted_at": "2026-08-18T15:36:30.564+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:7d7dfadc-c6fd-4958-8d59-004a91bff55e",
@@ -10363,7 +10307,7 @@
       "compensation": null,
       "posted_at": "2026-03-04T18:18:02.326+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:4957d615-fe24-46bb-91b8-0d6627902802",
@@ -10391,7 +10335,7 @@
       "compensation": null,
       "posted_at": "2026-08-14T20:19:06.040+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:0a517f25-4222-4ccf-bd09-bb332dc4c446",
@@ -10419,7 +10363,7 @@
       "compensation": null,
       "posted_at": "2026-08-26T03:56:04.315+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:379b23ea-14ff-4602-9b79-52d00bb96fda",
@@ -10447,7 +10391,7 @@
       "compensation": null,
       "posted_at": "2026-01-21T23:41:43.230+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:16b0647d-a470-4917-9bb9-a95967828edc",
@@ -10475,7 +10419,7 @@
       "compensation": null,
       "posted_at": "2025-08-28T21:14:13.188+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:3a562d8e-6ccf-4489-8367-ef9c49ef5217",
@@ -10503,7 +10447,7 @@
       "compensation": null,
       "posted_at": "2026-06-11T21:51:25.221+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:skydio:e7ff5501-09ae-4f7d-acf2-54e6c817830f",
@@ -10531,7 +10475,7 @@
       "compensation": null,
       "posted_at": "2026-10-14T19:28:58.447+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:skyways:dfd8b4e6-d0a5-40f3-b4a6-f73ac46f3b13",
@@ -10559,7 +10503,7 @@
       "compensation": null,
       "posted_at": "2026-04-21T21:38:59.129000+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:skyways:e733fd23-6ea8-4aed-9532-899c4c03f63b",
@@ -10587,7 +10531,7 @@
       "compensation": null,
       "posted_at": "2026-01-22T21:12:14.082000+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "lever:skyways:fb1e015f-9278-4b95-9750-24a42488a9d3",
@@ -10615,7 +10559,7 @@
       "compensation": null,
       "posted_at": "2026-09-14T15:33:06.513000+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socket:02c4af15-7ff5-4a4a-a961-cb1a557fb80a",
@@ -10643,7 +10587,7 @@
       "compensation": null,
       "posted_at": "2026-10-21T21:52:27.243+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socket:8f9f4b7a-5933-4c07-8fec-900fe2e425c6",
@@ -10671,7 +10615,7 @@
       "compensation": null,
       "posted_at": "2026-02-12T18:32:25.197+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:3e3acfee-8e62-406c-891d-f39ca5e003b1",
@@ -10699,7 +10643,7 @@
       "compensation": "$220K – $290K • Offers Equity • Offers Bonus",
       "posted_at": "2026-05-20T13:17:16.206+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:fed81553-3054-4e81-8d9a-d5e5b3d2702c",
@@ -10727,7 +10671,7 @@
       "compensation": "$150K – $185K • Offers Equity • Offers Bonus",
       "posted_at": "2026-11-12T21:43:45.862+00:00",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:c52b5f32-9ae7-43a6-86d5-26a5c8229285",
@@ -10755,7 +10699,7 @@
       "compensation": "$120K – $140K • Offers Equity • Offers Bonus",
       "posted_at": "2026-10-27T17:14:39.255+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:eda88068-dad3-44c0-8bd8-393971602aea",
@@ -10783,7 +10727,7 @@
       "compensation": "$200K – $230K • Offers Equity • Offers Bonus",
       "posted_at": "2026-05-27T17:06:00.645+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:f55fe1c9-1338-40d5-a9d0-84d37e33e37e",
@@ -10811,7 +10755,7 @@
       "compensation": "$180K – $210K • Offers Equity • Offers Bonus",
       "posted_at": "2026-01-19T17:39:58.416+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:c102743f-f368-4393-8776-3a83a461fd0d",
@@ -10839,7 +10783,7 @@
       "compensation": "$170K – $220K • Offers Equity • Offers Bonus • Multiple Ranges",
       "posted_at": "2026-07-29T07:26:11.637+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:9b3db58d-1330-44f5-9530-1f21c38519f3",
@@ -10867,7 +10811,7 @@
       "compensation": "$180K – $210K • Offers Equity • Offers Bonus",
       "posted_at": "2026-11-10T23:16:17.912+00:00",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:39f89181-37e6-4358-a959-d38966d27f32",
@@ -10895,7 +10839,7 @@
       "compensation": "$180K – $210K • Offers Equity • Offers Bonus",
       "posted_at": "2026-10-05T20:30:24.061+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:055da1d9-4664-4921-9787-642b34465bba",
@@ -10923,7 +10867,7 @@
       "compensation": "$180K – $210K • Offers Equity • Offers Bonus",
       "posted_at": "2026-09-14T17:35:21.713+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:8f5ee406-e220-4b51-a455-b8fb4e01fd1a",
@@ -10951,7 +10895,7 @@
       "compensation": "$160K – $190K • Offers Equity • Offers Bonus",
       "posted_at": "2026-09-28T20:00:30.493+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:382aacca-5f17-41a9-961e-6f89982058fe",
@@ -10979,7 +10923,7 @@
       "compensation": "$230K – $270K • Offers Equity • Offers Bonus",
       "posted_at": "2026-11-13T19:29:55.151+00:00",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:8a3e3914-20bc-4587-8610-a054f4e6ec5f",
@@ -11007,7 +10951,7 @@
       "compensation": "$150K – $170K • Offers Equity • Offers Bonus",
       "posted_at": "2026-08-14T15:12:12.549+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:ef4ab7b8-0a33-4ceb-9438-06c1fefeed41",
@@ -11035,7 +10979,7 @@
       "compensation": "$170K – $205K • Offers Equity • Offers Bonus",
       "posted_at": "2026-11-12T17:30:54.438+00:00",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:098f230b-072f-45f9-a723-1ac93ba30780",
@@ -11063,7 +11007,7 @@
       "compensation": "$170K – $195K • Offers Equity • Offers Bonus",
       "posted_at": "2026-11-02T18:33:25.346+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:socure:bac53b72-5f0d-43dd-9807-88740b0f80f3",
@@ -11091,7 +11035,7 @@
       "compensation": "$170K – $195K • Offers Equity • Offers Bonus",
       "posted_at": "2026-10-07T16:00:53.590+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4750594005",
@@ -11119,7 +11063,7 @@
       "compensation": null,
       "posted_at": "2026-11-03T12:18:03-05:00",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4749610005",
@@ -11147,7 +11091,7 @@
       "compensation": null,
       "posted_at": "2026-11-02T11:14:29-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4754055005",
@@ -11175,7 +11119,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T13:26:16-05:00",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4751755005",
@@ -11203,7 +11147,7 @@
       "compensation": null,
       "posted_at": "2026-11-05T23:50:12-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4751728005",
@@ -11231,7 +11175,7 @@
       "compensation": null,
       "posted_at": "2026-11-05T23:31:27-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4751952005",
@@ -11259,7 +11203,7 @@
       "compensation": null,
       "posted_at": "2026-11-07T10:20:27-05:00",
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4744878005",
@@ -11287,7 +11231,7 @@
       "compensation": null,
       "posted_at": "2026-10-16T22:12:47-04:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4726153005",
@@ -11315,7 +11259,7 @@
       "compensation": null,
       "posted_at": "2026-09-29T20:38:27-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4730717005",
@@ -11343,7 +11287,7 @@
       "compensation": null,
       "posted_at": "2026-09-29T20:38:27-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:tailscale:4731178005",
@@ -11371,7 +11315,7 @@
       "compensation": null,
       "posted_at": "2026-11-06T15:38:05-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:talkiatry:75a5f6d7-bf9f-40a5-bde3-87e2d8ff8ad3",
@@ -11399,7 +11343,7 @@
       "compensation": "$130K – $150K",
       "posted_at": "2026-11-10T21:44:05.987+00:00",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:talkiatry:5cc505aa-ef66-46f8-986c-a2422407bc9b",
@@ -11427,7 +11371,7 @@
       "compensation": "$150K – $187K",
       "posted_at": "2026-08-13T20:39:09.994+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:talkiatry:0e6880af-3bd1-430f-a0d1-9ee1e4ba0751",
@@ -11455,7 +11399,7 @@
       "compensation": "$145K – $180K",
       "posted_at": "2026-05-20T17:49:52.582+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:talkiatry:32cf96b4-f615-40d2-9d15-cf33cafc296c",
@@ -11483,7 +11427,7 @@
       "compensation": "$120K – $145K • Offers Bonus • Competitive Base Salary + Productivity Incentive Plan",
       "posted_at": "2026-10-09T19:45:41.156+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:talkiatry:4a40df83-4569-470d-bfe4-e98f8d33b391",
@@ -11511,7 +11455,7 @@
       "compensation": "$165K – $205K",
       "posted_at": "2026-10-12T20:42:38.091+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:talkiatry:766e2f57-9855-4ad6-9c93-c8302869e3a3",
@@ -11539,7 +11483,7 @@
       "compensation": "$180K – $225K",
       "posted_at": "2026-08-14T19:11:16.351+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:goteleport:f0ef2e82-1d4b-440c-b1b6-4f02e4472e37",
@@ -11567,7 +11511,7 @@
       "compensation": "$189,040 – $278,000 • Offers Equity • Multiple Ranges",
       "posted_at": "2026-07-24T19:14:54.718+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:goteleport:d5eb4352-e857-4678-bcc1-ae176882afb6",
@@ -11595,7 +11539,7 @@
       "compensation": "$165,920 – $244,000 • Offers Equity",
       "posted_at": "2026-03-10T16:39:57.024+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:goteleport:219963ed-01b6-4e78-a9c8-7048c0109141",
@@ -11623,7 +11567,7 @@
       "compensation": "$189K – $326K • Offers Equity • Multiple Ranges",
       "posted_at": "2026-07-17T18:26:46.382+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:tennr:638715dd-77e6-4a0e-a4d1-2f67c3dd74f8",
@@ -11651,7 +11595,7 @@
       "compensation": "$180K – $220K • Offers Equity • Offers Bonus",
       "posted_at": "2026-10-07T21:52:51.035+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:tennr:69603796-04be-4b5a-b05c-1ae8b23a2121",
@@ -11679,7 +11623,7 @@
       "compensation": "$180K – $210K • Offers Equity • Offers Bonus",
       "posted_at": "2026-09-23T14:57:19.801+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:tennr:b52ef254-34b1-498a-b85e-fb7b19e6bccb",
@@ -11707,7 +11651,7 @@
       "compensation": "$120K – $150K • Offers Equity • Offers Bonus",
       "posted_at": "2026-10-15T13:21:06.062+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5138856007",
@@ -11735,7 +11679,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5228067007",
@@ -11763,7 +11707,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5166540007",
@@ -11791,7 +11735,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5283892007",
@@ -11819,7 +11763,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5224739007",
@@ -11847,7 +11791,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5221498007",
@@ -11875,7 +11819,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5099702007",
@@ -11903,7 +11847,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5166543007",
@@ -11931,7 +11875,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5182446007",
@@ -11959,7 +11903,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5092038007",
@@ -11987,7 +11931,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5260587007",
@@ -12015,7 +11959,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5271710007",
@@ -12043,7 +11987,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5092069007",
@@ -12071,7 +12015,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5219639007",
@@ -12099,7 +12043,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5166545007",
@@ -12127,7 +12071,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5182480007",
@@ -12155,7 +12099,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5230702007",
@@ -12183,7 +12127,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5091489007",
@@ -12211,7 +12155,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5283170007",
@@ -12239,7 +12183,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5283191007",
@@ -12267,7 +12211,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5257649007",
@@ -12295,7 +12239,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5283185007",
@@ -12323,7 +12267,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5035812007",
@@ -12351,7 +12295,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:trueanomalyinc:5121969007",
@@ -12379,7 +12323,7 @@
       "compensation": null,
       "posted_at": "2026-11-12T17:21:07-05:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6250199004",
@@ -12407,7 +12351,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T01:57:35-05:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6238505004",
@@ -12435,7 +12379,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T17:02:48-05:00",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:5999949004",
@@ -12463,7 +12407,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T01:54:02-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6134242004",
@@ -12491,7 +12435,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T01:53:57-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6181157004",
@@ -12519,7 +12463,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T01:53:52-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6188602004",
@@ -12547,7 +12491,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T01:53:46-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:5655780004",
@@ -12575,7 +12519,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T01:57:15-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:5718813004",
@@ -12603,7 +12547,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T01:57:09-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6221912004",
@@ -12631,7 +12575,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T02:01:20-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6109867004",
@@ -12659,7 +12603,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T02:04:34-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:twinhealth:6020240004",
@@ -12687,7 +12631,7 @@
       "compensation": null,
       "posted_at": "2026-11-13T02:04:30-05:00",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:20d2c9aa-19da-4370-9378-491312f6f98a",
@@ -12716,7 +12660,7 @@
       "compensation": "$286K – $336K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-08-27T15:03:36.988+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:3680f3ab-b470-46dd-b192-86ae69d54a31",
@@ -12745,7 +12689,7 @@
       "compensation": "$208K – $284K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-11-05T23:56:09.161+00:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:b64b6e72-7c71-446f-b6ce-662330b910e8",
@@ -12774,7 +12718,7 @@
       "compensation": "$160K – $188K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-10-29T18:12:14.403+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:19837d21-971e-4b9d-b078-320895fae28a",
@@ -12803,7 +12747,7 @@
       "compensation": "$365K – $513K • Offers Equity • Cash Range",
       "posted_at": "2026-07-06T21:11:35.974+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:29e92503-fecf-4ac4-9de7-683390fb74c6",
@@ -12832,7 +12776,7 @@
       "compensation": "$127K – $149K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-11-03T18:25:26.804+00:00",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:b604e8b8-a311-4848-9940-9ba77a67410c",
@@ -12861,7 +12805,7 @@
       "compensation": "$309K – $363K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-11-06T23:39:49.894+00:00",
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:ed632c31-2a66-4c91-8d29-f450bbd4de67",
@@ -12890,7 +12834,7 @@
       "compensation": "$224K – $263K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-08-26T20:28:52.130+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:1513e1ac-5dca-4acb-a99d-8b5461115651",
@@ -12919,7 +12863,7 @@
       "compensation": "$195K – $229K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2025-03-13T22:25:56.507+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:bbaea4cf-1439-4996-b7b1-c10425413c3f",
@@ -12948,7 +12892,7 @@
       "compensation": "$195K – $263K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-09-23T19:43:46.798+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:fedc71ba-ef1d-454c-9536-ce87333a23c7",
@@ -12977,7 +12921,7 @@
       "compensation": "$224K – $263K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-03-12T16:14:37.165+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:0e154a57-fc33-4cf7-95cc-0aa30e0bde90",
@@ -13006,7 +12950,7 @@
       "compensation": "$197K – $232K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-09-18T17:08:17.112+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:0eb769bf-5444-491b-8721-2fc579ca4932",
@@ -13035,7 +12979,7 @@
       "compensation": "$207K – $244K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-10-29T17:48:23.295+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:7816b5fe-e916-43b8-9200-d0d45298ba9f",
@@ -13064,7 +13008,7 @@
       "compensation": "$207K – $244K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-11-05T00:08:34.860+00:00",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:82dd0fed-120e-4983-a1ae-676ae355cea8",
@@ -13093,7 +13037,7 @@
       "compensation": "$207K – $244K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-11-05T18:42:13.290+00:00",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:112c82ea-5825-4121-a43f-5e1902bec35c",
@@ -13122,7 +13066,7 @@
       "compensation": "$195K – $229K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-10-26T17:34:12.712+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:91c73485-5d0c-4272-9643-401ebcfff9d1",
@@ -13151,7 +13095,7 @@
       "compensation": "$195K – $229K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-07-10T15:10:18.843+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:7d9922bb-2d0e-4833-bc4e-df65dc57d232",
@@ -13180,7 +13124,7 @@
       "compensation": "$236K – $278K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-10-28T16:20:47.153+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:vanta:c3a34fb5-02e4-430e-83d2-b096363901aa",
@@ -13209,7 +13153,7 @@
       "compensation": "$243K – $286K • Offers Equity • This role is also eligible for medical benefits, 401(k) plan, and other company perk programs.",
       "posted_at": "2026-10-29T16:36:11.224+00:00",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:vatnsystems:4382254009",
@@ -13237,7 +13181,7 @@
       "compensation": null,
       "posted_at": "2026-09-09T09:09:44-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "ashby:wraithwatch:01cecb37-a7fc-4f32-838d-8d36542f783b",
@@ -13265,7 +13209,7 @@
       "compensation": null,
       "posted_at": "2026-03-03T03:55:11.535+00:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8010748",
@@ -13293,7 +13237,7 @@
       "compensation": null,
       "posted_at": "2026-09-11T11:00:52-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8230222",
@@ -13321,7 +13265,7 @@
       "compensation": null,
       "posted_at": "2026-10-22T15:43:41-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8155444",
@@ -13349,7 +13293,7 @@
       "compensation": null,
       "posted_at": "2026-10-09T10:21:40-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:7612536",
@@ -13377,7 +13321,7 @@
       "compensation": null,
       "posted_at": "2026-11-04T16:12:51-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:7716614",
@@ -13405,7 +13349,7 @@
       "compensation": null,
       "posted_at": "2026-11-04T16:12:51-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8360585",
@@ -13433,7 +13377,7 @@
       "compensation": null,
       "posted_at": "2026-11-09T10:09:17-05:00",
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8227742",
@@ -13461,7 +13405,7 @@
       "compensation": null,
       "posted_at": "2026-11-05T09:50:52-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8263361",
@@ -13489,7 +13433,7 @@
       "compensation": null,
       "posted_at": "2026-10-09T18:22:26-04:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8356769",
@@ -13517,7 +13461,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T12:45:03-05:00",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:7994223",
@@ -13545,7 +13489,7 @@
       "compensation": null,
       "posted_at": "2026-11-11T13:46:45-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     {
       "id": "greenhouse:zocdoc:8082087",
@@ -13573,7 +13517,7 @@
       "compensation": null,
       "posted_at": "2026-11-02T19:23:43-05:00",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     }
   ]
 }

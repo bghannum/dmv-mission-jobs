@@ -59,9 +59,9 @@
       "company": "LeoLabs",
       "ats": "greenhouse",
       "ok": true,
-      "count": 23,
+      "count": 22,
       "error": null,
-      "matched": 4,
+      "matched": 3,
       "dropped_non_us": 0
     },
     {
@@ -104,9 +104,9 @@
       "company": "Okta",
       "ats": "greenhouse",
       "ok": true,
-      "count": 362,
+      "count": 361,
       "error": null,
-      "matched": 82,
+      "matched": 81,
       "dropped_non_us": 50
     },
     {
@@ -203,10 +203,10 @@
       "company": "Spin.AI",
       "ats": "lever",
       "ok": true,
-      "count": 11,
+      "count": 10,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 1
+      "matched": 0,
+      "dropped_non_us": 0
     },
     {
       "company": "Abnormal AI",
@@ -239,7 +239,7 @@
       "company": "1Password",
       "ats": "ashby",
       "ok": true,
-      "count": 80,
+      "count": 81,
       "error": null,
       "matched": 10,
       "dropped_non_us": 1
@@ -302,7 +302,7 @@
       "company": "Persona",
       "ats": "ashby",
       "ok": true,
-      "count": 14,
+      "count": 13,
       "error": null,
       "matched": 0,
       "dropped_non_us": 0
@@ -392,7 +392,7 @@
       "company": "Rubrik",
       "ats": "greenhouse",
       "ok": true,
-      "count": 182,
+      "count": 183,
       "error": null,
       "matched": 16,
       "dropped_non_us": 8
@@ -410,7 +410,7 @@
       "company": "SentinelOne",
       "ats": "greenhouse",
       "ok": true,
-      "count": 256,
+      "count": 255,
       "error": null,
       "matched": 28,
       "dropped_non_us": 20
@@ -815,7 +815,7 @@
       "company": "Tennr",
       "ats": "ashby",
       "ok": true,
-      "count": 23,
+      "count": 24,
       "error": null,
       "matched": 3,
       "dropped_non_us": 0
@@ -832,10 +832,10 @@
   ],
   "any_failures": false,
   "us_only": true,
-  "dropped_non_us": 149,
-  "generated_at": "2026-11-14T16:51:06.718329+00:00",
-  "prior_job_count": 479,
-  "fresh_job_count": 483,
-  "total_job_count": 483,
+  "dropped_non_us": 148,
+  "generated_at": "2026-11-15T17:33:29.809507+00:00",
+  "prior_job_count": 483,
+  "fresh_job_count": 481,
+  "total_job_count": 481,
   "shrink_blocked": false
 }
