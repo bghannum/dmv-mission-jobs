@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:33:11.685981+00:00",
+  "generated_at": "2026-11-21T20:51:10.566613+00:00",
   "jobs": [
     {
       "id": "ashby:horizon3ai:21cf603f-78d8-4615-993c-3d2cc5087c58",
@@ -7525,42 +7525,6 @@
       "snippet": "anduril industries is a defense technology company with a mission to transform u.s. and allied military capabilities with advanced technology. by bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry,…"
     },
     {
-      "id": "greenhouse:andurilindustries:5211453007",
-      "title": "Senior Technical Program Manager, Space Battle Management",
-      "company": "Anduril",
-      "industries": [
-        "deftech",
-        "ai",
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5211453007?gh_jid=5211453007",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "program"
-      ],
-      "roles": [
-        "technical_program_manager"
-      ],
-      "level": "manager",
-      "location": "Washington, District of Columbia, United States",
-      "remote": false,
-      "workplace_type": null,
-      "location_type": "dmv_onsite",
-      "tags": [
-        "clearance",
-        "public_sector"
-      ],
-      "department": "AFS : Space Ground Engineering",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-16T21:23:01-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "anduril industries is a defense technology company with a mission to transform u.s. and allied military capabilities with advanced technology. by bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry,…"
-    },
-    {
       "id": "greenhouse:andurilindustries:5174516007",
       "title": "Senior Technical Program Manager, Space Battle Management",
       "company": "Anduril",
@@ -7581,6 +7545,42 @@
       ],
       "level": "manager",
       "location": "Chantilly, Virginia, United States",
+      "remote": false,
+      "workplace_type": null,
+      "location_type": "dmv_onsite",
+      "tags": [
+        "clearance",
+        "public_sector"
+      ],
+      "department": "AFS : Space Ground Engineering",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-16T21:23:01-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "anduril industries is a defense technology company with a mission to transform u.s. and allied military capabilities with advanced technology. by bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry,…"
+    },
+    {
+      "id": "greenhouse:andurilindustries:5211453007",
+      "title": "Senior Technical Program Manager, Space Battle Management",
+      "company": "Anduril",
+      "industries": [
+        "deftech",
+        "ai",
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5211453007?gh_jid=5211453007",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "program"
+      ],
+      "roles": [
+        "technical_program_manager"
+      ],
+      "level": "manager",
+      "location": "Washington, District of Columbia, United States",
       "remote": false,
       "workplace_type": null,
       "location_type": "dmv_onsite",
@@ -7957,42 +7957,6 @@
       "snippet": "anduril industries is a defense technology company with a mission to transform u.s. and allied military capabilities with advanced technology. by bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry,…"
     },
     {
-      "id": "greenhouse:andurilindustries:5298294007",
-      "title": "Technical Program Manager, Security Outcomes",
-      "company": "Anduril",
-      "industries": [
-        "deftech",
-        "ai",
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5298294007?gh_jid=5298294007",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "program"
-      ],
-      "roles": [
-        "technical_program_manager"
-      ],
-      "level": "manager",
-      "location": "Remote",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [
-        "clearance",
-        "public_sector"
-      ],
-      "department": "Corporate Technology : Information Security : Offensive Security",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-18T11:10:09-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "anduril industries is a defense technology company with a mission to transform u.s. and allied military capabilities with advanced technology. by bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry,…"
-    },
-    {
       "id": "greenhouse:andurilindustries:5298290007",
       "title": "Technical Program Manager, Security Outcomes",
       "company": "Anduril",
@@ -8024,6 +7988,42 @@
       "description_available": true,
       "compensation": null,
       "posted_at": "2026-11-18T11:09:38-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "anduril industries is a defense technology company with a mission to transform u.s. and allied military capabilities with advanced technology. by bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry,…"
+    },
+    {
+      "id": "greenhouse:andurilindustries:5298294007",
+      "title": "Technical Program Manager, Security Outcomes",
+      "company": "Anduril",
+      "industries": [
+        "deftech",
+        "ai",
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5298294007?gh_jid=5298294007",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "program"
+      ],
+      "roles": [
+        "technical_program_manager"
+      ],
+      "level": "manager",
+      "location": "Remote",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [
+        "clearance",
+        "public_sector"
+      ],
+      "department": "Corporate Technology : Information Security : Offensive Security",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-18T11:10:09-05:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "anduril industries is a defense technology company with a mission to transform u.s. and allied military capabilities with advanced technology. by bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry,…"
@@ -14237,6 +14237,37 @@
       "snippet": "slsq128r78 while candidates in the listed location(s) are encouraged for this role, candidates in other locations will be considered. remote - chicago as a strategic enterprise account executive at databricks, you are a sales professional experienced in leading go-to-market…"
     },
     {
+      "id": "greenhouse:databricks:8932854002",
+      "title": "Enterprise Account Executive - Financial Services",
+      "company": "Databricks",
+      "industries": [
+        "ai",
+        "saas"
+      ],
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8932854002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - New York",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Enterprise Sales",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-20T11:52:40-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "slsq128r164 as an enterprise account executive at databricks, you are a seasoned sales professional with experience selling to financial services accounts. you know how to sell innovation and change through customer vision expansion and can guide deals forward to compress…"
+    },
+    {
       "id": "greenhouse:databricks:8920452002",
       "title": "Enterprise Account Executive - Financial Services",
       "company": "Databricks",
@@ -14297,37 +14328,6 @@
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "slsq128r82 as an enterprise account executive at databricks, you are a seasoned sales professional with experience selling to financial services accounts. you know how to sell innovation and change through customer vision expansion and can guide deals forward to compress…"
-    },
-    {
-      "id": "greenhouse:databricks:8932854002",
-      "title": "Enterprise Account Executive - Financial Services",
-      "company": "Databricks",
-      "industries": [
-        "ai",
-        "saas"
-      ],
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8932854002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote - New York",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Enterprise Sales",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-20T11:52:40-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "slsq128r164 as an enterprise account executive at databricks, you are a seasoned sales professional with experience selling to financial services accounts. you know how to sell innovation and change through customer vision expansion and can guide deals forward to compress…"
     },
     {
       "id": "greenhouse:databricks:8582321002",
@@ -14458,37 +14458,6 @@
       "snippet": "slsq427r822 as a strategic enterprise account executive at databricks, you are a strategic sales professional experienced in selling into large healthcare & payer accounts. you know how to sell innovation and change through customer vision expansion and can guide deals forward…"
     },
     {
-      "id": "greenhouse:databricks:8925467002",
-      "title": "Enterprise Account Executive, Healthcare",
-      "company": "Databricks",
-      "industries": [
-        "ai",
-        "saas"
-      ],
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8925467002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote - New York; Remote - North Carolina",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Enterprise Sales",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-19T16:47:39-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "slsq128r86 as an enterprise account executive at databricks, you are a strategic sales professional experienced in selling into large healthcare and provider accounts. you know how to sell innovation and change through customer vision expansion and can guide deals forward to…"
-    },
-    {
       "id": "greenhouse:databricks:8925472002",
       "title": "Enterprise Account Executive, Healthcare",
       "company": "Databricks",
@@ -14518,6 +14487,37 @@
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "slsq128r85 as an enterprise account executive at databricks, you are a strategic sales professional experienced in selling into large healthcare & payer accounts. you know how to sell innovation and change through customer vision expansion and can guide deals forward to compress…"
+    },
+    {
+      "id": "greenhouse:databricks:8925467002",
+      "title": "Enterprise Account Executive, Healthcare",
+      "company": "Databricks",
+      "industries": [
+        "ai",
+        "saas"
+      ],
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8925467002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - New York; Remote - North Carolina",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Enterprise Sales",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-19T16:47:39-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "slsq128r86 as an enterprise account executive at databricks, you are a strategic sales professional experienced in selling into large healthcare and provider accounts. you know how to sell innovation and change through customer vision expansion and can guide deals forward to…"
     },
     {
       "id": "greenhouse:databricks:8870726002",
@@ -14615,37 +14615,6 @@
       "snippet": "csq427r268 you will build and lead a team of delivery solution architects (dsas) responsible for the post-sales success of databricks' largest financial services customers. this is one of the most consequential delivery leadership roles in the company. the customers in your…"
     },
     {
-      "id": "greenhouse:databricks:8755470002",
-      "title": "Manager, Field Engineering - Global Telecommunications",
-      "company": "Databricks",
-      "industries": [
-        "ai",
-        "saas"
-      ],
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755470002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "architecture"
-      ],
-      "roles": [
-        "solutions_architect"
-      ],
-      "level": "manager",
-      "location": "Remote - Texas",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Field Engineering - FE Direct Enterprise",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-19T16:47:39-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "feq227r233 manager, field engineering about the role as a manager, field engineering, you will lead a team of technical customer advisors who help organizations solve complex data, analytics, and ai challenges. you will work closely with sales and cross-functional partners to…"
-    },
-    {
       "id": "greenhouse:databricks:8476403002",
       "title": "Manager, Field Engineering - Global Telecommunications",
       "company": "Databricks",
@@ -14664,6 +14633,37 @@
       ],
       "level": "manager",
       "location": "Remote - Georgia",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Field Engineering - FE Direct Enterprise",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-19T16:47:39-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "feq227r233 manager, field engineering about the role as a manager, field engineering, you will lead a team of technical customer advisors who help organizations solve complex data, analytics, and ai challenges. you will work closely with sales and cross-functional partners to…"
+    },
+    {
+      "id": "greenhouse:databricks:8755470002",
+      "title": "Manager, Field Engineering - Global Telecommunications",
+      "company": "Databricks",
+      "industries": [
+        "ai",
+        "saas"
+      ],
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755470002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "architecture"
+      ],
+      "roles": [
+        "solutions_architect"
+      ],
+      "level": "manager",
+      "location": "Remote - Texas",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -14804,37 +14804,6 @@
       "snippet": "solutions architect (l5) feq128r41 the role as a solutions architect, you will lead the technical strategy for your customers — owning architecture discussions, driving platform adoption, and serving as a trusted advisor to customer technical leads and architects. you combine…"
     },
     {
-      "id": "greenhouse:databricks:8755476002",
-      "title": "Solutions Architect - Communications, Media, Entertainment and Games",
-      "company": "Databricks",
-      "industries": [
-        "ai",
-        "saas"
-      ],
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755476002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "architecture"
-      ],
-      "roles": [
-        "solutions_architect"
-      ],
-      "level": "mid",
-      "location": "Remote - New York",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Field Engineering - FE Direct Enterprise",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-19T16:47:39-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "feq227r273 while candidates in the listed location(s) are encouraged for this role, candidates in other locations will be considered. #cmeg as a solutions architect, you will lead the technical strategy for your customers — owning architecture discussions, driving platform…"
-    },
-    {
       "id": "greenhouse:databricks:8755482002",
       "title": "Solutions Architect - Communications, Media, Entertainment and Games",
       "company": "Databricks",
@@ -14853,6 +14822,37 @@
       ],
       "level": "mid",
       "location": "Remote - Pennsylvania",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Field Engineering - FE Direct Enterprise",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-19T16:47:39-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "feq227r273 while candidates in the listed location(s) are encouraged for this role, candidates in other locations will be considered. #cmeg as a solutions architect, you will lead the technical strategy for your customers — owning architecture discussions, driving platform…"
+    },
+    {
+      "id": "greenhouse:databricks:8755476002",
+      "title": "Solutions Architect - Communications, Media, Entertainment and Games",
+      "company": "Databricks",
+      "industries": [
+        "ai",
+        "saas"
+      ],
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8755476002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "architecture"
+      ],
+      "roles": [
+        "solutions_architect"
+      ],
+      "level": "mid",
+      "location": "Remote - New York",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -15114,37 +15114,6 @@
       "snippet": "feq227r170 important – please read before applying this role requires prior professional experience in the gaming industry. at this time, we are only considering candidates with demonstrated experience in games/gaming. applications without relevant gaming industry experience…"
     },
     {
-      "id": "greenhouse:databricks:8085877002",
-      "title": "Solutions Architect - Healthcare/Life Sciences Team (HLS)",
-      "company": "Databricks",
-      "industries": [
-        "ai",
-        "saas"
-      ],
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8085877002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "architecture"
-      ],
-      "roles": [
-        "solutions_architect"
-      ],
-      "level": "mid",
-      "location": "Remote - Illinois",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Field Engineering",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-19T16:47:39-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "p-146 while candidates in the listed locations are encouraged for this role, we are open to remote candidates in other locations in various cities around the us. we are looking for experienced pre-sales professionals who have a successful track record helping large enterprises…"
-    },
-    {
       "id": "greenhouse:databricks:8231231002",
       "title": "Solutions Architect - Healthcare/Life Sciences Team (HLS)",
       "company": "Databricks",
@@ -15163,6 +15132,37 @@
       ],
       "level": "mid",
       "location": "Remote - California",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Field Engineering",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-19T16:47:39-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "p-146 while candidates in the listed locations are encouraged for this role, we are open to remote candidates in other locations in various cities around the us. we are looking for experienced pre-sales professionals who have a successful track record helping large enterprises…"
+    },
+    {
+      "id": "greenhouse:databricks:8085877002",
+      "title": "Solutions Architect - Healthcare/Life Sciences Team (HLS)",
+      "company": "Databricks",
+      "industries": [
+        "ai",
+        "saas"
+      ],
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8085877002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "architecture"
+      ],
+      "roles": [
+        "solutions_architect"
+      ],
+      "level": "mid",
+      "location": "Remote - Illinois",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -15592,37 +15592,6 @@
       "snippet": "csq127r318 as a sr. forward deployed engineer (fde) you will work with customers to build and productionize solutions to their data & ai challenges using the databricks platform. you will own the architecture, lead design decisions, and implement end-to-end systems spanning data…"
     },
     {
-      "id": "greenhouse:databricks:8807033002",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
-      "company": "Databricks",
-      "industries": [
-        "ai",
-        "saas"
-      ],
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "architecture"
-      ],
-      "roles": [
-        "solutions_architect"
-      ],
-      "level": "senior",
-      "location": "Remote - California",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Professional Services Operations",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-19T16:47:39-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "csq227r258 as a forward deployed engineer (fde), you will work with customers to build and productionize solutions to their data & ai challenges using the databricks platform. you will own the architecture, lead design decisions, and implement end-to-end systems spanning data…"
-    },
-    {
       "id": "greenhouse:databricks:8807049002",
       "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
       "company": "Databricks",
@@ -15641,6 +15610,37 @@
       ],
       "level": "senior",
       "location": "Remote - New York",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Professional Services Operations",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-19T16:47:39-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "csq227r258 as a forward deployed engineer (fde), you will work with customers to build and productionize solutions to their data & ai challenges using the databricks platform. you will own the architecture, lead design decisions, and implement end-to-end systems spanning data…"
+    },
+    {
+      "id": "greenhouse:databricks:8807033002",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business",
+      "company": "Databricks",
+      "industries": [
+        "ai",
+        "saas"
+      ],
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807033002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "architecture"
+      ],
+      "roles": [
+        "solutions_architect"
+      ],
+      "level": "senior",
+      "location": "Remote - California",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -18273,36 +18273,6 @@
       "snippet": "about exa we raised a $250m series c to build the search engine for ais. led by a16z, with existing investors benchmark, lightspeed, and yc doubling down, the round brings exa's valuation to $2.2 billion. exa is building a search engine for the ai era. our search api currently…"
     },
     {
-      "id": "greenhouse:fivetran:7818401003",
-      "title": "Enterprise Account Executive",
-      "company": "Fivetran",
-      "industries": [
-        "saas"
-      ],
-      "url": "https://www.fivetran.com/careers/job?gh_jid=7818401003",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote,  Minnesota, United States, AMER",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Sales Department",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-19T10:13:31-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "from fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. with fivetran, customer data arrives in their warehouses, canonical and ready to query, with no engineering or maintenance required. we’re proud…"
-    },
-    {
       "id": "greenhouse:fivetran:8039971003",
       "title": "Enterprise Account Executive",
       "company": "Fivetran",
@@ -18328,6 +18298,36 @@
       "description_available": true,
       "compensation": null,
       "posted_at": "2026-11-19T15:17:36-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "from fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. with fivetran, customer data arrives in their warehouses, canonical and ready to query, with no engineering or maintenance required. we’re proud…"
+    },
+    {
+      "id": "greenhouse:fivetran:7818401003",
+      "title": "Enterprise Account Executive",
+      "company": "Fivetran",
+      "industries": [
+        "saas"
+      ],
+      "url": "https://www.fivetran.com/careers/job?gh_jid=7818401003",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote,  Minnesota, United States, AMER",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Sales Department",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-19T10:13:31-05:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "from fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. with fivetran, customer data arrives in their warehouses, canonical and ready to query, with no engineering or maintenance required. we’re proud…"
@@ -18453,36 +18453,6 @@
       "snippet": "from fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. with fivetran, customer data arrives in their warehouses, canonical and ready to query, with no engineering or maintenance required. we’re proud…"
     },
     {
-      "id": "greenhouse:fivetran:8048807003",
-      "title": "Senior Sales Engineer, Enterprise",
-      "company": "Fivetran",
-      "industries": [
-        "saas"
-      ],
-      "url": "https://www.fivetran.com/careers/job?gh_jid=8048807003",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "architecture"
-      ],
-      "roles": [
-        "solutions_architect"
-      ],
-      "level": "senior",
-      "location": "Remote, Texas, United States, AMER",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Sales Department",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-19T10:13:32-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "from fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. with fivetran, customer data arrives in their warehouses, canonical and ready to query, with no engineering or maintenance required. we’re proud…"
-    },
-    {
       "id": "greenhouse:fivetran:7875706003",
       "title": "Senior Sales Engineer, Enterprise",
       "company": "Fivetran",
@@ -18513,13 +18483,43 @@
       "snippet": "from fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. with fivetran, customer data arrives in their warehouses, canonical and ready to query, with no engineering or maintenance required. we’re proud…"
     },
     {
-      "id": "greenhouse:fivetran:7998877003",
+      "id": "greenhouse:fivetran:8048807003",
       "title": "Senior Sales Engineer, Enterprise",
       "company": "Fivetran",
       "industries": [
         "saas"
       ],
-      "url": "https://www.fivetran.com/careers/job?gh_jid=7998877003",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=8048807003",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "architecture"
+      ],
+      "roles": [
+        "solutions_architect"
+      ],
+      "level": "senior",
+      "location": "Remote, Texas, United States, AMER",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Sales Department",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-19T10:13:32-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "from fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. with fivetran, customer data arrives in their warehouses, canonical and ready to query, with no engineering or maintenance required. we’re proud…"
+    },
+    {
+      "id": "greenhouse:fivetran:8034211003",
+      "title": "Senior Sales Engineer, Enterprise",
+      "company": "Fivetran",
+      "industries": [
+        "saas"
+      ],
+      "url": "https://www.fivetran.com/careers/job?gh_jid=8034211003",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -23783,7 +23783,7 @@
       "location": "Washington, United States",
       "remote": true,
       "workplace_type": "remote",
-      "location_type": "unknown",
+      "location_type": "remote_us",
       "tags": [],
       "department": "All Cost Center",
       "description_available": true,
@@ -23875,7 +23875,7 @@
       "location": "Washington, United States",
       "remote": true,
       "workplace_type": "remote",
-      "location_type": "unknown",
+      "location_type": "remote_us",
       "tags": [],
       "department": "All Cost Center",
       "description_available": true,
@@ -26455,6 +26455,36 @@
       "snippet": "about mixpanel mixpanel is the leading product intelligence and analytics platform, trusted by more than 29,000 companies to help understand how people use the products they build. by combining powerful analytics with ai that knows your business, mixpanel helps teams see what’s…"
     },
     {
+      "id": "greenhouse:mixpanel:8260692",
+      "title": "Digital Adoption & Lifecycle Manager (Customer Success)",
+      "company": "Mixpanel",
+      "industries": [
+        "saas"
+      ],
+      "url": "https://job-boards.greenhouse.io/mixpanel/jobs/8260692",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "customer"
+      ],
+      "roles": [
+        "customer_success"
+      ],
+      "level": "manager",
+      "location": "San Francisco, US (Remote)",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Customer Engineering",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-16T14:21:49-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "about mixpanel mixpanel is the leading product intelligence and analytics platform, trusted by more than 29,000 companies to help understand how people use the products they build. by combining powerful analytics with ai that knows your business, mixpanel helps teams see what’s…"
+    },
+    {
       "id": "greenhouse:mixpanel:8268370",
       "title": "Digital Adoption & Lifecycle Manager (Customer Success)",
       "company": "Mixpanel",
@@ -26485,23 +26515,23 @@
       "snippet": "about mixpanel mixpanel is the leading product intelligence and analytics platform, trusted by more than 29,000 companies to help understand how people use the products they build. by combining powerful analytics with ai that knows your business, mixpanel helps teams see what’s…"
     },
     {
-      "id": "greenhouse:mixpanel:8260692",
-      "title": "Digital Adoption & Lifecycle Manager (Customer Success)",
+      "id": "greenhouse:mixpanel:8237751",
+      "title": "Senior Customer Engineer - LATAM (Spanish Speaking)",
       "company": "Mixpanel",
       "industries": [
         "saas"
       ],
-      "url": "https://job-boards.greenhouse.io/mixpanel/jobs/8260692",
+      "url": "https://job-boards.greenhouse.io/mixpanel/jobs/8237751",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
-        "customer"
+        "architecture"
       ],
       "roles": [
-        "customer_success"
+        "solutions_architect"
       ],
-      "level": "manager",
-      "location": "San Francisco, US (Remote)",
+      "level": "senior",
+      "location": "Florida, US (Remote)",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -26509,7 +26539,7 @@
       "department": "Customer Engineering",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-11-16T14:21:49-05:00",
+      "posted_at": "2026-11-16T14:21:48-05:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "about mixpanel mixpanel is the leading product intelligence and analytics platform, trusted by more than 29,000 companies to help understand how people use the products they build. by combining powerful analytics with ai that knows your business, mixpanel helps teams see what’s…"
@@ -26562,36 +26592,6 @@
       ],
       "level": "senior",
       "location": "Texas, US (Remote)",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Customer Engineering",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-16T14:21:48-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "about mixpanel mixpanel is the leading product intelligence and analytics platform, trusted by more than 29,000 companies to help understand how people use the products they build. by combining powerful analytics with ai that knows your business, mixpanel helps teams see what’s…"
-    },
-    {
-      "id": "greenhouse:mixpanel:8237751",
-      "title": "Senior Customer Engineer - LATAM (Spanish Speaking)",
-      "company": "Mixpanel",
-      "industries": [
-        "saas"
-      ],
-      "url": "https://job-boards.greenhouse.io/mixpanel/jobs/8237751",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "architecture"
-      ],
-      "roles": [
-        "solutions_architect"
-      ],
-      "level": "senior",
-      "location": "Florida, US (Remote)",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -28894,13 +28894,13 @@
       "snippet": "secure every identity, from ai to human identity is the key to unlocking the potential of ai. okta secures ai by building the trusted, neutral infrastructure that enables organizations to safely embrace this new era. this work requires a relentless drive to solve complex…"
     },
     {
-      "id": "greenhouse:okta:8073066",
+      "id": "greenhouse:okta:8073062",
       "title": "Staff TDI Site Reliability Engineer, Okta Federal",
       "company": "Okta",
       "industries": [
         "cybersecurity"
       ],
-      "url": "https://www.okta.com/company/careers/opportunity/8073066?gh_jid=8073066",
+      "url": "https://www.okta.com/company/careers/opportunity/8073062?gh_jid=8073062",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -28921,7 +28921,7 @@
       "department": "BT Engineering Services-779",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-11-16T18:35:54-05:00",
+      "posted_at": "2026-11-16T18:35:50-05:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "secure every identity, from ai to human identity is the key to unlocking the potential of ai. okta secures ai by building the trusted, neutral infrastructure that enables organizations to safely embrace this new era. this work requires a relentless drive to solve complex…"
@@ -35280,37 +35280,6 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:8331538",
-      "title": "Account Executive, Commercial ( West)",
-      "company": "Samsara",
-      "industries": [
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://www.samsara.com/company/careers/roles/8331538?gh_jid=8331538",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote - CO; Remote - GA; Remote - UT",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "US Commercial AE1",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-10-28T14:01:53-04:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
-    },
-    {
       "id": "greenhouse:samsara:8162025",
       "title": "Account Executive, Commercial ( West)",
       "company": "Samsara",
@@ -35373,6 +35342,37 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
+      "id": "greenhouse:samsara:8331538",
+      "title": "Account Executive, Commercial ( West)",
+      "company": "Samsara",
+      "industries": [
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://www.samsara.com/company/careers/roles/8331538?gh_jid=8331538",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - CO; Remote - GA; Remote - UT",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "US Commercial AE1",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-10-28T14:01:53-04:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
+    },
+    {
       "id": "greenhouse:samsara:8304638",
       "title": "Account Executive, Mid Market (Midwest)",
       "company": "Samsara",
@@ -35399,68 +35399,6 @@
       "description_available": true,
       "compensation": null,
       "posted_at": "2026-10-21T12:14:51-04:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
-    },
-    {
-      "id": "greenhouse:samsara:8304611",
-      "title": "Account Executive, Mid Market (Midwest)",
-      "company": "Samsara",
-      "industries": [
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://www.samsara.com/company/careers/roles/8304611?gh_jid=8304611",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote - IN; Remote - MI",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "US Mid Market AE2",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-10-23T20:40:11-04:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
-    },
-    {
-      "id": "greenhouse:samsara:8319788",
-      "title": "Account Executive, Mid Market (Midwest)",
-      "company": "Samsara",
-      "industries": [
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://www.samsara.com/company/careers/roles/8319788?gh_jid=8319788",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote - OH",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "US Mid Market AE2",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-10-23T20:41:15-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -35497,14 +35435,14 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:7609147",
-      "title": "Account Executive, Mid Market (Northeast)",
+      "id": "greenhouse:samsara:8319788",
+      "title": "Account Executive, Mid Market (Midwest)",
       "company": "Samsara",
       "industries": [
         "american-dynamism",
         "saas"
       ],
-      "url": "https://www.samsara.com/company/careers/roles/7609147?gh_jid=7609147",
+      "url": "https://www.samsara.com/company/careers/roles/8319788?gh_jid=8319788",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -35514,7 +35452,7 @@
         "sales"
       ],
       "level": "mid",
-      "location": "Remote - NY; Remote - US",
+      "location": "Remote - OH",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -35522,20 +35460,20 @@
       "department": "US Mid Market AE2",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-11-01T01:00:00-04:00",
+      "posted_at": "2026-10-23T20:41:15-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:8304559",
-      "title": "Account Executive, Mid Market (Northeast)",
+      "id": "greenhouse:samsara:8304611",
+      "title": "Account Executive, Mid Market (Midwest)",
       "company": "Samsara",
       "industries": [
         "american-dynamism",
         "saas"
       ],
-      "url": "https://www.samsara.com/company/careers/roles/8304559?gh_jid=8304559",
+      "url": "https://www.samsara.com/company/careers/roles/8304611?gh_jid=8304611",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -35545,7 +35483,7 @@
         "sales"
       ],
       "level": "mid",
-      "location": "Remote - DC; Remote - MD",
+      "location": "Remote - IN; Remote - MI",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -35553,7 +35491,7 @@
       "department": "US Mid Market AE2",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-10-28T20:29:07-04:00",
+      "posted_at": "2026-10-23T20:40:11-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -35590,6 +35528,68 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
+      "id": "greenhouse:samsara:8304559",
+      "title": "Account Executive, Mid Market (Northeast)",
+      "company": "Samsara",
+      "industries": [
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://www.samsara.com/company/careers/roles/8304559?gh_jid=8304559",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - DC; Remote - MD",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "US Mid Market AE2",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-10-28T20:29:07-04:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
+    },
+    {
+      "id": "greenhouse:samsara:7609147",
+      "title": "Account Executive, Mid Market (Northeast)",
+      "company": "Samsara",
+      "industries": [
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://www.samsara.com/company/careers/roles/7609147?gh_jid=7609147",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - NY; Remote - US",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "US Mid Market AE2",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-01T01:00:00-04:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
+    },
+    {
       "id": "greenhouse:samsara:8304572",
       "title": "Account Executive, Mid Market (Northeast)",
       "company": "Samsara",
@@ -35621,6 +35621,37 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
+      "id": "greenhouse:samsara:8304492",
+      "title": "Account Executive, Mid Market (Southeast)",
+      "company": "Samsara",
+      "industries": [
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://www.samsara.com/company/careers/roles/8304492?gh_jid=8304492",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - KY; Remote - TN",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "US Mid Market AE2",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-10-28T13:39:21-04:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
+    },
+    {
       "id": "greenhouse:samsara:8304491",
       "title": "Account Executive, Mid Market (Southeast)",
       "company": "Samsara",
@@ -35647,37 +35678,6 @@
       "description_available": true,
       "compensation": null,
       "posted_at": "2026-11-17T17:45:50-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
-    },
-    {
-      "id": "greenhouse:samsara:8304495",
-      "title": "Account Executive, Mid Market (Southeast)",
-      "company": "Samsara",
-      "industries": [
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://www.samsara.com/company/careers/roles/8304495?gh_jid=8304495",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote - VA Metro; Remote - WV Metro",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "US Mid Market AE2",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-10-28T17:15:03-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -35745,14 +35745,14 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:8304492",
+      "id": "greenhouse:samsara:8304495",
       "title": "Account Executive, Mid Market (Southeast)",
       "company": "Samsara",
       "industries": [
         "american-dynamism",
         "saas"
       ],
-      "url": "https://www.samsara.com/company/careers/roles/8304492?gh_jid=8304492",
+      "url": "https://www.samsara.com/company/careers/roles/8304495?gh_jid=8304495",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -35762,7 +35762,7 @@
         "sales"
       ],
       "level": "mid",
-      "location": "Remote - KY; Remote - TN",
+      "location": "Remote - VA Metro; Remote - WV Metro",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -35770,7 +35770,7 @@
       "department": "US Mid Market AE2",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-10-28T13:39:21-04:00",
+      "posted_at": "2026-10-28T17:15:03-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -35931,14 +35931,14 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:7609057",
+      "id": "greenhouse:samsara:8304430",
       "title": "Account Executive, Mid Market (West)",
       "company": "Samsara",
       "industries": [
         "american-dynamism",
         "saas"
       ],
-      "url": "https://www.samsara.com/company/careers/roles/7609057?gh_jid=7609057",
+      "url": "https://www.samsara.com/company/careers/roles/8304430?gh_jid=8304430",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -35948,7 +35948,7 @@
         "sales"
       ],
       "level": "mid",
-      "location": "Remote - US",
+      "location": "Remote - Denver; Remote - Seattle",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -35956,7 +35956,7 @@
       "department": "US Mid Market AE2",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-11-01T01:00:00-04:00",
+      "posted_at": "2026-10-21T15:28:45-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -35993,14 +35993,14 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:8304430",
+      "id": "greenhouse:samsara:7609057",
       "title": "Account Executive, Mid Market (West)",
       "company": "Samsara",
       "industries": [
         "american-dynamism",
         "saas"
       ],
-      "url": "https://www.samsara.com/company/careers/roles/8304430?gh_jid=8304430",
+      "url": "https://www.samsara.com/company/careers/roles/7609057?gh_jid=7609057",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -36010,7 +36010,7 @@
         "sales"
       ],
       "level": "mid",
-      "location": "Remote - Denver; Remote - Seattle",
+      "location": "Remote - US",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -36018,7 +36018,7 @@
       "department": "US Mid Market AE2",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-10-21T15:28:45-04:00",
+      "posted_at": "2026-11-01T01:00:00-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -36303,6 +36303,37 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
+      "id": "greenhouse:samsara:8325433",
+      "title": "Core Enterprise Account Executive Midwest",
+      "company": "Samsara",
+      "industries": [
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://www.samsara.com/company/careers/roles/8325433?gh_jid=8325433",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - OH; Remote - OK",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "US Core",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-10-28T19:40:56-04:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
+    },
+    {
       "id": "greenhouse:samsara:8099250",
       "title": "Core Enterprise Account Executive Midwest",
       "company": "Samsara",
@@ -36360,37 +36391,6 @@
       "description_available": true,
       "compensation": null,
       "posted_at": "2026-11-03T16:17:10-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
-    },
-    {
-      "id": "greenhouse:samsara:8325433",
-      "title": "Core Enterprise Account Executive Midwest",
-      "company": "Samsara",
-      "industries": [
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://www.samsara.com/company/careers/roles/8325433?gh_jid=8325433",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote - OH; Remote - OK",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "US Core",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-10-28T19:40:56-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -37666,37 +37666,6 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:8233947",
-      "title": "Principal Product Manager",
-      "company": "Samsara",
-      "industries": [
-        "american-dynamism",
-        "saas"
-      ],
-      "url": "https://www.samsara.com/company/careers/roles/8233947?gh_jid=8233947",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "product"
-      ],
-      "roles": [
-        "product_manager"
-      ],
-      "level": "manager",
-      "location": "Remote - DC; Remote - NYC",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Telematics Product",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-20T16:25:51-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
-    },
-    {
       "id": "greenhouse:samsara:8315136",
       "title": "Principal Product Manager",
       "company": "Samsara",
@@ -37728,34 +37697,32 @@
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
     },
     {
-      "id": "greenhouse:samsara:7612978",
-      "title": "Public Sector Major Account Executive",
+      "id": "greenhouse:samsara:8233947",
+      "title": "Principal Product Manager",
       "company": "Samsara",
       "industries": [
         "american-dynamism",
         "saas"
       ],
-      "url": "https://www.samsara.com/company/careers/roles/7612978?gh_jid=7612978",
+      "url": "https://www.samsara.com/company/careers/roles/8233947?gh_jid=8233947",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
-        "gtm"
+        "product"
       ],
       "roles": [
-        "sales"
+        "product_manager"
       ],
-      "level": "mid",
-      "location": "Remote - US",
+      "level": "manager",
+      "location": "Remote - DC; Remote - NYC",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
-      "tags": [
-        "public_sector"
-      ],
-      "department": "US Public Sector",
+      "tags": [],
+      "department": "Telematics Product",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-11-01T01:00:01-04:00",
+      "posted_at": "2026-11-20T16:25:51-05:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -37789,6 +37756,39 @@
       "description_available": true,
       "compensation": null,
       "posted_at": "2026-10-26T16:12:39-04:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
+    },
+    {
+      "id": "greenhouse:samsara:7612978",
+      "title": "Public Sector Major Account Executive",
+      "company": "Samsara",
+      "industries": [
+        "american-dynamism",
+        "saas"
+      ],
+      "url": "https://www.samsara.com/company/careers/roles/7612978?gh_jid=7612978",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote - US",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [
+        "public_sector"
+      ],
+      "department": "US Public Sector",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-01T01:00:01-04:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "who we are samsara (nyse: iot) is the pioneer of the connected operations™ cloud, which is a platform that enables organizations that depend on physical operations to harness internet of things (iot) data to develop actionable insights and improve their operations. at samsara,…"
@@ -43466,36 +43466,6 @@
       "snippet": "spacex was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. today spacex is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on…"
     },
     {
-      "id": "greenhouse:spacex:8703146002",
-      "title": "Starlink Growth Lead, US Northeast",
-      "company": "SpaceXSI",
-      "industries": [
-        "american-dynamism"
-      ],
-      "url": "https://boards.greenhouse.io/spacex/jobs/8703146002?gh_jid=8703146002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "growth"
-      ],
-      "roles": [
-        "growth"
-      ],
-      "level": "lead",
-      "location": "Remote - NY",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Starlink Consumer",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-20T17:06:05-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "spacex was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. today spacex is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on…"
-    },
-    {
       "id": "greenhouse:spacex:8703151002",
       "title": "Starlink Growth Lead, US Northeast",
       "company": "SpaceXSI",
@@ -43513,6 +43483,36 @@
       ],
       "level": "lead",
       "location": "Remote - PA",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Starlink Consumer",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-20T17:06:05-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "spacex was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. today spacex is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on…"
+    },
+    {
+      "id": "greenhouse:spacex:8703146002",
+      "title": "Starlink Growth Lead, US Northeast",
+      "company": "SpaceXSI",
+      "industries": [
+        "american-dynamism"
+      ],
+      "url": "https://boards.greenhouse.io/spacex/jobs/8703146002?gh_jid=8703146002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "growth"
+      ],
+      "roles": [
+        "growth"
+      ],
+      "level": "lead",
+      "location": "Remote - NY",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -43556,36 +43556,6 @@
       "snippet": "spacex was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. today spacex is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on…"
     },
     {
-      "id": "greenhouse:spacex:8703196002",
-      "title": "Starlink Growth Lead, US South",
-      "company": "SpaceXSI",
-      "industries": [
-        "american-dynamism"
-      ],
-      "url": "https://boards.greenhouse.io/spacex/jobs/8703196002?gh_jid=8703196002",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "growth"
-      ],
-      "roles": [
-        "growth"
-      ],
-      "level": "lead",
-      "location": "Remote - NC",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Starlink Consumer",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-11-20T17:06:05-05:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "spacex was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. today spacex is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on…"
-    },
-    {
       "id": "greenhouse:spacex:8703207002",
       "title": "Starlink Growth Lead, US South",
       "company": "SpaceXSI",
@@ -43616,13 +43586,13 @@
       "snippet": "spacex was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. today spacex is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on…"
     },
     {
-      "id": "greenhouse:spacex:8681154002",
-      "title": "Starlink Growth Lead, US West",
+      "id": "greenhouse:spacex:8703196002",
+      "title": "Starlink Growth Lead, US South",
       "company": "SpaceXSI",
       "industries": [
         "american-dynamism"
       ],
-      "url": "https://boards.greenhouse.io/spacex/jobs/8681154002?gh_jid=8681154002",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8703196002?gh_jid=8703196002",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -43632,7 +43602,7 @@
         "growth"
       ],
       "level": "lead",
-      "location": "Remote - CO",
+      "location": "Remote - NC",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -43663,6 +43633,36 @@
       ],
       "level": "lead",
       "location": "Remote - CA",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Starlink Consumer",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-11-20T17:06:05-05:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "spacex was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. today spacex is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on…"
+    },
+    {
+      "id": "greenhouse:spacex:8681154002",
+      "title": "Starlink Growth Lead, US West",
+      "company": "SpaceXSI",
+      "industries": [
+        "american-dynamism"
+      ],
+      "url": "https://boards.greenhouse.io/spacex/jobs/8681154002?gh_jid=8681154002",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "growth"
+      ],
+      "roles": [
+        "growth"
+      ],
+      "level": "lead",
+      "location": "Remote - CO",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -46063,36 +46063,6 @@
       "snippet": "thank you for considering tailscale. if this job description resonates with you, please apply. frequently cited statistics show that people who identify with historically marginalized groups are likely to apply to jobs only if they meet 100% of the qualifications. we encourage…"
     },
     {
-      "id": "greenhouse:tailscale:4738200005",
-      "title": "Enterprise Account Executive",
-      "company": "Tailscale",
-      "industries": [
-        "cybersecurity"
-      ],
-      "url": "https://job-boards.greenhouse.io/tailscale/jobs/4738200005",
-      "source_ats": "greenhouse",
-      "priority": 3,
-      "umbrellas": [
-        "gtm"
-      ],
-      "roles": [
-        "sales"
-      ],
-      "level": "mid",
-      "location": "Remote (New York, New York, United States)",
-      "remote": true,
-      "workplace_type": null,
-      "location_type": "remote_us",
-      "tags": [],
-      "department": "Sales",
-      "description_available": true,
-      "compensation": null,
-      "posted_at": "2026-09-29T20:38:27-04:00",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "snippet": "thank you for considering tailscale. if this job description resonates with you, please apply. frequently cited statistics show that people who identify with historically marginalized groups are likely to apply to jobs only if they meet 100% of the qualifications. we encourage…"
-    },
-    {
       "id": "greenhouse:tailscale:4738677005",
       "title": "Enterprise Account Executive",
       "company": "Tailscale",
@@ -46110,6 +46080,36 @@
       ],
       "level": "mid",
       "location": "Remote (San Francisco, California, United States)",
+      "remote": true,
+      "workplace_type": null,
+      "location_type": "remote_us",
+      "tags": [],
+      "department": "Sales",
+      "description_available": true,
+      "compensation": null,
+      "posted_at": "2026-09-29T20:38:27-04:00",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "snippet": "thank you for considering tailscale. if this job description resonates with you, please apply. frequently cited statistics show that people who identify with historically marginalized groups are likely to apply to jobs only if they meet 100% of the qualifications. we encourage…"
+    },
+    {
+      "id": "greenhouse:tailscale:4738200005",
+      "title": "Enterprise Account Executive",
+      "company": "Tailscale",
+      "industries": [
+        "cybersecurity"
+      ],
+      "url": "https://job-boards.greenhouse.io/tailscale/jobs/4738200005",
+      "source_ats": "greenhouse",
+      "priority": 3,
+      "umbrellas": [
+        "gtm"
+      ],
+      "roles": [
+        "sales"
+      ],
+      "level": "mid",
+      "location": "Remote (New York, New York, United States)",
       "remote": true,
       "workplace_type": null,
       "location_type": "remote_us",
@@ -47513,13 +47513,13 @@
       "snippet": "note: this role is hybrid in office 3 days per week the basics our product management team is actively seeking a product manager for platform to join our passionate, driven and fast-paced team. in this role you will be responsible for the development and business success of…"
     },
     {
-      "id": "greenhouse:tanium:8275598",
+      "id": "greenhouse:tanium:8282118",
       "title": "Senior Software Engineer, DevOps",
       "company": "Tanium",
       "industries": [
         "saas"
       ],
-      "url": "https://job-boards.greenhouse.io/tanium/jobs/8275598",
+      "url": "https://job-boards.greenhouse.io/tanium/jobs/8282118",
       "source_ats": "greenhouse",
       "priority": 3,
       "umbrellas": [
@@ -47537,7 +47537,7 @@
       "department": "Engineering - Shared Services",
       "description_available": true,
       "compensation": null,
-      "posted_at": "2026-11-10T11:27:22-05:00",
+      "posted_at": "2026-11-10T11:27:41-05:00",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
       "snippet": "the basics as a tanium senior software engineer, devops, you will be designing and managing systems, tools, and infrastructure to enable the entire engineering org to deliver code to our customers consistently, rapidly, safely, and reliably . this position follows the company’s…"

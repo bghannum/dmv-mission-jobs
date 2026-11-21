@@ -1688,7 +1688,7 @@
       "company": "fal",
       "ats": "ashby",
       "ok": true,
-      "count": 51,
+      "count": 50,
       "error": null,
       "matched": 17,
       "dropped_out_of_area": 15
@@ -2237,7 +2237,7 @@
       "company": "Labelbox",
       "ats": "greenhouse",
       "ok": true,
-      "count": 12,
+      "count": 13,
       "error": null,
       "matched": 5,
       "dropped_out_of_area": 5
@@ -3056,10 +3056,10 @@
       "company": "Samsara",
       "ats": "greenhouse",
       "ok": true,
-      "count": 299,
+      "count": 298,
       "error": null,
-      "matched": 143,
-      "dropped_out_of_area": 33
+      "matched": 142,
+      "dropped_out_of_area": 32
     },
     {
       "company": "Sandbox VR",
@@ -3182,7 +3182,7 @@
       "company": "SpaceXSI",
       "ats": "greenhouse",
       "ok": true,
-      "count": 2830,
+      "count": 2841,
       "error": null,
       "matched": 226,
       "dropped_out_of_area": 213
@@ -3748,7 +3748,7 @@
   ],
   "any_failures": true,
   "drop_out_of_area": true,
-  "dropped_out_of_area": 4733,
+  "dropped_out_of_area": 4732,
   "ambiguous_locations": [
     {
       "company": "Databricks",
@@ -3773,16 +3773,6 @@
     {
       "company": "Kong",
       "title": "Senior SRE, Managed Gateways",
-      "location": "Washington, United States"
-    },
-    {
-      "company": "Kong",
-      "title": "Enterprise Account Executive - Pacific Northwest",
-      "location": "Washington, United States"
-    },
-    {
-      "company": "Kong",
-      "title": "Enterprise Account Executive - Seattle",
       "location": "Washington, United States"
     }
   ],
@@ -3852,8 +3842,8 @@
       "public_sector": "Public sector"
     }
   },
-  "generated_at": "2026-11-21T18:33:11.685981+00:00",
-  "prior_job_count": 1686,
+  "generated_at": "2026-11-21T20:51:10.566613+00:00",
+  "prior_job_count": 1683,
   "fresh_job_count": 1683,
   "total_job_count": 1683,
   "shrink_blocked": false
