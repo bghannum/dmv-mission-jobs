@@ -9,7 +9,7 @@ from scraper.config_loader import (
     load_roles,
     load_settings,
 )
-from scraper.models import INDUSTRY_VOCAB, TIERS
+from scraper.models import INDUSTRY_VOCAB
 
 
 def test_live_companies_valid():
@@ -19,12 +19,6 @@ def test_live_companies_valid():
         assert c.ats in KNOWN_ATS
         assert c.identifier
         assert set(c.industry) <= INDUSTRY_VOCAB
-        assert c.tier in TIERS
-
-
-def test_exactly_one_featured_is_horizon3():
-    featured = [c for c in load_companies(valid_ats=KNOWN_ATS) if c.tier == "featured"]
-    assert any("horizon3" in c.name.lower() for c in featured)
 
 
 def test_live_roles_and_settings_load():

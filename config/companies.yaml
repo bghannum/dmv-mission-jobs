@@ -6,7 +6,6 @@
 #   ats          adapter key: ashby | greenhouse | lever | rippling | gem | getro (required)
 #   identifier   the board slug/token for that ATS (required; case-sensitive for Ashby)
 #   industry     one or more of: cybersecurity, deftech, cspm, finops, grc, healthtech (required)
-#   tier         featured | standard   (featured pins to the top; default standard)
 #   priority     1 | 2 | 3   (ordering tier; 1 sorts to the top, default 3)
 #   homepage     optional company URL
 #
@@ -18,7 +17,6 @@ companies:
     ats: ashby
     identifier: "horizon3ai"
     industry: [cybersecurity, deftech]
-    tier: featured
     priority: 1
     homepage: "https://horizon3.ai"
 

@@ -1,4 +1,4 @@
-// shane.jobs — reads data/jobs.json, renders + filters client-side. No build step.
+// DMV Mission Jobs — reads data/jobs.json, renders + filters client-side. No build step.
 
 const LEVEL_ORDER = ["intern", "junior", "mid", "senior", "staff", "principal", "lead", "manager", "director", "vp"];
 const UMBRELLA_LABELS = {
@@ -53,8 +53,6 @@ function card(job) {
   a.href = safeUrl(job.url);
   a.target = "_blank";
   a.rel = "noopener noreferrer";
-  const featured = job.company_tier === "featured";
-  if (featured) a.classList.add("featured-card");
 
   const top = el("div", "job-top");
   const left = el("div");
@@ -66,7 +64,6 @@ function card(job) {
   a.appendChild(top);
 
   const meta = el("div", "job-meta");
-  if (featured) meta.appendChild(el("span", "tag featured", "featured"));
   if (job.level) meta.appendChild(el("span", "tag level", job.level));
   (job.industries || []).forEach((i) => meta.appendChild(el("span", "tag industry", i)));
   if (job.location) meta.appendChild(el("span", "tag", job.location));

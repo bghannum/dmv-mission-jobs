@@ -46,7 +46,6 @@ class RipplingAdapter(ATSAdapter):
                     id=f"rippling:{company.identifier}:{source_id}",
                     title=(p.get("name") or p.get("title") or "").strip(),
                     company=company.name,
-                    company_tier=company.tier,
                     industries=list(company.industry),
                     url=p.get("url") or p.get("applicationUrl", ""),
                     source_ats="rippling",

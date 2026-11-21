@@ -38,7 +38,6 @@ class LeverAdapter(ATSAdapter):
                     id=f"lever:{company.identifier}:{source_id}",
                     title=p.get("text", "").strip(),
                     company=company.name,
-                    company_tier=company.tier,
                     industries=list(company.industry),
                     url=p.get("hostedUrl") or p.get("applyUrl", ""),
                     source_ats="lever",

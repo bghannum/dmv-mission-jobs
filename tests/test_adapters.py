@@ -8,25 +8,23 @@ from scraper.adapters.rippling import RipplingAdapter
 from scraper.models import Company
 
 
-def _company(ats: str, identifier: str, tier: str = "standard") -> Company:
+def _company(ats: str, identifier: str) -> Company:
     return Company(
         name=identifier.title(),
         ats=ats,
         identifier=identifier,
         industry=["cybersecurity"],
-        tier=tier,
     )
 
 
 def test_ashby_normalize(load_fixture):
-    company = _company("ashby", "horizon3ai", tier="featured")
+    company = _company("ashby", "horizon3ai")
     jobs = AshbyAdapter().normalize(load_fixture("ashby_sample.json")["jobs"], company)
     titles = [j.title for j in jobs]
     # Unlisted role dropped.
     assert "Hidden Role" not in titles
     fe = next(j for j in jobs if j.title == "Senior Frontend Engineer")
     assert fe.id == "ashby:horizon3ai:ash-1"
-    assert fe.company_tier == "featured"
     assert fe.remote is True
     assert fe.compensation == "US$180k - US$220k"
     assert fe.description_available is True

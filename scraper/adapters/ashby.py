@@ -37,7 +37,6 @@ class AshbyAdapter(ATSAdapter):
                     id=f"ashby:{company.identifier}:{source_id}",
                     title=p.get("title", "").strip(),
                     company=company.name,
-                    company_tier=company.tier,
                     industries=list(company.industry),
                     url=p.get("applyUrl") or p.get("jobUrl", ""),
                     source_ats="ashby",

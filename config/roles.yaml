@@ -1,14 +1,11 @@
-# Role umbrellas mirror the career guide (shane-tips-for-jobs).
+# Role umbrellas (categories) and the keyword rules that assign postings to roles.
 # A posting matches a role if any include_keyword is in the normalized title AND no
 # exclude_keyword is. A posting may match multiple umbrellas/roles. Matching is
 # case-insensitive over a lowercased, whitespace-normalized title.
-#
-# career_url: the career-guide section this umbrella deep-links to.
 
 umbrellas:
   product:
     label: "Product"
-    career_url: "https://shane-tips-for-jobs.lovable.app/"
     roles:
       product_manager:
         label: "Product Manager"
@@ -25,7 +22,6 @@ umbrellas:
 
   design:
     label: "Design"
-    career_url: "https://shane-tips-for-jobs.lovable.app/"
     roles:
       product_designer:
         label: "Product Designer"
@@ -34,7 +30,6 @@ umbrellas:
 
   engineering:
     label: "Engineering"
-    career_url: "https://shane-tips-for-jobs.lovable.app/"
     roles:
       full_stack:
         label: "Full Stack Engineer"
@@ -59,7 +54,6 @@ umbrellas:
 
   gtm_revenue:
     label: "GTM / Revenue"
-    career_url: "https://shane-tips-for-jobs.lovable.app/"
     roles:
       recruiter:
         label: "Recruiter"
@@ -68,7 +62,6 @@ umbrellas:
 
   support:
     label: "Support"
-    career_url: "https://shane-tips-for-jobs.lovable.app/"
     roles: {}
 
 # Level detection tags each posting intern -> VP. Levels TAG, they do not exclude.

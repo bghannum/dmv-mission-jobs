@@ -1,65 +1,65 @@
-# Shane's Job List
+# DMV Mission Jobs
 
-A curated, community-run US job board across the sectors Shane has worked in:
-cybersecurity, defense tech, cloud security (CSPM), FinOps, and GRC. It tracks a
-hand-picked allowlist of vetted companies and surfaces specific roles across all levels
-(IC through VP) using the companies' own public job-board APIs. A scraper runs daily via
-GitHub Actions and the site is served as static files from GitHub Pages.
+A curated, community-run job board for **mission-driven roles in the DC metro (DC,
+Northern Virginia, Maryland) and US remote**, across defense tech, public sector and
+commercial tech. It tracks an allowlist of companies and pulls roles from each company's
+own public job board. A scraper runs daily via GitHub Actions and the site is plain static
+files.
 
-> **Not affiliated with any employer.** This is a personal project by Shane Quinlan, run
-> for the community. It is not affiliated with, endorsed by, or operated by Horizon3.ai or
-> any company listed here. Horizon3.ai roles are featured because this is Shane's personal
-> list, not because of any official relationship.
+> **Not affiliated with any employer.** This is a personal, community-run project. It is
+> not affiliated with, endorsed by, or operated by any company listed here. Listings link
+> to each company's official job board.
 
-**Live:** [crsh-ovr.github.io/jobs](https://crsh-ovr.github.io/jobs/) · Companion career guide:
-**[shane-tips-for-jobs](https://shane-tips-for-jobs.lovable.app/)**
+Built on **[crsh-ovr/jobs](https://github.com/crsh-ovr/jobs)** by Shane Quinlan (MIT).
+Thank you, Shane.
+
+See [PLAN.md](PLAN.md) for the roadmap.
 
 ## What it tracks
 
-**Role umbrellas** (mirrors the career guide):
+**Role umbrellas:** Product, Design, Engineering and GTM / Revenue today. Program
+management, solutions architecture, growth / strategy and customer success are coming in
+Phase 1 (see PLAN.md). All levels are kept and tagged, from intern to VP.
 
-- **Product** — Product Manager, Technical Program Manager, Product Analytics
-- **Design** — Product Designer
-- **Engineering** — Full Stack, Frontend, DevOps / CI-CD / DevEx, Agentic / AI Engineer, Technical Writer
-- **GTM / Revenue** — Recruiter, Technical Recruiter
+**Industries:** cybersecurity, deftech, cspm, finops, grc, healthtech (more coming in
+Phase 2).
 
-All levels are kept and tagged: intern, junior, mid, senior, staff, principal, lead,
-manager, director, VP.
+**Location:** US roles only today. Phase 1 narrows this to the DC metro plus US remote.
 
-**Industries:** cybersecurity, deftech, cspm, finops, grc, healthtech.
-
-**Location:** US roles only. Postings that hire outside the US (and don't also hire in the
-US) are filtered out; see `scraper/location.py`.
-
-**Supported ATS platforms:** Ashby, Greenhouse, Lever, Rippling, Gem. (Getro and Workday are
-not supported.)
+**Supported ATS platforms:** Ashby, Greenhouse, Lever, Rippling, Gem. Workday and the big
+tech careers sites are planned.
 
 ## How it works
 
 ```
-config/*.yaml  →  python -m scraper.main  →  data/jobs.json  →  site/ (GitHub Pages)
-   allowlist         daily GitHub Action        committed            static, no build
+config/*.yaml  →  python -m scraper.main  →  data/jobs.json  →  site/ (static)
+   allowlist         daily GitHub Action        committed          no build step
 ```
 
 The scraper reads the company allowlist, fetches each company's public job-board JSON,
-normalizes every posting to a common schema, keeps only US postings that match a target
-role, tags level/umbrella/industry, de-duplicates, and writes `data/jobs.json`. The static
-site reads that file directly in the browser and filters client-side.
+normalizes every posting to a common schema, keeps postings that match a target role and
+location, tags level, umbrella and industry, de-duplicates, and writes `data/jobs.json`.
+The static site reads that file in the browser and filters client-side.
 
-A GitHub Actions workflow (`.github/workflows/scrape.yml`) runs the scraper **daily at
-11:00 UTC** (and on demand), commits the refreshed `data/`, and triggers a Pages redeploy.
-`ci.yml` runs ruff + pytest on every pull request, validating new allowlist entries.
+`.github/workflows/scrape.yml` runs the scraper **daily at 11:00 UTC** (and on demand) and
+commits the refreshed `data/`. `ci.yml` runs ruff and pytest on every pull request.
+
+**Hosting:** the repo is private for now, and GitHub Pages can't publish from a private
+repo on a free plan. `pages.yml` is skipped until the repo goes public and the
+`PAGES_ENABLED` repository variable is set to `true`. Until then, view the site locally.
 
 ## Add a company
 
-The whole point is curation, so adding a company is a one-file pull request. See
-[CONTRIBUTING.md](CONTRIBUTING.md) — you edit `config/companies.yaml`, CI validates it, and
-the next daily run picks it up.
+Adding a company is a one-file change to `config/companies.yaml`. See
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Run locally
 
+Requires Python 3.12 (matches CI).
+
 ```bash
-pip install -r requirements.txt
+python3.12 -m venv .venv && source .venv/bin/activate
+pip install -r requirements-dev.txt
 python -m scraper.main            # writes data/jobs.json + data/meta.json
 python -m http.server 8000        # then open http://localhost:8000/site/
 ```
@@ -67,11 +67,11 @@ python -m http.server 8000        # then open http://localhost:8000/site/
 ## Develop
 
 ```bash
-pip install -r requirements-dev.txt
 ruff check .
 pytest
 ```
 
 ## License
 
-[MIT](LICENSE).
+[MIT](LICENSE). The original copyright notice from crsh-ovr/jobs is retained, as the
+license requires.
