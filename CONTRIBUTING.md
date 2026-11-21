@@ -17,6 +17,17 @@ allowlist. That is a single-file change to `config/companies.yaml`.
 
    Workday and Getro are **not** supported.
 
+   Not sure? `scripts/verify_company.py` can find and check the board for you. It probes
+   Greenhouse, Ashby and Lever, then shows how many jobs would make it onto the board:
+
+   ```bash
+   python scripts/verify_company.py --find "Acme Security" --website https://acme.example
+   python scripts/verify_company.py greenhouse acme     # when you already know the board
+   ```
+
+   It prints the job count, how many match a target role and the DMV-or-remote filter,
+   sample titles, and a ready-to-paste entry for step 2.
+
 2. Add an entry to `config/companies.yaml`:
 
    ```yaml

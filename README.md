@@ -25,8 +25,8 @@ DMV Mission Jobs is maintained by Brian, who is adapting Shane's board in two wa
   company usually means business development and capture, not marketing, so the board
   treats it that way.
 - **A reworked user experience.** New filters for category, role, DC metro vs. remote,
-  clearance and public sector; every filter combination is a shareable link; and a visual
-  redesign is in progress.
+  clearance and public sector; every filter combination is a shareable link; and a new
+  visual design.
 
 See [PLAN.md](PLAN.md) for the roadmap.
 
@@ -72,8 +72,15 @@ the `PAGES_ENABLED` repository variable is `true`).
 
 ## Add a company
 
-Adding a company is a one-file change to `config/companies.yaml`. See
-[CONTRIBUTING.md](CONTRIBUTING.md).
+Adding a company is a one-file change to `config/companies.yaml`. To find and check its
+board first, run:
+
+```bash
+python scripts/verify_company.py --find "Company Name" --website https://company.example
+```
+
+It reports how many of the company's jobs would make it onto the board and prints the entry
+to add. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Run locally
 
