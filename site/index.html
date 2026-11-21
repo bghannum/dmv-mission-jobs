@@ -38,8 +38,12 @@
         <input id="q" type="search" placeholder="title or company..." autocomplete="off" />
       </div>
       <div class="control">
-        <label for="f-umbrella">role</label>
-        <select id="f-umbrella"><option value="">all roles</option></select>
+        <label for="f-umbrella">category</label>
+        <select id="f-umbrella"><option value="">all categories</option></select>
+      </div>
+      <div class="control">
+        <label for="f-role">role</label>
+        <select id="f-role"><option value="">all roles</option></select>
       </div>
       <div class="control">
         <label for="f-industry">industry</label>
@@ -50,11 +54,32 @@
         <select id="f-level"><option value="">all levels</option></select>
       </div>
       <div class="control">
+        <label for="f-loc">location</label>
+        <select id="f-loc">
+          <option value="">dmv + remote</option>
+          <option value="dmv">dmv (on-site or hybrid)</option>
+          <option value="dmv_onsite">dmv on-site</option>
+          <option value="dmv_hybrid">dmv hybrid</option>
+          <option value="remote">remote (us)</option>
+          <option value="unknown">"washington" (unconfirmed)</option>
+        </select>
+      </div>
+      <div class="control">
         <label for="f-company">company</label>
         <select id="f-company"><option value="">all companies</option></select>
       </div>
+      <div class="control">
+        <label for="f-sort">sort</label>
+        <select id="f-sort">
+          <option value="">mission first</option>
+          <option value="new">newest</option>
+        </select>
+      </div>
       <div class="control checkbox">
-        <label><input id="f-remote" type="checkbox" /> remote only</label>
+        <label><input id="f-public_sector" type="checkbox" /> public sector</label>
+      </div>
+      <div class="control checkbox">
+        <label><input id="f-clearance" type="checkbox" /> clearance</label>
       </div>
       <button id="reset" type="button" class="reset">reset</button>
     </section>

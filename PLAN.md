@@ -25,6 +25,9 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 | Starting companies | Keep all of Shane's existing list, and add to it. |
 | Categories | Keep Shane's Design and Engineering categories alongside the new ones. |
 | "Washington" (no state) | Undecided. Measure how often it appears during Phases 1–2, then decide. |
+| Bare "Remote" (no country) | Counts as US remote (`remote_us`). |
+| Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs` (a private copy, since GitHub can't make a private fork of a public repo). Scraper User-Agent: `brians-job-bot`. |
+| Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |
 | Repo | Private through Phase 2, then public (see "Repo and hosting" below). |
 
 ## Non-goals (for now)

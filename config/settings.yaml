@@ -10,11 +10,9 @@ adapters:
     enabled: false   # stretch; requires GETRO_API_KEY secret
 
 filters:
-  # Keep only roles hiring in the US. A role that also hires elsewhere is kept as long as
-  # it hires in the US. Ambiguous/blank locations (often a bare "Remote" on US companies)
-  # are kept when include_unknown_location is true.
-  us_only: true
-  include_unknown_location: true
+  # Keep only DC-metro (on-site or hybrid) and US-remote roles; everything else is dropped
+  # at scrape time. Set to false to keep out-of-area roles with location_type "other".
+  drop_out_of_area: true
 
 output:
   jobs_path: "data/jobs.json"

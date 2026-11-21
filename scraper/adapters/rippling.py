@@ -41,6 +41,9 @@ class RipplingAdapter(ATSAdapter):
             location = p.get("location")
             if isinstance(location, dict):
                 location = location.get("label") or location.get("name")
+            department = p.get("department")
+            if isinstance(department, dict):  # live API returns {"id", "label"}-style objects
+                department = department.get("label") or department.get("name")
             jobs.append(
                 Job(
                     id=f"rippling:{company.identifier}:{source_id}",
@@ -51,7 +54,7 @@ class RipplingAdapter(ATSAdapter):
                     source_ats="rippling",
                     location=location,
                     remote=bool(location and "remote" in str(location).lower()),
-                    department=p.get("department"),
+                    department=department,
                     description_html=None,
                     description_available=False,
                     compensation=None,

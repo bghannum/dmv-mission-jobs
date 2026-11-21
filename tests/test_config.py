@@ -6,8 +6,10 @@ from scraper.adapters.registry import KNOWN_ATS
 from scraper.config_loader import (
     ConfigError,
     load_companies,
+    load_locations,
     load_roles,
     load_settings,
+    load_tags,
 )
 from scraper.models import INDUSTRY_VOCAB
 
@@ -28,6 +30,29 @@ def test_live_roles_and_settings_load():
     settings = load_settings()
     assert settings.user_agent
     assert 0 < settings.max_shrink_fraction <= 1
+    assert settings.drop_out_of_area is True
+
+
+def test_live_locations_and_tags_load():
+    rules = load_locations()
+    assert "reston" in rules.dmv_match
+    tags = {t.key for t in load_tags()}
+    assert {"clearance", "public_sector"} <= tags
+
+
+def test_tag_with_unknown_industry_rejected(tmp_path):
+    bad = tmp_path / "tags.yaml"
+    bad.write_text("tags:\n  x:\n    keywords: [a]\n    industries: [crypto]\n")
+    with pytest.raises(ConfigError):
+        load_tags(path=bad)
+
+
+def test_no_marketing_roles_in_any_umbrella():
+    umbrellas, _ = load_roles()
+    for u in umbrellas:
+        for role in u.roles.values():
+            for kw in role.get("include_keywords") or []:
+                assert "marketing" not in kw.lower()
 
 
 def test_unknown_ats_rejected(tmp_path):

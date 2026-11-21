@@ -1,7 +1,11 @@
 # Role umbrellas (categories) and the keyword rules that assign postings to roles.
+#
 # A posting matches a role if any include_keyword is in the normalized title AND no
-# exclude_keyword is. A posting may match multiple umbrellas/roles. Matching is
-# case-insensitive over a lowercased, whitespace-normalized title.
+# exclude_keyword is, AND its department/team contains none of the role's optional
+# exclude_departments. A posting may match several umbrellas/roles. Matching is
+# case-insensitive substring matching over a lowercased, whitespace-normalized title.
+#
+# Marketing roles (including growth marketing) are intentionally out of scope (PLAN.md).
 
 umbrellas:
   product:
@@ -9,16 +13,74 @@ umbrellas:
     roles:
       product_manager:
         label: "Product Manager"
-        include_keywords: ["product manager", "product owner", "group product manager", "director of product", "vp of product", "head of product", "chief product officer"]
-        exclude_keywords: ["product marketing", "sales", "product support"]
-      technical_program_manager:
-        label: "Technical Program Manager"
-        include_keywords: ["technical program manager", "technical project manager", "program manager", "tpm"]
-        exclude_keywords: ["marketing program", "partner program"]
+        include_keywords: ["product manager", "product owner", "head of product", "director of product", "vp of product", "vp, product", "product lead", "chief product officer"]
+        exclude_keywords: ["product marketing", "product support"]
       product_analytics:
         label: "Product Analytics"
         include_keywords: ["product analyst", "product analytics", "analytics engineer", "analytics engineering", "product data scientist", "data scientist, product"]
         exclude_keywords: ["marketing", "sales", "security analyst", "soc analyst", "fraud", "financial"]
+
+  program:
+    label: "Program Management"
+    roles:
+      technical_program_manager:
+        label: "Technical Program Manager"
+        include_keywords: ["technical program manager", "technical project manager", "tpm"]
+        exclude_keywords: []
+      program_manager:
+        label: "Program Manager"
+        include_keywords: ["program manager", "program director", "program lead", "program management"]
+        exclude_keywords: ["marketing program", "technical program"]
+
+  architecture:
+    label: "Solutions / Architecture"
+    roles:
+      solutions_architect:
+        label: "Solutions Architect / Engineer"
+        include_keywords: ["solutions architect", "solution architect", "solutions engineer", "sales engineer", "forward deployed", "field engineer", "customer engineer"]
+        exclude_keywords: []
+      enterprise_architect:
+        label: "Enterprise / Cloud Architect"
+        include_keywords: ["enterprise architect", "systems architect", "cloud architect", "technical architect"]
+        exclude_keywords: []
+
+  gtm:
+    label: "GTM / Sales / BD"
+    roles:
+      sales:
+        label: "Sales"
+        include_keywords: ["account executive", "account manager", "sales director", "director of sales", "vp of sales", "vp, sales", "head of sales", "sales lead", "territory manager", "account director", "client executive"]
+        exclude_keywords: ["sales engineer", "marketing", "technical account manager"]
+      business_development:
+        label: "Business Development / Capture"
+        include_keywords: ["business development", "capture manager", "capture lead", "capture director", "strategic accounts", "federal sales", "public sector sales"]
+        exclude_keywords: ["marketing"]
+      partnerships:
+        label: "Partnerships"
+        include_keywords: ["partnerships", "partner manager", "alliances", "channel manager", "strategic partner"]
+        exclude_keywords: ["partner support", "marketing"]
+
+  growth:
+    label: "Growth / Strategy"
+    roles:
+      growth:
+        # In GovCon "growth" usually means BD/capture (e.g. "VP of Growth"), so it is kept.
+        label: "Growth"
+        include_keywords: ["growth", "go-to-market", "gtm", "revenue operations", "revops"]
+        exclude_keywords: ["marketing", "demand gen", "lifecycle", "seo", "content", "engineer"]
+        exclude_departments: ["marketing", "engineering"]
+      strategy_ops:
+        label: "Strategy & Operations"
+        include_keywords: ["strategy & operations", "strategy and operations", "bizops", "business operations", "chief of staff"]
+        exclude_keywords: ["content strategy", "brand strategy", "marketing"]
+
+  customer:
+    label: "Customer Success"
+    roles:
+      customer_success:
+        label: "Customer Success"
+        include_keywords: ["customer success", "client success", "customer experience", "customer outcomes", "mission success", "customer operations", "implementation manager", "deployment manager", "engagement manager", "technical account manager"]
+        exclude_keywords: ["customer support specialist", "support engineer", "marketing"]
 
   design:
     label: "Design"
@@ -27,6 +89,7 @@ umbrellas:
         label: "Product Designer"
         include_keywords: ["product designer", "ux designer", "ui designer", "ux/ui", "ui/ux", "design lead", "head of design", "director of design", "principal designer", "staff designer"]
         exclude_keywords: ["graphic designer", "marketing designer", "brand designer"]
+
 
   engineering:
     label: "Engineering"
@@ -51,18 +114,6 @@ umbrellas:
         label: "Technical Writer"
         include_keywords: ["technical writer", "technical writing", "documentation engineer", "documentation specialist", "developer documentation", "docs engineer", "content developer"]
         exclude_keywords: ["grant writer", "proposal writer", "marketing writer", "copywriter"]
-
-  gtm_revenue:
-    label: "GTM / Revenue"
-    roles:
-      recruiter:
-        label: "Recruiter"
-        include_keywords: ["recruiter", "technical recruiter", "talent acquisition", "sourcer", "recruiting"]
-        exclude_keywords: ["recruiting coordinator operations"]
-
-  support:
-    label: "Support"
-    roles: {}
 
 # Level detection tags each posting intern -> VP. Levels TAG, they do not exclude.
 # Order is low -> high; the highest matched level wins. Keywords are matched against the

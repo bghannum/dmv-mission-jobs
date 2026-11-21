@@ -13,18 +13,38 @@ files.
 Built on **[crsh-ovr/jobs](https://github.com/crsh-ovr/jobs)** by Shane Quinlan (MIT).
 Thank you, Shane.
 
+## About this version
+
+DMV Mission Jobs is maintained by Brian, who is adapting Shane's board in two ways.
+
+- **Broader role curation, with a focus on GTM-facing roles.** Shane's board centered on
+  product, design and engineering. This version adds sales, business development and
+  capture, partnerships, solutions architecture, growth and strategy, program management,
+  and customer success. The role definitions draw on Brian's experience in defense,
+  defense tech and industry more broadly. For example, a "VP of Growth" at a defense
+  company usually means business development and capture, not marketing, so the board
+  treats it that way.
+- **A reworked user experience.** New filters for category, role, DC metro vs. remote,
+  clearance and public sector; every filter combination is a shareable link; and a visual
+  redesign is in progress.
+
 See [PLAN.md](PLAN.md) for the roadmap.
 
 ## What it tracks
 
-**Role umbrellas:** Product, Design, Engineering and GTM / Revenue today. Program
-management, solutions architecture, growth / strategy and customer success are coming in
-Phase 1 (see PLAN.md). All levels are kept and tagged, from intern to VP.
+**Categories:** Product, Program Management, Solutions / Architecture, GTM / Sales / BD,
+Growth / Strategy, Customer Success, Design and Engineering, each with filterable roles
+(`config/roles.yaml`). Marketing roles are out of scope. All levels are kept and tagged,
+from intern to VP.
 
 **Industries:** cybersecurity, deftech, cspm, finops, grc, healthtech (more coming in
 Phase 2).
 
-**Location:** US roles only today. Phase 1 narrows this to the DC metro plus US remote.
+**Location:** DC metro (DC, Northern Virginia, Maryland suburbs), on-site or hybrid, plus
+US remote (`config/locations.yaml`). Everything else is dropped at scrape time. A bare
+"Washington" is kept as "unconfirmed" and logged in `data/meta.json` for review.
+
+**Tags:** Clearance and Public sector badges and filters (`config/tags.yaml`).
 
 **Supported ATS platforms:** Ashby, Greenhouse, Lever, Rippling, Gem. Workday and the big
 tech careers sites are planned.
@@ -38,7 +58,7 @@ config/*.yaml  →  python -m scraper.main  →  data/jobs.json  →  site/ (sta
 
 The scraper reads the company allowlist, fetches each company's public job-board JSON,
 normalizes every posting to a common schema, keeps postings that match a target role and
-location, tags level, umbrella and industry, de-duplicates, and writes `data/jobs.json`.
+location, tags category, role, level, location type, clearance and public sector, de-duplicates, and writes `data/jobs.json`.
 The static site reads that file in the browser and filters client-side.
 
 `.github/workflows/scrape.yml` runs the scraper **daily at 11:00 UTC** (and on demand) and

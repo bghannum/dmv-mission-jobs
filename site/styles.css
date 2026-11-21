@@ -139,6 +139,10 @@ main { max-width: 1040px; margin: 0 auto; padding: 20px; }
 .tag.level { color: var(--fg); border-color: var(--border-bright); }
 .tag.new { color: var(--accent); border-color: var(--accent-dim); }
 .tag.no-desc { color: var(--fg-dim); border-style: dashed; }
+.tag.public-sector { color: #34d399; border-color: rgba(52, 211, 153, 0.5); }
+.tag.clearance { color: #c4b5fd; border-color: rgba(167, 139, 250, 0.55); }
+.tag.loc { color: var(--fg); }
+.tag.loc.unknown { border-style: dashed; }
 
 .empty { color: var(--fg-dim); padding: 30px; text-align: center; border: 1px dashed var(--border); }
 

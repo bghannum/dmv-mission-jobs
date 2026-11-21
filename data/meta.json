@@ -7,8 +7,8 @@
       "ok": true,
       "count": 205,
       "error": null,
-      "matched": 21,
-      "dropped_non_us": 0
+      "matched": 93,
+      "dropped_out_of_area": 38
     },
     {
       "company": "Kion",
@@ -16,8 +16,8 @@
       "ok": true,
       "count": 4,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 2,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Rise8",
@@ -25,8 +25,8 @@
       "ok": true,
       "count": 9,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 4,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Second Front Systems",
@@ -34,8 +34,8 @@
       "ok": true,
       "count": 23,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 0
+      "matched": 13,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Defense Unicorns",
@@ -43,8 +43,8 @@
       "ok": true,
       "count": 44,
       "error": null,
-      "matched": 13,
-      "dropped_non_us": 0
+      "matched": 24,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Vannevar Labs",
@@ -52,8 +52,8 @@
       "ok": true,
       "count": 35,
       "error": null,
-      "matched": 7,
-      "dropped_non_us": 0
+      "matched": 10,
+      "dropped_out_of_area": 1
     },
     {
       "company": "LeoLabs",
@@ -61,8 +61,8 @@
       "ok": true,
       "count": 25,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 0
+      "matched": 7,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Skylight",
@@ -70,8 +70,8 @@
       "ok": true,
       "count": 12,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Raft",
@@ -79,8 +79,8 @@
       "ok": true,
       "count": 34,
       "error": null,
-      "matched": 4,
-      "dropped_non_us": 0
+      "matched": 5,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Endor Labs",
@@ -88,8 +88,8 @@
       "ok": true,
       "count": 43,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 2
+      "matched": 18,
+      "dropped_out_of_area": 15
     },
     {
       "company": "SecurityScorecard",
@@ -97,8 +97,8 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 0
+      "matched": 4,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Okta",
@@ -106,8 +106,8 @@
       "ok": true,
       "count": 372,
       "error": null,
-      "matched": 83,
-      "dropped_non_us": 53
+      "matched": 154,
+      "dropped_out_of_area": 117
     },
     {
       "company": "Huntress",
@@ -115,8 +115,8 @@
       "ok": true,
       "count": 47,
       "error": null,
-      "matched": 4,
-      "dropped_non_us": 0
+      "matched": 13,
+      "dropped_out_of_area": 13
     },
     {
       "company": "Keeper Security",
@@ -124,8 +124,8 @@
       "ok": true,
       "count": 94,
       "error": null,
-      "matched": 12,
-      "dropped_non_us": 2
+      "matched": 38,
+      "dropped_out_of_area": 17
     },
     {
       "company": "OPSWAT",
@@ -133,8 +133,8 @@
       "ok": true,
       "count": 98,
       "error": null,
-      "matched": 20,
-      "dropped_non_us": 14
+      "matched": 30,
+      "dropped_out_of_area": 23
     },
     {
       "company": "Doppel",
@@ -142,8 +142,8 @@
       "ok": true,
       "count": 23,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 0
+      "matched": 4,
+      "dropped_out_of_area": 4
     },
     {
       "company": "XBOW",
@@ -152,7 +152,7 @@
       "count": 3,
       "error": null,
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Method Security",
@@ -160,8 +160,8 @@
       "ok": true,
       "count": 11,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 4,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Wraithwatch",
@@ -170,7 +170,7 @@
       "count": 6,
       "error": null,
       "matched": 1,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Galvanick",
@@ -179,7 +179,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 1
     },
     {
       "company": "Safe Security",
@@ -187,8 +187,8 @@
       "ok": true,
       "count": 21,
       "error": null,
-      "matched": 0,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 0
     },
     {
       "company": "UltraViolet Cyber",
@@ -196,8 +196,8 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "matched": 0,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Spin.AI",
@@ -205,8 +205,8 @@
       "ok": true,
       "count": 9,
       "error": null,
-      "matched": 0,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Abnormal AI",
@@ -214,8 +214,8 @@
       "ok": true,
       "count": 85,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 1
+      "matched": 22,
+      "dropped_out_of_area": 7
     },
     {
       "company": "Chainguard",
@@ -223,8 +223,8 @@
       "ok": true,
       "count": 109,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 0
+      "matched": 66,
+      "dropped_out_of_area": 29
     },
     {
       "company": "Vanta",
@@ -232,8 +232,8 @@
       "ok": true,
       "count": 69,
       "error": null,
-      "matched": 14,
-      "dropped_non_us": 1
+      "matched": 44,
+      "dropped_out_of_area": 23
     },
     {
       "company": "1Password",
@@ -241,8 +241,8 @@
       "ok": true,
       "count": 81,
       "error": null,
-      "matched": 8,
-      "dropped_non_us": 3
+      "matched": 32,
+      "dropped_out_of_area": 19
     },
     {
       "company": "Tailscale",
@@ -250,8 +250,8 @@
       "ok": true,
       "count": 89,
       "error": null,
-      "matched": 22,
-      "dropped_non_us": 11
+      "matched": 41,
+      "dropped_out_of_area": 25
     },
     {
       "company": "Axonius",
@@ -259,8 +259,8 @@
       "ok": true,
       "count": 20,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 2
+      "matched": 9,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Semgrep",
@@ -268,8 +268,8 @@
       "ok": true,
       "count": 16,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 9,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Teleport",
@@ -277,8 +277,8 @@
       "ok": true,
       "count": 25,
       "error": null,
-      "matched": 4,
-      "dropped_non_us": 1
+      "matched": 10,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Socket",
@@ -286,8 +286,8 @@
       "ok": true,
       "count": 23,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 13,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Material Security",
@@ -295,8 +295,8 @@
       "ok": true,
       "count": 6,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Persona",
@@ -304,8 +304,8 @@
       "ok": true,
       "count": 12,
       "error": null,
-      "matched": 0,
-      "dropped_non_us": 0
+      "matched": 5,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Adaptive Security",
@@ -313,8 +313,8 @@
       "ok": true,
       "count": 12,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 10,
+      "dropped_out_of_area": 6
     },
     {
       "company": "HackerOne",
@@ -322,8 +322,8 @@
       "ok": true,
       "count": 13,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 5,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Corelight",
@@ -331,8 +331,8 @@
       "ok": true,
       "count": 14,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 8,
+      "dropped_out_of_area": 8
     },
     {
       "company": "Cribl",
@@ -340,8 +340,8 @@
       "ok": true,
       "count": 84,
       "error": null,
-      "matched": 4,
-      "dropped_non_us": 1
+      "matched": 25,
+      "dropped_out_of_area": 10
     },
     {
       "company": "Socure",
@@ -349,8 +349,8 @@
       "ok": true,
       "count": 84,
       "error": null,
-      "matched": 15,
-      "dropped_non_us": 1
+      "matched": 25,
+      "dropped_out_of_area": 13
     },
     {
       "company": "Censys",
@@ -358,8 +358,8 @@
       "ok": true,
       "count": 27,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 0
+      "matched": 14,
+      "dropped_out_of_area": 6
     },
     {
       "company": "Gray Swan AI",
@@ -367,8 +367,8 @@
       "ok": true,
       "count": 17,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 7,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Tracebit",
@@ -376,8 +376,8 @@
       "ok": true,
       "count": 5,
       "error": null,
-      "matched": 0,
-      "dropped_non_us": 0
+      "matched": 1,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Cloudflare",
@@ -385,8 +385,8 @@
       "ok": true,
       "count": 503,
       "error": null,
-      "matched": 32,
-      "dropped_non_us": 0
+      "matched": 270,
+      "dropped_out_of_area": 270
     },
     {
       "company": "Rubrik",
@@ -394,8 +394,8 @@
       "ok": true,
       "count": 208,
       "error": null,
-      "matched": 21,
-      "dropped_non_us": 12
+      "matched": 102,
+      "dropped_out_of_area": 93
     },
     {
       "company": "Fastly",
@@ -403,8 +403,8 @@
       "ok": true,
       "count": 48,
       "error": null,
-      "matched": 6,
-      "dropped_non_us": 2
+      "matched": 15,
+      "dropped_out_of_area": 15
     },
     {
       "company": "SentinelOne",
@@ -412,8 +412,8 @@
       "ok": true,
       "count": 262,
       "error": null,
-      "matched": 33,
-      "dropped_non_us": 24
+      "matched": 94,
+      "dropped_out_of_area": 59
     },
     {
       "company": "Mach Industries",
@@ -421,8 +421,8 @@
       "ok": true,
       "count": 191,
       "error": null,
-      "matched": 9,
-      "dropped_non_us": 0
+      "matched": 8,
+      "dropped_out_of_area": 8
     },
     {
       "company": "True Anomaly",
@@ -431,7 +431,7 @@
       "count": 214,
       "error": null,
       "matched": 25,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 20
     },
     {
       "company": "Vatn Systems",
@@ -439,8 +439,8 @@
       "ok": true,
       "count": 20,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Skydio",
@@ -448,8 +448,8 @@
       "ok": true,
       "count": 185,
       "error": null,
-      "matched": 24,
-      "dropped_non_us": 1
+      "matched": 50,
+      "dropped_out_of_area": 23
     },
     {
       "company": "Applied Intuition",
@@ -457,8 +457,8 @@
       "ok": true,
       "count": 336,
       "error": null,
-      "matched": 47,
-      "dropped_non_us": 4
+      "matched": 65,
+      "dropped_out_of_area": 65
     },
     {
       "company": "Harmattan AI",
@@ -466,8 +466,8 @@
       "ok": true,
       "count": 179,
       "error": null,
-      "matched": 9,
-      "dropped_non_us": 7
+      "matched": 13,
+      "dropped_out_of_area": 13
     },
     {
       "company": "BRINC",
@@ -475,8 +475,8 @@
       "ok": true,
       "count": 29,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 0
+      "matched": 7,
+      "dropped_out_of_area": 5
     },
     {
       "company": "HavocAI",
@@ -484,8 +484,8 @@
       "ok": true,
       "count": 19,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 2,
+      "dropped_out_of_area": 1
     },
     {
       "company": "9 Mothers",
@@ -494,7 +494,7 @@
       "count": 10,
       "error": null,
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Shield AI",
@@ -503,7 +503,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Skyways",
@@ -512,7 +512,7 @@
       "count": 18,
       "error": null,
       "matched": 3,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 3
     },
     {
       "company": "Elroy Air",
@@ -521,7 +521,7 @@
       "count": 7,
       "error": null,
       "matched": 1,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 1
     },
     {
       "company": "Enigma Aerospace",
@@ -530,7 +530,7 @@
       "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Helsing",
@@ -538,8 +538,8 @@
       "ok": true,
       "count": 175,
       "error": null,
-      "matched": 10,
-      "dropped_non_us": 8
+      "matched": 16,
+      "dropped_out_of_area": 13
     },
     {
       "company": "Oddball",
@@ -547,8 +547,8 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "matched": 6,
-      "dropped_non_us": 0
+      "matched": 8,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Nava",
@@ -556,8 +556,8 @@
       "ok": true,
       "count": 19,
       "error": null,
-      "matched": 6,
-      "dropped_non_us": 0
+      "matched": 7,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Kitware",
@@ -565,8 +565,8 @@
       "ok": true,
       "count": 23,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Shift5",
@@ -574,8 +574,8 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Picogrid",
@@ -583,8 +583,8 @@
       "ok": true,
       "count": 24,
       "error": null,
-      "matched": 1,
-      "dropped_non_us": 0
+      "matched": 4,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Quindar",
@@ -592,8 +592,8 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 0
+      "matched": 6,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Scout AI",
@@ -601,8 +601,8 @@
       "ok": true,
       "count": 32,
       "error": null,
-      "matched": 4,
-      "dropped_non_us": 0
+      "matched": 5,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Primer",
@@ -611,7 +611,7 @@
       "count": 15,
       "error": null,
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Abridge",
@@ -619,8 +619,8 @@
       "ok": true,
       "count": 29,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 0
+      "matched": 2,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Ambience Healthcare",
@@ -628,8 +628,8 @@
       "ok": true,
       "count": 17,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 7,
+      "dropped_out_of_area": 4
     },
     {
       "company": "Commure",
@@ -637,8 +637,8 @@
       "ok": true,
       "count": 74,
       "error": null,
-      "matched": 12,
-      "dropped_non_us": 4
+      "matched": 16,
+      "dropped_out_of_area": 10
     },
     {
       "company": "Bayesian Health",
@@ -647,7 +647,7 @@
       "count": 12,
       "error": null,
       "matched": 3,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "HealthLeap",
@@ -655,8 +655,8 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 5,
+      "dropped_out_of_area": 4
     },
     {
       "company": "Hello Patient",
@@ -664,8 +664,8 @@
       "ok": true,
       "count": 8,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 6,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Kivo Health",
@@ -674,7 +674,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 1
     },
     {
       "company": "AcuityMD",
@@ -682,8 +682,8 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "matched": 4,
-      "dropped_non_us": 0
+      "matched": 5,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Twin Health",
@@ -692,7 +692,7 @@
       "count": 38,
       "error": null,
       "matched": 13,
-      "dropped_non_us": 1
+      "dropped_out_of_area": 2
     },
     {
       "company": "Form Health",
@@ -701,7 +701,7 @@
       "count": 14,
       "error": null,
       "matched": 1,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Ophelia",
@@ -709,8 +709,8 @@
       "ok": true,
       "count": 13,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 3,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Jukebox Health",
@@ -718,8 +718,8 @@
       "ok": true,
       "count": 35,
       "error": null,
-      "matched": 0,
-      "dropped_non_us": 0
+      "matched": 1,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Daymark Health",
@@ -728,7 +728,7 @@
       "count": 29,
       "error": null,
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Medsien",
@@ -736,8 +736,8 @@
       "ok": true,
       "count": 31,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 2
+      "matched": 4,
+      "dropped_out_of_area": 4
     },
     {
       "company": "Zocdoc",
@@ -745,8 +745,8 @@
       "ok": true,
       "count": 66,
       "error": null,
-      "matched": 14,
-      "dropped_non_us": 2
+      "matched": 18,
+      "dropped_out_of_area": 13
     },
     {
       "company": "Maven Clinic",
@@ -754,8 +754,8 @@
       "ok": true,
       "count": 34,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 0
+      "matched": 9,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Komodo Health",
@@ -763,8 +763,8 @@
       "ok": true,
       "count": 20,
       "error": null,
-      "matched": 3,
-      "dropped_non_us": 0
+      "matched": 8,
+      "dropped_out_of_area": 8
     },
     {
       "company": "Garner Health",
@@ -772,8 +772,8 @@
       "ok": true,
       "count": 59,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 0
+      "matched": 20,
+      "dropped_out_of_area": 6
     },
     {
       "company": "Included Health",
@@ -782,7 +782,7 @@
       "count": 41,
       "error": null,
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     },
     {
       "company": "Talkiatry",
@@ -790,8 +790,8 @@
       "ok": true,
       "count": 188,
       "error": null,
-      "matched": 5,
-      "dropped_non_us": 0
+      "matched": 23,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Lyra Health",
@@ -799,8 +799,8 @@
       "ok": true,
       "count": 453,
       "error": null,
-      "matched": 9,
-      "dropped_non_us": 1
+      "matched": 14,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Candid Health",
@@ -808,8 +808,8 @@
       "ok": true,
       "count": 30,
       "error": null,
-      "matched": 10,
-      "dropped_non_us": 0
+      "matched": 15,
+      "dropped_out_of_area": 15
     },
     {
       "company": "Tennr",
@@ -817,8 +817,8 @@
       "ok": true,
       "count": 22,
       "error": null,
-      "matched": 2,
-      "dropped_non_us": 0
+      "matched": 9,
+      "dropped_out_of_area": 9
     },
     {
       "company": "Cedar",
@@ -827,15 +827,82 @@
       "count": 0,
       "error": "HTTPError: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/cedar?includeCompensation=true",
       "matched": 0,
-      "dropped_non_us": 0
+      "dropped_out_of_area": 0
     }
   ],
   "any_failures": true,
-  "us_only": true,
-  "dropped_non_us": 160,
-  "generated_at": "2026-11-21T17:18:32.244428+00:00",
-  "prior_job_count": 471,
-  "fresh_job_count": 471,
-  "total_job_count": 471,
+  "drop_out_of_area": true,
+  "dropped_out_of_area": 1100,
+  "ambiguous_locations": [],
+  "taxonomy": {
+    "umbrellas": {
+      "product": {
+        "label": "Product",
+        "roles": {
+          "product_manager": "Product Manager",
+          "product_analytics": "Product Analytics"
+        }
+      },
+      "program": {
+        "label": "Program Management",
+        "roles": {
+          "technical_program_manager": "Technical Program Manager",
+          "program_manager": "Program Manager"
+        }
+      },
+      "architecture": {
+        "label": "Solutions / Architecture",
+        "roles": {
+          "solutions_architect": "Solutions Architect / Engineer",
+          "enterprise_architect": "Enterprise / Cloud Architect"
+        }
+      },
+      "gtm": {
+        "label": "GTM / Sales / BD",
+        "roles": {
+          "sales": "Sales",
+          "business_development": "Business Development / Capture",
+          "partnerships": "Partnerships"
+        }
+      },
+      "growth": {
+        "label": "Growth / Strategy",
+        "roles": {
+          "growth": "Growth",
+          "strategy_ops": "Strategy & Operations"
+        }
+      },
+      "customer": {
+        "label": "Customer Success",
+        "roles": {
+          "customer_success": "Customer Success"
+        }
+      },
+      "design": {
+        "label": "Design",
+        "roles": {
+          "product_designer": "Product Designer"
+        }
+      },
+      "engineering": {
+        "label": "Engineering",
+        "roles": {
+          "full_stack": "Full Stack Engineer",
+          "frontend": "Frontend Engineer",
+          "devops": "DevOps / CI-CD / DevEx",
+          "agentic": "Agentic / AI Engineer",
+          "tech_writer": "Technical Writer"
+        }
+      }
+    },
+    "tags": {
+      "clearance": "Clearance",
+      "public_sector": "Public sector"
+    }
+  },
+  "generated_at": "2026-11-21T17:27:01.582209+00:00",
+  "prior_job_count": 643,
+  "fresh_job_count": 576,
+  "total_job_count": 576,
   "shrink_blocked": false
 }

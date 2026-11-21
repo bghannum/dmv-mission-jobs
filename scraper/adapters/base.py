@@ -71,3 +71,27 @@ class ATSAdapter(ABC):
 
 def industries_for(company: Company) -> list[str]:
     return list(company.industry)
+
+
+_WORKPLACE = {
+    "remote": "remote", "hybrid": "hybrid",
+    "onsite": "onsite", "on-site": "onsite", "on site": "onsite", "in office": "onsite",
+}
+
+
+def normalize_workplace(value) -> str | None:
+    """Map an ATS workplace value ("Remote", "OnSite", "on-site", ...) to remote|hybrid|onsite."""
+    if not isinstance(value, str):
+        return None
+    return _WORKPLACE.get(value.strip().lower())
+
+
+def join_locations(primary, extra) -> str | None:
+    """Join a primary location and extra locations into one "A; B; C" string, de-duplicated."""
+    parts: list[str] = []
+    for loc in [primary, *(extra or [])]:
+        if isinstance(loc, dict):
+            loc = loc.get("location") or loc.get("name") or loc.get("label")
+        if isinstance(loc, str) and loc.strip() and loc.strip() not in parts:
+            parts.append(loc.strip())
+    return "; ".join(parts) or None

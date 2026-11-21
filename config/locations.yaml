@@ -1,0 +1,30 @@
+# Where a role must be to appear on the board: the DC metro (DMV) or US remote.
+# See scraper/location.py for how location_type is assigned.
+#
+# match:   substrings of the lowercased location. Entries ending in ", va" / ", md" also
+#          match the spelled-out state (", virginia" / ", maryland") automatically.
+# exclude: phrases removed before matching, for same-named places outside the DMV.
+metros:
+  dmv:
+    label: "DC Metro"
+    match: [
+      # DC
+      "washington, dc", "washington dc", "washington, d.c", "washington d.c", "district of columbia",
+      "washington navy yard", "dc metro",
+      # Northern Virginia
+      "arlington", "alexandria", "reston", "herndon", "mclean", "tysons", "vienna, va", "falls church",
+      "fairfax", "chantilly", "ashburn", "sterling, va", "springfield, va", "dulles", "manassas",
+      "leesburg, va", "northern virginia", "quantico",
+      # Maryland suburbs
+      "bethesda", "rockville", "gaithersburg", "silver spring", "college park, md", "greenbelt",
+      "laurel, md", "columbia, md", "fort meade", "ft. meade", "ft meade", "annapolis junction",
+      "hanover, md", "lanham", "germantown, md"
+    ]
+    exclude: [
+      "arlington, tx", "arlington, texas", "arlington heights", "alexandria, la", "alexandria, louisiana",
+      "fairfax, ca", "fairfax, california"
+    ]
+
+# Words that mark a posting as remote or hybrid (substring match on the lowercased location).
+remote_keywords: ["remote", "work from home", "telework", "anywhere in the us", "anywhere in the u.s"]
+hybrid_keywords: ["hybrid"]
