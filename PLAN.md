@@ -10,7 +10,8 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 ## Current status (as of 2026-11-21)
 
 **Live:** https://bghannum.github.io/dmv-mission-jobs/ (public repo `bghannum/dmv-mission-jobs`).
-About 1,680 roles from 211 companies with open roles, out of 416 tracked. The scrape runs daily at 11:00 UTC (about 8 minutes),
+About 1,680 roles from 211 companies with open roles, out of 427 tracked (the 11 named
+companies and the Shield AI fix added on 2026-11-21 should add about 255 roles from the next scrape). The scrape runs daily at 11:00 UTC (about 8 minutes),
 commits as `brians-job-bot`, and redeploys the site automatically.
 
 | Phase | Status |
@@ -18,22 +19,31 @@ commits as `brians-job-bot`, and redeploys the site automatically.
 | 0: Fork and baseline | ✅ Done |
 | 1: Categories, location and tags | ✅ Done |
 | 1b: Visual redesign | ✅ Done, plus multi-select category chips and alphabetical dropdowns |
-| 2: Expand the company list | ✅ "Done when" met: the a16z portfolio added 324 companies, the Washington rule is decided, and the site is live. **Some tasks carried over** (below). |
-| 3: Payload size | 🟡 Partly done: descriptions are dropped from `jobs.json` and replaced with a 280-char `snippet`. The file is 1.9 MB at about 1,680 jobs; the target is under 1.5 MB at 2,000. |
+| 2: Expand the company list | ✅ "Done when" met: the a16z portfolio added 324 companies, the Washington rule is decided, and the site is live. `scripts/verify_company.py` is written and 11 of the 20 missing named companies are added (PR #3). **Some tasks carried over** (below). |
+| 3: Payload size | 🟡 Partly done: descriptions are dropped from `jobs.json` and replaced with a 280-char `snippet`. The file is 1.9 MB at about 1,680 jobs (expect about 2.2 MB once the new companies land); the target is under 1.5 MB at 2,000. |
 | 4: Seeder | 🟡 Started: `scraper/seeder/` (a16z source, ATS prober, industry suggestions) and `scripts/seed_a16z.py`. No `seed_sources.yaml`, no other sources, no weekly PR Action yet. |
 | 5: Big-tech adapters | ⬜ Not started |
 | 6: Workday adapter | ⬜ Not started |
 | 7: Polish | ⬜ Not started |
 
 **Suggested next steps, in order:**
-1. **Finish Phase 2's named companies.** 20 companies listed in Phase 2 are still missing:
-   - Palantir, Scale AI, Epirus, Hadrian, Govini, Rebellion Defense, Castelion, Chaos Industries, Ask Sage, Istari
-   - Snowflake, CrowdStrike, Zscaler, Palo Alto Networks, ServiceNow, Salesforce, Elastic, MongoDB, Datadog, GitLab
+1. **Finish Phase 2's named companies.** 11 of the 20 missing ones were added on 2026-11-21
+   (Palantir, Scale AI, Epirus, Chaos Industries, Rebellion Defense, Snowflake, Zscaler, Elastic,
+   MongoDB, Datadog, GitLab). 9 remain, none on Greenhouse, Ashby or Lever:
+   - Hadrian, Govini, Castelion, Ask Sage, Istari: check each careers page by hand. Rippling or
+     Gem can go straight in; anything else goes to `config/needs_adapter.yaml`.
+   - CrowdStrike, Palo Alto Networks, ServiceNow, Salesforce: confirm the ATS (thought to be
+     Workday or SmartRecruiters; not yet checked) and add them to `needs_adapter.yaml` for Phase 6.
 
-   Write `scripts/verify_company.py` (still missing) and reuse `scraper/seeder/probe.py` to find each one's ATS. The ones on Workday or custom sites go to `config/needs_adapter.yaml`.
+   Use `scripts/verify_company.py` (`--find "Name" --website URL`, or `<ats> <slug>`).
+   To review: Palantir is tagged `deftech` (every job Public sector); Scale AI is `ai` only.
 2. **Review queues:**
    - `config/candidates.yaml`: 48 a16z boards found but not confirmed as the right company. Move good ones into `companies.yaml` and the rest into a new `config/rejected.yaml`.
    - Cedar's Ashby board returns 404, so remove it.
+   - **Watch for boards that go silent.** Shield AI's Lever board went empty (it moved to
+     Ashby; fixed 2026-11-21), and the scrape counted it as a success with 0 jobs. 8 a16z
+     boards also returned 0 on 2026-11-21. Consider listing zero-job companies in `meta.json`
+     and rechecking them with `verify_company.py --find`.
 3. **Industry clean-up:**
    - Re-tag Shane's original companies with the new vocabulary (e.g. `saas`, `ai`, `govtech`).
    - Have someone with defense knowledge skim the American Dynamism block in `companies.yaml`. Some defense companies (e.g. CX2, Rune Technologies) have empty a16z descriptions and lack `deftech`.
@@ -41,15 +51,15 @@ commits as `brians-job-bot`, and redeploys the site automatically.
 5. **Phase 3, Phase 4, then Phase 6.** Phase 3 needs the size target. Phase 4 means more sources (8VC, Founders Fund, Lux, ...) plus the weekly PR. Phase 6 (Workday) unlocks many of the 346 companies in `needs_adapter.yaml` and the defense primes.
 
 **Where things live (as built):**
-- **Config:** `config/companies.yaml` (416 companies: Shane's 92 plus the a16z ones under a comment header), `candidates.yaml`, `needs_adapter.yaml`, `roles.yaml`, `locations.yaml`, `tags.yaml` and `settings.yaml`. `rejected.yaml` and `seed_sources.yaml` don't exist yet.
+- **Config:** `config/companies.yaml` (427 companies: Shane's 92, the Phase 2 named companies, then the a16z ones, each under a comment header), `candidates.yaml`, `needs_adapter.yaml`, `roles.yaml`, `locations.yaml`, `tags.yaml` and `settings.yaml`. `rejected.yaml` and `seed_sources.yaml` don't exist yet.
 - **Scraper:** `scraper/`. `location.py` holds the DMV-or-remote model and the Washington rules, `tagging.py` holds clearance and public sector, and `seeder/` holds the a16z source, the ATS prober and industry suggestions. Industry values are `INDUSTRY_VOCAB` in `scraper/models.py`.
-- **Scripts:** `scripts/seed_a16z.py` (rerun: `python scripts/seed_a16z.py`; add `--apply` to write config). Its probe cache and a16z page copies live in `.cache/seeder/` (gitignored), so reruns are almost free.
+- **Scripts:** `scripts/verify_company.py` checks one company's board before it's added (job count, role and location survivors, sample titles, a ready `companies.yaml` entry). `scripts/seed_a16z.py` (rerun: `python scripts/seed_a16z.py`; add `--apply` to write config). Its probe cache and a16z page copies live in `.cache/seeder/` (gitignored), so reruns are almost free.
 - **Docs:** `docs/seed_sources.md` records which discovery sources are allowed and why. portfoliojobs.a16z.com is **not** allowed (Consider's terms).
 - **Site:** `site/` (vanilla JS; every filter lives in the URL, e.g. `?umbrella=gtm,customer&loc=dmv&public_sector=1&view=list`). Filter labels come from `meta.json` `taxonomy`.
 - **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
 
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
-`ruff check . && pytest` (193 tests), `python -m scraper.main` (about 10 minutes for 416 companies), and
+`ruff check . && pytest` (198 tests), `python -m scraper.main` (about 10 minutes for 427 companies), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
 
 ## Goals
@@ -320,7 +330,7 @@ Each phase is one PR that ships with tests. Don't start a phase until the previo
 ### Phase 2: Expand the company list (by hand)
 - **Keep all of Shane's existing companies.** Everything here is additive.
 - Extend the industry vocabulary: `deftech`, `govtech`, `gov-it`, `space`, `ai`, `cybersecurity`, `bigtech`, `saas`. Re-tag existing entries where it fits.
-- Write `scripts/verify_company.py <ats> <slug>`, which prints the job count, sample titles and how many jobs survive the category and location filters.
+- ✅ Write `scripts/verify_company.py <ats> <slug>`, which prints the job count, sample titles and how many jobs survive the category and location filters.
 - Add new companies, verifying **every** entry against its live board. Starting candidates are below; confirm the ATS for each, since some will be Workday or custom:
   - **Defense tech**: Anduril, Shield AI, Palantir, Scale AI, Saronic, Epirus, Hadrian, Skydio, Govini, Vannevar Labs, Rebellion Defense, Second Front, Rise8, Defense Unicorns, Applied Intuition, Castelion, Chaos Industries, Primer, Ask Sage, Istari
   - **Commercial companies with federal/public-sector teams**: Databricks, Snowflake, CrowdStrike, Okta, Zscaler, Palo Alto Networks, ServiceNow, Salesforce, Cloudflare, Elastic, MongoDB, Datadog, GitLab
