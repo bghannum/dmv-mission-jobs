@@ -28,7 +28,7 @@ const LOCATION_LABELS = {
   dmv_onsite: "On-site",
   dmv_hybrid: "Hybrid",
   remote_us: "Remote (US)",
-  unknown: "Location unconfirmed",
+  unknown: "Uncertain",
   other: "Other",
 };
 const LOCATION_TYPES = ["dmv_onsite", "dmv_hybrid", "remote_us", "unknown"];
@@ -150,7 +150,7 @@ function card(job) {
   // "On-site" / "Hybrid" / "Remote (US)", unless the location text already says remote.
   const type = job.location_type;
   const saysRemote = /remote/i.test(loc);
-  if (type && !(type === "remote_us" && saysRemote)) {
+  if (type && type !== "unknown" && !(type === "remote_us" && saysRemote)) {
     sub.appendChild(document.createTextNode(" · " + (LOCATION_LABELS[type] || type)));
   }
   head.appendChild(sub);
@@ -163,6 +163,11 @@ function card(job) {
   const cat = cats.find((u) => state.umbrellas.has(u)) || cats[0];
   if (cat) pills.appendChild(el("span", "pill", umbrellaLabel(cat)));
   if (job.level) pills.appendChild(el("span", "pill", LEVEL_LABELS[job.level] || job.level));
+  if (type === "unknown") {
+    const u = el("span", "pill pill-uncertain", "Location uncertain");
+    u.title = "Listed as just \"Washington\": could be Washington, DC or Washington State.";
+    pills.appendChild(u);
+  }
   TAG_ORDER.filter((t) => (job.tags || []).includes(t)).forEach((t) =>
     pills.appendChild(el("span", `pill pill-${t}`, tagLabel(t))));
   article.appendChild(pills);
@@ -176,8 +181,10 @@ function card(job) {
   return article;
 }
 
-function uniqueSorted(values) {
-  return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
+// Dropdown options in alphabetical order of what the user sees (not the internal key).
+function sortedByLabel(values, label = (v) => v) {
+  return [...new Set(values.filter(Boolean))]
+    .sort((a, b) => label(a).localeCompare(label(b), undefined, { sensitivity: "base" }));
 }
 
 function addOption(sel, value, label) {
@@ -210,12 +217,13 @@ function populateFilters() {
     b.setAttribute("aria-pressed", "false");
     catChips.appendChild(b);
   });
-  uniqueSorted([...inds]).forEach((i) => addOption($("f-industry"), i, INDUSTRY_LABELS[i] || i));
+  const industryLabel = (i) => INDUSTRY_LABELS[i] || i;
+  sortedByLabel([...inds], industryLabel).forEach((i) => addOption($("f-industry"), i, industryLabel(i)));
   LEVEL_ORDER.filter((l) => levels.has(l)).forEach((l) => addOption($("f-level"), l, LEVEL_LABELS[l]));
-  uniqueSorted([...companies]).forEach((c) => addOption($("f-company"), c, c));
+  sortedByLabel([...companies]).forEach((c) => addOption($("f-company"), c, c));
   populateRoles();
 
-  // Only offer the "unconfirmed Washington" chip when such jobs exist.
+  // Only offer the "Washington (uncertain)" chip when such jobs exist.
   const chip = document.querySelector('.chip[data-loc="unknown"]');
   chip.hidden = !state.jobs.some((j) => j.location_type === "unknown");
 }
@@ -234,7 +242,7 @@ function populateRoles() {
     (j.roles || []).forEach((r) => { if (!allowed.size || allowed.has(r)) present.add(r); });
   });
   sel.length = 1; // keep the "All" option
-  [...present].sort((a, b) => (labels[a] || a).localeCompare(labels[b] || b))
+  sortedByLabel([...present], (r) => labels[r] || r)
     .forEach((r) => addOption(sel, r, labels[r] || r));
   sel.value = present.has(keep) ? keep : "";
 }

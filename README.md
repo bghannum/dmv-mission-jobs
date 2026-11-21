@@ -37,12 +37,13 @@ Growth / Strategy, Customer Success, Design and Engineering, each with filterabl
 (`config/roles.yaml`). Marketing roles are out of scope. All levels are kept and tagged,
 from intern to VP.
 
-**Industries:** cybersecurity, deftech, cspm, finops, grc, healthtech (more coming in
-Phase 2).
+**Companies:** Shane's original list plus every a16z portfolio company with a readable job
+board (`config/companies.yaml`, added with `scripts/seed_a16z.py`). Industries range from
+defense tech and American Dynamism to fintech, health and enterprise software.
 
 **Location:** DC metro (DC, Northern Virginia, Maryland suburbs), on-site or hybrid, plus
 US remote (`config/locations.yaml`). Everything else is dropped at scrape time. A bare
-"Washington" is kept as "unconfirmed" and logged in `data/meta.json` for review.
+"Washington" (DC or the state?) is kept and labelled "Location uncertain".
 
 **Tags:** Clearance and Public sector badges and filters (`config/tags.yaml`).
 

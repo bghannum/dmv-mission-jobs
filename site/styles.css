@@ -239,6 +239,7 @@ select option { background: #16181e; color: var(--text); }
   border: 1px solid rgba(255, 255, 255, 0.12); color: var(--pill-text); font-size: 12px; font-weight: 500;
 }
 .pill-public_sector { background: rgba(52, 211, 153, 0.12); border-color: rgba(52, 211, 153, 0.4); color: var(--success-text); font-weight: 600; }
+.pill-uncertain { border-style: dashed; border-color: rgba(255, 255, 255, 0.28); color: var(--text-2); background: transparent; }
 .pill-clearance { background: rgba(167, 139, 250, 0.14); border-color: rgba(167, 139, 250, 0.45); color: var(--violet-text); font-weight: 600; }
 .badge-new {
   flex: none; padding: 2px 8px; border-radius: 6px; background: rgba(232, 121, 249, 0.14);
