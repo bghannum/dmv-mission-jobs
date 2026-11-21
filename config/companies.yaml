@@ -314,8 +314,8 @@ companies:
     industry: [deftech]
     priority: 3
   - name: "Shield AI"
-    ats: lever
-    identifier: "shieldai"
+    ats: ashby
+    identifier: "shield"   # moved off Lever (`shieldai` empty since 2026-11); checked 2026-11-21
     industry: [deftech]
     priority: 3
   - name: "Skyways"
