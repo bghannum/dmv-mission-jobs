@@ -153,8 +153,22 @@ def is_dmv(low: str, rules: LocationRules) -> bool:
     return any(m in low for m in rules.dmv_match)
 
 
+_OTHER_STATES = tuple(
+    sorted(_STATE_NAMES - {"washington", "district of columbia"}, key=len, reverse=True)
+)
+
+
 def is_bare_washington(low: str) -> bool:
+    """A "Washington" that could be DC or the state. Not ambiguous when:
+    - a WA city or "Washington State" is named;
+    - it follows a city ("Tacoma, Washington"), which makes it the state;
+    - other US states are listed alongside it ("Remote - California; Remote - Washington").
+    """
     if any(h in low for h in _WASHINGTON_STATE_HINTS):
+        return False
+    if re.search(r"[a-z.]\s*,\s*washington\b(?!\s*,?\s*(?:d\.?\s?c\b|district))", low):
+        return False
+    if any(re.search(r"\b" + re.escape(st) + r"\b", low) for st in _OTHER_STATES):
         return False
     return bool(_BARE_WASHINGTON_RE.search(low))
 

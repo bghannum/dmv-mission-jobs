@@ -28,6 +28,8 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 | Bare "Remote" (no country) | Counts as US remote (`remote_us`). |
 | Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs` (a private copy, since GitHub can't make a private fork of a public repo). Scraper User-Agent: `brians-job-bot`. |
 | Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |
+| a16z portfolio | Every a16z company with a confirmed Greenhouse/Lever/Ashby board is on the board (added 2026-11-21 with `scripts/seed_a16z.py`). The company list comes from a16z.com; the Consider-hosted portfoliojobs.a16z.com isn't used because Consider's terms forbid scrapers. See `docs/seed_sources.md`. |
+| Job descriptions | Not stored in `jobs.json` (pulled forward from Phase 3); a 280-character `snippet` is kept. Tagging still reads full descriptions during the scrape. |
 | Repo | Private through Phase 2, then public (see "Repo and hosting" below). |
 
 ## Non-goals (for now)

@@ -74,3 +74,18 @@ def test_shrink_guard_blocks_write(tmp_path):
     )
     assert meta["shrink_blocked"] is True
     assert jobs_path.read_text() == before
+
+
+def test_descriptions_are_not_written_but_a_snippet_is(tmp_path):
+    from scraper.writer import snippet
+
+    job = _job("a:1")
+    job.description_html = "<p>" + "Build mission software. " * 40 + "</p>"
+    merge_and_write([job], {}, jobs_path=tmp_path / "j.json", meta_path=tmp_path / "m.json",
+                    today="2026-10-01")
+    out = json.loads((tmp_path / "j.json").read_text())["jobs"][0]
+    assert "description_html" not in out
+    assert out["snippet"].startswith("build mission software.")
+    assert len(out["snippet"]) <= 281 and out["snippet"].endswith("…")
+    assert snippet(None) is None
+    assert snippet("<p>Short.</p>") == "short."

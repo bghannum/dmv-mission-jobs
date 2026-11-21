@@ -53,6 +53,11 @@ RULES = load_locations()
         ("San Francisco, CA", False, None),
         ("Seattle, Washington", False, None),
         ("Washington State", False, None),
+        # "City, Washington" and Washington among other states are the state, not DC
+        ("Tacoma, Washington, United States", False, None),
+        ("Kent, Washington", False, None),
+        ("Remote - California; Remote - Oregon; Remote - Washington", False, REMOTE_US),
+        ("Nevada; Remote - California; Remote - Washington", False, REMOTE_US),
         ("Arlington, TX", False, None),
         ("London, UK", False, None),
         ("", False, None),

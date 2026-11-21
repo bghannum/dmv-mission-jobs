@@ -5,7 +5,7 @@
 #   name         display name (required)
 #   ats          adapter key: ashby | greenhouse | lever | rippling | gem | getro (required)
 #   identifier   the board slug/token for that ATS (required; case-sensitive for Ashby)
-#   industry     one or more of: cybersecurity, deftech, cspm, finops, grc, healthtech (required)
+#   industry     one or more values from INDUSTRY_VOCAB in scraper/models.py (required)
 #   priority     1 | 2 | 3   (ordering tier; 1 sorts to the top, default 3)
 #   homepage     optional company URL
 #
@@ -521,3 +521,1626 @@ companies:
 #   Devoted Health  — no working board slug found
 #   Cityblock Health — no working board slug found
 #   Color Health    — no working board slug found
+
+  # --- a16z portfolio (scripts/seed_a16z.py, 2026-11-21) ---
+  # Industries are suggested from a16z's description; review and correct.
+  - name: "Adaptive"
+    ats: ashby
+    identifier: "adaptive"
+    industry: [fintech, ai]
+    homepage: "https://adaptive.build"
+  - name: "Addi"
+    ats: ashby
+    identifier: "addi"
+    industry: [fintech]
+    homepage: "https://addi.com/"
+  - name: "Aerodome"
+    ats: greenhouse
+    identifier: "aerodome"
+    industry: [ai, american-dynamism, govtech]
+    homepage: "https://www.aerodome.com/"
+  - name: "Affirm"
+    ats: greenhouse
+    identifier: "affirm"
+    industry: [fintech]
+    homepage: "https://affirm.com"
+  - name: "Airbnb"
+    ats: greenhouse
+    identifier: "airbnb"
+    industry: [consumer]
+    homepage: "https://airbnb.com"
+  - name: "AirGarage"
+    ats: ashby
+    identifier: "airgarage"
+    industry: [consumer]
+    homepage: "https://www.airgarage.com/"
+  - name: "AKASA"
+    ats: ashby
+    identifier: "akasa"
+    industry: [ai, healthtech]
+    homepage: "https://akasa.com/"
+  - name: "Alchemy"
+    ats: ashby
+    identifier: "alchemy"
+    industry: [crypto]
+    homepage: "https://alchemy.com"
+  - name: "Aleo"
+    ats: ashby
+    identifier: "provable"
+    industry: [saas]
+    homepage: "https://provable.com"
+  - name: "Alleviate Health"
+    ats: ashby
+    identifier: "alleviatehealth"
+    industry: [ai, healthtech]
+    homepage: "https://alleviatehealth.care"
+  - name: "Alluxio"
+    ats: lever
+    identifier: "alluxio"
+    industry: [saas, fintech, ai]
+    homepage: "https://www.alluxio.io/"
+  - name: "Alpha-9 Oncology"
+    ats: greenhouse
+    identifier: "alpha9oncology"
+    industry: [healthtech]
+    homepage: "http://www.a9oncology.com/"
+  - name: "Alta"
+    ats: greenhouse
+    identifier: "alta"
+    industry: [games]
+    homepage: "https://www.altavr.io/"
+  - name: "Amber"
+    ats: ashby
+    identifier: "amber"
+    industry: [ai, healthtech]
+    homepage: "https://amber.bio"
+  - name: "Amca"
+    ats: greenhouse
+    identifier: "amca"
+    industry: [deftech, american-dynamism, space]
+    homepage: "https://amca.com/"
+  - name: "Anchorage"
+    ats: lever
+    identifier: "anchorage"
+    industry: [crypto, fintech]
+    homepage: "https://anchorage.com"
+  - name: "Anduril"
+    ats: greenhouse
+    identifier: "andurilindustries"
+    industry: [deftech, ai, american-dynamism, saas]
+    homepage: "https://www.anduril.com"
+  - name: "Anyscale"
+    ats: ashby
+    identifier: "anyscale"
+    industry: [ai, saas]
+    homepage: "https://anyscale.com"
+  - name: "Apollo"
+    ats: ashby
+    identifier: "apollo"
+    industry: [saas]
+    homepage: "https://www.apollographql.com/"
+  - name: "Aptos"
+    ats: greenhouse
+    identifier: "aptoslabs"
+    industry: [crypto]
+    homepage: "https://aptoslabs.com"
+  - name: "Arda Therapeutics"
+    ats: ashby
+    identifier: "arda-therapeutics"
+    industry: [healthtech]
+    homepage: "https://www.ardatx.com/"
+  - name: "Arena"
+    ats: ashby
+    identifier: "arena"
+    industry: [saas]
+    homepage: "https://arena.ai/"
+  - name: "Armadin"
+    ats: ashby
+    identifier: "armadin"
+    industry: [cybersecurity]
+    homepage: "https://www.armadin.com/"
+  - name: "Asana"
+    ats: greenhouse
+    identifier: "asana"
+    industry: [saas]
+    homepage: "https://asana.com"
+  - name: "ASI"
+    ats: greenhouse
+    identifier: "asi"
+    industry: [deftech, ai, american-dynamism]
+    homepage: "https://www.asi.com/"
+  - name: "Asimov"
+    ats: ashby
+    identifier: "asimov"
+    industry: [healthtech]
+    homepage: "https://www.asimov.com/"
+  - name: "Astranis"
+    ats: greenhouse
+    identifier: "astranis"
+    industry: [american-dynamism, saas, space]
+    homepage: "https://www.astranis.com/"
+  - name: "Astro Mechanica"
+    ats: ashby
+    identifier: "astro-mechanica"
+    industry: [american-dynamism]
+    homepage: "https://astromecha.co/"
+  - name: "Atlys"
+    ats: ashby
+    identifier: "atlys"
+    industry: [consumer]
+    homepage: "https://www.atlys.com"
+  - name: "Atoms"
+    ats: greenhouse
+    identifier: "atoms"
+    industry: [saas]
+    homepage: "https://atoms.co/"
+  - name: "Azra Games"
+    ats: greenhouse
+    identifier: "azragames"
+    industry: [ai, crypto]
+    homepage: "https://azragames.com"
+  - name: "Backflip AI"
+    ats: ashby
+    identifier: "backflip"
+    industry: [saas]
+    homepage: "https://backflip.ai"
+  - name: "Bastion"
+    ats: ashby
+    identifier: "bastion"
+    industry: [crypto]
+    homepage: "https://bastion.io"
+  - name: "Believer"
+    ats: ashby
+    identifier: "believer"
+    industry: [saas]
+    homepage: "https://www.believer.gg/"
+  - name: "Belisar"
+    ats: ashby
+    identifier: "belisar"
+    industry: [american-dynamism]
+    homepage: "https://belisar.com/"
+  - name: "Benchling"
+    ats: ashby
+    identifier: "benchling"
+    industry: [healthtech]
+    homepage: "https://benchling.com"
+  - name: "Boku"
+    ats: greenhouse
+    identifier: "boku"
+    industry: [fintech]
+    homepage: "https://www.boku.com/"
+  - name: "Bold"
+    ats: greenhouse
+    identifier: "agebold"
+    industry: [healthtech]
+    homepage: "https://agebold.com"
+  - name: "Boltz"
+    ats: ashby
+    identifier: "boltz"
+    industry: [ai, healthtech]
+    homepage: "https://boltz.com"
+  - name: "Bounce"
+    ats: ashby
+    identifier: "bounce"
+    industry: [consumer]
+    homepage: "https://bounce.com/"
+  - name: "Braintrust"
+    ats: ashby
+    identifier: "braintrust"
+    industry: [ai, saas]
+    homepage: "https://www.braintrust.dev/"
+  - name: "Branch.co"
+    ats: greenhouse
+    identifier: "branch"
+    industry: [fintech]
+    homepage: "https://Branch.co"
+  - name: "BuzzFeed"
+    ats: greenhouse
+    identifier: "buzzfeed"
+    industry: [consumer]
+    homepage: "https://buzzfeed.com"
+  - name: "Camber"
+    ats: ashby
+    identifier: "camber"
+    industry: [healthtech, fintech]
+    homepage: "https://camber.health"
+  - name: "Cape"
+    ats: ashby
+    identifier: "cape"
+    industry: [american-dynamism]
+    homepage: "https://www.cape.co/"
+  - name: "Capitolis"
+    ats: greenhouse
+    identifier: "capitolis"
+    industry: [fintech]
+    homepage: "https://www.capitolis.com"
+  - name: "Carta"
+    ats: greenhouse
+    identifier: "carta"
+    industry: [fintech]
+    homepage: "https://carta.com"
+  - name: "Character.AI"
+    ats: ashby
+    identifier: "character"
+    industry: [ai, saas]
+    homepage: "https://character.ai/"
+  - name: "Chariot Defense"
+    ats: greenhouse
+    identifier: "chariotdefense"
+    industry: [deftech, american-dynamism]
+    homepage: "https://chariotdefense.com"
+  - name: "Charthop"
+    ats: ashby
+    identifier: "charthop"
+    industry: [saas]
+    homepage: "https://charthop.com"
+  - name: "Chestnut"
+    ats: ashby
+    identifier: "chestnut"
+    industry: [fintech]
+    homepage: "https://www.chestnutai.com/"
+  - name: "Circle"
+    ats: ashby
+    identifier: "circle"
+    industry: [crypto]
+    homepage: "https://www.circle.com"
+  - name: "Clerk"
+    ats: ashby
+    identifier: "clerk"
+    industry: [saas]
+    homepage: "https://clerk.com/"
+  - name: "ClickUp"
+    ats: ashby
+    identifier: "clickup"
+    industry: [saas]
+    homepage: "https://clickup.com/"
+  - name: "Clubhouse"
+    ats: ashby
+    identifier: "clubhouse"
+    industry: [consumer]
+    homepage: "https://clubhouse.com"
+  - name: "Cluely"
+    ats: ashby
+    identifier: "cluely"
+    industry: [saas]
+    homepage: "https://cluely.com"
+  - name: "Clutch"
+    ats: greenhouse
+    identifier: "clutch"
+    industry: [consumer, fintech]
+    homepage: "https://www.withclutch.com/"
+  - name: "Coactive"
+    ats: greenhouse
+    identifier: "coactive"
+    industry: [ai, saas]
+    homepage: "https://coactive.ai/"
+  - name: "Cognition"
+    ats: ashby
+    identifier: "cognition"
+    industry: [saas]
+    homepage: "https://cognition.com/"
+  - name: "Coinbase"
+    ats: greenhouse
+    identifier: "coinbase"
+    industry: [crypto]
+    homepage: "https://www.coinbase.com/"
+  - name: "Compound"
+    ats: ashby
+    identifier: "compound"
+    industry: [crypto]
+    homepage: "https://compound.finance"
+  - name: "Concourse"
+    ats: ashby
+    identifier: "concourse"
+    industry: [ai, fintech]
+    homepage: "https://www.concourse.ai/"
+  - name: "Convex"
+    ats: ashby
+    identifier: "convex-dev"
+    industry: [saas]
+    homepage: "https://convex.dev/"
+  - name: "Cowboy Space Corporation"
+    ats: ashby
+    identifier: "cowboyspace"
+    industry: [american-dynamism]
+    homepage: "https://www.cowboyspace.com/"
+  - name: "Cresta"
+    ats: greenhouse
+    identifier: "cresta"
+    industry: [ai, saas]
+    homepage: "https://cresta.com/"
+  - name: "Cross River Bank"
+    ats: greenhouse
+    identifier: "crossriverbank"
+    industry: [fintech, crypto]
+    homepage: "https://www.crossriver.com/"
+  - name: "Crux"
+    ats: ashby
+    identifier: "crux"
+    industry: [american-dynamism, fintech]
+    homepage: "https://www.crux.com/"
+  - name: "Current"
+    ats: greenhouse
+    identifier: "current"
+    industry: [fintech]
+    homepage: "https://current.com/"
+  - name: "CX2"
+    ats: lever
+    identifier: "cx2"
+    industry: [american-dynamism]
+    homepage: "https://cx2.com"
+  - name: "Databricks"
+    ats: greenhouse
+    identifier: "databricks"
+    industry: [ai, saas]
+    homepage: "https://databricks.com"
+  - name: "Daylight"
+    ats: greenhouse
+    identifier: "daylight"
+    industry: [saas]
+    homepage: "https://godaylight.com"
+  - name: "Decagon"
+    ats: ashby
+    identifier: "decagon"
+    industry: [ai, saas]
+    homepage: "https://decagon.ai/"
+  - name: "Descript"
+    ats: greenhouse
+    identifier: "descript"
+    industry: [ai, consumer]
+    homepage: "https://www.descript.com/"
+  - name: "Dfinity"
+    ats: greenhouse
+    identifier: "dfinity"
+    industry: [saas]
+    homepage: "https://dfinity.org"
+  - name: "Dialpad"
+    ats: greenhouse
+    identifier: "dialpad"
+    industry: [saas]
+    homepage: "https://dialpad.com"
+  - name: "Diode"
+    ats: ashby
+    identifier: "diode"
+    industry: [american-dynamism]
+    homepage: "https://diode.computer/"
+  - name: "Dispatch"
+    ats: ashby
+    identifier: "dispatch"
+    industry: [consumer]
+    homepage: "https://dispatch.ai"
+  - name: "Doxel"
+    ats: lever
+    identifier: "doxel"
+    industry: [saas]
+    homepage: "https://www.doxel.ai/"
+  - name: "Dyno Therapeutics"
+    ats: greenhouse
+    identifier: "dynotherapeutics"
+    industry: [ai, healthtech]
+    homepage: "https://dynotx.com"
+  - name: "Earli"
+    ats: greenhouse
+    identifier: "earli"
+    industry: [healthtech]
+    homepage: "https://earli.com"
+  - name: "Earnin"
+    ats: greenhouse
+    identifier: "earnin"
+    industry: [fintech]
+    homepage: "https://www.earnin.com/"
+  - name: "Ease Health"
+    ats: ashby
+    identifier: "ease-health"
+    industry: [ai, healthtech]
+    homepage: "https://easehealth.com"
+  - name: "Eka Robotics"
+    ats: ashby
+    identifier: "ekarobotics"
+    industry: [saas]
+    homepage: "https://ekarobotics.com"
+  - name: "ElevenLabs"
+    ats: ashby
+    identifier: "elevenlabs"
+    industry: [ai, consumer, saas]
+    homepage: "https://elevenlabs.io/"
+  - name: "EliseAI"
+    ats: ashby
+    identifier: "eliseai"
+    industry: [ai, saas]
+    homepage: "https://www.eliseai.com"
+  - name: "Endra"
+    ats: ashby
+    identifier: "endra"
+    industry: [saas]
+    homepage: "https://endra.ai"
+  - name: "EngFlow"
+    ats: ashby
+    identifier: "engflow"
+    industry: [saas]
+    homepage: "https://www.engflow.com/"
+  - name: "Envoy"
+    ats: ashby
+    identifier: "envoy"
+    industry: [saas]
+    homepage: "https://envoy.com/"
+  - name: "Erasca"
+    ats: greenhouse
+    identifier: "erasca"
+    industry: [healthtech]
+    homepage: "https://www.erasca.com"
+  - name: "Espresso (Translucence Research Inc)"
+    ats: ashby
+    identifier: "espresso"
+    industry: [saas]
+    homepage: "https://espressosys.com"
+  - name: "Ethos"
+    ats: greenhouse
+    identifier: "ethos"
+    industry: [consumer]
+    homepage: "https://agent.askethos.com/"
+  - name: "Eve"
+    ats: greenhouse
+    identifier: "eve"
+    industry: [ai, saas]
+    homepage: "https://eve.legal"
+  - name: "Everlaw"
+    ats: greenhouse
+    identifier: "everlaw"
+    industry: [saas]
+    homepage: "https://www.everlaw.com/"
+  - name: "Exa"
+    ats: ashby
+    identifier: "exa"
+    industry: [saas]
+    homepage: "https://exa.ai"
+  - name: "Exowatt"
+    ats: lever
+    identifier: "exowatt"
+    industry: [american-dynamism]
+    homepage: "https://exowatt.com"
+  - name: "fal"
+    ats: ashby
+    identifier: "fal-ai"
+    industry: [ai, saas]
+    homepage: "https://fal.ai/"
+  - name: "Ferry Health"
+    ats: ashby
+    identifier: "ferryhealth"
+    industry: [ai, healthtech]
+    homepage: "https://ferry.health"
+  - name: "Figma"
+    ats: greenhouse
+    identifier: "figma"
+    industry: [saas]
+    homepage: "https://figma.com"
+  - name: "Filmhub"
+    ats: ashby
+    identifier: "filmhub"
+    industry: [consumer]
+    homepage: "https://filmhub.com/"
+  - name: "First Person Labs"
+    ats: ashby
+    identifier: "fpl"
+    industry: [saas]
+    homepage: "https://fpl.company"
+  - name: "Fivetran"
+    ats: greenhouse
+    identifier: "fivetran"
+    industry: [saas]
+    homepage: "https://fivetran.com"
+  - name: "Fleek"
+    ats: ashby
+    identifier: "fleek"
+    industry: [consumer]
+    homepage: "https://www.joinfleek.com/home"
+  - name: "Flexport"
+    ats: greenhouse
+    identifier: "flexport"
+    industry: [american-dynamism, saas]
+    homepage: "https://flexport.com"
+  - name: "Flock"
+    ats: ashby
+    identifier: "flock"
+    industry: [ai, american-dynamism, saas, govtech]
+    homepage: "https://www.flocksafety.com/"
+  - name: "Flock Homes"
+    ats: greenhouse
+    identifier: "flockhomes"
+    industry: [consumer, fintech]
+    homepage: "https://www.flockhomes.com/"
+  - name: "Fly.io"
+    ats: lever
+    identifier: "fly"
+    industry: [saas]
+    homepage: "https://fly.io/"
+  - name: "Formation Bio"
+    ats: greenhouse
+    identifier: "formationbio"
+    industry: [healthtech]
+    homepage: "https://www.formation.bio/"
+  - name: "Fortuna Health"
+    ats: ashby
+    identifier: "fortuna-health"
+    industry: [ai, healthtech]
+    homepage: "https://fortunahealth.com"
+  - name: "Forward"
+    ats: greenhouse
+    identifier: "forwardnetworks"
+    industry: [saas]
+    homepage: "https://www.forwardnetworks.com/"
+  - name: "Foundation"
+    ats: ashby
+    identifier: "foundation"
+    industry: [crypto]
+    homepage: "https://foundation.app"
+  - name: "Freenome"
+    ats: greenhouse
+    identifier: "freenome"
+    industry: [ai, healthtech]
+    homepage: "https://www.freenome.com/"
+  - name: "FurtherAI"
+    ats: ashby
+    identifier: "furtherai"
+    industry: [fintech]
+    homepage: "https://furtherai.com"
+  - name: "Gamma.app"
+    ats: ashby
+    identifier: "gamma"
+    industry: [saas]
+    homepage: "https://www.gamma.app"
+  - name: "General Medicine"
+    ats: ashby
+    identifier: "general-medicine"
+    industry: [healthtech, fintech]
+    homepage: "https://generalmedicine.co"
+  - name: "General Translation"
+    ats: ashby
+    identifier: "generaltranslation"
+    industry: [saas]
+    homepage: "https://generaltranslation.com"
+  - name: "Gensyn"
+    ats: greenhouse
+    identifier: "gensyn"
+    industry: [ai, saas]
+    homepage: "https://gensyn.ai"
+  - name: "Gimlet Labs"
+    ats: ashby
+    identifier: "gimlet"
+    industry: [saas]
+    homepage: "https://gimletlabs.ai"
+  - name: "Glimpse"
+    ats: ashby
+    identifier: "glimpse"
+    industry: [fintech, ai]
+    homepage: "https://tryglimpse.com"
+  - name: "Glow"
+    ats: ashby
+    identifier: "glow"
+    industry: [consumer]
+    homepage: "https://glowing.com/"
+  - name: "gooddata.ai"
+    ats: ashby
+    identifier: "gooddata"
+    industry: [saas]
+    homepage: "https://www.gooddata.ai/"
+  - name: "Greenlight"
+    ats: lever
+    identifier: "greenlight"
+    industry: [fintech]
+    homepage: "https://greenlight.com/"
+  - name: "Groupon, Inc."
+    ats: greenhouse
+    identifier: "groupon"
+    industry: [consumer]
+    homepage: "https://www.groupon.com/"
+  - name: "Harbor"
+    ats: ashby
+    identifier: "harbor"
+    industry: [crypto]
+    homepage: "https://harbor.com/"
+  - name: "Harvey"
+    ats: ashby
+    identifier: "harvey"
+    industry: [saas]
+    homepage: "https://www.harvey.ai/"
+  - name: "Headway"
+    ats: ashby
+    identifier: "headway"
+    industry: [healthtech, fintech]
+    homepage: "https://headway.co/"
+  - name: "Hedra"
+    ats: ashby
+    identifier: "hedra"
+    industry: [saas]
+    homepage: "https://www.hedra.com/"
+  - name: "Heron Power"
+    ats: ashby
+    identifier: "heron-power"
+    industry: [american-dynamism]
+    homepage: "https://heronpower.com"
+  - name: "Hex"
+    ats: ashby
+    identifier: "hex"
+    industry: [ai, saas]
+    homepage: "https://hex.tech/"
+  - name: "Honor"
+    ats: greenhouse
+    identifier: "honor"
+    industry: [healthtech]
+    homepage: "https://www.joinhonor.com/"
+  - name: "hyperexponential"
+    ats: ashby
+    identifier: "hyperexponential"
+    industry: [fintech]
+    homepage: "https://hyperexponential.com"
+  - name: "Ideogram"
+    ats: ashby
+    identifier: "ideogram"
+    industry: [ai, consumer, saas]
+    homepage: "https://ideogram.ai"
+  - name: "Illumio"
+    ats: ashby
+    identifier: "illumio"
+    industry: [saas, cybersecurity]
+    homepage: "https://www.illumio.com"
+  - name: "Imply"
+    ats: greenhouse
+    identifier: "imply"
+    industry: [saas]
+    homepage: "https://imply.io/"
+  - name: "Improbable"
+    ats: ashby
+    identifier: "improbable"
+    industry: [healthtech, games]
+    homepage: "https://www.improbable.io/"
+  - name: "Inceptive"
+    ats: greenhouse
+    identifier: "inceptive"
+    industry: [ai, healthtech]
+    homepage: "https://inceptive.life"
+  - name: "Inductive Bio"
+    ats: ashby
+    identifier: "inductive-bio"
+    industry: [ai, healthtech]
+    homepage: "https://inductive.bio"
+  - name: "Inferact"
+    ats: ashby
+    identifier: "inferact"
+    industry: [ai, saas]
+    homepage: "https://Inferact.ai"
+  - name: "Infinite Machine"
+    ats: ashby
+    identifier: "infinite-machine"
+    industry: [american-dynamism]
+    homepage: "https://infinitemachine.com"
+  - name: "Infinitus"
+    ats: ashby
+    identifier: "infinitus"
+    industry: [ai, healthtech]
+    homepage: "https://infinitus.ai/"
+  - name: "Inngest"
+    ats: ashby
+    identifier: "inngest"
+    industry: [saas]
+    homepage: "https://www.inngest.com/"
+  - name: "Insitro"
+    ats: ashby
+    identifier: "insitro"
+    industry: [ai, healthtech]
+    homepage: "https://www.insitro.com/"
+  - name: "Instacart"
+    ats: greenhouse
+    identifier: "instacart"
+    industry: [consumer]
+    homepage: "https://instacart.com"
+  - name: "Intro"
+    ats: ashby
+    identifier: "intro"
+    industry: [consumer]
+    homepage: "https://intro.co"
+  - name: "Jeeves"
+    ats: lever
+    identifier: "tryjeeves"
+    industry: [fintech]
+    homepage: "https://tryjeeves.com/"
+  - name: "Jito"
+    ats: lever
+    identifier: "jito"
+    industry: [saas]
+    homepage: "https://www.jito.network/"
+  - name: "k-ID"
+    ats: ashby
+    identifier: "k-id"
+    industry: [saas]
+    homepage: "https://k-id.com/"
+  - name: "Kaizen"
+    ats: ashby
+    identifier: "kaizenlabs"
+    industry: [deftech, american-dynamism]
+    homepage: "https://www.kaizenlabs.com/"
+  - name: "Kalshi"
+    ats: ashby
+    identifier: "kalshi"
+    industry: [saas]
+    homepage: "https://www.kalshi.com"
+  - name: "Kavak"
+    ats: lever
+    identifier: "kavak"
+    industry: [saas]
+    homepage: "https://kavak.com"
+  - name: "Keycard"
+    ats: greenhouse
+    identifier: "keycard"
+    industry: [saas]
+    homepage: "https://www.keycard.ai/"
+  - name: "Kindred"
+    ats: ashby
+    identifier: "kindred"
+    industry: [consumer]
+    homepage: "https://livekindred.com/"
+  - name: "Knownwell"
+    ats: ashby
+    identifier: "knownwell"
+    industry: [ai, healthtech]
+    homepage: "https://www.knownwell.co/"
+  - name: "KoBold Metals"
+    ats: greenhouse
+    identifier: "koboldmetals"
+    industry: [ai, american-dynamism, saas]
+    homepage: "https://www.koboldmetals.com"
+  - name: "Kodex"
+    ats: ashby
+    identifier: "kodex"
+    industry: [american-dynamism, govtech]
+    homepage: "https://www.kodexglobal.com/"
+  - name: "Kong"
+    ats: ashby
+    identifier: "kong"
+    industry: [saas]
+    homepage: "https://konghq.com"
+  - name: "Krea"
+    ats: ashby
+    identifier: "krea"
+    industry: [ai, consumer]
+    homepage: "https://Krea.ai"
+  - name: "Labelbox"
+    ats: greenhouse
+    identifier: "labelbox"
+    industry: [ai, saas]
+    homepage: "https://labelbox.com/"
+  - name: "Lassie"
+    ats: ashby
+    identifier: "lassie"
+    industry: [saas, ai]
+    homepage: "https://www.lassie.ai/"
+  - name: "LayerZero"
+    ats: greenhouse
+    identifier: "layerzerolabs"
+    industry: [crypto]
+    homepage: "https://layerzero.network"
+  - name: "Leona Health"
+    ats: ashby
+    identifier: "leona"
+    industry: [ai, healthtech]
+    homepage: "https://leona.health"
+  - name: "Lightfield"
+    ats: ashby
+    identifier: "lightfield"
+    industry: [saas]
+    homepage: "https://lightfield.com/"
+  - name: "Lightspark"
+    ats: ashby
+    identifier: "lightspark"
+    industry: [crypto]
+    homepage: "https://lightspark.com"
+  - name: "Linq"
+    ats: ashby
+    identifier: "linqapp"
+    industry: [saas, ai]
+    homepage: "https://linqapp.com/"
+  - name: "Lio"
+    ats: ashby
+    identifier: "lio"
+    industry: [saas]
+    homepage: "https://lio.ai/"
+  - name: "Longitude Labs"
+    ats: ashby
+    identifier: "longitudelabs"
+    industry: [ai, saas]
+    homepage: "https://longitudelabs.com/"
+  - name: "Lookout"
+    ats: greenhouse
+    identifier: "lookout"
+    industry: [saas]
+    homepage: "https://lookout.com"
+  - name: "LTSE Services, Inc."
+    ats: greenhouse
+    identifier: "ltse"
+    industry: [fintech]
+    homepage: "https://ltse.com"
+  - name: "Lumos"
+    ats: ashby
+    identifier: "lumos"
+    industry: [saas]
+    homepage: "https://lumos.com/"
+  - name: "Lyft"
+    ats: greenhouse
+    identifier: "lyft"
+    industry: [consumer]
+    homepage: "https://lyft.com"
+  - name: "Mariana Minerals"
+    ats: ashby
+    identifier: "marianaminerals"
+    industry: [american-dynamism]
+    homepage: "https://marianaminerals.com"
+  - name: "Matik"
+    ats: greenhouse
+    identifier: "matik"
+    industry: [saas]
+    homepage: "https://www.matik.ai/"
+  - name: "Matter Labs"
+    ats: ashby
+    identifier: "matter-labs"
+    industry: [crypto]
+    homepage: "https://matter-labs.io"
+  - name: "Maven"
+    ats: ashby
+    identifier: "maven"
+    industry: [consumer]
+    homepage: "https://maven.com/"
+  - name: "Maze Therapeutics"
+    ats: greenhouse
+    identifier: "mazetherapeutics"
+    industry: [healthtech]
+    homepage: "https://mazetx.com/"
+  - name: "Medium"
+    ats: greenhouse
+    identifier: "medium"
+    industry: [consumer]
+    homepage: "https://medium.com/"
+  - name: "Mercury"
+    ats: greenhouse
+    identifier: "mercury"
+    industry: [fintech]
+    homepage: "https://mercury.com/"
+  - name: "Method"
+    ats: greenhouse
+    identifier: "method"
+    industry: [fintech]
+    homepage: "https://methodfi.com/"
+  - name: "Midstream Health"
+    ats: ashby
+    identifier: "midstream"
+    industry: [ai, healthtech]
+    homepage: "https://midstream.health"
+  - name: "Mind Robotics"
+    ats: ashby
+    identifier: "mindrobotics"
+    industry: [saas]
+    homepage: "https://www.mindrobotics.com/"
+  - name: "Mintlify"
+    ats: ashby
+    identifier: "mintlify"
+    industry: [saas]
+    homepage: "https://mintlify.com/"
+  - name: "Mirage"
+    ats: ashby
+    identifier: "mirage"
+    industry: [ai, consumer]
+    homepage: "https://mirage.app/"
+  - name: "Mirelo AI"
+    ats: ashby
+    identifier: "mirelo"
+    industry: [saas]
+    homepage: "https://mirelo.ai"
+  - name: "Mirendil"
+    ats: ashby
+    identifier: "mirendil"
+    industry: [saas, ai]
+    homepage: "https://Mirendil.com"
+  - name: "Mixpanel"
+    ats: greenhouse
+    identifier: "mixpanel"
+    industry: [saas]
+    homepage: "https://mixpanel.com/"
+  - name: "ModernFi"
+    ats: ashby
+    identifier: "modernfi"
+    industry: [fintech]
+    homepage: "https://modernfi.com/"
+  - name: "Moment"
+    ats: ashby
+    identifier: "moment"
+    industry: [fintech]
+    homepage: "https://moment.com/"
+  - name: "Morpho"
+    ats: ashby
+    identifier: "morpho"
+    industry: [fintech]
+    homepage: "https://morpho.xyz"
+  - name: "Mosaic"
+    ats: ashby
+    identifier: "mosaic"
+    industry: [fintech]
+    homepage: "https://mosaic.us/"
+  - name: "Motherduck"
+    ats: ashby
+    identifier: "motherduck"
+    industry: [saas]
+    homepage: "https://motherduck.com"
+  - name: "Mux"
+    ats: ashby
+    identifier: "mux"
+    industry: [saas]
+    homepage: "https://mux.com"
+  - name: "Mysten Labs"
+    ats: ashby
+    identifier: "mystenlabs"
+    industry: [crypto]
+    homepage: "https://mystenlabs.com"
+  - name: "Nash"
+    ats: ashby
+    identifier: "nash"
+    industry: [consumer]
+    homepage: "https://www.nash.ai/"
+  - name: "Neighbor"
+    ats: lever
+    identifier: "neighbor"
+    industry: [consumer]
+    homepage: "https://www.neighbor.com/"
+  - name: "Netlify"
+    ats: greenhouse
+    identifier: "netlify"
+    industry: [saas]
+    homepage: "https://netlify.com"
+  - name: "Northwood Space"
+    ats: ashby
+    identifier: "northwoodspace"
+    industry: [american-dynamism]
+    homepage: "https://northwoodspace.io"
+  - name: "Octant Bio"
+    ats: greenhouse
+    identifier: "octantbio"
+    industry: [healthtech]
+    homepage: "https://www.octant.bio/"
+  - name: "Odyssey"
+    ats: ashby
+    identifier: "odyssey"
+    industry: [american-dynamism]
+    homepage: "https://withodyssey.com"
+  - name: "OfferUp"
+    ats: greenhouse
+    identifier: "offerup"
+    industry: [consumer]
+    homepage: "https://offerup.com/"
+  - name: "Omada Health"
+    ats: greenhouse
+    identifier: "omadahealth"
+    industry: [ai, healthtech]
+    homepage: "https://www.omadahealth.com/"
+  - name: "OpenAI"
+    ats: ashby
+    identifier: "openai"
+    industry: [ai, saas]
+    homepage: "https://openai.com/"
+  - name: "OpenEvidence"
+    ats: ashby
+    identifier: "openevidence"
+    industry: [healthtech, ai]
+    homepage: "https://www.openevidence.com/about"
+  - name: "Orderful"
+    ats: ashby
+    identifier: "orderful"
+    industry: [saas]
+    homepage: "https://www.orderful.com/"
+  - name: "Ornn"
+    ats: ashby
+    identifier: "ornn"
+    industry: [saas]
+    homepage: "https://ornn.com/"
+  - name: "Otter"
+    ats: greenhouse
+    identifier: "otter"
+    industry: [consumer]
+    homepage: "https://withotter.com/"
+  - name: "PagerDuty"
+    ats: greenhouse
+    identifier: "pagerduty"
+    industry: [saas]
+    homepage: "https://pagerduty.com"
+  - name: "Palmstreet"
+    ats: ashby
+    identifier: "palmstreet"
+    industry: [consumer]
+    homepage: "https://palmstreet.app/"
+  - name: "Patch"
+    ats: lever
+    identifier: "patch"
+    industry: [consumer]
+    homepage: "https://www.patch.io"
+  - name: "Payrails"
+    ats: ashby
+    identifier: "payrails"
+    industry: [fintech]
+    homepage: "https://payrails.com/"
+  - name: "Pearl Health"
+    ats: ashby
+    identifier: "pearlhealth"
+    industry: [healthtech]
+    homepage: "https://pearlhealth.com/"
+  - name: "Periodic Labs"
+    ats: ashby
+    identifier: "periodic-labs"
+    industry: [saas, ai]
+    homepage: "https://periodic.com/"
+  - name: "Petual"
+    ats: ashby
+    identifier: "petual"
+    industry: [fintech, ai]
+    homepage: "https://www.petual.ai/"
+  - name: "Phantom"
+    ats: ashby
+    identifier: "phantom"
+    industry: [crypto]
+    homepage: "https://phantom.com/"
+  - name: "Phylo"
+    ats: ashby
+    identifier: "phylo"
+    industry: [ai, healthtech]
+    homepage: "https://phylo.bio"
+  - name: "Pinecone"
+    ats: ashby
+    identifier: "pinecone"
+    industry: [ai, saas]
+    homepage: "https://www.pinecone.io/"
+  - name: "Pinterest"
+    ats: greenhouse
+    identifier: "pinterest"
+    industry: [consumer]
+    homepage: "https://pinterest.com"
+  - name: "Plaid"
+    ats: ashby
+    identifier: "plaid"
+    industry: [fintech]
+    homepage: "https://plaid.com"
+  - name: "PlanetScale"
+    ats: greenhouse
+    identifier: "planetscale"
+    industry: [saas]
+    homepage: "https://planetscale.com/"
+  - name: "Podium Automation"
+    ats: ashby
+    identifier: "podium-automation"
+    industry: [american-dynamism]
+    homepage: "https://podiumautomation.com"
+  - name: "Pomelo Care"
+    ats: ashby
+    identifier: "pomelo-care"
+    industry: [ai, healthtech]
+    homepage: "https://pomelocare.com"
+  - name: "Preference Model"
+    ats: ashby
+    identifier: "preference-model"
+    industry: [saas, ai]
+    homepage: "https://preferencemodel.com"
+  - name: "Probook"
+    ats: ashby
+    identifier: "probook"
+    industry: [saas]
+    homepage: "https://probook.ai"
+  - name: "Promise"
+    ats: ashby
+    identifier: "promise"
+    industry: [saas]
+    homepage: "https://www.promise.ai/"
+  - name: "Proof Holdings"
+    ats: greenhouse
+    identifier: "proof"
+    industry: [saas]
+    homepage: "https://proof.xyz"
+  - name: "Propel"
+    ats: ashby
+    identifier: "propel"
+    industry: [healthtech, fintech]
+    homepage: "https://www.propel.app/"
+  - name: "Prosper AI"
+    ats: ashby
+    identifier: "prosper-ai"
+    industry: [healthtech]
+    homepage: "https://getprosper.ai"
+  - name: "Protege"
+    ats: ashby
+    identifier: "protege"
+    industry: [ai, healthtech]
+    homepage: "https://withprotege.ai"
+  - name: "Pylon"
+    ats: ashby
+    identifier: "pylon"
+    industry: [saas]
+    homepage: "https://www.usepylon.com/"
+  - name: "Quora"
+    ats: ashby
+    identifier: "quora"
+    industry: [saas]
+    homepage: "https://quora.com"
+  - name: "Radiant"
+    ats: ashby
+    identifier: "radiant"
+    industry: [deftech, american-dynamism]
+    homepage: "https://radiantnuclear.com"
+  - name: "Rasa"
+    ats: ashby
+    identifier: "rasa"
+    industry: [ai, saas]
+    homepage: "https://rasa.com"
+  - name: "Raspberry AI"
+    ats: ashby
+    identifier: "raspberry"
+    industry: [ai, consumer, saas]
+    homepage: "https://www.raspberry.ai/"
+  - name: "Reddit"
+    ats: greenhouse
+    identifier: "reddit"
+    industry: [consumer]
+    homepage: "https://redditinc.com"
+  - name: "Reducto"
+    ats: ashby
+    identifier: "reducto"
+    industry: [saas]
+    homepage: "https://reducto.ai"
+  - name: "Relace"
+    ats: ashby
+    identifier: "relace"
+    industry: [saas]
+    homepage: "https://relace.ai"
+  - name: "Relay"
+    ats: ashby
+    identifier: "relay"
+    industry: [saas]
+    homepage: "https://relay.app"
+  - name: "Replit"
+    ats: ashby
+    identifier: "replit"
+    industry: [ai, consumer, saas]
+    homepage: "https://replit.com"
+  - name: "Resend"
+    ats: ashby
+    identifier: "resend"
+    industry: [saas]
+    homepage: "https://resend.com/"
+  - name: "Rezo Therapeutics"
+    ats: lever
+    identifier: "rezotx"
+    industry: [ai, healthtech]
+    homepage: "https://rezotx.com"
+  - name: "Rigetti Quantum Computing"
+    ats: lever
+    identifier: "rigetti"
+    industry: [healthtech]
+    homepage: "https://rigetti.com"
+  - name: "Rigup"
+    ats: greenhouse
+    identifier: "rigup"
+    industry: [american-dynamism, saas]
+    homepage: "https://www.rigup.com/"
+  - name: "Rillet"
+    ats: ashby
+    identifier: "rillet"
+    industry: [ai, fintech]
+    homepage: "https://www.rillet.com"
+  - name: "Robinhood"
+    ats: greenhouse
+    identifier: "robinhood"
+    industry: [fintech]
+    homepage: "https://robinhood.com"
+  - name: "Roblox"
+    ats: greenhouse
+    identifier: "roblox"
+    industry: [saas]
+    homepage: "http://corp.roblox.com"
+  - name: "ROME Therapeutics"
+    ats: greenhouse
+    identifier: "rometherapeutics"
+    industry: [healthtech]
+    homepage: "https://rometx.com/home/"
+  - name: "Rune Technologies"
+    ats: ashby
+    identifier: "runetech"
+    industry: [american-dynamism]
+    homepage: "https://www.runetech.co/"
+  - name: "Runta"
+    ats: ashby
+    identifier: "runta"
+    industry: [saas, ai]
+    homepage: "https://runta.com"
+  - name: "Salient"
+    ats: ashby
+    identifier: "salient"
+    industry: [saas]
+    homepage: "https://www.trysalient.com/"
+  - name: "Samsara"
+    ats: greenhouse
+    identifier: "samsara"
+    industry: [american-dynamism, saas]
+    homepage: "https://samsara.com"
+  - name: "Sandbox VR"
+    ats: lever
+    identifier: "sandboxvr"
+    industry: [games]
+    homepage: "https://sandboxvr.com/"
+  - name: "Sardine"
+    ats: ashby
+    identifier: "sardine"
+    industry: [ai, fintech]
+    homepage: "https://www.sardine.ai/"
+  - name: "Saronic"
+    ats: ashby
+    identifier: "saronic"
+    industry: [deftech, ai, american-dynamism]
+    homepage: "https://www.saronic.com/"
+  - name: "Senra Systems"
+    ats: greenhouse
+    identifier: "senrasystems"
+    industry: [american-dynamism]
+    homepage: "https://www.senrasystems.us/"
+  - name: "SentiLink"
+    ats: ashby
+    identifier: "sentilink"
+    industry: [saas, fintech]
+    homepage: "https://www.sentilink.com/"
+  - name: "Sesame"
+    ats: ashby
+    identifier: "sesame"
+    industry: [ai, consumer]
+    homepage: "https://www.sesame.com"
+  - name: "Setpoint.io"
+    ats: greenhouse
+    identifier: "setpoint"
+    industry: [fintech]
+    homepage: "https://www.setpoint.io"
+  - name: "Sky Mavis"
+    ats: ashby
+    identifier: "skymavis"
+    industry: [crypto]
+    homepage: "https://skymavis.com"
+  - name: "Sleeper"
+    ats: ashby
+    identifier: "sleeper"
+    industry: [games]
+    homepage: "https://sleeper.com"
+  - name: "Slingshot AI"
+    ats: ashby
+    identifier: "slingshotai"
+    industry: [ai, healthtech]
+    homepage: "https://www.slingshot.xyz/"
+  - name: "Snackpass"
+    ats: ashby
+    identifier: "snackpass"
+    industry: [consumer]
+    homepage: "https://snackpass.co"
+  - name: "SnapLogic"
+    ats: lever
+    identifier: "snaplogic"
+    industry: [saas]
+    homepage: "https://www.snaplogic.com/"
+  - name: "Sola"
+    ats: ashby
+    identifier: "sola"
+    industry: [saas]
+    homepage: "https://www.sola.ai/"
+  - name: "SpaceXSI"
+    ats: greenhouse
+    identifier: "spacex"
+    industry: [american-dynamism]
+    homepage: "https://x.ai"
+  - name: "Spade"
+    ats: ashby
+    identifier: "spade"
+    industry: [fintech]
+    homepage: "https://spade.com"
+  - name: "Specter"
+    ats: ashby
+    identifier: "specter"
+    industry: [american-dynamism]
+    homepage: "https://specter.co"
+  - name: "Sphere"
+    ats: ashby
+    identifier: "sphere"
+    industry: [saas, fintech]
+    homepage: "https://getsphere.com"
+  - name: "SpotOn"
+    ats: ashby
+    identifier: "spoton"
+    industry: [saas, fintech]
+    homepage: "https://spoton.com"
+  - name: "Sprig"
+    ats: ashby
+    identifier: "sprig"
+    industry: [saas]
+    homepage: "https://sprig.com"
+  - name: "Sprinter Health"
+    ats: ashby
+    identifier: "sprinter-health"
+    industry: [ai, healthtech]
+    homepage: "https://sprinterhealth.com"
+  - name: "Spruce Systems"
+    ats: ashby
+    identifier: "spruceid"
+    industry: [saas]
+    homepage: "https://spruceid.com"
+  - name: "Stacker"
+    ats: ashby
+    identifier: "stacker"
+    industry: [saas]
+    homepage: "https://stacker.ai/"
+  - name: "Starburst"
+    ats: greenhouse
+    identifier: "starburst"
+    industry: [saas]
+    homepage: "https://www.starburst.io/"
+  - name: "Stripe"
+    ats: greenhouse
+    identifier: "stripe"
+    industry: [fintech]
+    homepage: "https://stripe.com"
+  - name: "Substack"
+    ats: ashby
+    identifier: "substack"
+    industry: [consumer]
+    homepage: "https://substack.com/"
+  - name: "SuperApp"
+    ats: greenhouse
+    identifier: "superapp"
+    industry: [ai, saas]
+    homepage: "https://superapp.chat/"
+  - name: "Supermove"
+    ats: lever
+    identifier: "supermove"
+    industry: [saas]
+    homepage: "https://supermove.com"
+  - name: "Svix"
+    ats: ashby
+    identifier: "svix"
+    industry: [saas]
+    homepage: "https://svix.com/"
+  - name: "Swan"
+    ats: ashby
+    identifier: "swan"
+    industry: [american-dynamism]
+    homepage: "https://www.swan.tech/"
+  - name: "Tako"
+    ats: ashby
+    identifier: "tako"
+    industry: [fintech]
+    homepage: "https://tako.ai/"
+  - name: "Talos"
+    ats: ashby
+    identifier: "talos-trading"
+    industry: [crypto]
+    homepage: "https://talos.com"
+  - name: "Tanium"
+    ats: greenhouse
+    identifier: "tanium"
+    industry: [saas]
+    homepage: "https://tanium.com"
+  - name: "Temporal"
+    ats: ashby
+    identifier: "temporal"
+    industry: [saas]
+    homepage: "https://temporal.io"
+  - name: "Tessera Labs"
+    ats: ashby
+    identifier: "tessera-labs"
+    industry: [saas]
+    homepage: "https://tesseralabs.ai"
+  - name: "Thatch Health"
+    ats: greenhouse
+    identifier: "thatch"
+    industry: [ai, healthtech, fintech]
+    homepage: "https://thatch.ai/"
+  - name: "The Horowitz Andreessen Academy (HAA)"
+    ats: ashby
+    identifier: "theacademysf"
+    industry: [saas]
+    homepage: "https://theacademysf.com/"
+  - name: "Thyme Care"
+    ats: ashby
+    identifier: "thyme-care"
+    industry: [healthtech]
+    homepage: "https://www.thymecare.com/"
+  - name: "Titan"
+    ats: ashby
+    identifier: "titan"
+    industry: [fintech]
+    homepage: "https://titan.com"
+  - name: "Tomorrow Health"
+    ats: greenhouse
+    identifier: "tomorrowhealth"
+    industry: [healthtech]
+    homepage: "https://home.tomorrowhealth.com/"
+  - name: "Town"
+    ats: ashby
+    identifier: "town"
+    industry: [saas]
+    homepage: "https://town.com"
+  - name: "Truemed"
+    ats: ashby
+    identifier: "truemed"
+    industry: [ai, healthtech]
+    homepage: "https://truemed.com"
+  - name: "Truffle Security"
+    ats: greenhouse
+    identifier: "trufflesecurity"
+    industry: [saas, cybersecurity]
+    homepage: "https://trufflesecurity.com/"
+  - name: "Turquoise Health"
+    ats: ashby
+    identifier: "turquoise-health"
+    industry: [ai, healthtech]
+    homepage: "https://turquoise.health/"
+  - name: "Tutor Intelligence"
+    ats: ashby
+    identifier: "tutor-intelligence"
+    industry: [saas]
+    homepage: "https://tutorintelligence.com/"
+  - name: "TypeSafe AI"
+    ats: ashby
+    identifier: "typesafe-ai"
+    industry: [saas]
+    homepage: "http://typesafe.ai/"
+  - name: "Udio"
+    ats: greenhouse
+    identifier: "udio"
+    industry: [consumer, saas]
+    homepage: "https://www.udio.com/"
+  - name: "Ultima Genomics"
+    ats: greenhouse
+    identifier: "ultimagenomics"
+    industry: [ai, healthtech]
+    homepage: "https://ultimagenomics.com"
+  - name: "UnifyID"
+    ats: ashby
+    identifier: "unify"
+    industry: [saas]
+    homepage: "https://unify.id"
+  - name: "Uniswap"
+    ats: ashby
+    identifier: "uniswap"
+    industry: [crypto]
+    homepage: "https://uniswap.org"
+  - name: "Universal"
+    ats: greenhouse
+    identifier: "universal"
+    industry: [saas]
+    homepage: "https://www.universal.xyz/"
+  - name: "Uplift"
+    ats: greenhouse
+    identifier: "uplift"
+    industry: [american-dynamism]
+    homepage: "https://uplift.us"
+  - name: "Valkryn"
+    ats: ashby
+    identifier: "valkryn"
+    industry: [deftech, american-dynamism]
+    homepage: "https://valkryn.co"
+  - name: "Valon"
+    ats: ashby
+    identifier: "valon"
+    industry: [fintech]
+    homepage: "https://www.valon.ai/"
+  - name: "Vals AI"
+    ats: ashby
+    identifier: "vals-ai"
+    industry: [saas]
+    homepage: "https://vals.ai/"
+  - name: "Vantage"
+    ats: ashby
+    identifier: "vantage"
+    industry: [saas]
+    homepage: "https://www.vantage.sh/"
+  - name: "Ventus Therapeutics"
+    ats: greenhouse
+    identifier: "ventustherapeutics"
+    industry: [ai, healthtech]
+    homepage: "https://www.ventustx.com/"
+  - name: "Vesta"
+    ats: ashby
+    identifier: "vesta"
+    industry: [fintech]
+    homepage: "https://vesta.com/"
+  - name: "Viggle"
+    ats: ashby
+    identifier: "viggle"
+    industry: [ai, consumer]
+    homepage: "https://viggle.ai/"
+  - name: "Vitally"
+    ats: ashby
+    identifier: "vitally"
+    industry: [saas]
+    homepage: "https://vitally.io/"
+  - name: "Voldex"
+    ats: ashby
+    identifier: "voldex"
+    industry: [games]
+    homepage: "https://voldex.com/"
+  - name: "Volta"
+    ats: ashby
+    identifier: "volta"
+    industry: [saas]
+    homepage: "https://volta.com/"
+  - name: "Waymark"
+    ats: greenhouse
+    identifier: "waymark"
+    industry: [ai, healthtech]
+    homepage: "https://www.waymarkcare.com/"
+  - name: "Waymo"
+    ats: greenhouse
+    identifier: "waymo"
+    industry: [ai, saas]
+    homepage: "https://waymo.com"
+  - name: "Westmag"
+    ats: ashby
+    identifier: "westmag"
+    industry: [american-dynamism]
+    homepage: "https://www.westmag.com/"
+  - name: "Wingspan"
+    ats: greenhouse
+    identifier: "wingspan"
+    industry: [saas, fintech]
+    homepage: "https://www.wingspan.app/"
+  - name: "Wise"
+    ats: greenhouse
+    identifier: "wise"
+    industry: [fintech]
+    homepage: "https://wise.com/"
+  - name: "Wonderschool"
+    ats: greenhouse
+    identifier: "wonderschool"
+    industry: [american-dynamism, consumer]
+    homepage: "https://www.wonderschool.com"
+  - name: "WorkBoard"
+    ats: greenhouse
+    identifier: "workboard"
+    industry: [saas]
+    homepage: "https://workboard.com"
+  - name: "Wrapbook"
+    ats: ashby
+    identifier: "wrapbook"
+    industry: [saas, fintech]
+    homepage: "https://www.wrapbook.com/"
+  - name: "XDOF"
+    ats: ashby
+    identifier: "xdof"
+    industry: [american-dynamism]
+    homepage: "https://www.xdof.ai/"
+  - name: "Yubico"
+    ats: greenhouse
+    identifier: "yubico"
+    industry: [saas]
+    homepage: "https://www.yubico.com/"
+  - name: "Yuno"
+    ats: lever
+    identifier: "yuno"
+    industry: [fintech]
+    homepage: "https://y.uno/"
+  - name: "ZeroMark"
+    ats: ashby
+    identifier: "zeromark"
+    industry: [deftech, american-dynamism, govtech]
+    homepage: "https://zeromark.com"
+  - name: "Zipline"
+    ats: greenhouse
+    identifier: "flyzipline"
+    industry: [ai, american-dynamism, consumer]
+    homepage: "https://www.zipline.com/"
+  - name: "Zuma"
+    ats: lever
+    identifier: "getzuma"
+    industry: [ai, consumer]
+    homepage: "https://www.getzuma.com/"
+  - name: "Zus Health"
+    ats: ashby
+    identifier: "zus-health"
+    industry: [ai, healthtech]
+    homepage: "https://zushealth.com/"

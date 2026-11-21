@@ -9,6 +9,9 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .models import DEFAULT_PRIORITY, Job
+from .tagging import html_to_text
+
+SNIPPET_CHARS = 280
 
 
 def _load_prior(path: Path) -> list[dict]:
@@ -35,6 +38,24 @@ def _atomic_write(path: Path, payload: dict) -> None:
             os.unlink(tmp)
 
 
+def snippet(description_html: str | None, limit: int = SNIPPET_CHARS) -> str | None:
+    """Short plain-text preview of a description, cut at a word boundary."""
+    text = html_to_text(description_html)
+    if not text:
+        return None
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def _public_dict(job: Job) -> dict:
+    """What goes in jobs.json. Full descriptions stay out: they were ~90% of the file and
+    the site doesn't show them (PLAN.md Phase 3). Tagging reads them during the scrape."""
+    d = job.to_dict()
+    d["snippet"] = snippet(d.pop("description_html", None))
+    return d
+
+
 def merge_and_write(
     jobs: list[Job],
     meta: dict,
@@ -59,7 +80,7 @@ def merge_and_write(
     # Current run's jobs: carry forward first_seen, refresh last_seen.
     current: dict[str, dict] = {}
     for job in jobs:
-        d = job.to_dict()
+        d = _public_dict(job)
         was = prior_by_id.get(job.id)
         d["first_seen"] = (was.get("first_seen") if was else None) or today
         d["last_seen"] = today
