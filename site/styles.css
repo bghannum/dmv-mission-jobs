@@ -141,17 +141,23 @@ main { display: flex; flex-direction: column; gap: 24px; padding-top: 32px; padd
 
 /* filters */
 .filters { padding: 20px; display: flex; flex-direction: column; gap: 14px; }
-.filter-row { display: flex; flex-wrap: wrap; gap: 12px; }
+/* Fixed grid: each control gets a set share of the row, so changing a selection (and so
+   the text inside a dropdown) never reflows its neighbours. */
+.filter-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
+.filter-grid .search { grid-column: span 2; }
+@media (max-width: 1000px) {
+  .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .field {
   display: flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 14px;
   background: var(--surface-input); border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-field);
 }
 .field:focus-within { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(79, 227, 209, 0.15); }
-.field.search { flex: 2 1 280px; color: var(--muted); }
-.field.select { flex: 1 1 170px; }
+.field.search { color: var(--muted); }
+.field.select { min-width: 0; }
 .field input, .field select {
-  flex: 1; min-width: 0; height: 44px; background: transparent; border: 0; outline: none; color: var(--text);
+  flex: 1; min-width: 0; width: 100%; text-overflow: ellipsis; height: 44px; background: transparent; border: 0; outline: none; color: var(--text);
 }
 .field input::placeholder { color: var(--muted); }
 .field select { appearance: none; -webkit-appearance: none; cursor: pointer; padding-right: 18px;
@@ -207,7 +213,7 @@ select option { background: #16181e; color: var(--text); }
 /* ---------- job cards ---------- */
 .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
 .card {
-  position: relative; display: flex; flex-direction: column; gap: 14px; padding: 20px;
+  position: relative; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 20px;
   background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border); border-radius: var(--radius-card);
   transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
 }
@@ -291,14 +297,16 @@ select option { background: #16181e; color: var(--text); }
   .stat dd { font-size: 22px; }
   .filters { padding: 14px; }
   /* Dropdowns two per row so the results start sooner on a phone. */
-  .filter-row { gap: 8px; }
+  .filter-grid { gap: 8px; }
   .field.select {
-    flex: 1 1 calc(50% - 4px); min-width: 0; flex-direction: column; align-items: stretch;
+    flex-direction: column; align-items: stretch;
     justify-content: center; gap: 0; padding: 6px 12px;
   }
   .field.select .field-label { font-size: 10px; }
   .field.select select { height: 24px; }
-  .job-grid { grid-template-columns: 1fr; }
+  .job-grid { grid-template-columns: minmax(0, 1fr); }
   .divider { display: none; }
+  .chips { gap: 8px; }
+  .chip { min-height: 34px; padding: 0 12px; font-size: 13px; }
   .reset { margin-left: 0; }
 }

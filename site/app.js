@@ -1,5 +1,5 @@
 // DMV Mission Jobs: reads data/jobs.json, renders and filters client-side. No build step.
-// Every filter lives in the URL, e.g. ?umbrella=gtm&public_sector=1&loc=dmv&view=list
+// Every filter lives in the URL, e.g. ?umbrella=gtm,customer&public_sector=1&loc=dmv&view=list
 
 const LEVEL_ORDER = ["intern", "junior", "mid", "senior", "staff", "principal", "lead", "manager", "director", "vp"];
 const LEVEL_LABELS = {
@@ -36,12 +36,12 @@ const TAG_ORDER = ["public_sector", "clearance"];
 const MISSION_INDUSTRIES = ["deftech", "govtech", "gov-it", "space"];
 const NEW_DAYS = 7;
 const SELECTS = {
-  umbrella: "f-umbrella", role: "f-role", industry: "f-industry", level: "f-level",
-  company: "f-company", sort: "f-sort",
+  role: "f-role", industry: "f-industry", level: "f-level", company: "f-company", sort: "f-sort",
 };
 const TOGGLES = { public_sector: "f-public_sector", clearance: "f-clearance" };
 
-const state = { jobs: [], meta: null, loc: new Set(), view: "" };
+// umbrellas: selected categories (any-of). loc: selected location types (any-of).
+const state = { jobs: [], meta: null, umbrellas: new Set(), loc: new Set(), view: "", umbrellaOrder: [] };
 const $ = (id) => document.getElementById(id);
 
 // Prod serves index.html at the site root with data/ as a sibling; local `http.server`
@@ -157,7 +157,8 @@ function card(job) {
   article.appendChild(top);
 
   const pills = el("div", "pills");
-  const cat = (job.umbrellas || [])[0];
+  const cats = job.umbrellas || [];
+  const cat = cats.find((u) => state.umbrellas.has(u)) || cats[0];
   if (cat) pills.appendChild(el("span", "pill", umbrellaLabel(cat)));
   if (job.level) pills.appendChild(el("span", "pill", LEVEL_LABELS[job.level] || job.level));
   TAG_ORDER.filter((t) => (job.tags || []).includes(t)).forEach((t) =>
@@ -198,7 +199,15 @@ function populateFilters() {
   // Config order (taxonomy) first, then anything else present in the data.
   const ordered = Object.keys(taxonomy().umbrellas).filter((u) => umb.has(u));
   [...umb].sort().forEach((u) => { if (!ordered.includes(u)) ordered.push(u); });
-  ordered.forEach((u) => addOption($("f-umbrella"), u, umbrellaLabel(u)));
+  state.umbrellaOrder = ordered;
+  const catChips = $("category-chips");
+  ordered.forEach((u) => {
+    const b = el("button", "chip", umbrellaLabel(u));
+    b.type = "button";
+    b.dataset.umbrella = u;
+    b.setAttribute("aria-pressed", "false");
+    catChips.appendChild(b);
+  });
   uniqueSorted([...inds]).forEach((i) => addOption($("f-industry"), i, INDUSTRY_LABELS[i] || i));
   LEVEL_ORDER.filter((l) => levels.has(l)).forEach((l) => addOption($("f-level"), l, LEVEL_LABELS[l]));
   uniqueSorted([...companies]).forEach((c) => addOption($("f-company"), c, c));
@@ -209,17 +218,18 @@ function populateFilters() {
   chip.hidden = !state.jobs.some((j) => j.location_type === "unknown");
 }
 
-// Role options follow the chosen category (all roles when no category is chosen).
+// Role options follow the chosen categories (all roles when none is chosen).
 function populateRoles() {
   const sel = $("f-role");
   const keep = sel.value;
-  const umbrella = $("f-umbrella").value;
   const labels = roleLabels();
-  const allowed = umbrella ? Object.keys((taxonomy().umbrellas[umbrella] || {}).roles || {}) : [];
+  const allowed = new Set();
+  state.umbrellas.forEach((u) =>
+    Object.keys((taxonomy().umbrellas[u] || {}).roles || {}).forEach((r) => allowed.add(r)));
   const present = new Set();
   state.jobs.forEach((j) => {
-    if (umbrella && !(j.umbrellas || []).includes(umbrella)) return;
-    (j.roles || []).forEach((r) => { if (!allowed.length || allowed.includes(r)) present.add(r); });
+    if (state.umbrellas.size && !(j.umbrellas || []).some((u) => state.umbrellas.has(u))) return;
+    (j.roles || []).forEach((r) => { if (!allowed.size || allowed.has(r)) present.add(r); });
   });
   sel.length = 1; // keep the "All" option
   [...present].sort((a, b) => (labels[a] || a).localeCompare(labels[b] || b))
@@ -230,6 +240,7 @@ function populateRoles() {
 function currentFilters() {
   const f = { q: $("q").value.trim() };
   Object.entries(SELECTS).forEach(([k, id]) => { f[k] = $(id).value; });
+  f.umbrella = state.umbrellaOrder.filter((u) => state.umbrellas.has(u)).join(",");
   f.loc = LOCATION_TYPES.filter((t) => state.loc.has(t)).join(",");
   Object.entries(TOGGLES).forEach(([k, id]) => { f[k] = $(id).getAttribute("aria-pressed") === "true"; });
   f.view = state.view;
@@ -260,7 +271,7 @@ function matches(job, f) {
     const q = f.q.toLowerCase();
     if (!(`${job.title} ${job.company}`.toLowerCase().includes(q))) return false;
   }
-  if (f.umbrella && !(job.umbrellas || []).includes(f.umbrella)) return false;
+  if (state.umbrellas.size && !(job.umbrellas || []).some((u) => state.umbrellas.has(u))) return false;
   if (f.role && !(job.roles || []).includes(f.role)) return false;
   if (f.industry && !(job.industries || []).includes(f.industry)) return false;
   if (f.level && job.level !== f.level) return false;
@@ -299,11 +310,10 @@ function syncURL(f) {
 function restoreFromURL() {
   const p = new URLSearchParams(location.search);
   if (p.get("q")) $("q").value = p.get("q");
-  if (p.get("umbrella")) $("f-umbrella").value = p.get("umbrella");
-  populateRoles(); // role options depend on the category
-  Object.entries(SELECTS).forEach(([k, id]) => {
-    if (k !== "umbrella" && p.get(k)) $(id).value = p.get(k);
-  });
+  state.umbrellas = new Set((p.get("umbrella") || "").split(",")
+    .map((s) => s.trim()).filter((u) => state.umbrellaOrder.includes(u)));
+  populateRoles(); // role options depend on the categories
+  Object.entries(SELECTS).forEach(([k, id]) => { if (p.get(k)) $(id).value = p.get(k); });
   Object.entries(TOGGLES).forEach(([k, id]) => {
     if (p.get(k)) $(id).setAttribute("aria-pressed", "true");
   });
@@ -312,6 +322,8 @@ function restoreFromURL() {
 }
 
 function syncControls() {
+  document.querySelectorAll(".chip[data-umbrella]").forEach((b) =>
+    b.setAttribute("aria-pressed", String(state.umbrellas.has(b.dataset.umbrella))));
   document.querySelectorAll(".chip[data-loc]").forEach((b) =>
     b.setAttribute("aria-pressed", String(state.loc.has(b.dataset.loc))));
   document.querySelectorAll(".view-toggle button").forEach((b) =>
@@ -367,9 +379,12 @@ async function init() {
   render();
 
   $("q").addEventListener("input", render);
-  Object.values(SELECTS).forEach((id) => {
-    $(id).addEventListener("change", () => {
-      if (id === SELECTS.umbrella) populateRoles();
+  Object.values(SELECTS).forEach((id) => $(id).addEventListener("change", render));
+  document.querySelectorAll(".chip[data-umbrella]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const u = b.dataset.umbrella;
+      if (state.umbrellas.has(u)) state.umbrellas.delete(u); else state.umbrellas.add(u);
+      populateRoles();
       render();
     });
   });
@@ -395,6 +410,7 @@ async function init() {
     Object.values(SELECTS).forEach((id) => { $(id).value = ""; });
     Object.values(TOGGLES).forEach((id) => $(id).setAttribute("aria-pressed", "false"));
     state.loc.clear();
+    state.umbrellas.clear();
     populateRoles();
     render();
   });
