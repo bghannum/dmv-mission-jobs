@@ -19,8 +19,10 @@ const UMBRELLA_LABELS = {
 };
 const INDUSTRY_LABELS = {
   deftech: "Defense tech", govtech: "Gov tech", "gov-it": "Gov IT", space: "Space", ai: "AI",
-  cybersecurity: "Cybersecurity", bigtech: "Big tech", saas: "SaaS", cspm: "Cloud security",
-  finops: "FinOps", grc: "GRC", healthtech: "Health tech",
+  cybersecurity: "Cybersecurity", bigtech: "Big tech", saas: "Enterprise software",
+  cspm: "Cloud security", finops: "FinOps", grc: "GRC", healthtech: "Health & bio",
+  "american-dynamism": "American Dynamism", fintech: "Fintech", crypto: "Crypto",
+  consumer: "Consumer", games: "Games",
 };
 const LOCATION_LABELS = {
   dmv_onsite: "On-site",
@@ -33,7 +35,7 @@ const LOCATION_TYPES = ["dmv_onsite", "dmv_hybrid", "remote_us", "unknown"];
 const TAG_LABELS = { public_sector: "Public sector", clearance: "Clearance" };
 const TAG_ORDER = ["public_sector", "clearance"];
 // Industries sorted to the top by default ("mission first").
-const MISSION_INDUSTRIES = ["deftech", "govtech", "gov-it", "space"];
+const MISSION_INDUSTRIES = ["deftech", "govtech", "gov-it", "space", "american-dynamism"];
 const NEW_DAYS = 7;
 const SELECTS = {
   role: "f-role", industry: "f-industry", level: "f-level", company: "f-company", sort: "f-sort",
