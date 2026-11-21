@@ -24,7 +24,7 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 | Marketing | Excluded for now, including growth marketing. |
 | Starting companies | Keep all of Shane's existing list, and add to it. |
 | Categories | Keep Shane's Design and Engineering categories alongside the new ones. |
-| "Washington" (no state) | Undecided. Measure how often it appears during Phases 1–2, then decide. |
+| "Washington" (no state) | **Decided 2026-11-21:** keep these roles (`location_type: unknown`) and label them "Location uncertain" on the card, with a "Washington (uncertain)" location filter. "City, Washington" and Washington listed among other states count as Washington State and are dropped. Still logged in `meta.json` `ambiguous_locations`. |
 | Bare "Remote" (no country) | Counts as US remote (`remote_us`). |
 | Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs` (a private copy, since GitHub can't make a private fork of a public repo). Scraper User-Agent: `brians-job-bot`. |
 | Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |
@@ -370,7 +370,7 @@ These companies run their own careers sites, so each needs a custom adapter. Let
 - Keep the original safety rails: per-company failure isolation, retaining prior jobs when a fetch fails, the shrink guard, and the `safeUrl` sanitizer on job links.
 
 ## Open questions
-1. "Washington" with no state: decide at the end of Phase 2, based on the logged data.
+None right now. (The bare "Washington" question was decided on 2026-11-21; see the decisions table.)
 
 ## How to use this plan with Claude Code
 - Put this file in the repo root as `PLAN.md`, and add a `CLAUDE.md` that says: *"Follow PLAN.md. Work one phase at a time on a branch, with tests. Run `ruff check .` and `pytest` before committing. Ask before changing the data model beyond what the plan describes. For any adapter or seed source that hits an undocumented endpoint, investigate and document it in docs/ before writing code."*

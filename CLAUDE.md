@@ -13,3 +13,4 @@ and document it in docs/ before writing code.
 - Python 3.12 (same as CI). Local env: `.venv/` (`uv venv -p 3.12 .venv`).
 - Pages deploys are gated on the `PAGES_ENABLED` repo variable; leave it unset while private.
 - A bare "Remote" location with no country counts as `remote_us`.
+- A bare "Washington" stays on the board as `location_type: unknown`, shown as "Location uncertain".
