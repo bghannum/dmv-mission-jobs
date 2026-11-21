@@ -39,6 +39,37 @@ def scrape_company(company: Company, client: HTTPClient) -> tuple[list[Job], dic
         return [], status
 
 
+def filter_jobs(
+    raw_jobs: list[Job],
+    umbrellas: list[RoleUmbrella],
+    levels: dict,
+    location_rules,
+    tag_rules,
+    *,
+    drop_out_of_area: bool = True,
+    ambiguous: list[dict] | None = None,
+) -> tuple[list[Job], int]:
+    """Match roles, classify location and tag. Returns (kept jobs, number role-matched).
+
+    Bare-"Washington" jobs are appended to `ambiguous` when a list is given.
+    """
+    matched = [j for j in (apply_matching(j, umbrellas, levels) for j in raw_jobs) if j]
+    kept: list[Job] = []
+    for job in matched:
+        loc_type = classify_location_type(
+            job.location, job.remote, location_rules, job.workplace_type, job.title
+        )
+        if loc_type is None:
+            if drop_out_of_area:
+                continue
+            loc_type = OTHER
+        if loc_type == UNKNOWN and ambiguous is not None:
+            ambiguous.append({"company": job.company, "title": job.title, "location": job.location})
+        job.location_type = loc_type
+        kept.append(apply_tags(job, tag_rules))
+    return kept, len(matched)
+
+
 def taxonomy(umbrellas: list[RoleUmbrella], tag_rules) -> dict:
     """Labels the site uses for its filters (written to meta.json)."""
     return {
@@ -90,24 +121,12 @@ def run() -> int:
         raw_jobs, status = scrape_company(company, client)
         if not status["ok"]:
             retain_prefixes.add(f"{company.ats}:{company.identifier}:")
-        matched = [j for j in (apply_matching(j, umbrellas, levels) for j in raw_jobs) if j]
-        status["matched"] = len(matched)
-        kept: list[Job] = []
-        for job in matched:
-            loc_type = classify_location_type(
-                job.location, job.remote, location_rules, job.workplace_type, job.title
-            )
-            if loc_type is None:
-                if settings.drop_out_of_area:
-                    continue
-                loc_type = OTHER
-            if loc_type == UNKNOWN:
-                ambiguous.append(
-                    {"company": job.company, "title": job.title, "location": job.location}
-                )
-            job.location_type = loc_type
-            kept.append(apply_tags(job, tag_rules))
-        status["dropped_out_of_area"] = len(matched) - len(kept)
+        kept, n_matched = filter_jobs(
+            raw_jobs, umbrellas, levels, location_rules, tag_rules,
+            drop_out_of_area=settings.drop_out_of_area, ambiguous=ambiguous,
+        )
+        status["matched"] = n_matched
+        status["dropped_out_of_area"] = n_matched - len(kept)
         matched = kept
         adapter_status.append(status)
         all_matched.extend(matched)

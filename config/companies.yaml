@@ -522,6 +522,65 @@ companies:
 #   Cityblock Health — no working board slug found
 #   Color Health    — no working board slug found
 
+  # --- named companies (PLAN.md Phase 2), checked with scripts/verify_company.py, 2026-11-21 ---
+  # Defense tech
+  - name: "Palantir"
+    ats: lever
+    identifier: "palantir"
+    industry: [deftech, ai, saas]
+    homepage: "https://www.palantir.com"
+  - name: "Scale AI"
+    ats: greenhouse
+    identifier: "scaleai"
+    industry: [ai]   # not deftech: most roles are commercial; tagging marks public-sector ones
+    homepage: "https://scale.com"
+  - name: "Epirus"
+    ats: greenhouse
+    identifier: "epirus"
+    industry: [deftech]
+    homepage: "https://www.epirusinc.com"
+  - name: "Chaos Industries"
+    ats: greenhouse
+    identifier: "chaosindustries"
+    industry: [deftech]
+    homepage: "https://www.chaosinc.com"
+  - name: "Rebellion Defense"
+    ats: greenhouse
+    identifier: "rebelliondefense"   # board exists but had no open jobs on 2026-11-21
+    industry: [deftech, ai]
+    homepage: "https://rebelliondefense.com"
+  # Commercial companies with federal / public-sector teams
+  - name: "Snowflake"
+    ats: ashby
+    identifier: "snowflake"
+    industry: [saas, ai]
+    homepage: "https://www.snowflake.com"
+  - name: "Zscaler"
+    ats: greenhouse
+    identifier: "zscaler"
+    industry: [cybersecurity, saas]
+    homepage: "https://www.zscaler.com"
+  - name: "Elastic"
+    ats: greenhouse
+    identifier: "elastic"
+    industry: [saas]
+    homepage: "https://www.elastic.co"
+  - name: "MongoDB"
+    ats: greenhouse
+    identifier: "mongodb"
+    industry: [saas]
+    homepage: "https://www.mongodb.com"
+  - name: "Datadog"
+    ats: greenhouse
+    identifier: "datadog"
+    industry: [saas]
+    homepage: "https://www.datadoghq.com"
+  - name: "GitLab"
+    ats: greenhouse
+    identifier: "gitlab"
+    industry: [saas]
+    homepage: "https://about.gitlab.com"
+
   # --- a16z portfolio (scripts/seed_a16z.py, 2026-11-21) ---
   # Industries are suggested from a16z's description; review and correct.
   - name: "Adaptive"
