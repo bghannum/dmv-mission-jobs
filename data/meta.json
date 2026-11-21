@@ -833,8 +833,8 @@
   "any_failures": true,
   "us_only": true,
   "dropped_non_us": 160,
-  "generated_at": "2026-11-21T17:15:54.877639+00:00",
-  "prior_job_count": 470,
+  "generated_at": "2026-11-21T17:18:32.244428+00:00",
+  "prior_job_count": 471,
   "fresh_job_count": 471,
   "total_job_count": 471,
   "shrink_blocked": false
