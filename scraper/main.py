@@ -95,7 +95,7 @@ def run() -> int:
         kept: list[Job] = []
         for job in matched:
             loc_type = classify_location_type(
-                job.location, job.remote, location_rules, job.workplace_type
+                job.location, job.remote, location_rules, job.workplace_type, job.title
             )
             if loc_type is None:
                 if settings.drop_out_of_area:

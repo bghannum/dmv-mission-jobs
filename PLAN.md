@@ -24,7 +24,7 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 | Marketing | Excluded for now, including growth marketing. |
 | Starting companies | Keep all of Shane's existing list, and add to it. |
 | Categories | Keep Shane's Design and Engineering categories alongside the new ones. |
-| "Washington" (no state) | **Decided 2026-11-21:** keep these roles (`location_type: unknown`) and label them "Location uncertain" on the card, with a "Washington (uncertain)" location filter. "City, Washington" and Washington listed among other states count as Washington State and are dropped. Still logged in `meta.json` `ambiguous_locations`. |
+| "Washington" (no state) | **Decided 2026-11-21:** keep these roles (`location_type: unknown`) and label them "Location uncertain" on the card, with a "Washington (uncertain)" location filter. "City, Washington", Washington listed among other states, and a job title naming a Washington State place ("Seattle", "Pacific Northwest", "PNW", ...) all count as Washington State: dropped, or US remote if the role is remote. Still logged in `meta.json` `ambiguous_locations`. |
 | Bare "Remote" (no country) | Counts as US remote (`remote_us`). |
 | Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs` (a private copy, since GitHub can't make a private fork of a public repo). Scraper User-Agent: `brians-job-bot`. |
 | Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |

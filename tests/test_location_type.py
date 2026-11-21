@@ -78,3 +78,26 @@ def test_ats_hybrid_workplace_marks_dmv_hybrid():
     assert classify_location_type("Reston, VA", False, RULES, "onsite") == DMV_ONSITE
     # Hybrid outside the DMV is still out of area.
     assert classify_location_type("Hybrid - San Francisco, CA", False, RULES, "hybrid") is None
+
+
+@pytest.mark.parametrize(
+    "title,location,expected",
+    [
+        # A Washington State place in the title settles a bare "Washington"
+        ("Enterprise Account Executive - Pacific Northwest", "Washington, United States", None),
+        ("Enterprise Account Executive - Seattle", "Washington, United States", None),
+        ("Account Executive, PNW", "Washington", None),
+        ("Solutions Engineer (Tacoma)", "Washington", None),
+        # ...and if the role is remote, it's US remote (within the state)
+        ("Strategic Account Executive - Pacific Northwest", "Remote - Washington", REMOTE_US),
+        # No hint: stays uncertain
+        ("Solutions Architect - Games", "Washington", UNKNOWN),
+        ("Senior SRE, Managed Gateways", "Washington, United States", UNKNOWN),
+        # Hints only matter for a bare "Washington"; a DC location stays DMV
+        ("Account Executive, Pacific Northwest and Mid-Atlantic", "Washington, DC", DMV_ONSITE),
+        # Whole words only: "pnw" inside another word doesn't count
+        ("Snwpnwx Engineer", "Washington", UNKNOWN),
+    ],
+)
+def test_title_settles_bare_washington(title, location, expected):
+    assert classify_location_type(location, False, RULES, title=title) == expected
