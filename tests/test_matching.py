@@ -16,13 +16,32 @@ UMBRELLAS, LEVELS = load_roles()
         ("Principal DevEx Engineer", "engineering", "devops"),
         ("AI Engineer, Agentic Systems", "engineering", "agentic"),
         ("Staff Product Manager", "product", "product_manager"),
-        ("Technical Program Manager", "product", "technical_program_manager"),
+        ("Technical Program Manager", "program", "technical_program_manager"),
         ("Senior Product Analyst", "product", "product_analytics"),
         ("Analytics Engineer", "product", "product_analytics"),
         ("Senior Product Designer", "design", "product_designer"),
         ("Senior Technical Writer", "engineering", "tech_writer"),
         ("Documentation Engineer", "engineering", "tech_writer"),
-        ("Technical Recruiter", "gtm_revenue", "recruiter"),
+        # Phase 1 categories
+        ("Senior Product Owner", "product", "product_manager"),
+        ("Senior TPM, Platform", "program", "technical_program_manager"),
+        ("Program Manager, Space Systems", "program", "program_manager"),
+        ("Solutions Architect, Public Sector", "architecture", "solutions_architect"),
+        ("Sales Engineer", "architecture", "solutions_architect"),
+        ("Forward Deployed Engineer", "architecture", "solutions_architect"),
+        ("Cloud Architect", "architecture", "enterprise_architect"),
+        ("Federal Account Executive, DoD", "gtm", "sales"),
+        ("Enterprise Account Manager", "gtm", "sales"),
+        ("Capture Manager", "gtm", "business_development"),
+        ("Director, Business Development", "gtm", "business_development"),
+        ("Strategic Partnerships Lead", "gtm", "partnerships"),
+        ("VP of Growth", "growth", "growth"),
+        ("Revenue Operations Manager", "growth", "growth"),
+        ("Strategy & Operations Lead", "growth", "strategy_ops"),
+        ("Chief of Staff", "growth", "strategy_ops"),
+        ("Customer Success Manager, Government", "customer", "customer_success"),
+        ("Mission Success Manager", "customer", "customer_success"),
+        ("Technical Account Manager", "customer", "customer_success"),
     ],
 )
 def test_matches_expected_role(title, umbrella, role):
@@ -68,3 +87,45 @@ def test_non_target_roles_are_dropped(title):
 )
 def test_level_detection(title, level):
     assert detect_level(title, LEVELS) == level
+
+
+@pytest.mark.parametrize(
+    "title",
+    [
+        "Product Marketing Manager",
+        "Growth Marketing Manager",
+        "Customer Support Specialist",
+        "Content Strategy Lead",
+        "Brand Strategy Director",
+        "Technical Recruiter",          # recruiting is not a board category
+        "Office Manager",
+        "Executive Assistant",
+    ],
+)
+def test_out_of_scope_titles_match_nothing(title):
+    assert match_roles(title, UMBRELLAS) == ([], [])
+
+
+def test_sales_engineer_is_architecture_not_sales():
+    umbs, roles = match_roles("Senior Sales Engineer", UMBRELLAS)
+    assert "architecture" in umbs
+    assert "gtm" not in umbs and "sales" not in roles
+
+
+def test_technical_account_manager_is_customer_not_sales():
+    _, roles = match_roles("Technical Account Manager", UMBRELLAS)
+    assert roles == ["customer_success"]
+
+
+def test_technical_program_manager_is_not_also_program_manager():
+    _, roles = match_roles("Technical Program Manager", UMBRELLAS)
+    assert roles == ["technical_program_manager"]
+
+
+def test_exclude_departments_drops_growth_in_marketing_or_engineering():
+    assert match_roles("Growth Lead", UMBRELLAS, department="Growth Marketing") == ([], [])
+    assert match_roles("Growth Lead", UMBRELLAS, department="Engineering") == ([], [])
+    assert match_roles("Growth Lead", UMBRELLAS, department="Business Development")[1] == [
+        "growth"
+    ]
+    assert match_roles("Growth Engineer", UMBRELLAS) == ([], [])

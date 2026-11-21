@@ -28,7 +28,8 @@ allowlist. That is a single-file change to `config/companies.yaml`.
    ```
 
    Leave `priority` off — it's an optional ordering tier (1–3) the maintainer sets; new
-   entries default to 3. Only US roles are listed; non-US-only postings are filtered out.
+   entries default to 3. Only DC-metro (DMV) and US-remote roles are listed; see
+   `config/locations.yaml`.
 
 3. Open a pull request. CI runs `ruff` and `pytest`; `tests/test_config.py` validates that
    your entry has a known `ats`, a controlled-vocabulary `industry`, a valid
@@ -39,7 +40,14 @@ allowlist. That is a single-file change to `config/companies.yaml`.
 
 Roles and the keywords that match them live in `config/roles.yaml`. If a role you care about
 is being missed (or a wrong title is matching), adjust `include_keywords` / `exclude_keywords`
-and add a case to `tests/test_matching.py` so it stays correct.
+(or the optional `exclude_departments`) and add a case to `tests/test_matching.py` so it
+stays correct.
+
+## Tune locations or tags
+
+- DMV places, remote and hybrid words: `config/locations.yaml` (tests in
+  `tests/test_location_type.py`).
+- Clearance and public-sector tags: `config/tags.yaml` (tests in `tests/test_tagging.py`).
 
 ## Add a new ATS adapter
 

@@ -1,0 +1,34 @@
+# Badge/filter tags. Keywords match whole words/phrases, case-insensitively.
+#
+# keywords:             checked against the title and department/team.
+# description_keywords: checked against the plain-text description. Kept stricter than
+#                       `keywords` because boilerplate (EEO statements, "government-issued ID",
+#                       "federal, state and local laws") would otherwise tag almost every job.
+# description_min_hits: how many description phrase hits are needed (repeats count). Use 2+
+#                       so a one-line "trusted by government agencies" company blurb in every
+#                       posting doesn't tag every role at that company.
+# exclude:              phrases removed from all text before matching (false-positive guards).
+# industries:           companies with any of these industries get the tag on every job.
+tags:
+  clearance:
+    label: "Clearance"
+    keywords: ["clearance", "ts/sci", "top secret", "secret clearance", "polygraph", "public trust"]
+    description_keywords: ["security clearance", "clearance required", "active clearance",
+                           "ts/sci", "top secret", "secret clearance", "polygraph", "public trust"]
+    exclude: []
+  public_sector:
+    label: "Public sector"
+    keywords: ["public sector", "federal", "government", "national security", "defense", "dod", "usg",
+               "civilian agencies", "intelligence community", "state and local", "sled",
+               "azure government", "govcloud"]
+    description_keywords: ["public sector", "national security", "intelligence community",
+                           "department of defense", "dod", "defense and intelligence",
+                           "federal government", "federal agencies", "federal customers",
+                           "federal civilian", "civilian agencies", "government agencies",
+                           "government customers", "u.s. government", "us government",
+                           "state and local government", "warfighter", "azure government",
+                           "govcloud"]
+    description_min_hits: 2
+    exclude: ["will provide the federal government with", "e-verify", "cyber defense", "threat defense", "endpoint defense", "defense evasion",
+              "defense in depth", "defense-in-depth", "government-issued", "government issued"]
+    industries: [deftech]

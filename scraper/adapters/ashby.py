@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from ..models import Company, Job
-from .base import ATSAdapter
+from .base import ATSAdapter, join_locations, normalize_workplace
 
 
 def _compensation(posting: dict) -> str | None:
@@ -32,6 +32,9 @@ class AshbyAdapter(ATSAdapter):
             if p.get("isListed") is False:
                 continue
             source_id = str(p.get("id") or p.get("jobUrl") or p.get("title", ""))
+            workplace = normalize_workplace(p.get("workplaceType"))
+            primary = p.get("location") or (p.get("address") or {}).get("postalAddress")
+            location = join_locations(primary, p.get("secondaryLocations"))
             jobs.append(
                 Job(
                     id=f"ashby:{company.identifier}:{source_id}",
@@ -40,8 +43,10 @@ class AshbyAdapter(ATSAdapter):
                     industries=list(company.industry),
                     url=p.get("applyUrl") or p.get("jobUrl", ""),
                     source_ats="ashby",
-                    location=p.get("location") or (p.get("address") or {}).get("postalAddress"),
-                    remote=bool(p.get("isRemote")),
+                    location=location,
+                    # isRemote is also true for Hybrid roles; prefer workplaceType when present.
+                    remote=workplace == "remote" if workplace else bool(p.get("isRemote")),
+                    workplace_type=workplace,
                     department=p.get("department") or p.get("team"),
                     description_html=p.get("descriptionHtml"),
                     description_available=bool(p.get("descriptionHtml")),

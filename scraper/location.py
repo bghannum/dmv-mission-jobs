@@ -1,4 +1,12 @@
-"""Classify a free-text job location as US / non-US / unknown.
+"""Classify free-text job locations.
+
+Two layers:
+
+- `classify` / `is_us`: US vs non-US vs unknown (from the original project). Still used to
+  decide whether a remote role is US-eligible.
+- `classify_location_type`: the board's DMV-or-remote model (PLAN.md, "Location").
+
+The original US-vs-non-US notes follow.
 
 Location strings vary a lot across ATSes ("US, Remote", "San Francisco, CA",
 "London, UK", "Bengaluru, India", "Remote - EMEA", "Remote"). The goal is to keep a role
@@ -10,6 +18,7 @@ is kept.
 from __future__ import annotations
 
 import re
+from dataclasses import dataclass
 
 # 50 states + DC + Puerto Rico. Matched only as uppercase codes after a comma ("City, CA")
 # to avoid false positives from words like "in"/"or"/"ok" or country codes.
@@ -112,3 +121,70 @@ def is_us(location: str | None, *, include_unknown: bool = True) -> bool:
     if verdict is None:
         return include_unknown
     return verdict
+
+
+# --- DMV-or-remote model -------------------------------------------------------------------
+
+DMV_ONSITE = "dmv_onsite"
+DMV_HYBRID = "dmv_hybrid"
+REMOTE_US = "remote_us"
+UNKNOWN = "unknown"  # bare "Washington": DC or Washington state? Logged for review.
+OTHER = "other"  # out of area; only kept when drop_out_of_area is off
+
+# "Washington" NOT followed by a DC / state qualifier, e.g. "Washington" or
+# "Washington, United States". "Washington, DC" forms are matched as DMV before this runs.
+_BARE_WASHINGTON_RE = re.compile(
+    r"\bwashington\b(?!\s*,?\s*(?:d\.?\s?c\b|district|wa\b|state\b))"
+)
+_WASHINGTON_STATE_HINTS = ("washington state", "seattle", "bellevue", "redmond", "kirkland")
+
+
+@dataclass(frozen=True)
+class LocationRules:
+    dmv_match: tuple[str, ...]
+    dmv_exclude: tuple[str, ...]
+    remote_keywords: tuple[str, ...]
+    hybrid_keywords: tuple[str, ...]
+
+
+def is_dmv(low: str, rules: LocationRules) -> bool:
+    for phrase in rules.dmv_exclude:
+        low = low.replace(phrase, " ")
+    return any(m in low for m in rules.dmv_match)
+
+
+def is_bare_washington(low: str) -> bool:
+    if any(h in low for h in _WASHINGTON_STATE_HINTS):
+        return False
+    return bool(_BARE_WASHINGTON_RE.search(low))
+
+
+def classify_location_type(
+    location: str | None,
+    remote: bool,
+    rules: LocationRules,
+    workplace_type: str | None = None,
+) -> str | None:
+    """Assign a location_type, or None when the role is out of area.
+
+    Order matters:
+    1. Any DMV location (multi-location postings count if ANY location is in the DMV):
+       hybrid (ATS workplace_type or text) -> dmv_hybrid; else remote -> remote_us;
+       else dmv_onsite.
+    2. A bare "Washington" -> unknown (kept and logged; the rule is decided in Phase 2).
+    3. Remote and US-eligible -> remote_us. A bare "Remote" with no country counts as US.
+       Remote with only non-US signals ("Remote - Canada") -> None.
+    4. Anything else (other US cities, non-US, blank) -> None.
+    """
+    text = (location or "").strip()
+    low = re.sub(r"\s+", " ", text.lower())
+    is_remote = remote or any(k in low for k in rules.remote_keywords)
+    if low and is_dmv(low, rules):
+        if workplace_type == "hybrid" or any(k in low for k in rules.hybrid_keywords):
+            return DMV_HYBRID
+        return REMOTE_US if is_remote else DMV_ONSITE
+    if low and is_bare_washington(low):
+        return UNKNOWN
+    if is_remote:
+        return REMOTE_US if classify(text) is not False else None
+    return None

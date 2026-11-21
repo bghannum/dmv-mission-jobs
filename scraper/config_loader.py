@@ -7,7 +7,9 @@ from pathlib import Path
 
 import yaml
 
+from .location import LocationRules
 from .models import DEFAULT_PRIORITY, INDUSTRY_VOCAB, PRIORITIES, Company, RoleUmbrella
+from .tagging import TagRule
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
 
@@ -28,8 +30,7 @@ class Settings:
     meta_path: str
     stale_after_days: int
     max_shrink_fraction: float
-    us_only: bool
-    include_unknown_location: bool
+    drop_out_of_area: bool
 
 
 def _load_yaml(path: Path) -> dict:
@@ -145,6 +146,76 @@ def load_settings(path: Path | None = None) -> Settings:
         meta_path=str(output.get("meta_path", "data/meta.json")),
         stale_after_days=int(output.get("stale_after_days", 30)),
         max_shrink_fraction=float(output.get("max_shrink_fraction", 0.8)),
-        us_only=bool(filters.get("us_only", True)),
-        include_unknown_location=bool(filters.get("include_unknown_location", True)),
+        drop_out_of_area=bool(filters.get("drop_out_of_area", True)),
     )
+
+
+def _str_list(value, where: str) -> list[str]:
+    if value is None:
+        return []
+    if not isinstance(value, list) or not all(isinstance(v, str) and v.strip() for v in value):
+        raise ConfigError(f"{where} must be a list of non-empty strings")
+    return [v.strip().lower() for v in value]
+
+
+_STATE_LONG = {", va": ", virginia", ", md": ", maryland"}
+
+
+def load_locations(path: Path | None = None) -> LocationRules:
+    """Load the DMV metro definition plus remote/hybrid keywords."""
+    path = path or CONFIG_DIR / "locations.yaml"
+    data = _load_yaml(path)
+    dmv = ((data.get("metros") or {}).get("dmv")) or {}
+    match = _str_list(dmv.get("match"), "locations.yaml metros.dmv.match")
+    if not match:
+        raise ConfigError("locations.yaml must define a non-empty metros.dmv.match list")
+    expanded = list(match)
+    for m in match:  # "laurel, md" also matches "laurel, maryland"
+        for short, long in _STATE_LONG.items():
+            if m.endswith(short):
+                expanded.append(m[: -len(short)] + long)
+    remote = _str_list(data.get("remote_keywords"), "locations.yaml remote_keywords")
+    hybrid = _str_list(data.get("hybrid_keywords"), "locations.yaml hybrid_keywords")
+    if not remote or not hybrid:
+        raise ConfigError("locations.yaml needs non-empty remote_keywords and hybrid_keywords")
+    return LocationRules(
+        dmv_match=tuple(expanded),
+        dmv_exclude=tuple(_str_list(dmv.get("exclude"), "locations.yaml metros.dmv.exclude")),
+        remote_keywords=tuple(remote),
+        hybrid_keywords=tuple(hybrid),
+    )
+
+
+def load_tags(path: Path | None = None) -> list[TagRule]:
+    """Load tag rules (clearance, public_sector, ...)."""
+    path = path or CONFIG_DIR / "tags.yaml"
+    data = _load_yaml(path)
+    raw = data.get("tags")
+    if not isinstance(raw, dict) or not raw:
+        raise ConfigError("tags.yaml must contain a non-empty 'tags' mapping")
+    rules: list[TagRule] = []
+    for key, t in raw.items():
+        where = f"tags.yaml '{key}'"
+        if not isinstance(t, dict):
+            raise ConfigError(f"{where} must be a mapping")
+        industries = _str_list(t.get("industries"), f"{where} industries")
+        bad = [i for i in industries if i not in INDUSTRY_VOCAB]
+        if bad:
+            raise ConfigError(f"{where} has unknown industries {bad}")
+        keywords = _str_list(t.get("keywords"), f"{where} keywords")
+        if not keywords:
+            raise ConfigError(f"{where} needs at least one keyword")
+        rules.append(
+            TagRule(
+                key=key,
+                label=str(t.get("label", key)),
+                keywords=tuple(keywords),
+                description_keywords=tuple(
+                    _str_list(t.get("description_keywords"), f"{where} description_keywords")
+                ),
+                exclude=tuple(_str_list(t.get("exclude"), f"{where} exclude")),
+                industries=frozenset(industries),
+                description_min_hits=int(t.get("description_min_hits", 1)),
+            )
+        )
+    return rules

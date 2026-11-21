@@ -14,12 +14,16 @@ def normalize_title(title: str) -> str:
     return f" {cleaned} "
 
 
-def match_roles(title: str, umbrellas: list[RoleUmbrella]) -> tuple[list[str], list[str]]:
+def match_roles(
+    title: str, umbrellas: list[RoleUmbrella], department: str | None = None
+) -> tuple[list[str], list[str]]:
     """Return (matched_umbrella_keys, matched_role_keys) for a title.
 
-    A role matches when any include_keyword is present AND no exclude_keyword is.
+    A role matches when any include_keyword is present AND no exclude_keyword is AND the
+    department/team contains none of the role's exclude_departments.
     """
     norm = normalize_title(title)
+    dept = (department or "").lower()
     matched_umbrellas: list[str] = []
     matched_roles: list[str] = []
     for umb in umbrellas:
@@ -27,6 +31,9 @@ def match_roles(title: str, umbrellas: list[RoleUmbrella]) -> tuple[list[str], l
         for role_key, role in umb.roles.items():
             includes = role.get("include_keywords") or []
             excludes = role.get("exclude_keywords") or []
+            exclude_depts = role.get("exclude_departments") or []
+            if dept and any(d.lower() in dept for d in exclude_depts):
+                continue
             if any(kw.lower() in norm for kw in includes) and not any(
                 kw.lower() in norm for kw in excludes
             ):
@@ -57,7 +64,7 @@ def detect_level(title: str, levels: dict) -> str:
 
 def apply_matching(job: Job, umbrellas: list[RoleUmbrella], levels: dict) -> Job | None:
     """Tag a job with umbrellas/roles/level. Returns None if it matches no role."""
-    umbs, roles = match_roles(job.title, umbrellas)
+    umbs, roles = match_roles(job.title, umbrellas, job.department)
     if not roles:
         return None
     job.umbrellas = umbs

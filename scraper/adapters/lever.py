@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 
 from ..models import Company, Job
-from .base import ATSAdapter
+from .base import ATSAdapter, join_locations, normalize_workplace
 
 
 def _iso_from_ms(ms) -> str | None:
@@ -30,8 +30,8 @@ class LeverAdapter(ATSAdapter):
         for p in raw:
             source_id = str(p.get("id") or p.get("hostedUrl", ""))
             categories = p.get("categories") or {}
-            workplace = (p.get("workplaceType") or "").lower()
-            location = categories.get("location")
+            workplace = normalize_workplace(p.get("workplaceType"))
+            location = join_locations(categories.get("location"), categories.get("allLocations"))
             description = p.get("description") or p.get("descriptionPlain")
             jobs.append(
                 Job(
@@ -44,6 +44,7 @@ class LeverAdapter(ATSAdapter):
                     location=location,
                     remote=workplace == "remote"
                     or bool(location and "remote" in location.lower()),
+                    workplace_type=workplace,
                     department=categories.get("team") or categories.get("department"),
                     description_html=description,
                     description_available=bool(description),

@@ -71,3 +71,35 @@ def test_gem_normalize(load_fixture):
     ai = next(j for j in jobs if j.title.startswith("AI Engineer"))
     assert ai.id == "gem:acme:gem-1"
     assert ai.location == "Remote"
+
+
+def test_rippling_department_object_is_flattened():
+    raw = [{"uuid": "r-9", "name": "Program Manager", "url": "https://ats.rippling.com/a/9",
+            "location": "Remote (US)", "department": {"id": "d1", "label": "Operations"}}]
+    jobs = RipplingAdapter().normalize(raw, _company("rippling", "acme"))
+    assert jobs[0].department == "Operations"
+
+
+def test_ashby_hybrid_is_not_remote_and_secondary_locations_join():
+    # Live Ashby sets isRemote=true for Hybrid roles; workplaceType is the reliable field.
+    raw = [{
+        "id": "a-9", "title": "Program Manager", "jobUrl": "https://jobs.ashbyhq.com/x/a-9",
+        "location": "Hub - San Francisco", "isRemote": True, "workplaceType": "Hybrid",
+        "secondaryLocations": [{"location": "Hub - New York"}, {"location": "Reston, VA"}],
+    }]
+    job = AshbyAdapter().normalize(raw, _company("ashby", "x"))[0]
+    assert job.remote is False
+    assert job.workplace_type == "hybrid"
+    assert job.location == "Hub - San Francisco; Hub - New York; Reston, VA"
+
+
+def test_lever_workplace_and_all_locations():
+    raw = [{
+        "id": "l-9", "text": "Program Manager", "hostedUrl": "https://jobs.lever.co/x/l-9",
+        "workplaceType": "hybrid",
+        "categories": {"location": "Austin, TX", "allLocations": ["Austin, TX", "McLean, VA"]},
+    }]
+    job = LeverAdapter().normalize(raw, _company("lever", "x"))[0]
+    assert job.workplace_type == "hybrid"
+    assert job.remote is False
+    assert job.location == "Austin, TX; McLean, VA"
