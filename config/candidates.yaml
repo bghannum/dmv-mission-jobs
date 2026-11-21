@@ -1,0 +1,454 @@
+# Seeder finds awaiting review. NOT scraped. To approve, move an entry into
+# companies.yaml (drop source/open_jobs/why); to decline, move it to rejected.yaml.
+companies:
+- name: Base Power
+  ats: ashby
+  identifier: base-power
+  industry:
+  - american-dynamism
+  homepage: https://basepowercompany.com
+  source: a16z
+  open_jobs: 196
+  why: board found but couldn't confirm it belongs to this company
+- name: Beacons
+  ats: ashby
+  identifier: beacons
+  industry:
+  - consumer
+  homepage: https://beacons.ai/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Cadre
+  ats: ashby
+  identifier: cadre
+  industry:
+  - fintech
+  homepage: https://cadre.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Catena Labs
+  ats: ashby
+  identifier: catena
+  industry:
+  - saas
+  homepage: https://catenalabs.com/
+  source: a16z
+  open_jobs: 4
+  why: board found but couldn't confirm it belongs to this company
+- name: CFO.ai
+  ats: ashby
+  identifier: runway
+  industry:
+  - fintech
+  homepage: https://cfo.ai/
+  source: a16z
+  open_jobs: 3
+  why: board found but couldn't confirm it belongs to this company
+- name: ConductorAI
+  ats: ashby
+  identifier: conductorai
+  industry:
+  - american-dynamism
+  - govtech
+  homepage: https://conductorai.com
+  source: a16z
+  open_jobs: 6
+  why: board found but couldn't confirm it belongs to this company
+- name: Conway
+  ats: ashby
+  identifier: conway
+  industry:
+  - saas
+  homepage: https://conway.tech/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Cyngn
+  ats: lever
+  identifier: cyngn
+  industry:
+  - saas
+  homepage: https://www.cyngn.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Dapper Labs
+  ats: ashby
+  identifier: dapper
+  industry:
+  - crypto
+  - games
+  homepage: https://dapperlabs.com
+  source: a16z
+  open_jobs: 26
+  why: board found but couldn't confirm it belongs to this company
+- name: Deel
+  ats: ashby
+  identifier: deel
+  industry:
+  - fintech
+  homepage: http://www.deel.com
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Deeptune
+  ats: ashby
+  identifier: deeptune
+  industry:
+  - saas
+  - ai
+  homepage: https://deeptune.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Dwolla
+  ats: lever
+  identifier: dwolla
+  industry:
+  - fintech
+  homepage: https://www.dwolla.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: End Game
+  ats: ashby
+  identifier: endgame
+  industry:
+  - saas
+  homepage: https://end.gg
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: EON
+  ats: ashby
+  identifier: eon
+  industry:
+  - american-dynamism
+  - space
+  homepage: https://endeavornetworks.com/
+  source: a16z
+  open_jobs: 8
+  why: board found but couldn't confirm it belongs to this company
+- name: Erebor Bank
+  ats: ashby
+  identifier: erebor
+  industry:
+  - american-dynamism
+  - fintech
+  - ai
+  homepage: https://erebor.bank/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Function Health
+  ats: ashby
+  identifier: function-health
+  industry:
+  - ai
+  - healthtech
+  homepage: https://www.functionhealth.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Genesis Molecular AI
+  ats: ashby
+  identifier: genesis
+  industry:
+  - ai
+  - healthtech
+  homepage: https://genesis.ml/
+  source: a16z
+  open_jobs: 66
+  why: board found but couldn't confirm it belongs to this company
+- name: Grepr
+  ats: ashby
+  identifier: grepr
+  industry:
+  - saas
+  homepage: https://www.grepr.ai/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Halliday
+  ats: ashby
+  identifier: halliday
+  industry:
+  - saas
+  homepage: https://halliday.xyz/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Kinter
+  ats: lever
+  identifier: kinter
+  industry:
+  - saas
+  homepage: https://kinter.ai/
+  source: a16z
+  open_jobs: 1
+  why: board found but couldn't confirm it belongs to this company
+- name: Larridin
+  ats: ashby
+  identifier: larridin
+  industry:
+  - saas
+  homepage: https://www.larridin.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Loft
+  ats: ashby
+  identifier: loft
+  industry:
+  - consumer
+  - fintech
+  homepage: https://loft.com.br
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Luma AI
+  ats: ashby
+  identifier: lumaai
+  industry:
+  - ai
+  - consumer
+  - saas
+  homepage: https://lumalabs.ai
+  source: a16z
+  open_jobs: 12
+  why: board found but couldn't confirm it belongs to this company
+- name: MEGA
+  ats: lever
+  identifier: mega
+  industry:
+  - saas
+  homepage: https://www.gomega.ai/
+  source: a16z
+  open_jobs: 12
+  why: board found but couldn't confirm it belongs to this company
+- name: Merit Systems
+  ats: ashby
+  identifier: merit
+  industry:
+  - saas
+  homepage: https://www.merit.systems/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Nansen
+  ats: ashby
+  identifier: nansen
+  industry:
+  - crypto
+  homepage: https://nansen.ai
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Netris
+  ats: ashby
+  identifier: netris
+  industry:
+  - saas
+  homepage: https://netris.io
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: OpenSea
+  ats: ashby
+  identifier: opensea
+  industry:
+  - saas
+  homepage: https://opensea.io
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Pave
+  ats: ashby
+  identifier: pave
+  industry:
+  - saas
+  homepage: https://pave.com
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Point
+  ats: ashby
+  identifier: point
+  industry:
+  - fintech
+  homepage: https://point.com
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Protocol Labs
+  ats: ashby
+  identifier: protocol
+  industry:
+  - saas
+  homepage: https://protocol.ai
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Q Bio, Inc.
+  ats: lever
+  identifier: qbio
+  industry:
+  - ai
+  - healthtech
+  homepage: https://q.bio/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Rutter
+  ats: ashby
+  identifier: rutter
+  industry:
+  - saas
+  - fintech
+  homepage: https://www.rutter.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Safe Superintelligence
+  ats: ashby
+  identifier: ssi
+  industry:
+  - saas
+  homepage: https://ssi.inc/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Sky
+  ats: ashby
+  identifier: skyecosystem
+  industry:
+  - crypto
+  homepage: https://sky.money/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: SkySafe
+  ats: lever
+  identifier: skysafe
+  industry:
+  - american-dynamism
+  - saas
+  - govtech
+  homepage: https://www.skysafe.io
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Solana
+  ats: ashby
+  identifier: solanalabs
+  industry:
+  - crypto
+  homepage: https://solana.com
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Telepatia AI
+  ats: ashby
+  identifier: telepatia
+  industry:
+  - ai
+  - healthtech
+  homepage: https://telepatia.ai
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: The Coterie
+  ats: ashby
+  identifier: thecoterie
+  industry:
+  - fintech
+  homepage: https://www.thecoterie.co/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Theorycraft Games
+  ats: lever
+  identifier: theorycraftgames
+  industry:
+  - saas
+  homepage: https://www.theorycraftgames.com/
+  source: a16z
+  open_jobs: 1
+  why: board found but couldn't confirm it belongs to this company
+- name: Thinking Machines Lab
+  ats: ashby
+  identifier: thinkingmachines
+  industry:
+  - ai
+  - saas
+  homepage: https://thinkingmachines.ai
+  source: a16z
+  open_jobs: 58
+  why: board found but couldn't confirm it belongs to this company
+- name: Topography Health
+  ats: lever
+  identifier: jointopo
+  industry:
+  - ai
+  - healthtech
+  homepage: https://jointopo.com
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: TruckSmarter
+  ats: ashby
+  identifier: trucksmarter
+  industry:
+  - american-dynamism
+  homepage: https://www.trucksmarter.com/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: Trunk
+  ats: ashby
+  identifier: trunk
+  industry:
+  - saas
+  homepage: https://trunk.io/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: UNLIMITED
+  ats: ashby
+  identifier: unlimitedindustries
+  industry:
+  - american-dynamism
+  homepage: https://www.unlimitedindustries.com/
+  source: a16z
+  open_jobs: 10
+  why: board found but couldn't confirm it belongs to this company
+- name: Very Good Security
+  ats: lever
+  identifier: verygoodsecurity
+  industry:
+  - saas
+  homepage: https://www.verygoodsecurity.com/
+  source: a16z
+  open_jobs: 18
+  why: board found but couldn't confirm it belongs to this company
+- name: Wabi AI
+  ats: ashby
+  identifier: wabi
+  industry:
+  - consumer
+  homepage: https://wabi.ai
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company
+- name: XBuild
+  ats: ashby
+  identifier: xbuild
+  industry:
+  - consumer
+  - fintech
+  homepage: https://www.x.build/
+  source: a16z
+  open_jobs: 0
+  why: board found but couldn't confirm it belongs to this company

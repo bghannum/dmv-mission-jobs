@@ -4,7 +4,14 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
 
-INDUSTRY_VOCAB = {"cybersecurity", "deftech", "cspm", "finops", "grc", "healthtech"}
+INDUSTRY_VOCAB = {
+    # original (crsh-ovr/jobs)
+    "cybersecurity", "deftech", "cspm", "finops", "grc", "healthtech",
+    # PLAN.md Phase 2
+    "govtech", "gov-it", "space", "ai", "bigtech", "saas",
+    # a16z portfolio sectors (scripts/seed_a16z.py)
+    "american-dynamism", "fintech", "crypto", "consumer", "games",
+}
 # Neutral priority tiers; lower sorts first. Drives ordering only (no public meaning).
 PRIORITIES = {1, 2, 3}
 DEFAULT_PRIORITY = 3

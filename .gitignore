@@ -7,3 +7,6 @@ venv/
 .ruff_cache/
 .DS_Store
 *.egg-info/
+
+# seeder probe cache and reports
+.cache/

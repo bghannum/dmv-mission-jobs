@@ -23,7 +23,7 @@ allowlist. That is a single-file change to `config/companies.yaml`.
    - name: "Acme Security"
      ats: greenhouse
      identifier: "acme"
-     industry: [cybersecurity, cspm]   # one or more of: cybersecurity, deftech, cspm, finops, grc, healthtech
+     industry: [cybersecurity, saas]   # values from INDUSTRY_VOCAB in scraper/models.py
      homepage: "https://acme.example"   # optional
    ```
 

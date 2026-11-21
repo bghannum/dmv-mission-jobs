@@ -1,5 +1,5 @@
 {
-  "companies": 92,
+  "companies": 416,
   "adapters": [
     {
       "company": "Horizon3.ai",
@@ -383,10 +383,10 @@
       "company": "Cloudflare",
       "ats": "greenhouse",
       "ok": true,
-      "count": 503,
+      "count": 504,
       "error": null,
-      "matched": 270,
-      "dropped_out_of_area": 270
+      "matched": 271,
+      "dropped_out_of_area": 271
     },
     {
       "company": "Rubrik",
@@ -828,12 +828,2964 @@
       "error": "HTTPError: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/cedar?includeCompensation=true",
       "matched": 0,
       "dropped_out_of_area": 0
+    },
+    {
+      "company": "Adaptive",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Addi",
+      "ats": "ashby",
+      "ok": true,
+      "count": 34,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Aerodome",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Affirm",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 222,
+      "error": null,
+      "matched": 78,
+      "dropped_out_of_area": 44
+    },
+    {
+      "company": "Airbnb",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 202,
+      "error": null,
+      "matched": 39,
+      "dropped_out_of_area": 35
+    },
+    {
+      "company": "AirGarage",
+      "ats": "ashby",
+      "ok": true,
+      "count": 22,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "AKASA",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Alchemy",
+      "ats": "ashby",
+      "ok": true,
+      "count": 18,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Aleo",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Alleviate Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Alluxio",
+      "ats": "lever",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Alpha-9 Oncology",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Alta",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Amber",
+      "ats": "ashby",
+      "ok": true,
+      "count": 24,
+      "error": null,
+      "matched": 9,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "Amca",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 52,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "Anchorage",
+      "ats": "lever",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Anduril",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2632,
+      "error": null,
+      "matched": 311,
+      "dropped_out_of_area": 255
+    },
+    {
+      "company": "Anyscale",
+      "ats": "ashby",
+      "ok": true,
+      "count": 24,
+      "error": null,
+      "matched": 9,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Apollo",
+      "ats": "ashby",
+      "ok": true,
+      "count": 46,
+      "error": null,
+      "matched": 16,
+      "dropped_out_of_area": 16
+    },
+    {
+      "company": "Aptos",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Arda Therapeutics",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Arena",
+      "ats": "ashby",
+      "ok": true,
+      "count": 21,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Armadin",
+      "ats": "ashby",
+      "ok": true,
+      "count": 24,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Asana",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 111,
+      "error": null,
+      "matched": 42,
+      "dropped_out_of_area": 40
+    },
+    {
+      "company": "ASI",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Asimov",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Astranis",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 170,
+      "error": null,
+      "matched": 11,
+      "dropped_out_of_area": 11
+    },
+    {
+      "company": "Astro Mechanica",
+      "ats": "ashby",
+      "ok": true,
+      "count": 42,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Atlys",
+      "ats": "ashby",
+      "ok": true,
+      "count": 33,
+      "error": null,
+      "matched": 9,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "Atoms",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 167,
+      "error": null,
+      "matched": 20,
+      "dropped_out_of_area": 20
+    },
+    {
+      "company": "Azra Games",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Backflip AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Bastion",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Believer",
+      "ats": "ashby",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Belisar",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Benchling",
+      "ats": "ashby",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "matched": 27,
+      "dropped_out_of_area": 23
+    },
+    {
+      "company": "Boku",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 11,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Bold",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Boltz",
+      "ats": "ashby",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Bounce",
+      "ats": "ashby",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Braintrust",
+      "ats": "ashby",
+      "ok": true,
+      "count": 32,
+      "error": null,
+      "matched": 16,
+      "dropped_out_of_area": 12
+    },
+    {
+      "company": "Branch.co",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "BuzzFeed",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Camber",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Cape",
+      "ats": "ashby",
+      "ok": true,
+      "count": 22,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Capitolis",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Carta",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 80,
+      "error": null,
+      "matched": 20,
+      "dropped_out_of_area": 20
+    },
+    {
+      "company": "Character.AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Chariot Defense",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Charthop",
+      "ats": "ashby",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Chestnut",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Circle",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Clerk",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "ClickUp",
+      "ats": "ashby",
+      "ok": true,
+      "count": 48,
+      "error": null,
+      "matched": 29,
+      "dropped_out_of_area": 11
+    },
+    {
+      "company": "Clubhouse",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Cluely",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Clutch",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 85,
+      "error": null,
+      "matched": 9,
+      "dropped_out_of_area": 9
+    },
+    {
+      "company": "Coactive",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Cognition",
+      "ats": "ashby",
+      "ok": true,
+      "count": 108,
+      "error": null,
+      "matched": 38,
+      "dropped_out_of_area": 33
+    },
+    {
+      "company": "Coinbase",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 252,
+      "error": null,
+      "matched": 55,
+      "dropped_out_of_area": 10
+    },
+    {
+      "company": "Compound",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Concourse",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Convex",
+      "ats": "ashby",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Cowboy Space Corporation",
+      "ats": "ashby",
+      "ok": true,
+      "count": 61,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Cresta",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 84,
+      "error": null,
+      "matched": 33,
+      "dropped_out_of_area": 18
+    },
+    {
+      "company": "Cross River Bank",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 35,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Crux",
+      "ats": "ashby",
+      "ok": true,
+      "count": 34,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Current",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "CX2",
+      "ats": "lever",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Databricks",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 895,
+      "error": null,
+      "matched": 543,
+      "dropped_out_of_area": 464
+    },
+    {
+      "company": "Daylight",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Decagon",
+      "ats": "ashby",
+      "ok": true,
+      "count": 109,
+      "error": null,
+      "matched": 44,
+      "dropped_out_of_area": 40
+    },
+    {
+      "company": "Descript",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Dfinity",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Dialpad",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 16,
+      "error": null,
+      "matched": 12,
+      "dropped_out_of_area": 12
+    },
+    {
+      "company": "Diode",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Dispatch",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Doxel",
+      "ats": "lever",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Dyno Therapeutics",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Earli",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Earnin",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 26,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 10
+    },
+    {
+      "company": "Ease Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Eka Robotics",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "ElevenLabs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 121,
+      "error": null,
+      "matched": 61,
+      "dropped_out_of_area": 38
+    },
+    {
+      "company": "EliseAI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 104,
+      "error": null,
+      "matched": 48,
+      "dropped_out_of_area": 47
+    },
+    {
+      "company": "Endra",
+      "ats": "ashby",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "EngFlow",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Envoy",
+      "ats": "ashby",
+      "ok": true,
+      "count": 23,
+      "error": null,
+      "matched": 11,
+      "dropped_out_of_area": 11
+    },
+    {
+      "company": "Erasca",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Espresso (Translucence Research Inc)",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Ethos",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Eve",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 18,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Everlaw",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 37,
+      "error": null,
+      "matched": 20,
+      "dropped_out_of_area": 19
+    },
+    {
+      "company": "Exa",
+      "ats": "ashby",
+      "ok": true,
+      "count": 67,
+      "error": null,
+      "matched": 21,
+      "dropped_out_of_area": 19
+    },
+    {
+      "company": "Exowatt",
+      "ats": "lever",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "fal",
+      "ats": "ashby",
+      "ok": true,
+      "count": 51,
+      "error": null,
+      "matched": 17,
+      "dropped_out_of_area": 15
+    },
+    {
+      "company": "Ferry Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Figma",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 147,
+      "error": null,
+      "matched": 53,
+      "dropped_out_of_area": 53
+    },
+    {
+      "company": "Filmhub",
+      "ats": "ashby",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "First Person Labs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Fivetran",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 196,
+      "error": null,
+      "matched": 62,
+      "dropped_out_of_area": 49
+    },
+    {
+      "company": "Fleek",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Flexport",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 212,
+      "error": null,
+      "matched": 45,
+      "dropped_out_of_area": 45
+    },
+    {
+      "company": "Flock",
+      "ats": "ashby",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Flock Homes",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Fly.io",
+      "ats": "lever",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Formation Bio",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 23,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Fortuna Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Forward",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 22,
+      "error": null,
+      "matched": 11,
+      "dropped_out_of_area": 9
+    },
+    {
+      "company": "Foundation",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Freenome",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 25,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "FurtherAI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Gamma.app",
+      "ats": "ashby",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "General Medicine",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "General Translation",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Gensyn",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Gimlet Labs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 16,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Glimpse",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Glow",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "gooddata.ai",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Greenlight",
+      "ats": "lever",
+      "ok": true,
+      "count": 15,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Groupon, Inc.",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 27,
+      "error": null,
+      "matched": 11,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "Harbor",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Harvey",
+      "ats": "ashby",
+      "ok": true,
+      "count": 390,
+      "error": null,
+      "matched": 143,
+      "dropped_out_of_area": 137
+    },
+    {
+      "company": "Headway",
+      "ats": "ashby",
+      "ok": true,
+      "count": 94,
+      "error": null,
+      "matched": 28,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Hedra",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Heron Power",
+      "ats": "ashby",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Hex",
+      "ats": "ashby",
+      "ok": true,
+      "count": 42,
+      "error": null,
+      "matched": 14,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "Honor",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "hyperexponential",
+      "ats": "ashby",
+      "ok": true,
+      "count": 39,
+      "error": null,
+      "matched": 12,
+      "dropped_out_of_area": 12
+    },
+    {
+      "company": "Ideogram",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Illumio",
+      "ats": "ashby",
+      "ok": true,
+      "count": 74,
+      "error": null,
+      "matched": 21,
+      "dropped_out_of_area": 19
+    },
+    {
+      "company": "Imply",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Improbable",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Inceptive",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Inductive Bio",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Inferact",
+      "ats": "ashby",
+      "ok": true,
+      "count": 32,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Infinite Machine",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Infinitus",
+      "ats": "ashby",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Inngest",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Insitro",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Instacart",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 92,
+      "error": null,
+      "matched": 36,
+      "dropped_out_of_area": 13
+    },
+    {
+      "company": "Intro",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Jeeves",
+      "ats": "lever",
+      "ok": true,
+      "count": 79,
+      "error": null,
+      "matched": 47,
+      "dropped_out_of_area": 41
+    },
+    {
+      "company": "Jito",
+      "ats": "lever",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "k-ID",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Kaizen",
+      "ats": "ashby",
+      "ok": true,
+      "count": 23,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Kalshi",
+      "ats": "ashby",
+      "ok": true,
+      "count": 41,
+      "error": null,
+      "matched": 12,
+      "dropped_out_of_area": 11
+    },
+    {
+      "company": "Kavak",
+      "ats": "lever",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Keycard",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Kindred",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Knownwell",
+      "ats": "ashby",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "KoBold Metals",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 28,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Kodex",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Kong",
+      "ats": "ashby",
+      "ok": true,
+      "count": 126,
+      "error": null,
+      "matched": 79,
+      "dropped_out_of_area": 37
+    },
+    {
+      "company": "Krea",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Labelbox",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Lassie",
+      "ats": "ashby",
+      "ok": true,
+      "count": 15,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "LayerZero",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Leona Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Lightfield",
+      "ats": "ashby",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "Lightspark",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Linq",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Lio",
+      "ats": "ashby",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "matched": 13,
+      "dropped_out_of_area": 13
+    },
+    {
+      "company": "Longitude Labs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Lookout",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "LTSE Services, Inc.",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Lumos",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Lyft",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 148,
+      "error": null,
+      "matched": 32,
+      "dropped_out_of_area": 32
+    },
+    {
+      "company": "Mariana Minerals",
+      "ats": "ashby",
+      "ok": true,
+      "count": 101,
+      "error": null,
+      "matched": 12,
+      "dropped_out_of_area": 12
+    },
+    {
+      "company": "Matik",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Matter Labs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Maven",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Maze Therapeutics",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Medium",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Mercury",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 70,
+      "error": null,
+      "matched": 21,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Method",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Midstream Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Mind Robotics",
+      "ats": "ashby",
+      "ok": true,
+      "count": 35,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Mintlify",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Mirage",
+      "ats": "ashby",
+      "ok": true,
+      "count": 16,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Mirelo AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Mirendil",
+      "ats": "ashby",
+      "ok": true,
+      "count": 16,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Mixpanel",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 40,
+      "error": null,
+      "matched": 21,
+      "dropped_out_of_area": 15
+    },
+    {
+      "company": "ModernFi",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Moment",
+      "ats": "ashby",
+      "ok": true,
+      "count": 11,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Morpho",
+      "ats": "ashby",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Mosaic",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Motherduck",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Mux",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Mysten Labs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Nash",
+      "ats": "ashby",
+      "ok": true,
+      "count": 26,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Neighbor",
+      "ats": "lever",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Netlify",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Northwood Space",
+      "ats": "ashby",
+      "ok": true,
+      "count": 64,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Octant Bio",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Odyssey",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "OfferUp",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Omada Health",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 23,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "OpenAI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 852,
+      "error": null,
+      "matched": 312,
+      "dropped_out_of_area": 291
+    },
+    {
+      "company": "OpenEvidence",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Orderful",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Ornn",
+      "ats": "ashby",
+      "ok": true,
+      "count": 11,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Otter",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 25,
+      "error": null,
+      "matched": 15,
+      "dropped_out_of_area": 15
+    },
+    {
+      "company": "PagerDuty",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 48,
+      "error": null,
+      "matched": 23,
+      "dropped_out_of_area": 16
+    },
+    {
+      "company": "Palmstreet",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Patch",
+      "ats": "lever",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Payrails",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Pearl Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Periodic Labs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Petual",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Phantom",
+      "ats": "ashby",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Phylo",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Pinecone",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Pinterest",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 174,
+      "error": null,
+      "matched": 77,
+      "dropped_out_of_area": 47
+    },
+    {
+      "company": "Plaid",
+      "ats": "ashby",
+      "ok": true,
+      "count": 147,
+      "error": null,
+      "matched": 64,
+      "dropped_out_of_area": 60
+    },
+    {
+      "company": "PlanetScale",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Podium Automation",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Pomelo Care",
+      "ats": "ashby",
+      "ok": true,
+      "count": 94,
+      "error": null,
+      "matched": 11,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Preference Model",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Probook",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Promise",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Proof Holdings",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 124,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Propel",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Prosper AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 9,
+      "dropped_out_of_area": 9
+    },
+    {
+      "company": "Protege",
+      "ats": "ashby",
+      "ok": true,
+      "count": 21,
+      "error": null,
+      "matched": 8,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Pylon",
+      "ats": "ashby",
+      "ok": true,
+      "count": 26,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Quora",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Radiant",
+      "ats": "ashby",
+      "ok": true,
+      "count": 44,
+      "error": null,
+      "matched": 14,
+      "dropped_out_of_area": 10
+    },
+    {
+      "company": "Rasa",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Raspberry AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Reddit",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 148,
+      "error": null,
+      "matched": 62,
+      "dropped_out_of_area": 21
+    },
+    {
+      "company": "Reducto",
+      "ats": "ashby",
+      "ok": true,
+      "count": 38,
+      "error": null,
+      "matched": 18,
+      "dropped_out_of_area": 17
+    },
+    {
+      "company": "Relace",
+      "ats": "ashby",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Relay",
+      "ats": "ashby",
+      "ok": true,
+      "count": 37,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Replit",
+      "ats": "ashby",
+      "ok": true,
+      "count": 38,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Resend",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Rezo Therapeutics",
+      "ats": "lever",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Rigetti Quantum Computing",
+      "ats": "lever",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Rigup",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Rillet",
+      "ats": "ashby",
+      "ok": true,
+      "count": 46,
+      "error": null,
+      "matched": 20,
+      "dropped_out_of_area": 16
+    },
+    {
+      "company": "Robinhood",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 163,
+      "error": null,
+      "matched": 47,
+      "dropped_out_of_area": 46
+    },
+    {
+      "company": "Roblox",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 260,
+      "error": null,
+      "matched": 41,
+      "dropped_out_of_area": 41
+    },
+    {
+      "company": "ROME Therapeutics",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Rune Technologies",
+      "ats": "ashby",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Runta",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Salient",
+      "ats": "ashby",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Samsara",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 299,
+      "error": null,
+      "matched": 143,
+      "dropped_out_of_area": 33
+    },
+    {
+      "company": "Sandbox VR",
+      "ats": "lever",
+      "ok": true,
+      "count": 36,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Sardine",
+      "ats": "ashby",
+      "ok": true,
+      "count": 40,
+      "error": null,
+      "matched": 23,
+      "dropped_out_of_area": 9
+    },
+    {
+      "company": "Saronic",
+      "ats": "ashby",
+      "ok": true,
+      "count": 294,
+      "error": null,
+      "matched": 40,
+      "dropped_out_of_area": 30
+    },
+    {
+      "company": "Senra Systems",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 23,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "SentiLink",
+      "ats": "ashby",
+      "ok": true,
+      "count": 46,
+      "error": null,
+      "matched": 22,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Sesame",
+      "ats": "ashby",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Setpoint.io",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Sky Mavis",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Sleeper",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Slingshot AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Snackpass",
+      "ats": "ashby",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "SnapLogic",
+      "ats": "lever",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Sola",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "SpaceXSI",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 2830,
+      "error": null,
+      "matched": 226,
+      "dropped_out_of_area": 213
+    },
+    {
+      "company": "Spade",
+      "ats": "ashby",
+      "ok": true,
+      "count": 11,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Specter",
+      "ats": "ashby",
+      "ok": true,
+      "count": 36,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Sphere",
+      "ats": "ashby",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "SpotOn",
+      "ats": "ashby",
+      "ok": true,
+      "count": 77,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Sprig",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Sprinter Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 65,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Spruce Systems",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Stacker",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Starburst",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 36,
+      "error": null,
+      "matched": 13,
+      "dropped_out_of_area": 13
+    },
+    {
+      "company": "Stripe",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 778,
+      "error": null,
+      "matched": 377,
+      "dropped_out_of_area": 319
+    },
+    {
+      "company": "Substack",
+      "ats": "ashby",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "SuperApp",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Supermove",
+      "ats": "lever",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Svix",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Swan",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Tako",
+      "ats": "ashby",
+      "ok": true,
+      "count": 14,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Talos",
+      "ats": "ashby",
+      "ok": true,
+      "count": 19,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 5
+    },
+    {
+      "company": "Tanium",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 65,
+      "error": null,
+      "matched": 25,
+      "dropped_out_of_area": 11
+    },
+    {
+      "company": "Temporal",
+      "ats": "ashby",
+      "ok": true,
+      "count": 92,
+      "error": null,
+      "matched": 38,
+      "dropped_out_of_area": 17
+    },
+    {
+      "company": "Tessera Labs",
+      "ats": "ashby",
+      "ok": true,
+      "count": 37,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Thatch Health",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 28,
+      "error": null,
+      "matched": 11,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "The Horowitz Andreessen Academy (HAA)",
+      "ats": "ashby",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Thyme Care",
+      "ats": "ashby",
+      "ok": true,
+      "count": 44,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Titan",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Tomorrow Health",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Town",
+      "ats": "ashby",
+      "ok": true,
+      "count": 16,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Truemed",
+      "ats": "ashby",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 4
+    },
+    {
+      "company": "Truffle Security",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Turquoise Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 8,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Tutor Intelligence",
+      "ats": "ashby",
+      "ok": true,
+      "count": 85,
+      "error": null,
+      "matched": 22,
+      "dropped_out_of_area": 13
+    },
+    {
+      "company": "TypeSafe AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "matched": 6,
+      "dropped_out_of_area": 6
+    },
+    {
+      "company": "Udio",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Ultima Genomics",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "UnifyID",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Uniswap",
+      "ats": "ashby",
+      "ok": true,
+      "count": 9,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Universal",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Uplift",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Valkryn",
+      "ats": "ashby",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "matched": 5,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Valon",
+      "ats": "ashby",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "matched": 13,
+      "dropped_out_of_area": 8
+    },
+    {
+      "company": "Vals AI",
+      "ats": "ashby",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Vantage",
+      "ats": "ashby",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Ventus Therapeutics",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Vesta",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Viggle",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
+    },
+    {
+      "company": "Vitally",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Voldex",
+      "ats": "ashby",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Volta",
+      "ats": "ashby",
+      "ok": true,
+      "count": 46,
+      "error": null,
+      "matched": 14,
+      "dropped_out_of_area": 13
+    },
+    {
+      "company": "Waymark",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 19,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Waymo",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 363,
+      "error": null,
+      "matched": 91,
+      "dropped_out_of_area": 88
+    },
+    {
+      "company": "Westmag",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Wingspan",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Wise",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 18,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Wonderschool",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 40,
+      "error": null,
+      "matched": 18,
+      "dropped_out_of_area": 14
+    },
+    {
+      "company": "WorkBoard",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "Wrapbook",
+      "ats": "ashby",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "matched": 7,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "XDOF",
+      "ats": "ashby",
+      "ok": true,
+      "count": 27,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Yubico",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 21,
+      "error": null,
+      "matched": 10,
+      "dropped_out_of_area": 7
+    },
+    {
+      "company": "Yuno",
+      "ats": "lever",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 1
+    },
+    {
+      "company": "ZeroMark",
+      "ats": "ashby",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "matched": 1,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Zipline",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 315,
+      "error": null,
+      "matched": 28,
+      "dropped_out_of_area": 26
+    },
+    {
+      "company": "Zuma",
+      "ats": "lever",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "matched": 3,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Zus Health",
+      "ats": "ashby",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "matched": 2,
+      "dropped_out_of_area": 2
     }
   ],
   "any_failures": true,
   "drop_out_of_area": true,
-  "dropped_out_of_area": 1100,
-  "ambiguous_locations": [],
+  "dropped_out_of_area": 4733,
+  "ambiguous_locations": [
+    {
+      "company": "Databricks",
+      "title": "Solutions Architect - Games",
+      "location": "Washington"
+    },
+    {
+      "company": "Databricks",
+      "title": "Strategic Core Account Executive - Telco",
+      "location": "Remote - Washington"
+    },
+    {
+      "company": "Kong",
+      "title": "Site Reliability Engineer 2",
+      "location": "Washington, United States"
+    },
+    {
+      "company": "Kong",
+      "title": "Software Engineering Manager, Managed Gateways SREs",
+      "location": "Washington, United States"
+    },
+    {
+      "company": "Kong",
+      "title": "Senior SRE, Managed Gateways",
+      "location": "Washington, United States"
+    },
+    {
+      "company": "Kong",
+      "title": "Enterprise Account Executive - Pacific Northwest",
+      "location": "Washington, United States"
+    },
+    {
+      "company": "Kong",
+      "title": "Enterprise Account Executive - Seattle",
+      "location": "Washington, United States"
+    }
+  ],
   "taxonomy": {
     "umbrellas": {
       "product": {
@@ -900,9 +3852,9 @@
       "public_sector": "Public sector"
     }
   },
-  "generated_at": "2026-11-21T17:27:01.582209+00:00",
-  "prior_job_count": 643,
-  "fresh_job_count": 576,
-  "total_job_count": 576,
+  "generated_at": "2026-11-21T18:33:11.685981+00:00",
+  "prior_job_count": 1686,
+  "fresh_job_count": 1683,
+  "total_job_count": 1683,
   "shrink_blocked": false
 }

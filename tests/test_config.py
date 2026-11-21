@@ -42,7 +42,7 @@ def test_live_locations_and_tags_load():
 
 def test_tag_with_unknown_industry_rejected(tmp_path):
     bad = tmp_path / "tags.yaml"
-    bad.write_text("tags:\n  x:\n    keywords: [a]\n    industries: [crypto]\n")
+    bad.write_text("tags:\n  x:\n    keywords: [a]\n    industries: [nope]\n")
     with pytest.raises(ConfigError):
         load_tags(path=bad)
 
@@ -67,7 +67,7 @@ def test_unknown_ats_rejected(tmp_path):
 def test_unknown_industry_rejected(tmp_path):
     bad = tmp_path / "companies.yaml"
     bad.write_text(
-        "companies:\n  - name: X\n    ats: ashby\n    identifier: x\n    industry: [crypto]\n"
+        "companies:\n  - name: X\n    ats: ashby\n    identifier: x\n    industry: [nope]\n"
     )
     with pytest.raises(ConfigError):
         load_companies(path=bad, valid_ats=KNOWN_ATS)

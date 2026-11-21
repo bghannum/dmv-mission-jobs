@@ -1,0 +1,1734 @@
+# Relevant companies whose jobs we can't fetch yet: their careers site is on
+# an unsupported ATS (e.g. Workday) or a custom site, or no board was found.
+# Not scraped. See PLAN.md Phases 5-6.
+companies:
+- name: 11x
+  homepage: https://www.11x.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: '[untitled]'
+  homepage: https://untitled.stream/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Airbase
+  homepage: https://www.airbase.us/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Aktis Oncology
+  homepage: https://aktisoncology.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Alchemy Health
+  homepage: https://alchemyhealth.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Aleph Surgical
+  homepage: https://alephsurgical.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Alpine Bio
+  homepage: https://www.nobellfoods.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: AltSchool
+  homepage: https://altitudelearning.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Ambient.ai
+  homepage: https://ambient.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: AminoChain
+  homepage: https://aminochain.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Angle
+  homepage: https://angle.money
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: AnyRoad
+  homepage: https://anyroad.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Apeel Sciences
+  homepage: https://apeel.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Apex Space
+  homepage: https://apexspace.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Apptio
+  homepage: https://www.apptio.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Aradigm
+  homepage: https://www.aradigmhealth.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Arc
+  homepage: https://arcboats.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Arcjet
+  homepage: https://arcjet.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Arpeggi Labs
+  homepage: https://arpeggi.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Arweave
+  homepage: https://arweave.org
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Autograph.io
+  homepage: https://autograph.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Avalanche
+  homepage: https://avax.network
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Axoni
+  homepage: https://axoni.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Aztec
+  homepage: https://aztec.network
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Babylon
+  homepage: https://babylonlabs.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Backbone Systems
+  homepage: https://www.backbonesystems.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Backstory
+  homepage: https://www.backstory.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Belong
+  homepage: https://belonghome.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Ber Sarai Labs
+  homepage: https://yupp.ai
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: BigHat Biosciences
+  homepage: https://www.bighatbio.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: BigScreen
+  homepage: https://bigscreenvr.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: BioAge Labs
+  homepage: http://bioagelabs.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Biodock
+  homepage: https://www.biodock.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Bitski
+  homepage: https://bitski.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Black Forest Labs
+  homepage: https://bfl.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Black Ore Technologies
+  homepage: https://www.blackore.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Blackbird.xyz
+  homepage: https://blackbird.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Bonfire Studios
+  homepage: http://www.bonfirestudios.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Box
+  homepage: https://box.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Braveheart
+  homepage: https://www.braveheart.bio/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Brightside
+  homepage: https://gobrightside.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: California Forever
+  homepage: https://californiaforever.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Camp4
+  homepage: https://www.camp4tx.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Camu
+  homepage: https://www.camu.com.br/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Canal
+  homepage: https://shopcanal.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Capriza
+  homepage: https://www.capriza.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Carbonated
+  homepage: https://www.carbonated.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Carry1st
+  homepage: https://carry1st.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Cartography Biosciences
+  homepage: https://cartography.bio/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Castelion
+  homepage: https://www.castelion.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Celo
+  homepage: https://clabs.co
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Chia
+  homepage: https://chia.net
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: CHIP Professionals
+  homepage: https://www.chipprofessionals.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Cider
+  homepage: https://shopcider.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Civitai
+  homepage: https://civitai.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Co:Create
+  homepage: https://usecocreate.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: CodeCombat
+  homepage: https://codecombat.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Codi
+  homepage: https://www.codi.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Comma.ai
+  homepage: https://comma.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Command Zero
+  homepage: https://www.commandzero.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Core Loop
+  homepage: https://coreloop.gg/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Cotool
+  homepage: https://cotool.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Cowrie
+  homepage: https://cowrie.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Createra
+  homepage: https://createra.fun/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Crossbeam
+  homepage: https://crossbeam.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Cryptoys
+  homepage: https://onchainstudios.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Cuenca
+  homepage: https://cuenca.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Cult of the North
+  homepage: https://www.cultofthenorth.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Culture Wireless
+  homepage: https://www.goculturewireless.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: CYGNVS
+  homepage: https://cygnvs.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: D2iQ
+  homepage: https://d2iq.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Datanomik
+  homepage: https://www.datanomik.com/en-us
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Daze
+  homepage: https://daze.chat/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Deepcell
+  homepage: https://deepcell.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Deepr
+  homepage: https://www.deeprmusic.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: DELV
+  homepage: https://delv.tech
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: DeSO
+  homepage: https://deso.org
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Destruction Labz
+  homepage: https://www.destructionlabz.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Devoted Health
+  homepage: https://www.devoted.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Digital Asset Holdings
+  homepage: https://www.digitalasset.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: DigitalOcean
+  homepage: https://digitalocean.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: District
+  homepage: https://www.joindistrict.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Divvy Homes
+  homepage: https://divvyhomes.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: DoNotPay
+  homepage: https://donotpay.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: doxxnet
+  homepage: https://doxx.net/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: dYdX
+  homepage: https://dydx.exchange
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Dynamic Labs, Inc.
+  homepage: https://dynamic.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: E-3 Tech
+  homepage: https://e-3.tech
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Eclypsium
+  homepage: https://www.eclypsium.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Eco
+  homepage: https://eco.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: EigenLayer
+  homepage: https://eigenlayer.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Elegen
+  homepage: https://www.elegenbio.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Entropy
+  homepage: https://entropy.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: EPAL, INC.
+  homepage: https://www.epal.gg/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Equal IQ
+  homepage: https://www.equal-iq.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Equals
+  homepage: https://equals.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: EveryRealm
+  homepage: https://everyrealm.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Facebook
+  homepage: https://facebook.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Fanatics
+  homepage: https://fanatics.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Faraway
+  homepage: https://faraway.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Fashivly
+  homepage: https://fashivly.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: favorited
+  homepage: https://www.favorited.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Feedplan
+  homepage: https://feedplan.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Fei Protocol
+  homepage: https://fei.money
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Felix Pago
+  homepage: https://www.felixpago.com/en
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Fenris Games
+  homepage: https://fenris.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: FidoCure
+  homepage: https://www.fidocure.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: FingerprintsDAO
+  homepage: https://fingerprintsdao.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Flash Hoops
+  homepage: https://www.flashhoops.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Flow
+  homepage: https://www.flow.life/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Flowcarbon
+  homepage: https://flowcarbon.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: FlyHomes
+  homepage: https://www.flyhomes.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Foodology
+  homepage: https://foodology.com.co
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Formation
+  homepage: https://formation.dev
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Forta Network
+  homepage: https://forta.org
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Forte Labs, Inc.
+  homepage: https://forte.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Foundry Management
+  homepage: https://www.foundrymgt.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Foursquare
+  homepage: https://foursquare.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Freatic
+  homepage: https://freatic.team
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Fudo
+  homepage: https://fu.do
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Fusion I/O
+  homepage: http://www.fusionio.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: FWB
+  homepage: https://fwb.help
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Galadyne
+  homepage: https://galadyne.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: GamerXSociety
+  homepage: https://www.gamerxsociety.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Gate Bio
+  homepage: https://gatebio.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: GC Therapeutics
+  homepage: https://www.gc-tx.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Gitbutler
+  homepage: https://www.gitbutler.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Glif
+  homepage: https://glif.app/chat
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Glorify
+  homepage: https://www.glorify.global
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Glossbird
+  homepage: http://www.glossbird.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Greether
+  homepage: https://www.greether.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Gym Class VR
+  homepage: https://www.gymclass.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Hadrian
+  homepage: https://hadrian.co/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: HappyRobot
+  homepage: https://happyrobot.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Hebbia
+  homepage: https://www.hebbia.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Here Not There, Inc.
+  homepage: https://hntlabs.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Highstock
+  homepage: https://highstock.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Hilbert
+  homepage: https://hilberts.ai
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Hipcamp
+  homepage: https://hipcamp.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Hippocratic AI
+  homepage: https://hippocraticai.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Hopin
+  homepage: https://hopin.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: IFTTT
+  homepage: https://ifttt.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Incention
+  homepage: https://www.incention.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Incredible Health
+  homepage: https://www.incrediblehealth.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Infinite Athlete
+  homepage: https://infiniteathlete.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Instart
+  homepage: https://www.instart.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Inventa
+  homepage: https://inventa.com.br/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Iron Fish
+  homepage: https://ironfish.network
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Irreverent Labs
+  homepage: https://irreverentlabs.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: IYK
+  homepage: https://iyk.app
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Jarvie AI
+  homepage: https://heyjarvie.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Journera
+  homepage: https://journera.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: K12 Crypto
+  homepage: https://www.k12crypto.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Kadabra
+  homepage: https://www.kadabrainc.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Kaedim
+  homepage: https://www.kaedim3d.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Kairos
+  homepage: https://kairos.trade/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Keep Network
+  homepage: https://keep.network/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: KIKI
+  homepage: https://kikiworld.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Kiosk
+  homepage: https://kiosk.app
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Kosen Labs
+  homepage: https://kosen.ai
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: kweliTV
+  homepage: https://www.kweli.tv
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Labster
+  homepage: https://www.labster.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Legend Labs
+  homepage: https://legend.xyz/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Levels Health
+  homepage: https://www.levels.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Lido Finance
+  homepage: https://lido.fi/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Lighter
+  homepage: https://lighter.xyz/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Lightup
+  homepage: https://www.lightup.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Lime
+  homepage: https://www.li.me/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Locale
+  homepage: https://shoplocale.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Longeye
+  homepage: https://www.longeye.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Loop
+  homepage: https://loopcrypto.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: LootRush
+  homepage: https://www.lootrush.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Lumi Interactive
+  homepage: https://www.playkinderworld.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Macro
+  homepage: https://macro.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Magic Leap
+  homepage: https://www.magicleap.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mainframe Industries
+  homepage: https://themainframe.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mana Bio
+  homepage: https://mana.bio
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Manifold
+  homepage: https://manifold.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Marker Learning
+  homepage: https://markerlearning.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mayvenn
+  homepage: https://shop.mayvenn.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Medley
+  homepage: https://www.withmedley.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Meitre
+  homepage: https://meitre.com/en
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mem
+  homepage: https://get.mem.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mem Protocol
+  homepage: https://mem.co
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Merkle Manufactory, Inc.
+  homepage: https://farcaster.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Meta4 Capital
+  homepage: https://meta4.capital
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Metatheory
+  homepage: https://metatheory.gg
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Milu Health
+  homepage: https://www.miluhealth.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mistral
+  homepage: https://www.mistral.ai
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Moov
+  homepage: https://moov.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mother Computer Inc.
+  homepage: https://mother.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mountaintop Studios
+  homepage: https://www.mountaintop.gg
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Muse App Inc
+  homepage: https://www.musesessions.co/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mvmnt
+  homepage: https://mvmnt.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Mythical Games
+  homepage: https://mythicalgames.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: NationBuilder
+  homepage: https://nationbuilder.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Nautilus Biotechnology
+  homepage: https://www.nautilus.bio/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Nava Therapeutics
+  homepage: https://navatx.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Navan
+  homepage: https://navan.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: NEAR
+  homepage: https://near.org
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Neo
+  homepage: https://www.neo.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Netography
+  homepage: https://netography.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Neural Magic
+  homepage: https://neuralmagic.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Nexthop
+  homepage: https://nexthop.ai
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: NG.CASH
+  homepage: https://ng.cash/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Niftmint
+  homepage: https://tflabs.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: NOD Games
+  homepage: https://nodgames.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: North Pole Security
+  homepage: https://northpole.security/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Nova Labs
+  homepage: https://nova.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: NX
+  homepage: http://nx.dev/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Nym
+  homepage: https://nymtech.net
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Oasis Labs
+  homepage: https://www.oasislabs.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Oboe
+  homepage: https://oboe.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Odyssey Interactive
+  homepage: http://OdysseyInteractive.gg
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: One More Game
+  homepage: https://www.onemoregame.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Oorja Bio
+  homepage: https://oorjabio.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: OpenBazaar
+  homepage: https://openbazaar.org/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Opendoor
+  homepage: https://www.opendoor.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: OpenReserve
+  homepage: https://www.openreserve.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Optimism
+  homepage: https://optimism.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Orchid Labs
+  homepage: https://www.orchid.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Original Games
+  homepage: https://originalgames.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Outing
+  homepage: https://www.joinouting.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Overtime
+  homepage: https://overtime.tv/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Overwolf
+  homepage: https://www.overwolf.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Pahdo Labs
+  homepage: https://pahdolabs.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: PartyDAO
+  homepage: https://partybid.app
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Payall
+  homepage: https://payall.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Peepal.co
+  homepage: https://coinswitch.co
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Phaze
+  homepage: https://phaze.app/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Phota Labs
+  homepage: https://www.photalabs.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Pietra
+  homepage: http://www.pietrastudio.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: PilotGPT
+  homepage: https://www.pilotgpt.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Pimlico
+  homepage: https://pimlico.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Pindrop
+  homepage: https://www.pindrop.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: PleasrDAO
+  homepage: https://pleasr.org
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Plix
+  homepage: https://plix.ai
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Polychain
+  homepage: https://polychain.capital/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Poseidon
+  homepage: https://psdn.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Practice
+  homepage: https://practice.do/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Preset
+  homepage: https://preset.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Prisms
+  homepage: https://prismsvr.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Probably
+  homepage: https://www.probably.dev/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: problems
+  homepage: https://problems.dev/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Proof of Play
+  homepage: https://proofofplay.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Proven
+  homepage: https://www.proven.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Pug.AI
+  homepage: https://www.pug.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Pyn
+  homepage: https://pynhq.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: QuiverAI
+  homepage: https://quiver.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Rabbit
+  homepage: https://rabb.it
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: RadEmploy
+  homepage: https://www.rademploy.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Raid Base
+  homepage: https://raidbase.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Rapid
+  homepage: https://rapidapi.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Rappi
+  homepage: https://rappi.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Reface
+  homepage: https://reface.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Replay
+  homepage: https://replay.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Revolut
+  homepage: https://revolut.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Rewatch
+  homepage: https://rewatch.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Rive
+  homepage: https://rive.app
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: RLY Network
+  homepage: https://forte.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Roboto Games
+  homepage: https://robotogames.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Roebling
+  homepage: https://roebling.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Rollup AI
+  homepage: https://rollup.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Royal
+  homepage: https://royal.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Run the World
+  homepage: https://www.runtheworld.today/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Runloop
+  homepage: https://runloop.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Rye
+  homepage: https://rye.store
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Salt AI
+  homepage: https://www.salt.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Santa Ana Bio
+  homepage: https://SantaAnaBio.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Scene Infrastructure Co
+  homepage: https://sceneinfrastructure.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Scribe Therapeutics
+  homepage: https://Scribetx.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Scribenote
+  homepage: https://scribenote.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Segura
+  homepage: https://www.segura.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Seismic Systems
+  homepage: https://seismic.systems
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Series Entertainment
+  homepage: https://www.series.inc/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Shapeways
+  homepage: https://www.shapeways.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Sharp Performance
+  homepage: https://www.sharpperformance.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Shef
+  homepage: https://shef.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Shibuya
+  homepage: https://shibuya.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Shizuku AI
+  homepage: https://shizuku.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Shop Rodeo
+  homepage: https://www.shoprodeo.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Singularity 6
+  homepage: https://www.singularity6.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Skylight Health
+  homepage: https://skylight.health
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Slack
+  homepage: https://slack.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Sloyd
+  homepage: https://sloyd.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Smartcar
+  homepage: https://smartcar.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Snapser
+  homepage: https://snapser.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Sound.xyz
+  homepage: https://sound.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Sourcegraph
+  homepage: https://sourcegraph.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Sovrun
+  homepage: https://www.sovrun.org/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Standard Nuclear
+  homepage: https://standardnuclear.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Stelo Labs, Inc.
+  homepage: https://stelolabs.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Stipple Bio
+  homepage: https://www.stipple.bio/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Stitch
+  homepage: https://www.stitch.co/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Stoik
+  homepage: https://www.stoik.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Story Protocol
+  homepage: https://storyprotocol.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Stuut
+  homepage: https://www.stuut.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Super Evil MegaCorp
+  homepage: https://www.superevilmegacorp.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Superhuman
+  homepage: https://superhuman.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Supersonik
+  homepage: https://supersonik.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: SwayBrand, Inc.
+  homepage: https://www.swaybrand.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Synapse
+  homepage: https://synapsefi.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Syndicate
+  homepage: https://syndicate.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Talaria Scientific
+  homepage: https://talariasci.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Tally Labs, Inc.
+  homepage: https://tallylabs.xyz
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Tapi
+  homepage: https://tapi.la/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Teespring
+  homepage: https://teespring.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Tellus
+  homepage: https://tellusapp.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: ternwheel
+  homepage: https://www.ternwheel.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Testcode
+  homepage: https://testco.de
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: The Boring Company
+  homepage: https://www.boringcompany.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Third Arc Bio
+  homepage: https://thirdarcbio.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Timbucktoo
+  homepage: https://www.thetimbucktoo.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Titus
+  homepage: https://www.gotitus.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Tlon
+  homepage: https://urbit.org/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Toka
+  homepage: https://tokagroup.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Toma
+  homepage: https://toma.so
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: TopKey
+  homepage: https://www.topkey.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Tradeblock
+  homepage: https://tradeblock.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Treeline
+  homepage: https://www.treeline.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: TrueFi
+  homepage: https://truefi.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Ulysses
+  homepage: https://www.theoceancompany.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Unconventional AI
+  homepage: https://unconv.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Unisound
+  homepage: https://www.unisound.io/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: UnitedMasters
+  homepage: https://unitedmasters.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: UpSmith
+  homepage: https://upsmith.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Upstash
+  homepage: https://upstash.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Vaas
+  homepage: https://getvaas.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Valar Labs
+  homepage: https://valarlabs.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Valora
+  homepage: https://valoraapp.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: VeeFriends
+  homepage: https://veefriends.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Ventrilo
+  homepage: https://ventrilo.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Virch Merch
+  homepage: https://www.virchmerchshop.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Warbler Labs, Incorporated
+  homepage: https://goldfinch.finance
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Wealthmore
+  homepage: https://www.wealthmore.net/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Whatnot
+  homepage: https://www.whatnot.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Worldcoin
+  homepage: https://worldcoin.org
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: XMTP Labs
+  homepage: https://xmtp.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Yellow
+  homepage: http://yellowsignal.ai/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Yield Guild Games
+  homepage: https://yieldguild.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Yuga Labs (BAYC)
+  homepage: https://yuga.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Zed.run
+  homepage: https://vhslab.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Zefchain
+  homepage: https://linera.io
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Zenefits
+  homepage: https://www.zenefits.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Zulily
+  homepage: https://www.zulily.com/
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
+- name: Zynga
+  homepage: https://zynga.com
+  source: a16z
+  ats: unknown
+  note: no Greenhouse/Lever/Ashby board found
