@@ -65,9 +65,9 @@ The static site reads that file in the browser and filters client-side.
 `.github/workflows/scrape.yml` runs the scraper **daily at 11:00 UTC** (and on demand) and
 commits the refreshed `data/`. `ci.yml` runs ruff and pytest on every pull request.
 
-**Hosting:** the repo is private for now, and GitHub Pages can't publish from a private
-repo on a free plan. `pages.yml` is skipped until the repo goes public and the
-`PAGES_ENABLED` repository variable is set to `true`. Until then, view the site locally.
+**Live:** [bghannum.github.io/dmv-mission-jobs](https://bghannum.github.io/dmv-mission-jobs/).
+`pages.yml` deploys the site whenever `site/` or `data/` changes on `main` (it runs only when
+the `PAGES_ENABLED` repository variable is `true`).
 
 ## Add a company
 
