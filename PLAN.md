@@ -7,6 +7,51 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 - **Workday coverage**: many defense primes and government IT employers use Workday.
 - **Discovery**: a seeder keeps growing the company list automatically.
 
+## Current status (as of 2026-11-21)
+
+**Live:** https://bghannum.github.io/dmv-mission-jobs/ (public repo `bghannum/dmv-mission-jobs`).
+About 1,680 roles from 211 companies with open roles, out of 416 tracked. The scrape runs daily at 11:00 UTC (about 8 minutes),
+commits as `brians-job-bot`, and redeploys the site automatically.
+
+| Phase | Status |
+|---|---|
+| 0: Fork and baseline | ✅ Done |
+| 1: Categories, location and tags | ✅ Done |
+| 1b: Visual redesign | ✅ Done, plus multi-select category chips and alphabetical dropdowns |
+| 2: Expand the company list | ✅ "Done when" met: the a16z portfolio added 324 companies, the Washington rule is decided, and the site is live. **Some tasks carried over** (below). |
+| 3: Payload size | 🟡 Partly done: descriptions are dropped from `jobs.json` and replaced with a 280-char `snippet`. The file is 1.9 MB at about 1,680 jobs; the target is under 1.5 MB at 2,000. |
+| 4: Seeder | 🟡 Started: `scraper/seeder/` (a16z source, ATS prober, industry suggestions) and `scripts/seed_a16z.py`. No `seed_sources.yaml`, no other sources, no weekly PR Action yet. |
+| 5: Big-tech adapters | ⬜ Not started |
+| 6: Workday adapter | ⬜ Not started |
+| 7: Polish | ⬜ Not started |
+
+**Suggested next steps, in order:**
+1. **Finish Phase 2's named companies.** 20 companies listed in Phase 2 are still missing:
+   - Palantir, Scale AI, Epirus, Hadrian, Govini, Rebellion Defense, Castelion, Chaos Industries, Ask Sage, Istari
+   - Snowflake, CrowdStrike, Zscaler, Palo Alto Networks, ServiceNow, Salesforce, Elastic, MongoDB, Datadog, GitLab
+
+   Write `scripts/verify_company.py` (still missing) and reuse `scraper/seeder/probe.py` to find each one's ATS. The ones on Workday or custom sites go to `config/needs_adapter.yaml`.
+2. **Review queues:**
+   - `config/candidates.yaml`: 48 a16z boards found but not confirmed as the right company. Move good ones into `companies.yaml` and the rest into a new `config/rejected.yaml`.
+   - Cedar's Ashby board returns 404, so remove it.
+3. **Industry clean-up:**
+   - Re-tag Shane's original companies with the new vocabulary (e.g. `saas`, `ai`, `govtech`).
+   - Have someone with defense knowledge skim the American Dynamism block in `companies.yaml`. Some defense companies (e.g. CX2, Rune Technologies) have empty a16z descriptions and lack `deftech`.
+4. **Real titles into `roles.yaml`.** Collect real GTM and customer titles from defense companies and add them to `roles.yaml` with tests (a Phase 2 task, not done).
+5. **Phase 3, Phase 4, then Phase 6.** Phase 3 needs the size target. Phase 4 means more sources (8VC, Founders Fund, Lux, ...) plus the weekly PR. Phase 6 (Workday) unlocks many of the 346 companies in `needs_adapter.yaml` and the defense primes.
+
+**Where things live (as built):**
+- **Config:** `config/companies.yaml` (416 companies: Shane's 92 plus the a16z ones under a comment header), `candidates.yaml`, `needs_adapter.yaml`, `roles.yaml`, `locations.yaml`, `tags.yaml` and `settings.yaml`. `rejected.yaml` and `seed_sources.yaml` don't exist yet.
+- **Scraper:** `scraper/`. `location.py` holds the DMV-or-remote model and the Washington rules, `tagging.py` holds clearance and public sector, and `seeder/` holds the a16z source, the ATS prober and industry suggestions. Industry values are `INDUSTRY_VOCAB` in `scraper/models.py`.
+- **Scripts:** `scripts/seed_a16z.py` (rerun: `python scripts/seed_a16z.py`; add `--apply` to write config). Its probe cache and a16z page copies live in `.cache/seeder/` (gitignored), so reruns are almost free.
+- **Docs:** `docs/seed_sources.md` records which discovery sources are allowed and why. portfoliojobs.a16z.com is **not** allowed (Consider's terms).
+- **Site:** `site/` (vanilla JS; every filter lives in the URL, e.g. `?umbrella=gtm,customer&loc=dmv&public_sector=1&view=list`). Filter labels come from `meta.json` `taxonomy`.
+- **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
+
+**Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
+`ruff check . && pytest` (193 tests), `python -m scraper.main` (about 10 minutes for 416 companies), and
+`python -m http.server 8000`, then open `http://localhost:8000/site/`.
+
 ## Goals
 
 1. **One board for everyone.** There are no per-user profiles. Users narrow it with filters for category, role, industry, level, location type, clearance and public sector, as on Shane's site.
@@ -26,7 +71,9 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 | Categories | Keep Shane's Design and Engineering categories alongside the new ones. |
 | "Washington" (no state) | **Decided 2026-11-21:** keep these roles (`location_type: unknown`) and label them "Location uncertain" on the card, with a "Washington (uncertain)" location filter. "City, Washington", Washington listed among other states, and a job title naming a Washington State place ("Seattle", "Pacific Northwest", "PNW", ...) all count as Washington State: dropped, or US remote if the role is remote. Still logged in `meta.json` `ambiguous_locations`. |
 | Bare "Remote" (no country) | Counts as US remote (`remote_us`). |
-| Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs` (a private copy, since GitHub can't make a private fork of a public repo). Scraper User-Agent: `brians-job-bot`. |
+| Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs`. It began as a private copy (GitHub can't make a private fork of a public repo) and is now public; see "Repo". Scraper User-Agent: `brians-job-bot`. |
+| Industries | `INDUSTRY_VOCAB` in `scraper/models.py`: Shane's original values, the Phase 2 values, and the a16z sectors (`american-dynamism`, `fintech`, `crypto`, `consumer`, `games`). `deftech` is strict because it tags every job at the company Public sector. Mission-first sort: `deftech`, `govtech`, `gov-it`, `space`, `american-dynamism`. |
+| Categories (site) | Category is a row of multi-select chips (`umbrella=gtm,customer`). Industry, Role and Company dropdowns are alphabetical; Level stays in seniority order. |
 | Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |
 | a16z portfolio | Every a16z company with a confirmed Greenhouse/Lever/Ashby board is on the board (added 2026-11-21 with `scripts/seed_a16z.py`). The company list comes from a16z.com; the Consider-hosted portfoliojobs.a16z.com isn't used because Consider's terms forbid scrapers. See `docs/seed_sources.md`. |
 | Job descriptions | Not stored in `jobs.json` (pulled forward from Phase 3); a 280-character `snippet` is kept. Tagging still reads full descriptions during the scrape. |
@@ -63,6 +110,8 @@ The design keeps this shape. The changes are mostly config (more categories, a l
 ---
 
 ## Target architecture
+
+(The original target. For what exists today, see "Where things live" under Current status.)
 
 ```
 config/
@@ -352,7 +401,11 @@ These companies run their own careers sites, so each needs a custom adapter. Let
 
 ## Repo and hosting
 
-**Decision: private through Phase 2, public at the end of Phase 2.**
+**Decision: private through Phase 2, public at the end of Phase 2.** Done on 2026-11-21. The repo
+went public as a fresh repo whose history was rewritten: the personal email on commits became the GitHub noreply
+address, and a personal name was removed. The private original, with PRs #1–#6, is
+`bghannum/dmv-mission-jobs-archive`. Commit with the noreply address only. The notes below are the reasoning
+from before launch.
 
 - **Private while iterating.** Half-built scrapers and noisy data aren't public, and you can experiment freely. The catches:
   - **GitHub Pages doesn't publish from a private repo on a free account.** It needs a paid plan, so view the site locally (`python -m http.server`) during development.
@@ -373,5 +426,6 @@ These companies run their own careers sites, so each needs a custom adapter. Let
 None right now. (The bare "Washington" question was decided on 2026-11-21; see the decisions table.)
 
 ## How to use this plan with Claude Code
-- Put this file in the repo root as `PLAN.md`, and add a `CLAUDE.md` that says: *"Follow PLAN.md. Work one phase at a time on a branch, with tests. Run `ruff check .` and `pytest` before committing. Ask before changing the data model beyond what the plan describes. For any adapter or seed source that hits an undocumented endpoint, investigate and document it in docs/ before writing code."*
-- First prompt: *"Read PLAN.md and the existing code, then do Phase 0."*
+- `CLAUDE.md` holds the working rules and project facts. This file holds the plan, the decisions and the **Current status** at the top.
+- Starting a fresh session: *"Read CLAUDE.md and the Current status section of PLAN.md, then do next step 1."* (or whichever step you want).
+- Keep **Current status** up to date at the end of each piece of work: phase table, next steps, counts.
