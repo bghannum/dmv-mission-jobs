@@ -1,6 +1,11 @@
-// DMV Mission Jobs — reads data/jobs.json, renders + filters client-side. No build step.
+// DMV Mission Jobs: reads data/jobs.json, renders and filters client-side. No build step.
+// Every filter lives in the URL, e.g. ?umbrella=gtm&public_sector=1&loc=dmv&view=list
 
 const LEVEL_ORDER = ["intern", "junior", "mid", "senior", "staff", "principal", "lead", "manager", "director", "vp"];
+const LEVEL_LABELS = {
+  intern: "Intern", junior: "Junior", mid: "Mid", senior: "Senior", staff: "Staff",
+  principal: "Principal", lead: "Lead", manager: "Manager", director: "Director", vp: "VP",
+};
 // Fallback labels; meta.json's `taxonomy` (written by the scraper from config) wins.
 const UMBRELLA_LABELS = {
   product: "Product",
@@ -12,36 +17,32 @@ const UMBRELLA_LABELS = {
   design: "Design",
   engineering: "Engineering",
 };
-const LOCATION_LABELS = {
-  dmv_onsite: "dmv on-site",
-  dmv_hybrid: "dmv hybrid",
-  remote_us: "remote (us)",
-  unknown: "washington?",
+const INDUSTRY_LABELS = {
+  deftech: "Defense tech", govtech: "Gov tech", "gov-it": "Gov IT", space: "Space", ai: "AI",
+  cybersecurity: "Cybersecurity", bigtech: "Big tech", saas: "SaaS", cspm: "Cloud security",
+  finops: "FinOps", grc: "GRC", healthtech: "Health tech",
 };
-const TAG_LABELS = { public_sector: "public sector", clearance: "clearance" };
+const LOCATION_LABELS = {
+  dmv_onsite: "On-site",
+  dmv_hybrid: "Hybrid",
+  remote_us: "Remote (US)",
+  unknown: "Location unconfirmed",
+  other: "Other",
+};
+const LOCATION_TYPES = ["dmv_onsite", "dmv_hybrid", "remote_us", "unknown"];
+const TAG_LABELS = { public_sector: "Public sector", clearance: "Clearance" };
+const TAG_ORDER = ["public_sector", "clearance"];
 // Industries sorted to the top by default ("mission first").
 const MISSION_INDUSTRIES = ["deftech", "govtech", "gov-it", "space"];
 const NEW_DAYS = 7;
-// Filter control ids -> URL param names. Checkbox params are "1" when on.
 const SELECTS = {
   umbrella: "f-umbrella", role: "f-role", industry: "f-industry", level: "f-level",
-  loc: "f-loc", company: "f-company", sort: "f-sort",
+  company: "f-company", sort: "f-sort",
 };
-const CHECKBOXES = { public_sector: "f-public_sector", clearance: "f-clearance" };
+const TOGGLES = { public_sector: "f-public_sector", clearance: "f-clearance" };
 
-const state = { jobs: [], meta: null };
-
-function taxonomy() {
-  return (state.meta && state.meta.taxonomy) || { umbrellas: {}, tags: {} };
-}
-function umbrellaLabel(key) {
-  return (taxonomy().umbrellas[key] || {}).label || UMBRELLA_LABELS[key] || key;
-}
-function roleLabels() {
-  const out = {};
-  Object.values(taxonomy().umbrellas).forEach((u) => Object.assign(out, u.roles || {}));
-  return out;
-}
+const state = { jobs: [], meta: null, loc: new Set(), view: "" };
+const $ = (id) => document.getElementById(id);
 
 // Prod serves index.html at the site root with data/ as a sibling; local `http.server`
 // serves it under /site/. Try both so either works.
@@ -57,8 +58,25 @@ async function loadJSON(name) {
 
 function daysAgo(iso) {
   if (!iso) return Infinity;
-  const then = new Date(iso + "T00:00:00Z").getTime();
+  const then = new Date(iso.length === 10 ? iso + "T00:00:00Z" : iso).getTime();
   return (Date.now() - then) / 86400000;
+}
+
+function relativeDays(iso) {
+  const d = Math.floor(daysAgo(iso));
+  if (!Number.isFinite(d)) return "";
+  if (d <= 0) return "today";
+  if (d === 1) return "1d ago";
+  if (d < 60) return `${d}d ago`;
+  return `${Math.round(d / 30)}mo ago`;
+}
+
+function relativeTime(iso) {
+  const hours = daysAgo(iso) * 24;
+  if (!Number.isFinite(hours)) return "–";
+  if (hours < 1) return "just now";
+  if (hours < 24) return `${Math.round(hours)}h ago`;
+  return `${Math.round(hours / 24)}d ago`;
 }
 
 function el(tag, cls, text) {
@@ -79,40 +97,90 @@ function safeUrl(url) {
   }
 }
 
+function taxonomy() {
+  return (state.meta && state.meta.taxonomy) || { umbrellas: {}, tags: {} };
+}
+function umbrellaLabel(key) {
+  return (taxonomy().umbrellas[key] || {}).label || UMBRELLA_LABELS[key] || key;
+}
+function roleLabels() {
+  const out = {};
+  Object.values(taxonomy().umbrellas).forEach((u) => Object.assign(out, u.roles || {}));
+  return out;
+}
+function tagLabel(key) {
+  return (taxonomy().tags || {})[key] || TAG_LABELS[key] || key;
+}
+
+// A multi-city posting's location string can be long; show the DMV city when there is one.
+const DMV_HINT = /(washington,? d\.?c|district of columbia|virginia|, va\b|maryland|, md\b|reston|arlington|mcLean|herndon|bethesda|fort meade|springfield|alexandria)/i;
+function shortLocation(job) {
+  const parts = (job.location || "").split(/;\s*/).filter(Boolean);
+  if (parts.length <= 1) return job.location || "";
+  const pick = (job.location_type || "").startsWith("dmv") ? parts.find((p) => DMV_HINT.test(p)) : null;
+  return `${pick || parts[0]} +${parts.length - 1} more`;
+}
+
+const ARROW = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 L17 7"></path><path d="M8 7 L17 7 L17 16"></path></svg>';
+
 function card(job) {
-  const a = el("a", "job");
+  const article = el("article", "card");
+
+  const top = el("div", "card-top");
+  const head = el("div", "card-head");
+  const h3 = el("h3");
+  const a = el("a", null, job.title || "Untitled role");
   a.href = safeUrl(job.url);
   a.target = "_blank";
   a.rel = "noopener noreferrer";
+  h3.appendChild(a);
+  head.appendChild(h3);
 
-  const top = el("div", "job-top");
-  const left = el("div");
-  left.appendChild(el("span", "job-title", job.title || "Untitled role"));
-  left.appendChild(document.createTextNode(" @ "));
-  left.appendChild(el("span", "company", job.company || ""));
-  top.appendChild(left);
-  top.appendChild(el("span", "apply", "apply →"));
-  a.appendChild(top);
+  const sub = el("span", "card-sub");
+  sub.appendChild(el("span", "co", job.company || ""));
+  const loc = shortLocation(job);
+  if (loc) {
+    sub.appendChild(document.createTextNode(" · "));
+    const l = el("span", "loc-text", loc);
+    if (loc !== job.location) l.title = job.location;
+    sub.appendChild(l);
+  }
+  // "On-site" / "Hybrid" / "Remote (US)", unless the location text already says remote.
+  const type = job.location_type;
+  const saysRemote = /remote/i.test(loc);
+  if (type && !(type === "remote_us" && saysRemote)) {
+    sub.appendChild(document.createTextNode(" · " + (LOCATION_LABELS[type] || type)));
+  }
+  head.appendChild(sub);
+  top.appendChild(head);
+  if (daysAgo(job.first_seen) <= NEW_DAYS) top.appendChild(el("span", "badge-new", "New"));
+  article.appendChild(top);
 
-  const meta = el("div", "job-meta");
-  (job.tags || []).forEach((t) =>
-    meta.appendChild(el("span", `tag ${t.replace(/_/g, "-")}`, taxonomy().tags[t] ? taxonomy().tags[t].toLowerCase() : (TAG_LABELS[t] || t))));
-  if (job.level) meta.appendChild(el("span", "tag level", job.level));
-  (job.industries || []).forEach((i) => meta.appendChild(el("span", "tag industry", i)));
-  if (job.location) meta.appendChild(el("span", "tag", job.location));
-  if (job.location_type) {
-    meta.appendChild(el("span", `tag loc ${job.location_type}`, LOCATION_LABELS[job.location_type] || job.location_type));
-  }
-  if (daysAgo(job.first_seen) <= NEW_DAYS) meta.appendChild(el("span", "tag new", "new"));
-  if (job.description_available === false) {
-    meta.appendChild(el("span", "tag no-desc", "full description on company site"));
-  }
-  a.appendChild(meta);
-  return a;
+  const pills = el("div", "pills");
+  const cat = (job.umbrellas || [])[0];
+  if (cat) pills.appendChild(el("span", "pill", umbrellaLabel(cat)));
+  if (job.level) pills.appendChild(el("span", "pill", LEVEL_LABELS[job.level] || job.level));
+  TAG_ORDER.filter((t) => (job.tags || []).includes(t)).forEach((t) =>
+    pills.appendChild(el("span", `pill pill-${t}`, tagLabel(t))));
+  article.appendChild(pills);
+
+  const foot = el("div", "card-foot");
+  foot.appendChild(el("span", "seen", job.first_seen ? `First seen ${relativeDays(job.first_seen)}` : ""));
+  const view = el("span", "view-role");
+  view.innerHTML = "View role" + ARROW; // static markup only
+  foot.appendChild(view);
+  article.appendChild(foot);
+  return article;
 }
 
 function uniqueSorted(values) {
-  return [...new Set(values.filter(Boolean))].sort();
+  return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
+}
+
+function addOption(sel, value, label) {
+  const o = el("option", null, label);
+  o.value = value;
+  sel.appendChild(o);
 }
 
 function populateFilters() {
@@ -127,74 +195,77 @@ function populateFilters() {
     if (j.company) companies.add(j.company);
   });
 
-  const umbSel = document.getElementById("f-umbrella");
   // Config order (taxonomy) first, then anything else present in the data.
   const ordered = Object.keys(taxonomy().umbrellas).filter((u) => umb.has(u));
   [...umb].sort().forEach((u) => { if (!ordered.includes(u)) ordered.push(u); });
-  ordered.forEach((u) => {
-    const o = el("option", null, umbrellaLabel(u));
-    o.value = u;
-    umbSel.appendChild(o);
-  });
+  ordered.forEach((u) => addOption($("f-umbrella"), u, umbrellaLabel(u)));
+  uniqueSorted([...inds]).forEach((i) => addOption($("f-industry"), i, INDUSTRY_LABELS[i] || i));
+  LEVEL_ORDER.filter((l) => levels.has(l)).forEach((l) => addOption($("f-level"), l, LEVEL_LABELS[l]));
+  uniqueSorted([...companies]).forEach((c) => addOption($("f-company"), c, c));
   populateRoles();
-  const indSel = document.getElementById("f-industry");
-  uniqueSorted([...inds]).forEach((i) => {
-    const o = el("option", null, i); o.value = i; indSel.appendChild(o);
-  });
-  const lvlSel = document.getElementById("f-level");
-  LEVEL_ORDER.filter((l) => levels.has(l)).forEach((l) => {
-    const o = el("option", null, l); o.value = l; lvlSel.appendChild(o);
-  });
-  const coSel = document.getElementById("f-company");
-  uniqueSorted([...companies]).forEach((c) => {
-    const o = el("option", null, c); o.value = c; coSel.appendChild(o);
-  });
+
+  // Only offer the "unconfirmed Washington" chip when such jobs exist.
+  const chip = document.querySelector('.chip[data-loc="unknown"]');
+  chip.hidden = !state.jobs.some((j) => j.location_type === "unknown");
 }
 
 // Role options follow the chosen category (all roles when no category is chosen).
 function populateRoles() {
-  const sel = document.getElementById("f-role");
+  const sel = $("f-role");
   const keep = sel.value;
-  const umbrella = document.getElementById("f-umbrella").value;
+  const umbrella = $("f-umbrella").value;
   const labels = roleLabels();
+  const allowed = umbrella ? Object.keys((taxonomy().umbrellas[umbrella] || {}).roles || {}) : [];
   const present = new Set();
   state.jobs.forEach((j) => {
     if (umbrella && !(j.umbrellas || []).includes(umbrella)) return;
-    const allowed = umbrella ? Object.keys((taxonomy().umbrellas[umbrella] || {}).roles || {}) : null;
-    (j.roles || []).forEach((r) => { if (!allowed || allowed.length === 0 || allowed.includes(r)) present.add(r); });
+    (j.roles || []).forEach((r) => { if (!allowed.length || allowed.includes(r)) present.add(r); });
   });
-  sel.length = 1; // keep the "all roles" option
-  [...present].sort((a, b) => (labels[a] || a).localeCompare(labels[b] || b)).forEach((r) => {
-    const o = el("option", null, labels[r] || r);
-    o.value = r;
-    sel.appendChild(o);
-  });
+  sel.length = 1; // keep the "All" option
+  [...present].sort((a, b) => (labels[a] || a).localeCompare(labels[b] || b))
+    .forEach((r) => addOption(sel, r, labels[r] || r));
   sel.value = present.has(keep) ? keep : "";
 }
 
 function currentFilters() {
-  const f = { q: document.getElementById("q").value.trim().toLowerCase() };
-  Object.entries(SELECTS).forEach(([k, id]) => { f[k] = document.getElementById(id).value; });
-  Object.entries(CHECKBOXES).forEach(([k, id]) => { f[k] = document.getElementById(id).checked; });
+  const f = { q: $("q").value.trim() };
+  Object.entries(SELECTS).forEach(([k, id]) => { f[k] = $(id).value; });
+  f.loc = LOCATION_TYPES.filter((t) => state.loc.has(t)).join(",");
+  Object.entries(TOGGLES).forEach(([k, id]) => { f[k] = $(id).getAttribute("aria-pressed") === "true"; });
+  f.view = state.view;
   return f;
 }
 
-function matchesLocation(job, loc) {
-  const t = job.location_type;
-  if (!loc) return true;
-  if (loc === "dmv") return t === "dmv_onsite" || t === "dmv_hybrid";
-  if (loc === "remote") return t === "remote_us";
-  return t === loc;
+// "dmv" in a URL is shorthand for on-site + hybrid; "remote" for remote_us.
+function parseLoc(value) {
+  const out = new Set();
+  (value || "").split(",").map((s) => s.trim()).forEach((v) => {
+    if (v === "dmv") { out.add("dmv_onsite"); out.add("dmv_hybrid"); }
+    else if (v === "remote") out.add("remote_us");
+    else if (LOCATION_TYPES.includes(v)) out.add(v);
+  });
+  return out;
+}
+
+function urlLoc(set) {
+  const s = new Set(set);
+  const parts = [];
+  if (s.has("dmv_onsite") && s.has("dmv_hybrid")) { parts.push("dmv"); s.delete("dmv_onsite"); s.delete("dmv_hybrid"); }
+  if (s.has("remote_us")) { parts.push("remote"); s.delete("remote_us"); }
+  return [...parts, ...LOCATION_TYPES.filter((t) => s.has(t))].join(",");
 }
 
 function matches(job, f) {
-  if (f.q && !(`${job.title} ${job.company}`.toLowerCase().includes(f.q))) return false;
+  if (f.q) {
+    const q = f.q.toLowerCase();
+    if (!(`${job.title} ${job.company}`.toLowerCase().includes(q))) return false;
+  }
   if (f.umbrella && !(job.umbrellas || []).includes(f.umbrella)) return false;
   if (f.role && !(job.roles || []).includes(f.role)) return false;
   if (f.industry && !(job.industries || []).includes(f.industry)) return false;
   if (f.level && job.level !== f.level) return false;
   if (f.company && job.company !== f.company) return false;
-  if (!matchesLocation(job, f.loc)) return false;
+  if (state.loc.size && !state.loc.has(job.location_type)) return false;
   if (f.public_sector && !(job.tags || []).includes("public_sector")) return false;
   if (f.clearance && !(job.tags || []).includes("clearance")) return false;
   return true;
@@ -218,7 +289,8 @@ function sortJobs(jobs, sort) {
 function syncURL(f) {
   const p = new URLSearchParams();
   Object.entries(f).forEach(([k, v]) => {
-    if (v && v !== false) p.set(k, v === true ? "1" : v);
+    if (k === "loc") { if (state.loc.size) p.set("loc", urlLoc(state.loc)); return; }
+    if (v) p.set(k, v === true ? "1" : v);
   });
   const qs = p.toString();
   history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
@@ -226,48 +298,65 @@ function syncURL(f) {
 
 function restoreFromURL() {
   const p = new URLSearchParams(location.search);
-  const set = (id, key) => { const v = p.get(key); if (v) document.getElementById(id).value = v; };
-  set("q", "q");
-  set(SELECTS.umbrella, "umbrella");
+  if (p.get("q")) $("q").value = p.get("q");
+  if (p.get("umbrella")) $("f-umbrella").value = p.get("umbrella");
   populateRoles(); // role options depend on the category
-  Object.entries(SELECTS).forEach(([k, id]) => { if (k !== "umbrella") set(id, k); });
-  Object.entries(CHECKBOXES).forEach(([k, id]) => {
-    if (p.get(k)) document.getElementById(id).checked = true;
+  Object.entries(SELECTS).forEach(([k, id]) => {
+    if (k !== "umbrella" && p.get(k)) $(id).value = p.get(k);
   });
-  // Old links used ?remote=1.
-  if (p.get("remote") && !p.get("loc")) document.getElementById(SELECTS.loc).value = "remote";
+  Object.entries(TOGGLES).forEach(([k, id]) => {
+    if (p.get(k)) $(id).setAttribute("aria-pressed", "true");
+  });
+  state.loc = parseLoc(p.get("loc") || (p.get("remote") ? "remote" : "")); // old links used ?remote=1
+  state.view = p.get("view") === "list" ? "list" : "";
+}
+
+function syncControls() {
+  document.querySelectorAll(".chip[data-loc]").forEach((b) =>
+    b.setAttribute("aria-pressed", String(state.loc.has(b.dataset.loc))));
+  document.querySelectorAll(".view-toggle button").forEach((b) =>
+    b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
+  $("job-list").classList.toggle("list", state.view === "list");
 }
 
 function render() {
   const f = currentFilters();
   syncURL(f);
-  const list = document.getElementById("job-list");
-  list.innerHTML = "";
+  syncControls();
+  const list = $("job-list");
+  list.replaceChildren();
   const filtered = sortJobs(state.jobs.filter((j) => matches(j, f)), f.sort);
-  filtered.forEach((j) => list.appendChild(card(j)));
-  document.getElementById("empty").hidden = filtered.length > 0;
-  document.getElementById("count").textContent =
-    `${filtered.length} role${filtered.length === 1 ? "" : "s"} · ${new Set(filtered.map((j) => j.company)).size} companies`;
+  const frag = document.createDocumentFragment();
+  filtered.forEach((j) => frag.appendChild(card(j)));
+  list.appendChild(frag);
+  $("empty").hidden = filtered.length > 0;
+  $("empty-text").textContent = "No roles match these filters. Try removing one.";
+  const companies = new Set(filtered.map((j) => j.company)).size;
+  $("count").textContent =
+    `Showing ${filtered.length.toLocaleString()} role${filtered.length === 1 ? "" : "s"} · ${companies} compan${companies === 1 ? "y" : "ies"}`;
 }
 
 function renderMeta() {
-  if (!state.meta) return;
-  const when = state.meta.generated_at ? new Date(state.meta.generated_at) : null;
+  $("stat-roles").textContent = state.jobs.length.toLocaleString();
+  $("stat-companies").textContent = new Set(state.jobs.map((j) => j.company)).size.toLocaleString();
+  if (!state.meta) { $("stat-updated-text").textContent = "Daily"; return; }
+  const when = state.meta.generated_at;
+  $("stat-updated-text").textContent = when ? relativeTime(when) : "Daily";
   const ok = (state.meta.adapters || []).filter((a) => a.ok).length;
   const total = (state.meta.adapters || []).length;
   const parts = [];
-  if (when) parts.push(`last updated ${when.toISOString().slice(0, 10)}`);
-  if (total) parts.push(`${ok}/${total} boards ok`);
-  parts.push(`${state.jobs.length} roles tracked`);
-  document.getElementById("meta").textContent = parts.join(" · ");
+  if (when) parts.push(`Last updated ${when.slice(0, 10)}`);
+  if (total) parts.push(`${ok}/${total} job boards OK`);
+  $("meta").textContent = parts.join(" · ");
 }
 
 async function init() {
   const data = await loadJSON("jobs.json");
   state.meta = await loadJSON("meta.json");
   if (!data || !Array.isArray(data.jobs)) {
-    document.getElementById("empty").hidden = false;
-    document.getElementById("empty").textContent = "could not load jobs data.";
+    $("count").textContent = "Couldn't load roles";
+    $("empty").hidden = false;
+    $("empty-text").textContent = "Couldn't load the job data. Try refreshing in a minute.";
     return;
   }
   state.jobs = data.jobs;
@@ -277,17 +366,35 @@ async function init() {
   renderMeta();
   render();
 
-  document.getElementById("q").addEventListener("input", render);
-  [...Object.values(SELECTS), ...Object.values(CHECKBOXES)].forEach((id) => {
-    document.getElementById(id).addEventListener("change", () => {
+  $("q").addEventListener("input", render);
+  Object.values(SELECTS).forEach((id) => {
+    $(id).addEventListener("change", () => {
       if (id === SELECTS.umbrella) populateRoles();
       render();
     });
   });
-  document.getElementById("reset").addEventListener("click", () => {
-    document.getElementById("q").value = "";
-    Object.values(SELECTS).forEach((id) => { document.getElementById(id).value = ""; });
-    Object.values(CHECKBOXES).forEach((id) => { document.getElementById(id).checked = false; });
+  Object.values(TOGGLES).forEach((id) => {
+    $(id).addEventListener("click", (e) => {
+      const b = e.currentTarget;
+      b.setAttribute("aria-pressed", String(b.getAttribute("aria-pressed") !== "true"));
+      render();
+    });
+  });
+  document.querySelectorAll(".chip[data-loc]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const t = b.dataset.loc;
+      if (state.loc.has(t)) state.loc.delete(t); else state.loc.add(t);
+      render();
+    });
+  });
+  document.querySelectorAll(".view-toggle button").forEach((b) => {
+    b.addEventListener("click", () => { state.view = b.dataset.view; render(); });
+  });
+  $("reset").addEventListener("click", () => {
+    $("q").value = "";
+    Object.values(SELECTS).forEach((id) => { $(id).value = ""; });
+    Object.values(TOGGLES).forEach((id) => $(id).setAttribute("aria-pressed", "false"));
+    state.loc.clear();
     populateRoles();
     render();
   });

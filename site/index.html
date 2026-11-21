@@ -5,122 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DMV Mission Jobs</title>
   <meta name="description" content="Mission-driven roles in the DC metro (DC, Northern Virginia, Maryland) and US remote: defense tech, public sector and commercial tech. A personal, community-run project. Not affiliated with any employer." />
+  <meta name="color-scheme" content="dark" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Always-on, non-negotiable disclaimer -->
   <div class="disclaimer" role="note">
-    <strong>[ unaffiliated ]</strong> A personal, community-run project.
-    Not affiliated with, endorsed by, or operated by any company listed here.
-    Listings link to each company's official job board.
+    <div class="wrap disclaimer-inner">
+      <span class="pill-label">Unaffiliated</span>
+      <span>A personal, community-run project. Not affiliated with, endorsed by, or operated by any company listed here. Listings link to each company's official job board.</span>
+    </div>
   </div>
 
-  <header class="site-header">
-    <div class="brand">
-      <span class="prompt">dmv@mission-jobs</span><span class="sep">:</span><span class="path">~</span><span class="sep">$</span>
-      <span class="brand-title">curated roles</span><span class="cursor">&#9608;</span>
+  <header class="hero">
+    <svg class="wave" aria-hidden="true" viewBox="0 0 1440 420" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wave-stroke" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#4FE3D1" stop-opacity="0.05" />
+          <stop offset="0.35" stop-color="#38BDF8" stop-opacity="0.55" />
+          <stop offset="0.7" stop-color="#A78BFA" stop-opacity="0.6" />
+          <stop offset="1" stop-color="#E879F9" stop-opacity="0.35" />
+        </linearGradient>
+        <radialGradient id="wave-glow" cx="0.78" cy="0.35" r="0.55">
+          <stop offset="0" stop-color="#A78BFA" stop-opacity="0.28" />
+          <stop offset="0.5" stop-color="#38BDF8" stop-opacity="0.10" />
+          <stop offset="1" stop-color="#0E0F13" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="1440" height="420" fill="url(#wave-glow)" />
+      <g class="wave-a" fill="none" stroke="url(#wave-stroke)" stroke-width="1">
+        <path d="M0,300 C240,240 420,360 700,280 S1150,140 1440,200" />
+        <path d="M0,290 C250,226 430,344 708,266 S1160,128 1440,186" />
+        <path d="M0,280 C260,212 440,328 716,252 S1170,116 1440,172" />
+        <path d="M0,270 C270,198 450,312 724,238 S1180,104 1440,158" />
+        <path d="M0,260 C280,184 460,296 732,224 S1190,92 1440,144" />
+        <path d="M0,250 C290,170 470,280 740,210 S1200,80 1440,130" />
+        <path d="M0,240 C300,156 480,264 748,196 S1210,68 1440,116" />
+        <path d="M0,230 C310,142 490,248 756,182 S1220,56 1440,102" />
+        <path d="M0,220 C320,128 500,232 764,168 S1230,44 1440,88" />
+        <path d="M0,210 C330,114 510,216 772,154 S1240,32 1440,74" />
+      </g>
+      <g class="wave-b" fill="none" stroke="url(#wave-stroke)" stroke-width="1">
+        <path d="M0,340 C220,300 460,390 760,320 S1180,220 1440,260" stroke-opacity="0.6" />
+        <path d="M0,352 C230,312 470,400 768,332 S1190,232 1440,272" stroke-opacity="0.5" />
+        <path d="M0,364 C240,324 480,410 776,344 S1200,244 1440,284" stroke-opacity="0.4" />
+      </g>
+    </svg>
+
+    <div class="wrap hero-inner">
+      <a class="brand" href="./" aria-label="DMV Mission Jobs, home">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22 L11 8 L17 18 L24 6" /><circle cx="11" cy="8" r="2" /><circle cx="17" cy="18" r="2" /></svg>
+        <span>DMV Mission Jobs</span>
+      </a>
+      <div class="hero-row">
+        <div class="hero-copy">
+          <h1>Mission-driven roles<br /><span class="accent">in the DC metro.</span></h1>
+          <p>Curated roles in defense tech, public sector and commercial tech. DC, Northern Virginia, Maryland and remote. Pulled daily from each company's own job board.</p>
+        </div>
+        <dl class="stats" aria-label="Board stats">
+          <div class="stat"><dt>Roles</dt><dd id="stat-roles">–</dd></div>
+          <div class="stat"><dt>Companies</dt><dd id="stat-companies">–</dd></div>
+          <div class="stat"><dt>Updated</dt><dd id="stat-updated" class="stat-updated"><span class="dot" aria-hidden="true"></span><span id="stat-updated-text">–</span></dd></div>
+        </dl>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <p>
-        Mission-driven roles in the DC metro and US remote: defense tech, public sector and
-        commercial tech. Pulled daily from each company's own job board. Use the
-        <strong>industry</strong> filter to focus any one of them.
-      </p>
+  <main class="wrap">
+    <section class="panel filters" aria-label="Filters">
+      <div class="filter-row">
+        <label class="field search">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="M20 20 L16 16" /></svg>
+          <span class="sr-only">Search roles or companies</span>
+          <input id="q" type="search" placeholder="Search roles or companies" autocomplete="off" />
+        </label>
+        <label class="field select"><span class="field-label">Category</span>
+          <select id="f-umbrella"><option value="">All</option></select></label>
+        <label class="field select"><span class="field-label">Role</span>
+          <select id="f-role"><option value="">All</option></select></label>
+      </div>
+      <div class="filter-row">
+        <label class="field select"><span class="field-label">Industry</span>
+          <select id="f-industry"><option value="">All</option></select></label>
+        <label class="field select"><span class="field-label">Level</span>
+          <select id="f-level"><option value="">All</option></select></label>
+        <label class="field select"><span class="field-label">Company</span>
+          <select id="f-company"><option value="">All</option></select></label>
+      </div>
+      <div class="chip-row">
+        <span class="eyebrow" id="loc-label">Location</span>
+        <div class="chips" role="group" aria-labelledby="loc-label">
+          <button type="button" class="chip" data-loc="dmv_onsite" aria-pressed="false">DMV on-site</button>
+          <button type="button" class="chip" data-loc="dmv_hybrid" aria-pressed="false">DMV hybrid</button>
+          <button type="button" class="chip" data-loc="remote_us" aria-pressed="false">Remote (US)</button>
+          <button type="button" class="chip" data-loc="unknown" aria-pressed="false" hidden>“Washington” (unconfirmed)</button>
+        </div>
+        <span class="divider" aria-hidden="true"></span>
+        <span class="eyebrow" id="tag-label">Tags</span>
+        <div class="chips" role="group" aria-labelledby="tag-label">
+          <button type="button" class="chip chip-success" id="f-public_sector" aria-pressed="false">Public sector</button>
+          <button type="button" class="chip chip-violet" id="f-clearance" aria-pressed="false">Clearance</button>
+        </div>
+        <button id="reset" type="button" class="reset">Reset</button>
+      </div>
     </section>
 
-    <section class="controls" aria-label="Filters">
-      <div class="control search">
-        <label for="q">search</label>
-        <input id="q" type="search" placeholder="title or company..." autocomplete="off" />
+    <div class="results-head">
+      <h2 id="count" aria-live="polite">Loading roles…</h2>
+      <div class="results-tools">
+        <label class="sort"><span class="field-label">Sort</span>
+          <select id="f-sort">
+            <option value="">Mission first</option>
+            <option value="new">Newest</option>
+          </select>
+        </label>
+        <div class="view-toggle" role="group" aria-label="View">
+          <button type="button" data-view="" aria-pressed="true">Cards</button>
+          <button type="button" data-view="list" aria-pressed="false">List</button>
+        </div>
       </div>
-      <div class="control">
-        <label for="f-umbrella">category</label>
-        <select id="f-umbrella"><option value="">all categories</option></select>
-      </div>
-      <div class="control">
-        <label for="f-role">role</label>
-        <select id="f-role"><option value="">all roles</option></select>
-      </div>
-      <div class="control">
-        <label for="f-industry">industry</label>
-        <select id="f-industry"><option value="">all industries</option></select>
-      </div>
-      <div class="control">
-        <label for="f-level">level</label>
-        <select id="f-level"><option value="">all levels</option></select>
-      </div>
-      <div class="control">
-        <label for="f-loc">location</label>
-        <select id="f-loc">
-          <option value="">dmv + remote</option>
-          <option value="dmv">dmv (on-site or hybrid)</option>
-          <option value="dmv_onsite">dmv on-site</option>
-          <option value="dmv_hybrid">dmv hybrid</option>
-          <option value="remote">remote (us)</option>
-          <option value="unknown">"washington" (unconfirmed)</option>
-        </select>
-      </div>
-      <div class="control">
-        <label for="f-company">company</label>
-        <select id="f-company"><option value="">all companies</option></select>
-      </div>
-      <div class="control">
-        <label for="f-sort">sort</label>
-        <select id="f-sort">
-          <option value="">mission first</option>
-          <option value="new">newest</option>
-        </select>
-      </div>
-      <div class="control checkbox">
-        <label><input id="f-public_sector" type="checkbox" /> public sector</label>
-      </div>
-      <div class="control checkbox">
-        <label><input id="f-clearance" type="checkbox" /> clearance</label>
-      </div>
-      <button id="reset" type="button" class="reset">reset</button>
-    </section>
+    </div>
 
-    <p id="count" class="count" aria-live="polite"></p>
-
-    <section id="results" class="results">
-      <div id="job-list" class="job-list"></div>
-      <p id="empty" class="empty" hidden>no roles match these filters.</p>
+    <section id="results" aria-label="Roles">
+      <div id="job-list" class="job-grid"></div>
+      <div id="empty" class="empty" hidden>
+        <svg aria-hidden="true" viewBox="0 0 600 120" preserveAspectRatio="none">
+          <g fill="none" stroke="url(#wave-stroke)" stroke-width="1">
+            <path d="M0,80 C120,50 220,110 330,70 S500,20 600,45" />
+            <path d="M0,70 C130,40 230,98 338,58 S510,12 600,33" />
+            <path d="M0,60 C140,30 240,86 346,46 S520,4 600,21" />
+          </g>
+        </svg>
+        <p id="empty-text">No roles match these filters.</p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-col">
-      <h3>more job boards</h3>
-      <ul>
-        <li><a href="https://jobs.forgepointcap.com" target="_blank" rel="noopener">Forgepoint Capital (cyber)</a></li>
-        <li><a href="https://jobs.1011vc.com" target="_blank" rel="noopener">Ten Eleven Ventures (cyber)</a></li>
-        <li><a href="https://jobs.8vc.com/jobs" target="_blank" rel="noopener">8VC (defense / deep tech)</a></li>
-        <li><a href="https://portfoliojobs.a16z.com" target="_blank" rel="noopener">a16z portfolio jobs</a></li>
-        <li><a href="https://jobs.sequoiacap.com" target="_blank" rel="noopener">Sequoia portfolio jobs</a></li>
-        <li><a href="https://jobs.generalcatalyst.com" target="_blank" rel="noopener">General Catalyst jobs</a></li>
-        <li><a href="https://www.ycombinator.com/jobs" target="_blank" rel="noopener">Y Combinator jobs</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>resources</h3>
-      <ul>
-        <li><a href="https://github.com/bghannum/dmv-mission-jobs" target="_blank" rel="noopener">this project on GitHub</a></li>
-        <li><a href="https://github.com/bghannum/dmv-mission-jobs/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">add a company (open a PR)</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>about</h3>
-      <p>
-        A community project. Open source under the MIT license, built on
-        <a href="https://github.com/crsh-ovr/jobs" target="_blank" rel="noopener">crsh-ovr/jobs</a>
-        by Shane Quinlan. Not affiliated with any employer. Listings link to each company's
-        official board.
-      </p>
-      <p id="meta" class="meta"></p>
+    <div class="wrap footer-grid">
+      <div class="footer-col">
+        <span class="eyebrow">About</span>
+        <p>A community project. Open source under the MIT license, built on
+          <a href="https://github.com/crsh-ovr/jobs" target="_blank" rel="noopener">crsh-ovr/jobs</a>
+          by Shane Quinlan. Not affiliated with any employer.</p>
+        <p id="meta" class="meta"></p>
+      </div>
+      <div class="footer-col">
+        <span class="eyebrow">Contribute</span>
+        <a href="https://github.com/bghannum/dmv-mission-jobs/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Add a company (open a PR)</a>
+        <a href="https://github.com/bghannum/dmv-mission-jobs" target="_blank" rel="noopener">This project on GitHub</a>
+      </div>
+      <div class="footer-col">
+        <span class="eyebrow">More job boards</span>
+        <a href="https://jobs.8vc.com/jobs" target="_blank" rel="noopener">8VC (defense / deep tech)</a>
+        <a href="https://portfoliojobs.a16z.com" target="_blank" rel="noopener">a16z portfolio jobs</a>
+        <a href="https://jobs.generalcatalyst.com" target="_blank" rel="noopener">General Catalyst jobs</a>
+        <a href="https://www.ycombinator.com/jobs" target="_blank" rel="noopener">Y Combinator jobs</a>
+      </div>
     </div>
   </footer>
 
