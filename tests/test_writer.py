@@ -6,7 +6,7 @@ from scraper.writer import merge_and_write
 
 def _job(jid):
     return Job(
-        id=jid, title="Frontend Engineer", company="Acme", company_tier="standard",
+        id=jid, title="Frontend Engineer", company="Acme",
         industries=["cybersecurity"], url=f"https://e/{jid}", source_ats="greenhouse",
         roles=["frontend"], umbrellas=["engineering"], level="mid",
     )

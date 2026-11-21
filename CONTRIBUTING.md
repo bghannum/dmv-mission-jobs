@@ -24,7 +24,6 @@ allowlist. That is a single-file change to `config/companies.yaml`.
      ats: greenhouse
      identifier: "acme"
      industry: [cybersecurity, cspm]   # one or more of: cybersecurity, deftech, cspm, finops, grc, healthtech
-     tier: standard                     # "featured" is reserved; default to "standard"
      homepage: "https://acme.example"   # optional
    ```
 
@@ -32,7 +31,7 @@ allowlist. That is a single-file change to `config/companies.yaml`.
    entries default to 3. Only US roles are listed; non-US-only postings are filtered out.
 
 3. Open a pull request. CI runs `ruff` and `pytest`; `tests/test_config.py` validates that
-   your entry has a known `ats`, a controlled-vocabulary `industry`, a valid `tier`, a valid
+   your entry has a known `ats`, a controlled-vocabulary `industry`, a valid
    `priority`, and a non-empty `identifier`. Fix any failures and the next daily scrape picks
    it up.
 

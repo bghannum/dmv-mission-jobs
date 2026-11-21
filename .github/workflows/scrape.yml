@@ -29,7 +29,7 @@ jobs:
         run: python -m scraper.main
       - name: Commit refreshed data
         run: |
-          git config user.name  "jobs-bot"
+          git config user.name  "brians-job-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/jobs.json data/meta.json
           if git diff --staged --quiet; then
@@ -41,7 +41,7 @@ jobs:
           fi
         id: commit
       - name: Trigger site deploy
-        if: steps.commit.outputs.deploy == '1'
+        if: steps.commit.outputs.deploy == '1' && vars.PAGES_ENABLED == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main

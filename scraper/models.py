@@ -5,7 +5,6 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 
 INDUSTRY_VOCAB = {"cybersecurity", "deftech", "cspm", "finops", "grc", "healthtech"}
-TIERS = {"featured", "standard"}
 # Neutral priority tiers; lower sorts first. Drives ordering only (no public meaning).
 PRIORITIES = {1, 2, 3}
 DEFAULT_PRIORITY = 3
@@ -19,18 +18,16 @@ class Company:
     ats: str
     identifier: str
     industry: list[str]
-    tier: str = "standard"
     priority: int = DEFAULT_PRIORITY
     homepage: str | None = None
 
 
 @dataclass
 class RoleUmbrella:
-    """A role grouping that mirrors the career guide taxonomy."""
+    """A role grouping (umbrella) with its roles and keyword rules."""
 
     key: str
     label: str
-    career_url: str
     # role_key -> {"label", "include_keywords", "exclude_keywords"}
     roles: dict[str, dict]
 
@@ -42,7 +39,6 @@ class Job:
     id: str
     title: str
     company: str
-    company_tier: str
     industries: list[str]
     url: str
     source_ats: str

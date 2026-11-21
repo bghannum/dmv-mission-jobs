@@ -3,7 +3,7 @@ http:
   max_retries: 2
   backoff_seconds: 2.0
   politeness_delay_seconds: 1.0
-  user_agent: "shanes-jobs-bot/1.0 (+https://github.com/crsh-ovr/jobs; personal community project)"
+  user_agent: "brians-job-bot/1.0 (+https://github.com/bghannum/dmv-mission-jobs; personal community project)"
 
 adapters:
   getro:

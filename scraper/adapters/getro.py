@@ -39,7 +39,6 @@ class GetroAdapter(ATSAdapter):
                     id=f"getro:{company.identifier}:{source_id}",
                     title=(p.get("title") or "").strip(),
                     company=org.get("name") or company.name,
-                    company_tier=company.tier,
                     industries=list(company.industry),
                     url=p.get("url") or p.get("apply_url", ""),
                     source_ats="getro",

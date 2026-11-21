@@ -37,7 +37,6 @@ class GemAdapter(ATSAdapter):
                     id=f"gem:{company.identifier}:{source_id}",
                     title=(p.get("title") or p.get("name") or "").strip(),
                     company=company.name,
-                    company_tier=company.tier,
                     industries=list(company.industry),
                     url=p.get("url") or p.get("apply_url", ""),
                     source_ats="gem",

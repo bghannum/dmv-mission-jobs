@@ -33,7 +33,6 @@ class GreenhouseAdapter(ATSAdapter):
                     id=f"greenhouse:{company.identifier}:{source_id}",
                     title=p.get("title", "").strip(),
                     company=company.name,
-                    company_tier=company.tier,
                     industries=list(company.industry),
                     url=p.get("absolute_url", ""),
                     source_ats="greenhouse",

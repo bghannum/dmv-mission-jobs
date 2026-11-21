@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from .models import DEFAULT_PRIORITY, INDUSTRY_VOCAB, PRIORITIES, TIERS, Company, RoleUmbrella
+from .models import DEFAULT_PRIORITY, INDUSTRY_VOCAB, PRIORITIES, Company, RoleUmbrella
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
 
@@ -74,10 +74,6 @@ def load_companies(path: Path | None = None, *, valid_ats: set[str] | None = Non
                 f"{where} has unknown industry {bad}; allowed: {sorted(INDUSTRY_VOCAB)}"
             )
 
-        tier = str(entry.get("tier", "standard")).strip().lower()
-        if tier not in TIERS:
-            raise ConfigError(f"{where} has invalid tier '{tier}'; allowed: {sorted(TIERS)}")
-
         raw_priority = entry.get("priority", DEFAULT_PRIORITY)
         try:
             priority = int(raw_priority)
@@ -99,7 +95,6 @@ def load_companies(path: Path | None = None, *, valid_ats: set[str] | None = Non
                 ats=ats,
                 identifier=str(entry["identifier"]).strip(),
                 industry=list(industry),
-                tier=tier,
                 priority=priority,
                 homepage=entry.get("homepage"),
             )
@@ -122,7 +117,6 @@ def load_roles(path: Path | None = None) -> tuple[list[RoleUmbrella], dict]:
             RoleUmbrella(
                 key=key,
                 label=u.get("label", key),
-                career_url=u.get("career_url", ""),
                 roles=u.get("roles") or {},
             )
         )
@@ -145,7 +139,7 @@ def load_settings(path: Path | None = None) -> Settings:
         max_retries=int(http.get("max_retries", 2)),
         backoff_seconds=float(http.get("backoff_seconds", 2.0)),
         politeness_delay_seconds=float(http.get("politeness_delay_seconds", 1.0)),
-        user_agent=str(http.get("user_agent", "shanes-jobs-bot/1.0")),
+        user_agent=str(http.get("user_agent", "brians-job-bot/1.0")),
         getro_enabled=bool(getro.get("enabled", False)),
         jobs_path=str(output.get("jobs_path", "data/jobs.json")),
         meta_path=str(output.get("meta_path", "data/meta.json")),

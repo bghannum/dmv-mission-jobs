@@ -70,7 +70,8 @@ def merge_and_write(
     # job it no longer returns was genuinely removed or filtered out (e.g. non-US) and is
     # dropped. retain_prefixes is the set of "{ats}:{identifier}:" for failed companies;
     # None means retain all recent prior jobs (used only in tests). Drop past the window.
-    cutoff = (datetime.now(timezone.utc).date() - timedelta(days=stale_after_days)).isoformat()
+    # Measured from `today` (not the wall clock) so runs and tests are deterministic.
+    cutoff = (date.fromisoformat(today) - timedelta(days=stale_after_days)).isoformat()
     for jid, old in prior_by_id.items():
         if jid in current:
             continue
@@ -81,10 +82,9 @@ def merge_and_write(
             current[jid] = old  # keep as-is; last_seen not refreshed
 
     merged = list(current.values())
-    # featured first, then by priority tier (1 highest), then company/title.
+    # By priority tier (1 highest), then company/title.
     merged.sort(
         key=lambda j: (
-            j.get("company_tier") != "featured",
             j.get("priority", DEFAULT_PRIORITY),
             j.get("company", ""),
             j.get("title", ""),

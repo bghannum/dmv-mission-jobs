@@ -7,7 +7,6 @@ def _job(jid, title="Frontend Engineer", company="Acme", location="Remote"):
         id=jid,
         title=title,
         company=company,
-        company_tier="standard",
         industries=["cybersecurity"],
         url=f"https://example.com/{jid}",
         source_ats="greenhouse",
