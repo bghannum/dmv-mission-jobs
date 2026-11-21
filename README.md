@@ -13,6 +13,21 @@ files.
 Built on **[crsh-ovr/jobs](https://github.com/crsh-ovr/jobs)** by Shane Quinlan (MIT).
 Thank you, Shane.
 
+## About this version
+
+DMV Mission Jobs is maintained by Brian, who is adapting Shane's board in two ways.
+
+- **Broader role curation, with a focus on GTM-facing roles.** Shane's board centered on
+  product, design and engineering. This version adds sales, business development and
+  capture, partnerships, solutions architecture, growth and strategy, program management,
+  and customer success. The role definitions draw on Brian's experience in defense,
+  defense tech and industry more broadly. For example, a "VP of Growth" at a defense
+  company usually means business development and capture, not marketing, so the board
+  treats it that way.
+- **A reworked user experience.** New filters for category, role, DC metro vs. remote,
+  clearance and public sector; every filter combination is a shareable link; and a visual
+  redesign is in progress.
+
 See [PLAN.md](PLAN.md) for the roadmap.
 
 ## What it tracks
