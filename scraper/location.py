@@ -137,6 +137,15 @@ _BARE_WASHINGTON_RE = re.compile(
     r"\bwashington\b(?!\s*,?\s*(?:d\.?\s?c\b|district|wa\b|state\b))"
 )
 _WASHINGTON_STATE_HINTS = ("washington state", "seattle", "bellevue", "redmond", "kirkland")
+# Places in a job TITLE that settle a bare "Washington" location as Washington State.
+_WA_TITLE_HINTS = ("washington state", "seattle", "bellevue", "redmond", "kirkland", "tacoma",
+                   "spokane", "everett", "olympia", "pacific northwest", "pnw")
+
+
+def title_says_washington_state(title: str | None) -> bool:
+    low = (title or "").lower()
+    return any(re.search(r"(?<![a-z])" + re.escape(h) + r"(?![a-z])", low)
+               for h in _WA_TITLE_HINTS)
 
 
 @dataclass(frozen=True)
@@ -178,6 +187,7 @@ def classify_location_type(
     remote: bool,
     rules: LocationRules,
     workplace_type: str | None = None,
+    title: str | None = None,
 ) -> str | None:
     """Assign a location_type, or None when the role is out of area.
 
@@ -185,7 +195,9 @@ def classify_location_type(
     1. Any DMV location (multi-location postings count if ANY location is in the DMV):
        hybrid (ATS workplace_type or text) -> dmv_hybrid; else remote -> remote_us;
        else dmv_onsite.
-    2. A bare "Washington" -> unknown (kept and logged; the rule is decided in Phase 2).
+    2. A bare "Washington" -> unknown (kept, labelled "Location uncertain", logged), unless
+       the job title names a Washington State place ("Seattle", "Pacific Northwest"); then
+       it is the state and falls through to the remote check below.
     3. Remote and US-eligible -> remote_us. A bare "Remote" with no country counts as US.
        Remote with only non-US signals ("Remote - Canada") -> None.
     4. Anything else (other US cities, non-US, blank) -> None.
@@ -197,7 +209,7 @@ def classify_location_type(
         if workplace_type == "hybrid" or any(k in low for k in rules.hybrid_keywords):
             return DMV_HYBRID
         return REMOTE_US if is_remote else DMV_ONSITE
-    if low and is_bare_washington(low):
+    if low and is_bare_washington(low) and not title_says_washington_state(title):
         return UNKNOWN
     if is_remote:
         return REMOTE_US if classify(text) is not False else None
