@@ -521,6 +521,43 @@ companies:
     industry: [saas]
     homepage: "https://www.salesforce.com"
 
+  # Added 2026-11-22 (second batch); robots.txt allows each site.
+  - name: "Amentum"
+    ats: workday
+    identifier: "pae/wd1/Amentum_Careers"   # Amentum's board is on the PAE tenant
+    industry: [deftech, gov-it]
+    homepage: "https://www.amentum.com"
+
+  - name: "KBR"
+    ats: workday
+    identifier: "kbr/wd5/KBR_Careers"
+    industry: [deftech, gov-it]
+    homepage: "https://www.kbr.com"
+
+  - name: "Guidehouse"
+    ats: workday
+    identifier: "guidehouse/wd1/External"
+    industry: [gov-it]
+    homepage: "https://guidehouse.com"
+
+  - name: "Boeing"
+    ats: workday
+    identifier: "boeing/wd1/EXTERNAL_CAREERS"
+    industry: [deftech, space]
+    homepage: "https://www.boeing.com"
+
+  - name: "Capital One"
+    ats: workday
+    identifier: "capitalone/wd12/Capital_One"
+    industry: [fintech]
+    homepage: "https://www.capitalone.com"
+
+  - name: "Fannie Mae"
+    ats: workday
+    identifier: "fanniemae/wd1/FannieMaeCareers"
+    industry: [fintech]
+    homepage: "https://www.fanniemae.com"
+
   # --- a16z portfolio (scripts/seed_a16z.py, 2026-11-21) ---
   # Industries are suggested from a16z's description; review and correct.
   - name: "Adaptive"

@@ -159,6 +159,7 @@ def test_project_manager_exclusions():
         "Talent Acquisition Partner Sales/GTM (Remote)",
         "Contract Sourcer (GTM)",
         "Senior Recruiter, Public Sector GTM",
+        "Executive Assistant - Growth & Leadership",
     ],
 )
 def test_recruiting_titles_match_no_role(title):

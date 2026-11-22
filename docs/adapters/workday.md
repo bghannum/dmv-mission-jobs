@@ -47,6 +47,8 @@ date, `YYYY-MM-DD`), `jobReqId`, `externalUrl` and on some tenants `remoteType`.
 | Northrop Grumman | `United States-Virginia-McLean`, `United States-Remote`, site codes like `ALHU12` |
 | CrowdStrike | `USA - Arlington, VA`, `USA - Remote, VA`, `Germany - Remote` |
 | Salesforce | `Virginia - Herndon`, `Virginia - Remote`, `Maryland - Washington DC Metro - Remote` |
+| Amentum | `US-VA-Reston`, `US-DC-Washington`, `US-Remote` |
+| Guidehouse | `US - VA, McLean`, `US - Remote (Any location)` |
 
 The adapter rewrites each one to "City, ST" style (`normalize_location`) and then uses the
 board's own classifier (`scraper/location.py`) to decide which facet values are in the DMV or
@@ -100,15 +102,24 @@ never call, and allows or disallows the career-site path per employer:
 | Northrop Grumman | `ngc/wd1/Northrop_Grumman_External_Site` | Yes |
 | CrowdStrike | `crowdstrike/wd5/crowdstrikecareers` | Yes |
 | Salesforce | `salesforce/wd12/External_Career_Site` | Yes |
+| Amentum | `pae/wd1/Amentum_Careers` | Yes |
+| KBR | `kbr/wd5/KBR_Careers` | Yes |
+| Guidehouse | `guidehouse/wd1/External` | Yes |
+| Boeing | `boeing/wd1/EXTERNAL_CAREERS` | Yes |
+| Capital One | `capitalone/wd12/Capital_One` | Yes |
+| Fannie Mae | `fanniemae/wd1/FannieMaeCareers` | Yes |
 | CACI | `caci/wd1/External` | **No**: `Disallow: /External/` |
 | Palo Alto Networks | `paloaltonetworks/wd5/panwexternalcareers` | **No**: `Disallow: /panwexternalcareers/` |
+| MITRE | `mitre/wd5/MITRE` | **No**: `Disallow: /MITRE/` |
 
 The disallowed ones stay in `config/needs_adapter.yaml` with the reason. The adapter
 re-checks robots.txt on every run, so a later change fails that board and the board health
 check alerts.
 
-Not found on Workday (2026-11-22): SAIC, ServiceNow. ManTech uses Avature, Peraton iCIMS
-and Parsons Phenom; those need other adapters.
+Not found on Workday (2026-11-22): SAIC, ServiceNow. Others use different systems and need
+other adapters: Phenom (RTX, BAE Systems, ICF, Freddie Mac, Parsons), Avature (Deloitte,
+Maximus, ManTech), iCIMS (Peraton, V2X), Radancy (L3Harris), Taleo (Textron). All are in
+`config/needs_adapter.yaml`.
 
 ## Politeness
 
