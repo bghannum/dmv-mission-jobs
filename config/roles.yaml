@@ -7,6 +7,10 @@
 #
 # Marketing roles (including growth marketing) are intentionally out of scope (PLAN.md).
 
+# Excluded from every role. Recruiting is out of scope (PLAN.md), but recruiter titles often
+# name the team they hire for ("GTM Recruiter", "Senior Recruiter, Business Development").
+exclude_keywords: ["recruiter", "recruiting", "talent acquisition", "sourcer"]
+
 umbrellas:
   product:
     label: "Product"
