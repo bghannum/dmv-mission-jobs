@@ -1,5 +1,5 @@
 {
-  "companies": 432,
+  "companies": 438,
   "adapters": [
     {
       "company": "Horizon3.ai",
@@ -1170,7 +1170,7 @@
       "ok": true,
       "count": 110,
       "error": null,
-      "matched": 23,
+      "matched": 22,
       "dropped_out_of_area": 0
     },
     {
@@ -1181,6 +1181,66 @@
       "count": 132,
       "error": null,
       "matched": 65,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Amentum",
+      "ats": "workday",
+      "identifier": "pae/wd1/Amentum_Careers",
+      "ok": true,
+      "count": 496,
+      "error": null,
+      "matched": 40,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "KBR",
+      "ats": "workday",
+      "identifier": "kbr/wd5/KBR_Careers",
+      "ok": true,
+      "count": 281,
+      "error": null,
+      "matched": 27,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Guidehouse",
+      "ats": "workday",
+      "identifier": "guidehouse/wd1/External",
+      "ok": true,
+      "count": 532,
+      "error": null,
+      "matched": 56,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Boeing",
+      "ats": "workday",
+      "identifier": "boeing/wd1/EXTERNAL_CAREERS",
+      "ok": true,
+      "count": 34,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Capital One",
+      "ats": "workday",
+      "identifier": "capitalone/wd12/Capital_One",
+      "ok": true,
+      "count": 1481,
+      "error": null,
+      "matched": 566,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Fannie Mae",
+      "ats": "workday",
+      "identifier": "fanniemae/wd1/FannieMaeCareers",
+      "ok": true,
+      "count": 53,
+      "error": null,
+      "matched": 2,
       "dropped_out_of_area": 0
     },
     {
@@ -4937,14 +4997,14 @@
     "failing": []
   },
   "last_run_by_ats": {
-    "workday": "2026-11-22T20:39:26.035786+00:00"
+    "workday": "2026-11-22T21:19:49.452177+00:00"
   },
   "local_only_ats": [
     "workday"
   ],
-  "generated_at": "2026-11-22T20:39:26.143212+00:00",
-  "prior_job_count": 1637,
-  "fresh_job_count": 512,
-  "total_job_count": 2149,
+  "generated_at": "2026-11-22T21:19:49.673772+00:00",
+  "prior_job_count": 2149,
+  "fresh_job_count": 1082,
+  "total_job_count": 2719,
   "shrink_blocked": false
 }
