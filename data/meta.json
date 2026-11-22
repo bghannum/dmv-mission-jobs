@@ -1,5 +1,5 @@
 {
-  "companies": 416,
+  "companies": 427,
   "adapters": [
     {
       "company": "Horizon3.ai",
@@ -86,7 +86,7 @@
       "company": "Endor Labs",
       "ats": "greenhouse",
       "ok": true,
-      "count": 43,
+      "count": 42,
       "error": null,
       "matched": 18,
       "dropped_out_of_area": 15
@@ -104,7 +104,7 @@
       "company": "Okta",
       "ats": "greenhouse",
       "ok": true,
-      "count": 372,
+      "count": 373,
       "error": null,
       "matched": 154,
       "dropped_out_of_area": 117
@@ -239,7 +239,7 @@
       "company": "1Password",
       "ats": "ashby",
       "ok": true,
-      "count": 81,
+      "count": 80,
       "error": null,
       "matched": 32,
       "dropped_out_of_area": 19
@@ -356,10 +356,10 @@
       "company": "Censys",
       "ats": "greenhouse",
       "ok": true,
-      "count": 27,
+      "count": 25,
       "error": null,
-      "matched": 14,
-      "dropped_out_of_area": 6
+      "matched": 13,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Gray Swan AI",
@@ -410,7 +410,7 @@
       "company": "SentinelOne",
       "ats": "greenhouse",
       "ok": true,
-      "count": 262,
+      "count": 263,
       "error": null,
       "matched": 94,
       "dropped_out_of_area": 59
@@ -455,7 +455,7 @@
       "company": "Applied Intuition",
       "ats": "ashby",
       "ok": true,
-      "count": 336,
+      "count": 333,
       "error": null,
       "matched": 65,
       "dropped_out_of_area": 65
@@ -498,12 +498,12 @@
     },
     {
       "company": "Shield AI",
-      "ats": "lever",
+      "ats": "ashby",
       "ok": true,
-      "count": 0,
+      "count": 665,
       "error": null,
-      "matched": 0,
-      "dropped_out_of_area": 0
+      "matched": 94,
+      "dropped_out_of_area": 69
     },
     {
       "company": "Skyways",
@@ -545,7 +545,7 @@
       "company": "Oddball",
       "ats": "greenhouse",
       "ok": true,
-      "count": 15,
+      "count": 20,
       "error": null,
       "matched": 8,
       "dropped_out_of_area": 1
@@ -830,6 +830,105 @@
       "dropped_out_of_area": 0
     },
     {
+      "company": "Palantir",
+      "ats": "lever",
+      "ok": true,
+      "count": 308,
+      "error": null,
+      "matched": 109,
+      "dropped_out_of_area": 77
+    },
+    {
+      "company": "Scale AI",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 166,
+      "error": null,
+      "matched": 65,
+      "dropped_out_of_area": 47
+    },
+    {
+      "company": "Epirus",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 42,
+      "error": null,
+      "matched": 4,
+      "dropped_out_of_area": 3
+    },
+    {
+      "company": "Chaos Industries",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 187,
+      "error": null,
+      "matched": 17,
+      "dropped_out_of_area": 16
+    },
+    {
+      "company": "Rebellion Defense",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 0,
+      "error": null,
+      "matched": 0,
+      "dropped_out_of_area": 0
+    },
+    {
+      "company": "Snowflake",
+      "ats": "ashby",
+      "ok": true,
+      "count": 374,
+      "error": null,
+      "matched": 114,
+      "dropped_out_of_area": 91
+    },
+    {
+      "company": "Zscaler",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 387,
+      "error": null,
+      "matched": 162,
+      "dropped_out_of_area": 110
+    },
+    {
+      "company": "Elastic",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 382,
+      "error": null,
+      "matched": 135,
+      "dropped_out_of_area": 127
+    },
+    {
+      "company": "MongoDB",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 417,
+      "error": null,
+      "matched": 176,
+      "dropped_out_of_area": 171
+    },
+    {
+      "company": "Datadog",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 382,
+      "error": null,
+      "matched": 191,
+      "dropped_out_of_area": 162
+    },
+    {
+      "company": "GitLab",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 246,
+      "error": null,
+      "matched": 131,
+      "dropped_out_of_area": 71
+    },
+    {
       "company": "Adaptive",
       "ats": "ashby",
       "ok": true,
@@ -977,10 +1076,10 @@
       "company": "Anduril",
       "ats": "greenhouse",
       "ok": true,
-      "count": 2632,
+      "count": 2633,
       "error": null,
-      "matched": 311,
-      "dropped_out_of_area": 255
+      "matched": 312,
+      "dropped_out_of_area": 256
     },
     {
       "company": "Anyscale",
@@ -1454,7 +1553,7 @@
       "company": "Databricks",
       "ats": "greenhouse",
       "ok": true,
-      "count": 895,
+      "count": 893,
       "error": null,
       "matched": 543,
       "dropped_out_of_area": 464
@@ -1526,10 +1625,10 @@
       "company": "Doxel",
       "ats": "lever",
       "ok": true,
-      "count": 17,
+      "count": 16,
       "error": null,
-      "matched": 8,
-      "dropped_out_of_area": 7
+      "matched": 7,
+      "dropped_out_of_area": 6
     },
     {
       "company": "Dyno Therapeutics",
@@ -1580,7 +1679,7 @@
       "company": "ElevenLabs",
       "ats": "ashby",
       "ok": true,
-      "count": 121,
+      "count": 122,
       "error": null,
       "matched": 61,
       "dropped_out_of_area": 38
@@ -1672,8 +1771,8 @@
       "ok": true,
       "count": 67,
       "error": null,
-      "matched": 21,
-      "dropped_out_of_area": 19
+      "matched": 20,
+      "dropped_out_of_area": 18
     },
     {
       "company": "Exowatt",
@@ -2345,7 +2444,7 @@
       "company": "Lyft",
       "ats": "greenhouse",
       "ok": true,
-      "count": 148,
+      "count": 145,
       "error": null,
       "matched": 32,
       "dropped_out_of_area": 32
@@ -2633,7 +2732,7 @@
       "company": "OpenEvidence",
       "ats": "ashby",
       "ok": true,
-      "count": 8,
+      "count": 7,
       "error": null,
       "matched": 2,
       "dropped_out_of_area": 0
@@ -3011,7 +3110,7 @@
       "company": "Roblox",
       "ats": "greenhouse",
       "ok": true,
-      "count": 260,
+      "count": 259,
       "error": null,
       "matched": 41,
       "dropped_out_of_area": 41
@@ -3056,7 +3155,7 @@
       "company": "Samsara",
       "ats": "greenhouse",
       "ok": true,
-      "count": 298,
+      "count": 299,
       "error": null,
       "matched": 142,
       "dropped_out_of_area": 32
@@ -3182,7 +3281,7 @@
       "company": "SpaceXSI",
       "ats": "greenhouse",
       "ok": true,
-      "count": 2841,
+      "count": 2845,
       "error": null,
       "matched": 226,
       "dropped_out_of_area": 213
@@ -3272,10 +3371,10 @@
       "company": "Stripe",
       "ats": "greenhouse",
       "ok": true,
-      "count": 778,
+      "count": 777,
       "error": null,
-      "matched": 377,
-      "dropped_out_of_area": 319
+      "matched": 376,
+      "dropped_out_of_area": 318
     },
     {
       "company": "Substack",
@@ -3452,7 +3551,7 @@
       "company": "Tutor Intelligence",
       "ats": "ashby",
       "ok": true,
-      "count": 85,
+      "count": 82,
       "error": null,
       "matched": 22,
       "dropped_out_of_area": 13
@@ -3686,7 +3785,7 @@
       "company": "XDOF",
       "ats": "ashby",
       "ok": true,
-      "count": 27,
+      "count": 28,
       "error": null,
       "matched": 3,
       "dropped_out_of_area": 3
@@ -3722,7 +3821,7 @@
       "company": "Zipline",
       "ats": "greenhouse",
       "ok": true,
-      "count": 315,
+      "count": 314,
       "error": null,
       "matched": 28,
       "dropped_out_of_area": 26
@@ -3748,8 +3847,23 @@
   ],
   "any_failures": true,
   "drop_out_of_area": true,
-  "dropped_out_of_area": 4732,
+  "dropped_out_of_area": 5673,
   "ambiguous_locations": [
+    {
+      "company": "Elastic",
+      "title": "Emerging Enterprise Account Executive, West",
+      "location": "Washington, United States"
+    },
+    {
+      "company": "Elastic",
+      "title": "Inside Account Executive (Hunter AE) - West",
+      "location": "Washington, United States"
+    },
+    {
+      "company": "Datadog",
+      "title": "Strategic Account Executive",
+      "location": "Washington, USA, Remote"
+    },
     {
       "company": "Databricks",
       "title": "Solutions Architect - Games",
@@ -3842,9 +3956,9 @@
       "public_sector": "Public sector"
     }
   },
-  "generated_at": "2026-11-21T20:51:10.566613+00:00",
+  "generated_at": "2026-11-22T18:26:36.872953+00:00",
   "prior_job_count": 1683,
-  "fresh_job_count": 1683,
-  "total_job_count": 1683,
+  "fresh_job_count": 1933,
+  "total_job_count": 1933,
   "shrink_blocked": false
 }
