@@ -29,6 +29,7 @@ Phase 6 (see each phase for why).
 | 5: Big-tech adapters | ⬜ Not started |
 | 6: Payload size | 🟡 Deprioritized. Descriptions are out of `jobs.json`; it is 2.27 MB raw but 197 KB gzipped as served. |
 | 7: Polish | 🟡 Board health data and alerts done (2026-11-22); the site page for it isn't. |
+| 8: Personalization | ⬜ Not started. Added 2026-11-22; begins with a discovery step. |
 
 **Done on 2026-11-22:**
 - Removed the `priority` tiers inherited from upstream. They pinned Horizon3.ai (55 jobs) to the
@@ -77,6 +78,9 @@ Phase 6 (see each phase for why).
      (`american-dynamism`) now leads the default sort with 109 mission-group roles.
 5. **Phase 4, then Phase 5.** Phase 4 means more sources (8VC, Founders Fund, Lux, ...) plus the
    weekly PR. Phase 6 only if the gzipped `jobs.json` passes about 1 MB.
+6. **Phase 8 discovery** (personalization) can run alongside any of the above, since it touches
+   only `site/` and docs. Write `docs/personalization.md` and get the options decided before
+   building anything.
 
 **Where things live (as built):**
 - **Config:** `config/companies.yaml` (426 companies: Shane's 91, the Phase 2 named companies, then the a16z ones, each under a comment header), `candidates.yaml`, `needs_adapter.yaml`, `roles.yaml`, `locations.yaml`, `tags.yaml` and `settings.yaml`. `rejected.yaml` and `seed_sources.yaml` don't exist yet.
@@ -135,7 +139,7 @@ Not planned now (decided 2026-11-22); revisit when the phases above are done.
 
 ## Non-goals (for now)
 
-- User accounts, logins or per-user profiles.
+- User accounts, logins or per-user profiles stored on a server. Per-browser preferences (Phase 8) are in scope.
 - Applying to jobs or tracking applications.
 - Marketing roles.
 - Scraping aggregator job boards (LinkedIn, Indeed). Jobs only ever come from the employer's own careers system.
@@ -454,9 +458,45 @@ These companies run their own careers sites, so each needs a custom adapter. Let
 - **Done when:** `jobs.json` stays under about 1.5 MB at 2,000 jobs.
 
 ### Phase 7: Polish (optional)
-- "New this week" view, and starred jobs in localStorage.
+- "New this week" view. (Starred jobs moved to Phase 8.)
 - An RSS feed or weekly email digest for a saved filter URL.
 - A health page on the site from `meta.json` `board_health` (the data and the Action alert exist since 2026-11-22).
+
+### Phase 8: Personalization
+*Added 2026-11-22.* Let each visitor tailor the board: saved searches, hidden companies, starred
+(and maybe hidden) jobs. The site is static on GitHub Pages and accounts are a non-goal, so the
+default assumption is per-browser storage. Discovery comes first and decides the approach.
+
+**Step 1: Discovery (no code).** Write `docs/personalization.md` comparing the options below,
+with a recommendation, and record the decisions in "Decisions so far".
+- **Storage and sync:**
+  - *localStorage only.* No backend; preferences stay in one browser and are lost when site data
+    is cleared or in a private window. Smallest build (roughly a day).
+  - *localStorage plus export/import.* Same, plus a "copy my settings" code or link to move them
+    to another device by hand. About 30 more lines.
+  - *Synced accounts* (e.g. Supabase, Firebase, or a Cloudflare Worker with KV, plus GitHub or
+    email login). Works across devices but reverses the accounts non-goal, adds a hosted service,
+    personal data, a privacy note and account deletion. Roughly 1–2 weeks plus upkeep. Note what
+    would change our mind (e.g. real users asking for it).
+- **Features and scope:** which of saved searches, hidden companies, starred jobs, hidden jobs
+  and "seen" markers make the first version; whether a saved search can be the default view on
+  load; how hidden items are shown and undone (e.g. "3 companies hidden · Manage").
+- **Stable keys:** jobs have a stable `id` (`ashby:1password:<uuid>`), but companies are keyed by
+  display name, so renaming one in `companies.yaml` would quietly un-hide it. Decide whether to
+  add a `company_slug` to `jobs.json`. That changes the data model, so ask before doing it.
+- **URLs and sharing:** saved searches reuse the existing query-string filters. Personal hides
+  must stay out of shared URLs, and the empty state and count should say when the visitor's own
+  settings are hiding results.
+- **Privacy and storage hygiene:** nothing leaves the browser; every storage read and write is
+  wrapped in try/catch and the site works without storage. A versioned storage key for future
+  migrations.
+- **Interplay with Phase 7:** a "New since your last visit" view and the RSS or digest idea for a
+  saved filter URL.
+- **Done when:** `docs/personalization.md` is written and the decisions are recorded here.
+
+**Step 2: Build** (scope set by Step 1), on its own branch, in `site/app.js` and `site/index.html`.
+- **Done when:** the chosen features work at desktop and phone width, survive a reload, can be
+  undone, never change a shared URL, and the site works with storage blocked.
 
 ---
 
