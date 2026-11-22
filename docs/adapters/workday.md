@@ -65,10 +65,27 @@ for CrowdStrike and Salesforce.
    `externalPath`.
 4. Title matching runs on the list results (scraper/main.py). Only matched jobs get a detail
    request, for the full location list and the description that clearance tagging needs.
-   Details are cached in `.cache/workday/` (restored between runs with actions/cache), so a
-   job's detail is fetched once and refreshed after 14 days.
+   Details are cached in `.cache/workday/` on the machine that runs the scrape, so a job's
+   detail is fetched once and refreshed after 14 days.
 
 A tenant with no location facet is paged without a filter, capped at 100 pages.
+
+## Where it runs: locally, about weekly
+
+The first scheduled run from GitHub Actions (2026-11-22) got HTTP 429 "Too Many Requests"
+from all six tenants, mostly on the very first request (robots.txt). The same requests had
+worked from a home connection an hour earlier, so Workday appears to throttle the shared
+cloud addresses GitHub's runners use. A 429 is a request to back off, so we don't work around
+it (no proxies or rotating addresses). Instead:
+
+- `config/settings.yaml` sets `adapters.workday.daily: false`. The daily Action skips the
+  Workday boards, keeps their jobs from the last local run, and carries their status in
+  `meta.json` (`"carried": true`). Kept jobs still age out after 30 days without a refresh.
+- A maintainer runs `python scripts/scrape_workday.py --push` about once a week. It pulls
+  `main`, scrapes only the Workday boards, keeps every other board's jobs as they are,
+  commits `data/` and pushes; the push redeploys the site.
+- `meta.json` `last_run_by_ats.workday` records the refresh time, and the site shows a note
+  under the intro with the Workday employers and when they were last refreshed.
 
 ## robots.txt and terms
 
@@ -97,4 +114,4 @@ and Parsons Phenom; those need other adapters.
 
 Same User-Agent, retries and per-request delay as the other adapters (`config/settings.yaml`).
 A first run for the six boards above makes roughly 300 search requests and one detail request
-per category-matched job; later runs make detail requests only for new jobs.
+per category-matched job (about 15 minutes); later runs make detail requests only for new jobs.

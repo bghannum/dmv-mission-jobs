@@ -48,7 +48,7 @@ def board_health(adapter_status: list[dict], prior_meta: dict, today: str) -> di
 
     empty, failing = [], []
     for s in adapter_status:
-        if s.get("error") == "disabled":
+        if s.get("error") in ("disabled", "not run yet"):
             continue
         key = _key(s)
         base = {"company": s.get("company"), "ats": s.get("ats"), "identifier": s.get("identifier")}

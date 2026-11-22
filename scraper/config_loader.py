@@ -27,6 +27,7 @@ class Settings:
     politeness_delay_seconds: float
     user_agent: str
     getro_enabled: bool
+    local_only_ats: frozenset[str]
     jobs_path: str
     meta_path: str
     stale_after_days: int
@@ -142,6 +143,10 @@ def load_settings(path: Path | None = None) -> Settings:
         politeness_delay_seconds=float(http.get("politeness_delay_seconds", 1.0)),
         user_agent=str(http.get("user_agent", "brians-job-bot/1.0")),
         getro_enabled=bool(getro.get("enabled", False)),
+        local_only_ats=frozenset(
+            k for k, v in (data.get("adapters") or {}).items()
+            if isinstance(v, dict) and v.get("daily") is False
+        ),
         jobs_path=str(output.get("jobs_path", "data/jobs.json")),
         meta_path=str(output.get("meta_path", "data/meta.json")),
         stale_after_days=int(output.get("stale_after_days", 30)),

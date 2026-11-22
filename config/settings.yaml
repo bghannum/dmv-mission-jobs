@@ -8,6 +8,11 @@ http:
 adapters:
   getro:
     enabled: false   # stretch; requires GETRO_API_KEY secret
+  workday:
+    # Workday's servers answer GitHub's runners with HTTP 429 (2026-11-22), so the daily
+    # Action leaves Workday boards out and keeps their last jobs. Refresh them from a
+    # maintainer's machine: python scripts/scrape_workday.py --push (docs/adapters/workday.md).
+    daily: false
 
 filters:
   # Keep only DC-metro (on-site or hybrid) and US-remote roles; everything else is dropped
