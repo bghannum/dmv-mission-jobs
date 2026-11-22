@@ -1,0 +1,16 @@
+{
+  "jobPostingInfo": {
+    "id": "abc",
+    "title": "Senior Program Manager",
+    "jobDescription": "<p>Lead programs for DoD customers. Active TS/SCI clearance required.</p>",
+    "location": "Columbus, OH",
+    "additionalLocations": [
+      "6314 Remote/Teleworker US",
+      "Norfolk, VA"
+    ],
+    "startDate": "2026-11-22",
+    "jobReqId": "R-002",
+    "remoteType": "Remote",
+    "externalUrl": "https://acme.wd5.myworkdayjobs.com/External/job/Remote/Senior-Program-Manager_R-002"
+  }
+}

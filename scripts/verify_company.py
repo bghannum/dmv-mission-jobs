@@ -2,6 +2,7 @@
 
     python scripts/verify_company.py greenhouse scaleai --name "Scale AI"
     python scripts/verify_company.py --find "Scale AI" --website https://scale.com
+    python scripts/verify_company.py workday leidos/wd5/External --name Leidos
 
 The first form fetches a known board. The second probes Greenhouse, Ashby and Lever for the
 company's board first (scraper/seeder/probe.py), then fetches it. Either way it prints the
@@ -124,14 +125,16 @@ def main(argv: list[str] | None = None) -> int:
                         max_retries=settings.max_retries, backoff=settings.backoff_seconds,
                         politeness_delay=settings.politeness_delay_seconds)
     try:
-        raw = get_adapter(ats, client).run(company)
+        adapter = get_adapter(ats, client)
+        raw = adapter.run(company)
     except Exception as exc:  # noqa: BLE001 - report and exit, like the scraper does
         print(f"Fetch failed for {ats}:{slug}: {type(exc).__name__}: {exc}")
         return 1
 
     umbrellas, levels = load_roles()
     kept, n_matched = filter_jobs(raw, umbrellas, levels, load_locations(), load_tags(),
-                                  drop_out_of_area=True)
+                                  drop_out_of_area=True, adapter=adapter)
+    adapter.finish()
     s = summarize(raw, kept, n_matched)
     print(f"{s['fetched']} jobs fetched, {s['role_matched']} match a target role, "
           f"{s['kept']} also in the DMV or US remote")

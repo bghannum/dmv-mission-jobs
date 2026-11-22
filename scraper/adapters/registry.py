@@ -9,6 +9,7 @@ from .getro import GetroAdapter
 from .greenhouse import GreenhouseAdapter
 from .lever import LeverAdapter
 from .rippling import RipplingAdapter
+from .workday import WorkdayAdapter
 
 ADAPTERS: dict[str, type[ATSAdapter]] = {
     AshbyAdapter.key: AshbyAdapter,
@@ -17,6 +18,7 @@ ADAPTERS: dict[str, type[ATSAdapter]] = {
     RipplingAdapter.key: RipplingAdapter,
     GemAdapter.key: GemAdapter,
     GetroAdapter.key: GetroAdapter,
+    WorkdayAdapter.key: WorkdayAdapter,
 }
 
 KNOWN_ATS = set(ADAPTERS)

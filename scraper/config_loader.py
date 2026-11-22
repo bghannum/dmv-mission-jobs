@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -79,6 +80,11 @@ def load_companies(path: Path | None = None, *, valid_ats: set[str] | None = Non
             # Removed 2026-11-22: the tiers were inherited from upstream and pinned a few
             # companies to the top of the board. The site now orders jobs itself.
             raise ConfigError(f"{where} has 'priority', which is no longer supported")
+
+        if ats == "workday" and not re.match(
+            r"^[A-Za-z0-9_-]+/wd\d+/[A-Za-z0-9_-]+$", str(entry["identifier"]).strip()
+        ):
+            raise ConfigError(f"{where} Workday identifier must be tenant/wdN/site")
 
         key = (ats, str(entry["identifier"]).strip().lower())
         if key in seen:

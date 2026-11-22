@@ -1,0 +1,97 @@
+{
+  "total": 3,
+  "jobPostings": [
+    {
+      "title": "Capture Manager",
+      "externalPath": "/job/Reston-VA/Capture-Manager_R-001",
+      "locationsText": "Reston, VA",
+      "postedOn": "Posted 2 Days Ago",
+      "bulletFields": [
+        "R-001"
+      ]
+    },
+    {
+      "title": "Senior Program Manager",
+      "externalPath": "/job/Remote/Senior-Program-Manager_R-002",
+      "locationsText": "3 Locations",
+      "postedOn": "Posted Today",
+      "bulletFields": [
+        "R-002"
+      ]
+    },
+    {
+      "title": "Payroll Specialist",
+      "externalPath": "/job/Reston-VA/Payroll-Specialist_R-003",
+      "locationsText": "0411 Vienna VA",
+      "postedOn": "Posted 30+ Days Ago",
+      "bulletFields": [
+        "R-003"
+      ]
+    }
+  ],
+  "facets": [
+    {
+      "facetParameter": "jobFamilyGroup",
+      "descriptor": "Job Category",
+      "values": [
+        {
+          "descriptor": "Engineering",
+          "id": "fam-eng",
+          "count": 900
+        }
+      ]
+    },
+    {
+      "facetParameter": "locationMainGroup",
+      "values": [
+        {
+          "facetParameter": "locationCountry",
+          "descriptor": "Location Country",
+          "values": [
+            {
+              "descriptor": "United States of America",
+              "id": "c-us",
+              "count": 2900
+            }
+          ]
+        },
+        {
+          "facetParameter": "locations",
+          "descriptor": "Locations",
+          "values": [
+            {
+              "descriptor": "Reston, VA",
+              "id": "loc-reston",
+              "count": 108
+            },
+            {
+              "descriptor": "0411 Vienna VA",
+              "id": "loc-vienna",
+              "count": 3
+            },
+            {
+              "descriptor": "6314 Remote/Teleworker US",
+              "id": "loc-remote",
+              "count": 158
+            },
+            {
+              "descriptor": "Norfolk, VA",
+              "id": "loc-norfolk",
+              "count": 21
+            },
+            {
+              "descriptor": "Remote, United Kingdom",
+              "id": "loc-uk",
+              "count": 9
+            },
+            {
+              "descriptor": "10586 Columbus OH",
+              "id": "loc-columbus",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

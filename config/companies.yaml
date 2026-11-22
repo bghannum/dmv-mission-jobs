@@ -3,8 +3,9 @@
 #
 # Fields:
 #   name         display name (required)
-#   ats          adapter key: ashby | greenhouse | lever | rippling | gem | getro (required)
-#   identifier   the board slug/token for that ATS (required; case-sensitive for Ashby)
+#   ats          adapter key: ashby | greenhouse | lever | rippling | gem | getro | workday (required)
+#   identifier   the board slug/token for that ATS (required; case-sensitive for Ashby;
+#                tenant/wdN/site for Workday, e.g. leidos/wd5/External)
 #   industry     one or more values from INDUSTRY_VOCAB in scraper/models.py (required)
 #   homepage     optional company URL
 #
@@ -481,6 +482,44 @@ companies:
     identifier: "gitlab"
     industry: [saas]
     homepage: "https://about.gitlab.com"
+
+  # --- Workday employers (PLAN.md Phase 3), checked with scripts/verify_company.py, 2026-11-22 ---
+  # robots.txt allows each career site; see docs/adapters/workday.md.
+  - name: "Leidos"
+    ats: workday
+    identifier: "leidos/wd5/External"
+    industry: [deftech, gov-it]
+    homepage: "https://www.leidos.com"
+
+  - name: "Booz Allen Hamilton"
+    ats: workday
+    identifier: "bah/wd1/BAH_Jobs"
+    industry: [deftech, gov-it]
+    homepage: "https://www.boozallen.com"
+
+  - name: "GDIT"
+    ats: workday
+    identifier: "gdit/wd5/External_Career_Site"
+    industry: [deftech, gov-it]
+    homepage: "https://www.gdit.com"
+
+  - name: "Northrop Grumman"
+    ats: workday
+    identifier: "ngc/wd1/Northrop_Grumman_External_Site"
+    industry: [deftech, space]
+    homepage: "https://www.northropgrumman.com"
+
+  - name: "CrowdStrike"
+    ats: workday
+    identifier: "crowdstrike/wd5/crowdstrikecareers"
+    industry: [cybersecurity]
+    homepage: "https://www.crowdstrike.com"
+
+  - name: "Salesforce"
+    ats: workday
+    identifier: "salesforce/wd12/External_Career_Site"
+    industry: [saas]
+    homepage: "https://www.salesforce.com"
 
   # --- a16z portfolio (scripts/seed_a16z.py, 2026-11-21) ---
   # Industries are suggested from a16z's description; review and correct.

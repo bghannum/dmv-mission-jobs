@@ -53,7 +53,7 @@ umbrellas:
         exclude_keywords: ["sales engineer", "marketing", "technical account manager"]
       business_development:
         label: "Business Development / Capture"
-        include_keywords: ["business development", "capture manager", "capture lead", "capture director", "strategic accounts", "federal sales", "public sector sales"]
+        include_keywords: ["business development", "capture manager", "capture lead", "capture director", "capture executive", "capture excellence", "vp of capture", "vp, capture", "vice president, capture", "head of capture", "strategic accounts", "federal sales", "public sector sales"]
         exclude_keywords: ["marketing"]
       partnerships:
         label: "Partnerships"

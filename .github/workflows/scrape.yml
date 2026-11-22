@@ -23,6 +23,15 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      # Workday job details (descriptions, full location lists), so each job's detail is
+      # fetched once instead of every day. A new key each run saves the updated cache;
+      # restore-keys picks up the latest one. See docs/adapters/workday.md.
+      - name: Restore Workday detail cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/workday
+          key: workday-details-${{ github.run_id }}
+          restore-keys: workday-details-
       - name: Run scraper
         env:
           GETRO_API_KEY: ${{ secrets.GETRO_API_KEY }}

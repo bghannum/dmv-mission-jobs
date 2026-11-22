@@ -10,8 +10,9 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 ## Current status (as of 2026-11-22)
 
 **Live:** https://bghannum.github.io/dmv-mission-jobs/ (public repo `bghannum/dmv-mission-jobs`).
-1,933 roles from 222 companies with open roles, out of 426 tracked (2026-11-22 scrape). The scrape
-runs daily at 11:00 UTC (about 3 minutes in Actions), commits as `brians-job-bot`, redeploys the
+1,933 roles from 222 companies with open roles, out of 426 tracked (2026-11-22 scrape), before
+the 6 Workday employers (about 580 more roles; 432 tracked). The scrape
+runs daily at 11:00 UTC (about 3 minutes in Actions before Workday; expect longer now), commits as `brians-job-bot`, redeploys the
 site and then runs the board health check.
 
 **Phase order changed on 2026-11-22:** Workday moved up to Phase 3 and payload size moved down to
@@ -22,8 +23,8 @@ Phase 6 (see each phase for why).
 | 0: Fork and baseline | ✅ Done |
 | 1: Categories, location and tags | ✅ Done |
 | 1b: Visual redesign | ✅ Done, plus multi-select category chips and alphabetical dropdowns |
-| 2: Expand the company list | ✅ "Done when" met. 9 named companies and the review queues carried over (below). |
-| 3: Workday adapter | ⬜ Next |
+| 2: Expand the company list | ✅ "Done when" met. 6 named companies and the review queues carried over (below). |
+| 3: Workday adapter | 🟡 Built 2026-11-22 (`scraper/adapters/workday.py`, `docs/adapters/workday.md`) with 6 employers: Leidos, Booz Allen, GDIT, Northrop Grumman, CrowdStrike, Salesforce (about 580 roles at verify time). "Done when" needs a clean week of daily runs. |
 | 4: Seeder | 🟡 Started: `scraper/seeder/` (a16z source, ATS prober, industry suggestions) and `scripts/seed_a16z.py`. No `seed_sources.yaml`, no other sources, no weekly PR Action yet. |
 | 5: Big-tech adapters | ⬜ Not started |
 | 6: Payload size | 🟡 Deprioritized. Descriptions are out of `jobs.json`; it is 2.27 MB raw but 197 KB gzipped as served. |
@@ -39,17 +40,27 @@ Phase 6 (see each phase for why).
   boards with the day each started. The scrape workflow's last step fails, so GitHub emails, only
   when a board that had jobs goes to 0 or a board starts failing.
 - Removed Cedar (Ashby board 404).
+- Workday adapter (Phase 3) and its first 6 employers; senior capture titles in `roles.yaml`.
 
 **Suggested next steps, in order:**
-1. **Phase 3: Workday adapter.** Document the endpoint in `docs/adapters/workday.md` first, then
-   build it and add the first defense primes and government IT employers (Leidos, Booz Allen, SAIC,
-   GDIT, CACI, ...) plus the Workday companies among the 9 named ones. Add the primes' GTM and
-   customer titles to `roles.yaml` with tests at the same time.
-2. **Finish Phase 2's named companies.** 9 remain, none on Greenhouse, Ashby or Lever:
+1. **Finish Phase 3.** Watch the first week of Workday runs: the first run fetches every
+   detail and takes about 30 minutes longer, later ones only new jobs (actions/cache). Then
+   decide the taxonomy questions it raised (below) and add more Workday employers with
+   `verify_company.py workday <tenant/wdN/site>`. Not addable: CACI and Palo Alto Networks
+   (robots.txt disallows), SAIC and ServiceNow (no tenant found), ManTech (Avature), Peraton
+   (iCIMS), Parsons (Phenom); all in `needs_adapter.yaml`.
+   - **Open: state-limited remote.** Many remote roles (Salesforce, CrowdStrike) are remote
+     only in listed states, e.g. "Remote, Arizona; Remote, Nevada". The board counts any remote
+     US role as `remote_us`, for every ATS. Decide whether to require a generic US remote or a
+     VA/MD/DC remote location.
+   - **Open: prime titles.** Leidos titles our roles miss: Project Manager, Proposal Manager,
+     Contracts Manager, Mission Manager, Portfolio Manager. Decide which categories they
+     belong in, if any. Senior capture titles were added 2026-11-22.
+2. **Finish Phase 2's named companies.** 6 remain (CrowdStrike and Salesforce are in; Palo Alto
+   Networks is blocked by robots.txt), none on Greenhouse, Ashby or Lever:
    - Hadrian, Govini, Castelion, Ask Sage, Istari: check each careers page by hand. Rippling or
      Gem can go straight in; anything else goes to `config/needs_adapter.yaml`.
-   - CrowdStrike, Palo Alto Networks, ServiceNow, Salesforce: confirm the ATS (thought to be
-     Workday or SmartRecruiters). Workday ones go in with Phase 3.
+   - ServiceNow: no Workday tenant found; check whether it's SmartRecruiters.
 
    Use `scripts/verify_company.py` (`--find "Name" --website URL`, or `<ats> <slug>`).
    To review: Palantir is tagged `deftech` (every job Public sector); Scale AI is `ai` only.
@@ -74,7 +85,7 @@ Phase 6 (see each phase for why).
 - **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
 
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
-`ruff check . && pytest` (205 tests), `python -m scraper.main` (about 10 minutes for 426 companies), and
+`ruff check . && pytest` (233 tests), `python -m scraper.main` (about 10 minutes for the ATS boards, plus the Workday boards: about 30 minutes on a first run, a few minutes with a warm `.cache/workday`), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
 
 ## Goals

@@ -33,6 +33,9 @@ UMBRELLAS, LEVELS = load_roles()
         ("Federal Account Executive, DoD", "gtm", "sales"),
         ("Enterprise Account Manager", "gtm", "sales"),
         ("Capture Manager", "gtm", "business_development"),
+        # Defense-prime capture titles (Leidos, 2026-11-22)
+        ("Vice President, Capture Excellence - Defense Sector", "gtm", "business_development"),
+        ("Vice President, Capture Executive", "gtm", "business_development"),
         ("Director, Business Development", "gtm", "business_development"),
         ("Strategic Partnerships Lead", "gtm", "partnerships"),
         ("VP of Growth", "growth", "growth"),

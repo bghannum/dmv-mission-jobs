@@ -14,8 +14,11 @@ allowlist. That is a single-file change to `config/companies.yaml`.
    | `lever` | `https://jobs.lever.co/chainguard` | `chainguard` |
    | `rippling` | `https://ats.rippling.com/acme/jobs` | `acme` |
    | `gem` | `https://jobs.gem.com/acme` | `acme` |
+   | `workday` | `https://leidos.wd5.myworkdayjobs.com/External` | `leidos/wd5/External` |
 
-   Workday and Getro are **not** supported.
+   Getro is **not** supported. For Workday, check the site's robots.txt
+   (`https://{tenant}.{wdN}.myworkdayjobs.com/robots.txt`) first: if it disallows the site
+   path, the board can't be added (`docs/adapters/workday.md`).
 
    Not sure? `scripts/verify_company.py` can find and check the board for you. It probes
    Greenhouse, Ashby and Lever, then shows how many jobs would make it onto the board:
