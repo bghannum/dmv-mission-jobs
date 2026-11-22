@@ -57,9 +57,6 @@ Phase 6 (see each phase for why).
    checks of DMV employers are in `docs/adapters/workday.md` and `needs_adapter.yaml`.
    Capital One alone adds about 560 roles (mostly McLean engineering); the interleaved sort
    keeps it from crowding the first screen.
-   - **Next adapter to consider: Phenom.** It hosts RTX, BAE Systems, ICF, Freddie Mac and
-     Parsons. Avature (Deloitte, Maximus, ManTech) and iCIMS (Peraton, V2X) come after.
-     Investigate and document the endpoint in `docs/adapters/` first, as with Workday.
    - Not addable: CACI, Palo Alto Networks and MITRE (robots.txt disallows).
 2. **Finish Phase 2's named companies.** 6 remain (CrowdStrike and Salesforce are in; Palo Alto
    Networks is blocked by robots.txt), none on Greenhouse, Ashby or Lever:
@@ -92,6 +89,17 @@ Phase 6 (see each phase for why).
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
 `ruff check . && pytest` (287 tests), `python -m scraper.main` (about 10 minutes; skips Workday) and `python scripts/scrape_workday.py` (Workday only), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
+
+## Backlog
+
+Not planned now (decided 2026-11-22); revisit when the phases above are done.
+
+- **Adapters for other job systems.** Phenom hosts RTX, BAE Systems, ICF, Freddie Mac and
+  Parsons; Avature hosts Deloitte, Maximus and ManTech; iCIMS hosts Peraton and V2X; Radancy
+  hosts L3Harris; Taleo hosts Textron. Phenom covers the most DMV employers, so it would come
+  first. Lockheed Martin, HII, JHU APL, CGI Federal and Accenture Federal Services still need
+  their system identified. All are in `config/needs_adapter.yaml`. As with Workday,
+  investigate and document each endpoint in `docs/adapters/` before writing code.
 
 ## Goals
 
