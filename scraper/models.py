@@ -12,9 +12,6 @@ INDUSTRY_VOCAB = {
     # a16z portfolio sectors (scripts/seed_a16z.py)
     "american-dynamism", "fintech", "crypto", "consumer", "games",
 }
-# Neutral priority tiers; lower sorts first. Drives ordering only (no public meaning).
-PRIORITIES = {1, 2, 3}
-DEFAULT_PRIORITY = 3
 
 
 @dataclass
@@ -25,7 +22,6 @@ class Company:
     ats: str
     identifier: str
     industry: list[str]
-    priority: int = DEFAULT_PRIORITY
     homepage: str | None = None
 
 
@@ -49,8 +45,6 @@ class Job:
     industries: list[str]
     url: str
     source_ats: str
-    # Set from the company after normalization (see main.scrape_company).
-    priority: int = DEFAULT_PRIORITY
     # Filled in by matching.py
     umbrellas: list[str] = field(default_factory=list)
     roles: list[str] = field(default_factory=list)

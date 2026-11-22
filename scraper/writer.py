@@ -8,7 +8,7 @@ import tempfile
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from .models import DEFAULT_PRIORITY, Job
+from .models import Job
 from .tagging import html_to_text
 
 SNIPPET_CHARS = 280
@@ -50,7 +50,7 @@ def snippet(description_html: str | None, limit: int = SNIPPET_CHARS) -> str | N
 
 def _public_dict(job: Job) -> dict:
     """What goes in jobs.json. Full descriptions stay out: they were ~90% of the file and
-    the site doesn't show them (PLAN.md Phase 3). Tagging reads them during the scrape."""
+    the site doesn't show them (PLAN.md Phase 6). Tagging reads them during the scrape."""
     d = job.to_dict()
     d["snippet"] = snippet(d.pop("description_html", None))
     return d
@@ -103,14 +103,8 @@ def merge_and_write(
             current[jid] = old  # keep as-is; last_seen not refreshed
 
     merged = list(current.values())
-    # By priority tier (1 highest), then company/title.
-    merged.sort(
-        key=lambda j: (
-            j.get("priority", DEFAULT_PRIORITY),
-            j.get("company", ""),
-            j.get("title", ""),
-        )
-    )
+    # Stable, diff-friendly order. The site decides display order (site/app.js sortJobs).
+    merged.sort(key=lambda j: (j.get("company", ""), j.get("title", "")))
 
     prior_count = len(prior)
     fresh_count = len(jobs)

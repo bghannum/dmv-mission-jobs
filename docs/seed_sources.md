@@ -41,7 +41,7 @@ each ATS's public, documented job-board API:
 - **Politeness:** one thread per ATS host with a fixed delay between requests (default 0.3s), the board's User-Agent, and an on-disk cache (`.cache/seeder/probe_cache.json`) so no slug is probed twice.
 
 Companies with no board on these three ATSs go to `config/needs_adapter.yaml`. Many will
-be on Workday or a custom careers site (PLAN.md Phases 5–6).
+be on Workday or a custom careers site (PLAN.md Phases 3 and 5).
 
 ## Industries
 

@@ -1,6 +1,6 @@
 # Relevant companies whose jobs we can't fetch yet: their careers site is on
 # an unsupported ATS (e.g. Workday) or a custom site, or no board was found.
-# Not scraped. See PLAN.md Phases 5-6.
+# Not scraped. See PLAN.md Phases 3 (Workday) and 5 (big tech).
 companies:
 - name: 11x
   homepage: https://www.11x.ai/

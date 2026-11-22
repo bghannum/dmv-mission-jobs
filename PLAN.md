@@ -7,59 +7,74 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 - **Workday coverage**: many defense primes and government IT employers use Workday.
 - **Discovery**: a seeder keeps growing the company list automatically.
 
-## Current status (as of 2026-11-21)
+## Current status (as of 2026-11-22)
 
 **Live:** https://bghannum.github.io/dmv-mission-jobs/ (public repo `bghannum/dmv-mission-jobs`).
-About 1,680 roles from 211 companies with open roles, out of 427 tracked (the 11 named
-companies and the Shield AI fix added on 2026-11-21 should add about 255 roles from the next scrape). The scrape runs daily at 11:00 UTC (about 8 minutes),
-commits as `brians-job-bot`, and redeploys the site automatically.
+1,933 roles from 222 companies with open roles, out of 426 tracked (2026-11-22 scrape). The scrape
+runs daily at 11:00 UTC (about 3 minutes in Actions), commits as `brians-job-bot`, redeploys the
+site and then runs the board health check.
+
+**Phase order changed on 2026-11-22:** Workday moved up to Phase 3 and payload size moved down to
+Phase 6 (see each phase for why).
 
 | Phase | Status |
 |---|---|
 | 0: Fork and baseline | ✅ Done |
 | 1: Categories, location and tags | ✅ Done |
 | 1b: Visual redesign | ✅ Done, plus multi-select category chips and alphabetical dropdowns |
-| 2: Expand the company list | ✅ "Done when" met: the a16z portfolio added 324 companies, the Washington rule is decided, and the site is live. `scripts/verify_company.py` is written and 11 of the 20 missing named companies are added (PR #3). **Some tasks carried over** (below). |
-| 3: Payload size | 🟡 Partly done: descriptions are dropped from `jobs.json` and replaced with a 280-char `snippet`. The file is 1.9 MB at about 1,680 jobs (expect about 2.2 MB once the new companies land); the target is under 1.5 MB at 2,000. |
+| 2: Expand the company list | ✅ "Done when" met. 9 named companies and the review queues carried over (below). |
+| 3: Workday adapter | ⬜ Next |
 | 4: Seeder | 🟡 Started: `scraper/seeder/` (a16z source, ATS prober, industry suggestions) and `scripts/seed_a16z.py`. No `seed_sources.yaml`, no other sources, no weekly PR Action yet. |
 | 5: Big-tech adapters | ⬜ Not started |
-| 6: Workday adapter | ⬜ Not started |
-| 7: Polish | ⬜ Not started |
+| 6: Payload size | 🟡 Deprioritized. Descriptions are out of `jobs.json`; it is 2.27 MB raw but 197 KB gzipped as served. |
+| 7: Polish | 🟡 Board health data and alerts done (2026-11-22); the site page for it isn't. |
+
+**Done on 2026-11-22:**
+- Removed the `priority` tiers inherited from upstream. They pinned Horizon3.ai (55 jobs) to the
+  top of the board. `priority:` in `companies.yaml` is now a config error.
+- New default sort on the site ("Mission first"): mission-industry roles, then the rest, each
+  interleaved by company (each company's newest role first, the company with the newest role
+  first). "Newest" sorts by first seen, then posting date. Both live in `site/app.js` `sortJobs`.
+- Board health check (`scraper/health.py`): `meta.json` `board_health` lists empty and failing
+  boards with the day each started. The scrape workflow's last step fails, so GitHub emails, only
+  when a board that had jobs goes to 0 or a board starts failing.
+- Removed Cedar (Ashby board 404).
 
 **Suggested next steps, in order:**
-1. **Finish Phase 2's named companies.** 11 of the 20 missing ones were added on 2026-11-21
-   (Palantir, Scale AI, Epirus, Chaos Industries, Rebellion Defense, Snowflake, Zscaler, Elastic,
-   MongoDB, Datadog, GitLab). 9 remain, none on Greenhouse, Ashby or Lever:
+1. **Phase 3: Workday adapter.** Document the endpoint in `docs/adapters/workday.md` first, then
+   build it and add the first defense primes and government IT employers (Leidos, Booz Allen, SAIC,
+   GDIT, CACI, ...) plus the Workday companies among the 9 named ones. Add the primes' GTM and
+   customer titles to `roles.yaml` with tests at the same time.
+2. **Finish Phase 2's named companies.** 9 remain, none on Greenhouse, Ashby or Lever:
    - Hadrian, Govini, Castelion, Ask Sage, Istari: check each careers page by hand. Rippling or
      Gem can go straight in; anything else goes to `config/needs_adapter.yaml`.
    - CrowdStrike, Palo Alto Networks, ServiceNow, Salesforce: confirm the ATS (thought to be
-     Workday or SmartRecruiters; not yet checked) and add them to `needs_adapter.yaml` for Phase 6.
+     Workday or SmartRecruiters). Workday ones go in with Phase 3.
 
    Use `scripts/verify_company.py` (`--find "Name" --website URL`, or `<ats> <slug>`).
    To review: Palantir is tagged `deftech` (every job Public sector); Scale AI is `ai` only.
-2. **Review queues:**
-   - `config/candidates.yaml`: 48 a16z boards found but not confirmed as the right company. Move good ones into `companies.yaml` and the rest into a new `config/rejected.yaml`.
-   - Cedar's Ashby board returns 404, so remove it.
-   - **Watch for boards that go silent.** Shield AI's Lever board went empty (it moved to
-     Ashby; fixed 2026-11-21), and the scrape counted it as a success with 0 jobs. 8 a16z
-     boards also returned 0 on 2026-11-21. Consider listing zero-job companies in `meta.json`
-     and rechecking them with `verify_company.py --find`.
-3. **Industry clean-up:**
+3. **Review queues:** `config/candidates.yaml` has 48 a16z boards found but not confirmed as the
+   right company. Move good ones into `companies.yaml` and the rest into a new
+   `config/rejected.yaml`. When the health check emails about a board, run
+   `verify_company.py --find` on it.
+4. **Industry clean-up:**
    - Re-tag Shane's original companies with the new vocabulary (e.g. `saas`, `ai`, `govtech`).
-   - Have someone with defense knowledge skim the American Dynamism block in `companies.yaml`. Some defense companies (e.g. CX2, Rune Technologies) have empty a16z descriptions and lack `deftech`.
-4. **Real titles into `roles.yaml`.** Collect real GTM and customer titles from defense companies and add them to `roles.yaml` with tests (a Phase 2 task, not done).
-5. **Phase 3, Phase 4, then Phase 6.** Phase 3 needs the size target. Phase 4 means more sources (8VC, Founders Fund, Lux, ...) plus the weekly PR. Phase 6 (Workday) unlocks many of the 346 companies in `needs_adapter.yaml` and the defense primes.
+   - Have someone with defense knowledge skim the American Dynamism block in `companies.yaml`.
+     Some defense companies (e.g. CX2, Rune Technologies) lack `deftech`, and Samsara
+     (`american-dynamism`) now leads the default sort with 109 mission-group roles.
+5. **Phase 4, then Phase 5.** Phase 4 means more sources (8VC, Founders Fund, Lux, ...) plus the
+   weekly PR. Phase 6 only if the gzipped `jobs.json` passes about 1 MB.
 
 **Where things live (as built):**
-- **Config:** `config/companies.yaml` (427 companies: Shane's 92, the Phase 2 named companies, then the a16z ones, each under a comment header), `candidates.yaml`, `needs_adapter.yaml`, `roles.yaml`, `locations.yaml`, `tags.yaml` and `settings.yaml`. `rejected.yaml` and `seed_sources.yaml` don't exist yet.
-- **Scraper:** `scraper/`. `location.py` holds the DMV-or-remote model and the Washington rules, `tagging.py` holds clearance and public sector, and `seeder/` holds the a16z source, the ATS prober and industry suggestions. Industry values are `INDUSTRY_VOCAB` in `scraper/models.py`.
+- **Config:** `config/companies.yaml` (426 companies: Shane's 91, the Phase 2 named companies, then the a16z ones, each under a comment header), `candidates.yaml`, `needs_adapter.yaml`, `roles.yaml`, `locations.yaml`, `tags.yaml` and `settings.yaml`. `rejected.yaml` and `seed_sources.yaml` don't exist yet.
+- **Scraper:** `scraper/`. `location.py` holds the DMV-or-remote model and the Washington rules, `tagging.py` holds clearance and public sector, `health.py` holds the board health check, and `seeder/` holds the a16z source, the ATS prober and industry suggestions. Industry values are `INDUSTRY_VOCAB` in `scraper/models.py`.
 - **Scripts:** `scripts/verify_company.py` checks one company's board before it's added (job count, role and location survivors, sample titles, a ready `companies.yaml` entry). `scripts/seed_a16z.py` (rerun: `python scripts/seed_a16z.py`; add `--apply` to write config). Its probe cache and a16z page copies live in `.cache/seeder/` (gitignored), so reruns are almost free.
 - **Docs:** `docs/seed_sources.md` records which discovery sources are allowed and why. portfoliojobs.a16z.com is **not** allowed (Consider's terms).
 - **Site:** `site/` (vanilla JS; every filter lives in the URL, e.g. `?umbrella=gtm,customer&loc=dmv&public_sector=1&view=list`). Filter labels come from `meta.json` `taxonomy`.
 - **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
 
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
-`ruff check . && pytest` (198 tests), `python -m scraper.main` (about 10 minutes for 427 companies), and
+`ruff check . && pytest` (205 tests), `python -m scraper.main` (about 10 minutes for 426 companies), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
 
 ## Goals
@@ -86,7 +101,9 @@ commits as `brians-job-bot`, and redeploys the site automatically.
 | Categories (site) | Category is a row of multi-select chips (`umbrella=gtm,customer`). Industry, Role and Company dropdowns are alphabetical; Level stays in seniority order. |
 | Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |
 | a16z portfolio | Every a16z company with a confirmed Greenhouse/Lever/Ashby board is on the board (added 2026-11-21 with `scripts/seed_a16z.py`). The company list comes from a16z.com; the Consider-hosted portfoliojobs.a16z.com isn't used because Consider's terms forbid scrapers. See `docs/seed_sources.md`. |
-| Job descriptions | Not stored in `jobs.json` (pulled forward from Phase 3); a 280-character `snippet` is kept. Tagging still reads full descriptions during the scrape. |
+| Job descriptions | Not stored in `jobs.json` (pulled forward from the payload phase, now Phase 6); a 280-character `snippet` is kept. Tagging still reads full descriptions during the scrape. |
+| Ordering | **Decided 2026-11-22:** no per-company priority tiers. The site's default sort puts mission-industry roles first and interleaves companies by their newest roles, so no single company fills the first screen. |
+| Board health | **Decided 2026-11-22:** empty and failing boards are tracked in `meta.json` `board_health`. The scrape workflow fails (one email) only when a board newly breaks; boards that have never had jobs are listed but not alerted on. |
 | Repo | Private through Phase 2, then public (see "Repo and hosting" below). **Went public 2026-11-21** as a fresh repo with cleaned history; the private original is `dmv-mission-jobs-archive`. |
 
 ## Non-goals (for now)
@@ -343,10 +360,17 @@ Each phase is one PR that ships with tests. Don't start a phase until the previo
   - Confirm the scheduled scrape redeploys the live site.
 - **Done when:** at least 40 verified companies are added, every category has DMV or remote jobs, the Washington rule is decided, and the site is live on GitHub Pages.
 
-### Phase 3: Payload size
-- Move `description_html` into `data/descriptions/<id>.json`, loaded on demand, and keep a short plain-text snippet inline.
-- The original is already about 4.7 MB at roughly 500 jobs, and big tech and the seeder will multiply that.
-- **Done when:** `jobs.json` stays under about 1.5 MB at 2,000 jobs.
+### Phase 3: Workday adapter
+*Moved up from Phase 6 on 2026-11-22: the defense primes and government IT integrators are the core of a DMV mission board, and most of them use Workday.*
+
+- Investigate first and document the endpoint in `docs/adapters/workday.md` (CLAUDE.md rule for undocumented endpoints).
+- Covers defense primes, government IT integrators and many enterprise software companies.
+- Workday career sites call `POST https://{tenant}.wd{N}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs`. The identifier becomes `tenant/wdN/site`.
+- Paginate with `limit`/`offset`, and narrow the results server-side with the location facets.
+- Fetch job details only for jobs that already match a category, and only when tags need the description.
+- Run Workday in a separate, slower pass, with a recorded fixture and test.
+- Add the defense GTM and customer titles the primes use (capture, BD, mission success, ...) to `roles.yaml` with tests, alongside the first Workday employers.
+- **Done when:** three or more Workday employers scrape reliably for a week.
 
 ### Phase 4: Seeder (automated company discovery)
 This is the main lever for being comprehensive. The goal is to find every company with a relevant, live DMV or remote job, not just the ones someone thought to add.
@@ -394,18 +418,18 @@ These companies run their own careers sites, so each needs a custom adapter. Let
   - Rely on the retain-on-failure logic so a broken adapter doesn't wipe that company's listings.
 - **Done when:** Microsoft, Google and Amazon DMV roles appear, with public-sector teams tagged, and the adapters survive a week of daily runs.
 
-### Phase 6: Workday adapter
-- Covers defense primes, government IT integrators and many enterprise software companies.
-- Workday career sites call `POST https://{tenant}.wd{N}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs`. The identifier becomes `tenant/wdN/site`.
-- Paginate with `limit`/`offset`, and narrow the results server-side with the location facets.
-- Fetch job details only for jobs that already match a category, and only when tags need the description.
-- Run Workday in a separate, slower pass, with a recorded fixture and test.
-- **Done when:** three or more Workday employers scrape reliably for a week.
+### Phase 6: Payload size
+*Moved down from Phase 3 on 2026-11-22. GitHub Pages serves `jobs.json` gzipped: 2.27 MB raw was 197 KB over the wire at 1,933 jobs. Revisit if the compressed size passes about 1 MB.*
+
+- ✅ Descriptions are already out of `jobs.json` (a 280-character `snippet` is kept).
+- Move `description_html` into `data/descriptions/<id>.json`, loaded on demand, and keep a short plain-text snippet inline.
+- The original is already about 4.7 MB at roughly 500 jobs, and big tech and the seeder will multiply that.
+- **Done when:** `jobs.json` stays under about 1.5 MB at 2,000 jobs.
 
 ### Phase 7: Polish (optional)
 - "New this week" view, and starred jobs in localStorage.
 - An RSS feed or weekly email digest for a saved filter URL.
-- A health page from `meta.json` showing which adapters and boards are failing.
+- A health page on the site from `meta.json` `board_health` (the data and the Action alert exist since 2026-11-22).
 
 ---
 

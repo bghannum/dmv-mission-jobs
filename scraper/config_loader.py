@@ -8,7 +8,7 @@ from pathlib import Path
 import yaml
 
 from .location import LocationRules
-from .models import DEFAULT_PRIORITY, INDUSTRY_VOCAB, PRIORITIES, Company, RoleUmbrella
+from .models import INDUSTRY_VOCAB, Company, RoleUmbrella
 from .tagging import TagRule
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
@@ -75,15 +75,10 @@ def load_companies(path: Path | None = None, *, valid_ats: set[str] | None = Non
                 f"{where} has unknown industry {bad}; allowed: {sorted(INDUSTRY_VOCAB)}"
             )
 
-        raw_priority = entry.get("priority", DEFAULT_PRIORITY)
-        try:
-            priority = int(raw_priority)
-        except (TypeError, ValueError):
-            raise ConfigError(f"{where} has non-integer priority '{raw_priority}'") from None
-        if priority not in PRIORITIES:
-            raise ConfigError(
-                f"{where} has invalid priority '{priority}'; allowed: {sorted(PRIORITIES)}"
-            )
+        if "priority" in entry:
+            # Removed 2026-11-22: the tiers were inherited from upstream and pinned a few
+            # companies to the top of the board. The site now orders jobs itself.
+            raise ConfigError(f"{where} has 'priority', which is no longer supported")
 
         key = (ats, str(entry["identifier"]).strip().lower())
         if key in seen:
@@ -96,7 +91,6 @@ def load_companies(path: Path | None = None, *, valid_ats: set[str] | None = Non
                 ats=ats,
                 identifier=str(entry["identifier"]).strip(),
                 industry=list(industry),
-                priority=priority,
                 homepage=entry.get("homepage"),
             )
         )

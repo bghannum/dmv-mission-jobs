@@ -45,3 +45,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main
+      # Runs last so the data is already committed. Fails the run (and GitHub emails the
+      # workflow owner) only on a new problem: a board that had jobs went to 0, or a board
+      # started failing. See scraper/health.py.
+      - name: Board health check
+        run: python -m scraper.health data/meta.json

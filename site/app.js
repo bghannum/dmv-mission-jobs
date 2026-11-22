@@ -296,15 +296,42 @@ function isMission(job) {
   return (job.industries || []).some((i) => MISSION_INDUSTRIES.includes(i));
 }
 
-// jobs.json arrives in priority order; both sorts are stable on top of it.
-function sortJobs(jobs, sort) {
-  const out = jobs.slice();
-  if (sort === "new") {
-    out.sort((a, b) => (b.first_seen || "").localeCompare(a.first_seen || ""));
-  } else {
-    out.sort((a, b) => Number(isMission(b)) - Number(isMission(a)));
+// When the ATS says a role was posted, falling back to when the scraper first saw it.
+function recency(job) {
+  return Date.parse(job.posted_at || "") || Date.parse(job.first_seen || "") || 0;
+}
+
+// Companies take turns: each company's newest role, then each one's second newest, and so
+// on. The company with the newest role goes first. This keeps one big board from filling
+// the first screen (it used to be a whole page of one company's roles).
+function interleaveByCompany(jobs) {
+  const byCompany = new Map();
+  jobs.forEach((j) => {
+    if (!byCompany.has(j.company)) byCompany.set(j.company, []);
+    byCompany.get(j.company).push(j);
+  });
+  const queues = [...byCompany.entries()].map(([name, list]) => {
+    list.sort((a, b) => recency(b) - recency(a) || a.title.localeCompare(b.title));
+    return { name, list };
+  });
+  queues.sort((a, b) => recency(b.list[0]) - recency(a.list[0]) || a.name.localeCompare(b.name));
+  const out = [];
+  for (let i = 0; out.length < jobs.length; i++) {
+    queues.forEach((q) => { if (i < q.list.length) out.push(q.list[i]); });
   }
   return out;
+}
+
+// Default ("Mission first"): mission-industry roles, then the rest, each part interleaved
+// by company. "Newest": by first seen on the board, then by posting date.
+function sortJobs(jobs, sort) {
+  if (sort === "new") {
+    return jobs.slice().sort((a, b) =>
+      (b.first_seen || "").localeCompare(a.first_seen || "") || recency(b) - recency(a));
+  }
+  const mission = jobs.filter(isMission);
+  const rest = jobs.filter((j) => !isMission(j));
+  return [...interleaveByCompany(mission), ...interleaveByCompany(rest)];
 }
 
 function syncURL(f) {
