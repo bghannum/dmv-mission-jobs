@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from .adapters.base import ATSAdapter, HTTPClient
@@ -100,12 +100,33 @@ def taxonomy(umbrellas: list[RoleUmbrella], tag_rules) -> dict:
     }
 
 
-def run() -> int:
+def _carried_status(company: Company, prior_meta: dict) -> dict:
+    """Last recorded status for a board this run doesn't scrape (e.g. Workday in the daily run)."""
+    for s in prior_meta.get("adapters", []):
+        if s.get("ats") == company.ats and s.get("identifier") == company.identifier:
+            return {**s, "carried": True}
+    return {
+        "company": company.name, "ats": company.ats, "identifier": company.identifier,
+        "ok": True, "count": 0, "error": "not run yet", "carried": True,
+    }
+
+
+def run(only_ats: set[str] | None = None) -> int:
+    """Scrape and write jobs.json/meta.json.
+
+    only_ats: scrape just these ATSs and carry every other board over from the previous run
+    (its jobs, status and ambiguous locations). The daily run leaves out the ATSs in
+    settings `local_only_ats` (Workday: its servers refuse GitHub's runners); those run from
+    a maintainer's machine with scripts/scrape_workday.py.
+    """
     settings = load_settings()
     companies = load_companies(valid_ats=KNOWN_ATS)
     umbrellas, levels = load_roles()
     location_rules = load_locations()
     tag_rules = load_tags()
+    prior_meta = load_meta(ROOT / settings.meta_path)
+    if only_ats is None:
+        only_ats = KNOWN_ATS - settings.local_only_ats
     ambiguous: list[dict] = []
 
     client = HTTPClient(
@@ -118,9 +139,17 @@ def run() -> int:
 
     all_matched: list[Job] = []
     adapter_status: list[dict] = []
-    retain_prefixes: set[str] = set()  # companies whose adapter failed -> keep prior jobs
+    # Boards whose prior jobs are kept: failed this run, or not scraped in this run.
+    retain_prefixes: set[str] = set()
+    carried_names: set[str] = set()
 
     for company in companies:
+        prefix = f"{company.ats}:{company.identifier}:"
+        if company.ats not in only_ats:
+            adapter_status.append(_carried_status(company, prior_meta))
+            retain_prefixes.add(prefix)
+            carried_names.add(company.name)
+            continue
         if company.ats == "getro" and not settings.getro_enabled:
             log.info("Skipping %s: getro adapter disabled", company.name)
             adapter_status.append(
@@ -137,7 +166,7 @@ def run() -> int:
 
         raw_jobs, status, adapter = scrape_company(company, client)
         if not status["ok"]:
-            retain_prefixes.add(f"{company.ats}:{company.identifier}:")
+            retain_prefixes.add(prefix)
         kept, n_matched = filter_jobs(
             raw_jobs, umbrellas, levels, location_rules, tag_rules,
             drop_out_of_area=settings.drop_out_of_area, ambiguous=ambiguous, adapter=adapter,
@@ -146,13 +175,20 @@ def run() -> int:
             adapter.finish()
         status["matched"] = n_matched
         status["dropped_out_of_area"] = n_matched - len(kept)
-        matched = kept
         adapter_status.append(status)
-        all_matched.extend(matched)
-        log.info("%s: %d fetched, %d kept", company.name, status["count"], len(matched))
+        all_matched.extend(kept)
+        log.info("%s: %d fetched, %d kept", company.name, status["count"], len(kept))
 
     deduped = dedup(all_matched)
     log.info("Total: %d kept, %d after dedup", len(all_matched), len(deduped))
+
+    ambiguous += [a for a in prior_meta.get("ambiguous_locations", [])
+                  if a.get("company") in carried_names]
+    now = datetime.now(timezone.utc).isoformat()
+    last_run_by_ats = dict(prior_meta.get("last_run_by_ats") or {})
+    for ats in only_ats:
+        if any(c.ats == ats for c in companies):
+            last_run_by_ats[ats] = now
 
     meta = {
         "companies": len(companies),
@@ -164,9 +200,11 @@ def run() -> int:
         "ambiguous_locations": ambiguous,
         "taxonomy": taxonomy(umbrellas, tag_rules),
         # Empty and failing boards, with the day each problem started (scraper/health.py).
-        "board_health": board_health(
-            adapter_status, load_meta(ROOT / settings.meta_path), date.today().isoformat()
-        ),
+        "board_health": board_health(adapter_status, prior_meta, date.today().isoformat()),
+        # When each ATS's boards were last scraped. The site shows Workday's, which is
+        # refreshed from a maintainer's machine, not daily (scripts/scrape_workday.py).
+        "last_run_by_ats": last_run_by_ats,
+        "local_only_ats": sorted(settings.local_only_ats),
     }
     for line in alerts(meta["board_health"]):
         log.warning("Board health: %s", line)

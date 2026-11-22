@@ -12,7 +12,7 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 **Live:** https://bghannum.github.io/dmv-mission-jobs/ (public repo `bghannum/dmv-mission-jobs`).
 1,933 roles from 222 companies with open roles, out of 426 tracked (2026-11-22 scrape), before
 the 6 Workday employers (about 580 more roles; 432 tracked). The scrape
-runs daily at 11:00 UTC (about 3 minutes in Actions before Workday; expect longer now), commits as `brians-job-bot`, redeploys the
+runs daily at 11:00 UTC (about 3 minutes in Actions; Workday boards are skipped there), commits as `brians-job-bot`, redeploys the
 site and then runs the board health check.
 
 **Phase order changed on 2026-11-22:** Workday moved up to Phase 3 and payload size moved down to
@@ -24,7 +24,7 @@ Phase 6 (see each phase for why).
 | 1: Categories, location and tags | ✅ Done |
 | 1b: Visual redesign | ✅ Done, plus multi-select category chips and alphabetical dropdowns |
 | 2: Expand the company list | ✅ "Done when" met. 6 named companies and the review queues carried over (below). |
-| 3: Workday adapter | 🟡 Built 2026-11-22 (`scraper/adapters/workday.py`, `docs/adapters/workday.md`) with 6 employers: Leidos, Booz Allen, GDIT, Northrop Grumman, CrowdStrike, Salesforce (about 580 roles at verify time). "Done when" needs a clean week of daily runs. |
+| 3: Workday adapter | 🟡 Built 2026-11-22 (`scraper/adapters/workday.py`, `docs/adapters/workday.md`) with 6 employers: Leidos, Booz Allen, GDIT, Northrop Grumman, CrowdStrike, Salesforce. Workday refuses GitHub's runners (HTTP 429), so these run locally about weekly with `scripts/scrape_workday.py --push`; the daily run keeps their jobs. "Done when" needs a few clean weekly refreshes. |
 | 4: Seeder | 🟡 Started: `scraper/seeder/` (a16z source, ATS prober, industry suggestions) and `scripts/seed_a16z.py`. No `seed_sources.yaml`, no other sources, no weekly PR Action yet. |
 | 5: Big-tech adapters | ⬜ Not started |
 | 6: Payload size | 🟡 Deprioritized. Descriptions are out of `jobs.json`; it is 2.27 MB raw but 197 KB gzipped as served. |
@@ -41,6 +41,8 @@ Phase 6 (see each phase for why).
   when a board that had jobs goes to 0 or a board starts failing.
 - Removed Cedar (Ashby board 404).
 - Workday adapter (Phase 3) and its first 6 employers; senior capture titles in `roles.yaml`.
+  The first Actions run got HTTP 429 from every Workday tenant, so Workday now runs locally
+  (`scripts/scrape_workday.py`), with a "last refreshed" note on the site.
 - Remote scope narrowed for every ATS: only generic US remote or remote in VA/MD/DC counts.
   About 320 of the 1,649 remote roles on the 2026-11-22 board were remote only in other states
   (or "Remote - UK") and drop on the next scrape.
@@ -48,9 +50,9 @@ Phase 6 (see each phase for why).
   and "Mission Manager" matches Customer Success with Engagement Manager.
 
 **Suggested next steps, in order:**
-1. **Finish Phase 3.** Watch the first week of Workday runs: the first run fetches every
-   detail and takes about 30 minutes longer, later ones only new jobs (actions/cache). Then
-   add more Workday employers with
+1. **Finish Phase 3.** Refresh the Workday boards about weekly from your machine:
+   `python scripts/scrape_workday.py --push` (first run about 15 minutes, then a few). The site
+   shows when it last ran. Add more Workday employers with
    `verify_company.py workday <tenant/wdN/site>`. Not addable: CACI and Palo Alto Networks
    (robots.txt disallows), SAIC and ServiceNow (no tenant found), ManTech (Avature), Peraton
    (iCIMS), Parsons (Phenom); all in `needs_adapter.yaml`.
@@ -83,7 +85,7 @@ Phase 6 (see each phase for why).
 - **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
 
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
-`ruff check . && pytest` (270 tests), `python -m scraper.main` (about 10 minutes for the ATS boards, plus the Workday boards: about 30 minutes on a first run, a few minutes with a warm `.cache/workday`), and
+`ruff check . && pytest` (275 tests), `python -m scraper.main` (about 10 minutes; skips Workday) and `python scripts/scrape_workday.py` (Workday only), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
 
 ## Goals
@@ -113,6 +115,7 @@ Phase 6 (see each phase for why).
 | Job descriptions | Not stored in `jobs.json` (pulled forward from the payload phase, now Phase 6); a 280-character `snippet` is kept. Tagging still reads full descriptions during the scrape. |
 | Remote scope | **Decided 2026-11-22:** a remote role counts (`remote_us`) only if it is generic US remote ("Remote", "Remote - US", "United States" with the ATS remote flag) or remote in VA, MD or DC. Remote limited to other states ("Remote, AZ; Remote, NV", "California, USA, Remote") or other countries is dropped. A DMV office plus remote elsewhere ("Herndon, VA; Remote, CA") is on-site. `remote_eligible` in `scraper/location.py`. |
 | Prime titles | **Decided 2026-11-22:** Project Manager goes with Program Manager; Mission Manager goes with Engagement Manager (Customer Success). Proposal, Contracts and Portfolio Manager stay out. |
+| Workday runs locally | **Decided 2026-11-22:** Workday tenants answer GitHub's runners with HTTP 429, and we don't work around a 429. The daily Action skips Workday and keeps its jobs; a maintainer refreshes them about weekly with `scripts/scrape_workday.py --push`. The site shows the last refresh. |
 | Ordering | **Decided 2026-11-22:** no per-company priority tiers. The site's default sort puts mission-industry roles first and interleaves companies by their newest roles, so no single company fills the first screen. |
 | Board health | **Decided 2026-11-22:** empty and failing boards are tracked in `meta.json` `board_health`. The scrape workflow fails (one email) only when a board newly breaks; boards that have never had jobs are listed but not alerted on. |
 | Repo | Private through Phase 2, then public (see "Repo and hosting" below). **Went public 2026-11-21** as a fresh repo with cleaned history; the private original is `dmv-mission-jobs-archive`. |

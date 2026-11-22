@@ -385,9 +385,32 @@ function render() {
     `Showing ${filtered.length.toLocaleString()} role${filtered.length === 1 ? "" : "s"} · ${companies} compan${companies === 1 ? "y" : "ies"}`;
 }
 
+// Workday employers can't be scraped from GitHub's servers, so they're refreshed by hand
+// about weekly (scripts/scrape_workday.py). Say so, with the last refresh date.
+function renderRefreshNote() {
+  const note = $("refresh-note");
+  const meta = state.meta || {};
+  if (!(meta.local_only_ats || []).includes("workday")) { note.hidden = true; return; }
+  const names = (meta.adapters || []).filter((a) => a.ats === "workday").map((a) => a.company);
+  if (!names.length) { note.hidden = true; return; }
+  const who = names.length > 2
+    ? `${names.slice(0, 2).join(", ")} and ${names.length - 2} more`
+    : names.join(" and ");
+  const when = (meta.last_run_by_ats || {}).workday;
+  const day = when
+    ? new Date(when).toLocaleDateString("en-US", { month: "short", day: "numeric" })
+    : null;
+  note.textContent = day
+    ? `${who} are refreshed about weekly, not daily. Last refreshed ${day} (${relativeTime(when)}).`
+    : `${who} are refreshed about weekly, not daily, and haven't been loaded yet.`;
+  note.title = names.join(", ");
+  note.hidden = false;
+}
+
 function renderMeta() {
   $("stat-roles").textContent = state.jobs.length.toLocaleString();
   $("stat-companies").textContent = new Set(state.jobs.map((j) => j.company)).size.toLocaleString();
+  renderRefreshNote();
   if (!state.meta) { $("stat-updated-text").textContent = "Daily"; return; }
   const when = state.meta.generated_at;
   $("stat-updated-text").textContent = when ? relativeTime(when) : "Daily";

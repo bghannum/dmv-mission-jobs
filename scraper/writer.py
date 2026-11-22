@@ -108,8 +108,14 @@ def merge_and_write(
 
     prior_count = len(prior)
     fresh_count = len(jobs)
+    # Compare only boards that ran: jobs kept for failed or not-scraped boards (a Workday-only
+    # run, or Workday left out of the daily run) aren't part of this run's fresh count.
+    compared = [
+        j for j in prior
+        if not (retain_prefixes and any(j.get("id", "").startswith(p) for p in retain_prefixes))
+    ]
     shrink_blocked = (
-        prior_count > 0 and fresh_count < prior_count * (1 - max_shrink_fraction)
+        len(compared) > 0 and fresh_count < len(compared) * (1 - max_shrink_fraction)
     )
 
     meta = dict(meta)

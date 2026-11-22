@@ -30,6 +30,9 @@ and document it in docs/ before writing code.
 
 - Jobs only come from employers' own ATS boards. Never scrape aggregators (LinkedIn,
   Indeed, VC job boards).
+- Workday boards don't run in Actions (HTTP 429 from GitHub's runners). Refresh them locally
+  with `python scripts/scrape_workday.py --push` (pulls, scrapes Workday only, commits, pushes).
+  Never route around a 429 (proxies, rotating addresses).
 - `data/` is rewritten by the daily Action. After a local scrape, expect to rebase over the
   bot's "daily job refresh" commit.
 - Workflows with a `paths` filter don't run on the first push of a new branch or repo.
