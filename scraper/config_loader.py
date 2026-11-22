@@ -111,17 +111,18 @@ def load_roles(path: Path | None = None) -> tuple[list[RoleUmbrella], dict]:
     if not isinstance(raw_umbrellas, dict) or not raw_umbrellas:
         raise ConfigError("roles.yaml must contain a non-empty 'umbrellas' mapping")
 
+    # Excluded from every role (e.g. recruiters whose titles name GTM or BD).
+    global_excludes = _str_list(data.get("exclude_keywords") or [], "roles.yaml exclude_keywords")
+
     umbrellas: list[RoleUmbrella] = []
     for key, u in raw_umbrellas.items():
         if not isinstance(u, dict):
             raise ConfigError(f"umbrella '{key}' must be a mapping")
-        umbrellas.append(
-            RoleUmbrella(
-                key=key,
-                label=u.get("label", key),
-                roles=u.get("roles") or {},
-            )
-        )
+        roles = {
+            rk: {**r, "exclude_keywords": [*(r.get("exclude_keywords") or []), *global_excludes]}
+            for rk, r in (u.get("roles") or {}).items()
+        }
+        umbrellas.append(RoleUmbrella(key=key, label=u.get("label", key), roles=roles))
 
     levels = data.get("levels")
     if not isinstance(levels, dict) or "detection" not in levels or "order" not in levels:

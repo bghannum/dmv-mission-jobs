@@ -138,20 +138,26 @@ function card(job) {
   h3.appendChild(a);
   head.appendChild(h3);
 
+  // Company, then "location · On-site". On phones the company gets its own line and the
+  // first separator is hidden, so a long location never leaves a dangling "·" (styles.css).
   const sub = el("span", "card-sub");
   sub.appendChild(el("span", "co", job.company || ""));
+  const where = el("span", "where");
   const loc = shortLocation(job);
   if (loc) {
-    sub.appendChild(document.createTextNode(" · "));
     const l = el("span", "loc-text", loc);
     if (loc !== job.location) l.title = job.location;
-    sub.appendChild(l);
+    where.appendChild(l);
   }
   // "On-site" / "Hybrid" / "Remote (US)", unless the location text already says remote.
   const type = job.location_type;
   const saysRemote = /remote/i.test(loc);
   if (type && type !== "unknown" && !(type === "remote_us" && saysRemote)) {
-    sub.appendChild(document.createTextNode(" · " + (LOCATION_LABELS[type] || type)));
+    where.appendChild(document.createTextNode((loc ? " · " : "") + (LOCATION_LABELS[type] || type)));
+  }
+  if (where.childNodes.length) {
+    sub.appendChild(el("span", "sep", " · "));
+    sub.appendChild(where);
   }
   head.appendChild(sub);
   top.appendChild(head);

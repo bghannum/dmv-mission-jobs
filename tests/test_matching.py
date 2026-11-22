@@ -148,3 +148,19 @@ def test_project_manager_exclusions():
     assert "program_manager" not in roles
     _, roles = match_roles("Technical Project Manager", UMBRELLAS)
     assert roles == ["technical_program_manager"]
+
+
+@pytest.mark.parametrize(
+    "title",
+    [
+        "Senior Recruiter, Business Development",
+        "GTM Recruiter",
+        "Director, GTM & G&A Recruiting",
+        "Talent Acquisition Partner Sales/GTM (Remote)",
+        "Contract Sourcer (GTM)",
+        "Senior Recruiter, Public Sector GTM",
+    ],
+)
+def test_recruiting_titles_match_no_role(title):
+    # Recruiting is out of scope; these name GTM/BD only as the team they hire for.
+    assert match_roles(title, UMBRELLAS) == ([], [])
