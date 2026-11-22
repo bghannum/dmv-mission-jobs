@@ -10,8 +10,9 @@ A curated job board for **DC-area and remote roles** in defense tech, public sec
 ## Current status (as of 2026-11-22)
 
 **Live:** https://bghannum.github.io/dmv-mission-jobs/ (public repo `bghannum/dmv-mission-jobs`).
-1,933 roles from 222 companies with open roles, out of 426 tracked (2026-11-22 scrape). The scrape
-runs daily at 11:00 UTC (about 3 minutes in Actions), commits as `brians-job-bot`, redeploys the
+1,933 roles from 222 companies with open roles, out of 426 tracked (2026-11-22 scrape), before
+the 6 Workday employers (about 580 more roles; 432 tracked). The scrape
+runs daily at 11:00 UTC (about 3 minutes in Actions before Workday; expect longer now), commits as `brians-job-bot`, redeploys the
 site and then runs the board health check.
 
 **Phase order changed on 2026-11-22:** Workday moved up to Phase 3 and payload size moved down to
@@ -22,8 +23,8 @@ Phase 6 (see each phase for why).
 | 0: Fork and baseline | ✅ Done |
 | 1: Categories, location and tags | ✅ Done |
 | 1b: Visual redesign | ✅ Done, plus multi-select category chips and alphabetical dropdowns |
-| 2: Expand the company list | ✅ "Done when" met. 9 named companies and the review queues carried over (below). |
-| 3: Workday adapter | ⬜ Next |
+| 2: Expand the company list | ✅ "Done when" met. 6 named companies and the review queues carried over (below). |
+| 3: Workday adapter | 🟡 Built 2026-11-22 (`scraper/adapters/workday.py`, `docs/adapters/workday.md`) with 6 employers: Leidos, Booz Allen, GDIT, Northrop Grumman, CrowdStrike, Salesforce (about 580 roles at verify time). "Done when" needs a clean week of daily runs. |
 | 4: Seeder | 🟡 Started: `scraper/seeder/` (a16z source, ATS prober, industry suggestions) and `scripts/seed_a16z.py`. No `seed_sources.yaml`, no other sources, no weekly PR Action yet. |
 | 5: Big-tech adapters | ⬜ Not started |
 | 6: Payload size | 🟡 Deprioritized. Descriptions are out of `jobs.json`; it is 2.27 MB raw but 197 KB gzipped as served. |
@@ -39,17 +40,25 @@ Phase 6 (see each phase for why).
   boards with the day each started. The scrape workflow's last step fails, so GitHub emails, only
   when a board that had jobs goes to 0 or a board starts failing.
 - Removed Cedar (Ashby board 404).
+- Workday adapter (Phase 3) and its first 6 employers; senior capture titles in `roles.yaml`.
+- Remote scope narrowed for every ATS: only generic US remote or remote in VA/MD/DC counts.
+  About 320 of the 1,649 remote roles on the 2026-11-22 board were remote only in other states
+  (or "Remote - UK") and drop on the next scrape.
+- "Project Manager" titles now match Program Manager (relabeled "Program / Project Manager"),
+  and "Mission Manager" matches Customer Success with Engagement Manager.
 
 **Suggested next steps, in order:**
-1. **Phase 3: Workday adapter.** Document the endpoint in `docs/adapters/workday.md` first, then
-   build it and add the first defense primes and government IT employers (Leidos, Booz Allen, SAIC,
-   GDIT, CACI, ...) plus the Workday companies among the 9 named ones. Add the primes' GTM and
-   customer titles to `roles.yaml` with tests at the same time.
-2. **Finish Phase 2's named companies.** 9 remain, none on Greenhouse, Ashby or Lever:
+1. **Finish Phase 3.** Watch the first week of Workday runs: the first run fetches every
+   detail and takes about 30 minutes longer, later ones only new jobs (actions/cache). Then
+   add more Workday employers with
+   `verify_company.py workday <tenant/wdN/site>`. Not addable: CACI and Palo Alto Networks
+   (robots.txt disallows), SAIC and ServiceNow (no tenant found), ManTech (Avature), Peraton
+   (iCIMS), Parsons (Phenom); all in `needs_adapter.yaml`.
+2. **Finish Phase 2's named companies.** 6 remain (CrowdStrike and Salesforce are in; Palo Alto
+   Networks is blocked by robots.txt), none on Greenhouse, Ashby or Lever:
    - Hadrian, Govini, Castelion, Ask Sage, Istari: check each careers page by hand. Rippling or
      Gem can go straight in; anything else goes to `config/needs_adapter.yaml`.
-   - CrowdStrike, Palo Alto Networks, ServiceNow, Salesforce: confirm the ATS (thought to be
-     Workday or SmartRecruiters). Workday ones go in with Phase 3.
+   - ServiceNow: no Workday tenant found; check whether it's SmartRecruiters.
 
    Use `scripts/verify_company.py` (`--find "Name" --website URL`, or `<ats> <slug>`).
    To review: Palantir is tagged `deftech` (every job Public sector); Scale AI is `ai` only.
@@ -74,7 +83,7 @@ Phase 6 (see each phase for why).
 - **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
 
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
-`ruff check . && pytest` (205 tests), `python -m scraper.main` (about 10 minutes for 426 companies), and
+`ruff check . && pytest` (270 tests), `python -m scraper.main` (about 10 minutes for the ATS boards, plus the Workday boards: about 30 minutes on a first run, a few minutes with a warm `.cache/workday`), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
 
 ## Goals
@@ -95,13 +104,15 @@ Phase 6 (see each phase for why).
 | Starting companies | Keep all of Shane's existing list, and add to it. |
 | Categories | Keep Shane's Design and Engineering categories alongside the new ones. |
 | "Washington" (no state) | **Decided 2026-11-21:** keep these roles (`location_type: unknown`) and label them "Location uncertain" on the card, with a "Washington (uncertain)" location filter. "City, Washington", Washington listed among other states, and a job title naming a Washington State place ("Seattle", "Pacific Northwest", "PNW", ...) all count as Washington State: dropped, or US remote if the role is remote. Still logged in `meta.json` `ambiguous_locations`. |
-| Bare "Remote" (no country) | Counts as US remote (`remote_us`). |
+| Bare "Remote" (no country) | Counts as US remote (`remote_us`). See also "Remote scope". |
 | Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs`. It began as a private copy (GitHub can't make a private fork of a public repo) and is now public; see "Repo". Scraper User-Agent: `brians-job-bot`. |
 | Industries | `INDUSTRY_VOCAB` in `scraper/models.py`: Shane's original values, the Phase 2 values, and the a16z sectors (`american-dynamism`, `fintech`, `crypto`, `consumer`, `games`). `deftech` is strict because it tags every job at the company Public sector. Mission-first sort: `deftech`, `govtech`, `gov-it`, `space`, `american-dynamism`. |
 | Categories (site) | Category is a row of multi-select chips (`umbrella=gtm,customer`). Industry, Role and Company dropdowns are alphabetical; Level stays in seniority order. |
 | Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |
 | a16z portfolio | Every a16z company with a confirmed Greenhouse/Lever/Ashby board is on the board (added 2026-11-21 with `scripts/seed_a16z.py`). The company list comes from a16z.com; the Consider-hosted portfoliojobs.a16z.com isn't used because Consider's terms forbid scrapers. See `docs/seed_sources.md`. |
 | Job descriptions | Not stored in `jobs.json` (pulled forward from the payload phase, now Phase 6); a 280-character `snippet` is kept. Tagging still reads full descriptions during the scrape. |
+| Remote scope | **Decided 2026-11-22:** a remote role counts (`remote_us`) only if it is generic US remote ("Remote", "Remote - US", "United States" with the ATS remote flag) or remote in VA, MD or DC. Remote limited to other states ("Remote, AZ; Remote, NV", "California, USA, Remote") or other countries is dropped. A DMV office plus remote elsewhere ("Herndon, VA; Remote, CA") is on-site. `remote_eligible` in `scraper/location.py`. |
+| Prime titles | **Decided 2026-11-22:** Project Manager goes with Program Manager; Mission Manager goes with Engagement Manager (Customer Success). Proposal, Contracts and Portfolio Manager stay out. |
 | Ordering | **Decided 2026-11-22:** no per-company priority tiers. The site's default sort puts mission-industry roles first and interleaves companies by their newest roles, so no single company fills the first screen. |
 | Board health | **Decided 2026-11-22:** empty and failing boards are tracked in `meta.json` `board_health`. The scrape workflow fails (one email) only when a board newly breaks; boards that have never had jobs are listed but not alerted on. |
 | Repo | Private through Phase 2, then public (see "Repo and hosting" below). **Went public 2026-11-21** as a fresh repo with cleaned history; the private original is `dmv-mission-jobs-archive`. |

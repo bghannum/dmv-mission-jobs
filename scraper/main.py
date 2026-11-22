@@ -7,7 +7,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from .adapters.base import HTTPClient
+from .adapters.base import ATSAdapter, HTTPClient
 from .adapters.registry import KNOWN_ATS, get_adapter
 from .config_loader import load_companies, load_locations, load_roles, load_settings, load_tags
 from .dedup import dedup
@@ -24,7 +24,9 @@ log = logging.getLogger("scraper")
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def scrape_company(company: Company, client: HTTPClient) -> tuple[list[Job], dict]:
+def scrape_company(
+    company: Company, client: HTTPClient
+) -> tuple[list[Job], dict, ATSAdapter | None]:
     """Fetch + normalize one company. Isolated: never raises on network errors."""
     status = {
         "company": company.name, "ats": company.ats, "identifier": company.identifier,
@@ -35,11 +37,11 @@ def scrape_company(company: Company, client: HTTPClient) -> tuple[list[Job], dic
         jobs = adapter.run(company)
         status["ok"] = True
         status["count"] = len(jobs)
-        return jobs, status
+        return jobs, status, adapter
     except Exception as exc:  # noqa: BLE001 - isolation: one company must not fail the run
         log.warning("Fetch failed for %s (%s): %s", company.name, company.ats, exc)
         status["error"] = f"{type(exc).__name__}: {exc}"
-        return [], status
+        return [], status, None
 
 
 def filter_jobs(
@@ -51,12 +53,23 @@ def filter_jobs(
     *,
     drop_out_of_area: bool = True,
     ambiguous: list[dict] | None = None,
+    adapter: ATSAdapter | None = None,
 ) -> tuple[list[Job], int]:
     """Match roles, classify location and tag. Returns (kept jobs, number role-matched).
 
-    Bare-"Washington" jobs are appended to `ambiguous` when a list is given.
+    Bare-"Washington" jobs are appended to `ambiguous` when a list is given. When an
+    adapter is given, its `enrich` runs on each role-matched job first (Workday fetches the
+    description and full location list there). A job whose enrich fails is dropped.
     """
     matched = [j for j in (apply_matching(j, umbrellas, levels) for j in raw_jobs) if j]
+    if adapter is not None:
+        enriched = []
+        for job in matched:
+            try:
+                enriched.append(adapter.enrich(job))
+            except Exception as exc:  # noqa: BLE001 - one job must not fail the company
+                log.warning("Detail fetch failed for %s: %s", job.url, exc)
+        matched = enriched
     kept: list[Job] = []
     for job in matched:
         loc_type = classify_location_type(
@@ -122,13 +135,15 @@ def run() -> int:
             )
             continue
 
-        raw_jobs, status = scrape_company(company, client)
+        raw_jobs, status, adapter = scrape_company(company, client)
         if not status["ok"]:
             retain_prefixes.add(f"{company.ats}:{company.identifier}:")
         kept, n_matched = filter_jobs(
             raw_jobs, umbrellas, levels, location_rules, tag_rules,
-            drop_out_of_area=settings.drop_out_of_area, ambiguous=ambiguous,
+            drop_out_of_area=settings.drop_out_of_area, ambiguous=ambiguous, adapter=adapter,
         )
+        if adapter is not None:
+            adapter.finish()
         status["matched"] = n_matched
         status["dropped_out_of_area"] = n_matched - len(kept)
         matched = kept

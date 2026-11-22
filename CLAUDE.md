@@ -20,7 +20,8 @@ and document it in docs/ before writing code.
 - Board name: **DMV Mission Jobs**. Scraper User-Agent bot name: `brians-job-bot`.
 - Python 3.12 (same as CI). Local env: `.venv/` (`uv venv -p 3.12 .venv`).
 - Pages deploys are gated on the `PAGES_ENABLED` repo variable (set to `true`).
-- A bare "Remote" location with no country counts as `remote_us`.
+- A bare "Remote" location with no country counts as `remote_us`. Remote limited to states other
+  than VA/MD/DC (e.g. "Remote, AZ") does not count (decided 2026-11-22).
 - A bare "Washington" stays on the board as `location_type: unknown`, shown as "Location uncertain".
 - Discovery sources must be allowed by robots.txt **and** terms; record each in
   `docs/seed_sources.md`. portfoliojobs.a16z.com (Consider) is not allowed.

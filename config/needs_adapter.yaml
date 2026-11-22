@@ -1732,3 +1732,41 @@ companies:
   source: a16z
   ats: unknown
   note: no Greenhouse/Lever/Ashby board found
+# --- defense primes and named companies, checked 2026-11-22 (docs/adapters/workday.md) ---
+- name: CACI
+  homepage: https://www.caci.com/
+  source: phase3
+  ats: workday
+  identifier: caci/wd1/External
+  note: robots.txt disallows /External/, so not scraped
+- name: Palo Alto Networks
+  homepage: https://www.paloaltonetworks.com/
+  source: phase2-named
+  ats: workday
+  identifier: paloaltonetworks/wd5/panwexternalcareers
+  note: robots.txt disallows /panwexternalcareers/, so not scraped
+- name: SAIC
+  homepage: https://www.saic.com/
+  source: phase3
+  ats: unknown
+  note: no Workday tenant found at saic.wd1/wd5/wd12; check jobs.saic.com by hand
+- name: ServiceNow
+  homepage: https://www.servicenow.com/
+  source: phase2-named
+  ats: unknown
+  note: no Workday tenant found; thought to be SmartRecruiters, not yet checked
+- name: ManTech
+  homepage: https://www.mantech.com/
+  source: phase3
+  ats: avature
+  note: careers site links to Avature
+- name: Peraton
+  homepage: https://www.peraton.com/
+  source: phase3
+  ats: icims
+  note: careers site links to iCIMS
+- name: Parsons
+  homepage: https://www.parsons.com/
+  source: phase3
+  ats: phenom
+  note: careers site uses Phenom

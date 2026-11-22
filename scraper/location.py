@@ -182,6 +182,100 @@ def is_bare_washington(low: str) -> bool:
     return bool(_BARE_WASHINGTON_RE.search(low))
 
 
+# --- Remote scope: generic US remote, or remote in VA/MD/DC (decided 2026-11-22) ----------
+
+_DMV_STATES = {"VA", "MD", "DC"}
+# Longest names first so "west virginia" is consumed before "virginia".
+_STATE_NAME_ORDER = sorted(_STATE_NAMES, key=len, reverse=True)
+_DC_RE = re.compile(r"\bwashington,?\s*d\.?\s?c\b\.?|\bdistrict of columbia\b")
+_ABBREV_TOKEN_RE = re.compile(r"(?<![A-Za-z])([A-Z]{2})(?![A-Za-z])")
+_UK_RE = re.compile(r"\buk\b")
+# Parts of a location string: "A; B", "A | B", and "Boston or Remote".
+_PART_SPLIT_RE = re.compile(r"[;|]|\s+or\s+(?=remote)", re.IGNORECASE)
+
+
+def _named_states(part: str) -> set[str]:
+    """US states named in one location part: "DC", "VA", "CA", ... ("Washington" alone = WA)."""
+    low = part.lower()
+    found: set[str] = set()
+    if _DC_RE.search(low):
+        found.add("DC")
+        low = _DC_RE.sub(" ", low)
+    for name in _STATE_NAME_ORDER:
+        pattern = r"\b" + re.escape(name) + r"\b"
+        if re.search(pattern, low):
+            found.add("DMV" if name in ("virginia", "maryland") else name)
+            low = re.sub(pattern, " ", low)
+    found |= {code for code in _ABBREV_TOKEN_RE.findall(part) if code in _STATE_ABBREV}
+    return found
+
+
+_COUNTRY = r"(?:usa|us|u\.s\.?|united states)"
+# "California, USA, Remote", "Texas, US (Remote)", "Remote, Colorado, United States, AMER"
+_STATE_COUNTRY_REMOTE_RE = re.compile(
+    r"^([a-z .]+?),\s*" + _COUNTRY + r"\s*[,(]?\s*remote\)?$"
+)
+_REMOTE_STATE_COUNTRY_RE = re.compile(r"^remote,\s*([a-z .]+?),\s*" + _COUNTRY + r"\b")
+_TOKEN_SPLIT_RE = re.compile(r"[,/]|\s+or\s+")
+_GENERIC_WORDS_RE = re.compile(
+    r"\b(?:usa|us|u\.s\.?|united states|in the|within the|open to|only|nationwide|anywhere"
+    r"|east coast|based|position)\b"
+)
+
+
+def _generic_remote_token(tokens: list[str], i: int, rules: LocationRules) -> bool:
+    """tokens[i] says remote and nothing narrower ("Remote", "US-Remote", "Remote in the US"),
+    and isn't followed by a state ("Remote, CA")."""
+    low = tokens[i].lower()
+    if not any(k in low for k in rules.remote_keywords):
+        return False
+    for k in rules.remote_keywords:
+        low = low.replace(k, " ")
+    if re.sub(r"[\s\-().&]", "", _GENERIC_WORDS_RE.sub(" ", low)):
+        return False
+    nxt = tokens[i + 1] if i + 1 < len(tokens) else ""
+    return not _named_states(nxt)
+
+
+def _remote_part_ok(part: str, rules: LocationRules) -> bool:
+    """A remote location part we accept: in the DMV, generic US, or naming VA/MD/DC."""
+    low = re.sub(r"\s+", " ", part.lower()).strip()
+    if not low:
+        return True
+    if is_dmv(low, rules):
+        return True
+    m = _STATE_COUNTRY_REMOTE_RE.match(low) or _REMOTE_STATE_COUNTRY_RE.match(low)
+    if m and m.group(1).strip() in _STATE_NAMES:
+        return bool(_named_states(m.group(1)) & (_DMV_STATES | {"DMV"}))
+    # A list with a generic remote item: "Charlotte, Denver, New York, Remote", "SF, NY, Remote-US"
+    non_us = classify(part) is False or bool(_UK_RE.search(low))
+    tokens = [t.strip() for t in _TOKEN_SPLIT_RE.split(part)]
+    if not non_us and any(_generic_remote_token(tokens, i, rules) for i in range(len(tokens))):
+        return True
+    states = _named_states(part)
+    if states:
+        return bool(states & (_DMV_STATES | {"DMV"}))
+    if _UK_RE.search(low):
+        return False
+    return classify(part) is not False
+
+
+def remote_eligible(text: str, remote_flag: bool, rules: LocationRules) -> bool:
+    """Whether a remote role is open to someone in the DMV.
+
+    Generic US remote ("Remote", "Remote - US", "United States") and remote in VA, MD or DC
+    count. Remote limited to other states ("Remote, AZ; Remote, NV", "Remote - California")
+    or other countries doesn't. The parts that mention remote decide; when the ATS flags the
+    role remote, its plain location parts ("United States", "New York, NY") are judged too.
+    """
+    parts = [p.strip() for p in _PART_SPLIT_RE.split(text or "") if p and p.strip()]
+    if not parts:
+        return True  # remote with no location: generic
+    remote_parts = [p for p in parts if any(k in p.lower() for k in rules.remote_keywords)]
+    candidates = remote_parts + ([p for p in parts if p not in remote_parts] if remote_flag else [])
+    return any(_remote_part_ok(p, rules) for p in candidates)
+
+
 def classify_location_type(
     location: str | None,
     remote: bool,
@@ -198,19 +292,22 @@ def classify_location_type(
     2. A bare "Washington" -> unknown (kept, labelled "Location uncertain", logged), unless
        the job title names a Washington State place ("Seattle", "Pacific Northwest"); then
        it is the state and falls through to the remote check below.
-    3. Remote and US-eligible -> remote_us. A bare "Remote" with no country counts as US.
-       Remote with only non-US signals ("Remote - Canada") -> None.
+    3. Remote and open to the DMV -> remote_us: generic US remote (a bare "Remote" counts)
+       or remote in VA/MD/DC. Remote limited to other states ("Remote, AZ") or other
+       countries ("Remote - Canada", "Remote - UK") -> None. See remote_eligible.
     4. Anything else (other US cities, non-US, blank) -> None.
     """
     text = (location or "").strip()
     low = re.sub(r"\s+", " ", text.lower())
     is_remote = remote or any(k in low for k in rules.remote_keywords)
+    flagged = remote or workplace_type == "remote"
     if low and is_dmv(low, rules):
         if workplace_type == "hybrid" or any(k in low for k in rules.hybrid_keywords):
             return DMV_HYBRID
-        return REMOTE_US if is_remote else DMV_ONSITE
+        # "Herndon, VA; Remote, CA" is on-site in the DMV, not remote for a DMV reader.
+        return REMOTE_US if is_remote and remote_eligible(text, flagged, rules) else DMV_ONSITE
     if low and is_bare_washington(low) and not title_says_washington_state(title):
         return UNKNOWN
     if is_remote:
-        return REMOTE_US if classify(text) is not False else None
+        return REMOTE_US if remote_eligible(text, flagged, rules) else None
     return None

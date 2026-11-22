@@ -48,8 +48,9 @@ US remote (`config/locations.yaml`). Everything else is dropped at scrape time. 
 
 **Tags:** Clearance and Public sector badges and filters (`config/tags.yaml`).
 
-**Supported ATS platforms:** Ashby, Greenhouse, Lever, Rippling, Gem. Workday and the big
-tech careers sites are planned.
+**Supported ATS platforms:** Ashby, Greenhouse, Lever, Rippling, Gem and Workday (for career
+sites whose robots.txt allows it; see `docs/adapters/workday.md`). The big tech careers sites
+are planned.
 
 ## How it works
 
