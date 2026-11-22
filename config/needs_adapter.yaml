@@ -1770,3 +1770,85 @@ companies:
   source: phase3
   ats: phenom
   note: careers site uses Phenom
+# --- DMV employers checked for Workday, 2026-11-22 (docs/adapters/workday.md) ---
+- name: MITRE
+  homepage: https://www.mitre.org/
+  source: phase3
+  ats: workday
+  identifier: mitre/wd5/MITRE
+  note: robots.txt disallows /MITRE/, so not scraped
+- name: RTX
+  homepage: https://www.rtx.com/
+  source: phase3
+  ats: phenom
+  note: careers site uses Phenom
+- name: BAE Systems
+  homepage: https://www.baesystems.com/
+  source: phase3
+  ats: phenom
+  note: careers site uses Phenom
+- name: ICF
+  homepage: https://www.icf.com/
+  source: phase3
+  ats: phenom
+  note: careers site uses Phenom
+- name: Freddie Mac
+  homepage: https://www.freddiemac.com/
+  source: phase3
+  ats: phenom
+  note: careers site uses Phenom
+- name: Deloitte
+  homepage: https://www.deloitte.com/
+  source: phase3
+  ats: avature
+  note: apply.deloitte.com uses Avature
+- name: Maximus
+  homepage: https://maximus.com/
+  source: phase3
+  ats: avature
+  note: careers site uses Avature
+- name: L3Harris
+  homepage: https://www.l3harris.com/
+  source: phase3
+  ats: radancy
+  note: careers site uses Radancy
+- name: Textron
+  homepage: https://www.textron.com/
+  source: phase3
+  ats: taleo
+  note: careers site uses Taleo
+- name: V2X
+  homepage: https://gov2x.com/
+  source: phase3
+  ats: icims
+  note: careers site uses iCIMS
+- name: Lockheed Martin
+  homepage: https://www.lockheedmartin.com/
+  source: phase3
+  ats: unknown
+  note: no ATS visible in lockheedmartinjobs.com page source; check by hand
+- name: General Dynamics
+  homepage: https://www.gd.com/
+  source: phase3
+  ats: unknown
+  note: careers are per business unit (GDIT is on the board); check the others by hand
+- name: HII
+  homepage: https://hii.com/
+  source: phase3
+  ats: unknown
+  note: no ATS visible in page source; hii.wd1 External not found
+- name: JHU APL
+  homepage: https://www.jhuapl.edu/
+  source: phase3
+  ats: unknown
+  note: no ATS visible in page source; check by hand
+- name: CGI Federal
+  homepage: https://www.cgi.com/us/en-us/federal
+  source: phase3
+  ats: unknown
+  note: no ATS visible in page source; check by hand
+- name: Accenture Federal Services
+  homepage: https://www.accenture.com/us-en/industries/us-federal-government-index
+  source: phase3
+  ats: unknown
+  note: careers page URL returned 404; check by hand

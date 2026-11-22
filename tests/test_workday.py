@@ -86,6 +86,11 @@ def _adapter(client, tmp_path):
     ("Virginia - Herndon", "Herndon, Virginia"),
     ("Germany - Remote", "Germany - Remote"),
     ("Ontario - Remote", "Remote, Ontario, Canada"),
+    ("US-VA-Reston", "Reston, VA"),
+    ("US-DC-Washington", "Washington, DC"),
+    ("US-Remote", "Remote, US"),
+    ("US - VA, McLean", "McLean, VA"),
+    ("US - Remote (Any location)", "US - Remote (Any location)"),
     ("6314 Remote/Teleworker US", "Remote/Teleworker US"),
     (None, None),
 ])

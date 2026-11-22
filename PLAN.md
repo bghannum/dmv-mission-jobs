@@ -24,7 +24,7 @@ Phase 6 (see each phase for why).
 | 1: Categories, location and tags | ✅ Done |
 | 1b: Visual redesign | ✅ Done, plus multi-select category chips and alphabetical dropdowns |
 | 2: Expand the company list | ✅ "Done when" met. 6 named companies and the review queues carried over (below). |
-| 3: Workday adapter | 🟡 Built 2026-11-22 (`scraper/adapters/workday.py`, `docs/adapters/workday.md`) with 6 employers: Leidos, Booz Allen, GDIT, Northrop Grumman, CrowdStrike, Salesforce. Workday refuses GitHub's runners (HTTP 429), so these run locally about weekly with `scripts/scrape_workday.py --push`; the daily run keeps their jobs. "Done when" needs a few clean weekly refreshes. |
+| 3: Workday adapter | 🟡 Built 2026-11-22 (`scraper/adapters/workday.py`, `docs/adapters/workday.md`) with 12 employers: Leidos, Booz Allen, GDIT, Northrop Grumman, CrowdStrike, Salesforce, then Amentum, KBR, Guidehouse, Boeing, Capital One, Fannie Mae. Workday refuses GitHub's runners (HTTP 429), so these run locally about weekly with `scripts/scrape_workday.py --push`; the daily run keeps their jobs. "Done when" needs a few clean weekly refreshes. |
 | 4: Seeder | 🟡 Started: `scraper/seeder/` (a16z source, ATS prober, industry suggestions) and `scripts/seed_a16z.py`. No `seed_sources.yaml`, no other sources, no weekly PR Action yet. |
 | 5: Big-tech adapters | ⬜ Not started |
 | 6: Payload size | 🟡 Deprioritized. Descriptions are out of `jobs.json`; it is 2.27 MB raw but 197 KB gzipped as served. |
@@ -43,6 +43,8 @@ Phase 6 (see each phase for why).
 - Workday adapter (Phase 3) and its first 6 employers; senior capture titles in `roles.yaml`.
   The first Actions run got HTTP 429 from every Workday tenant, so Workday now runs locally
   (`scripts/scrape_workday.py`), with a "last refreshed" note on the site.
+- 14 recruiter roles leaked in through GTM/BD keywords; `roles.yaml` now has global
+  `exclude_keywords` (recruiting, talent acquisition, executive assistant).
 - Remote scope narrowed for every ATS: only generic US remote or remote in VA/MD/DC counts.
   About 320 of the 1,649 remote roles on the 2026-11-22 board were remote only in other states
   (or "Remote - UK") and drop on the next scrape.
@@ -51,11 +53,14 @@ Phase 6 (see each phase for why).
 
 **Suggested next steps, in order:**
 1. **Finish Phase 3.** Refresh the Workday boards about weekly from your machine:
-   `python scripts/scrape_workday.py --push` (first run about 15 minutes, then a few). The site
-   shows when it last ran. Add more Workday employers with
-   `verify_company.py workday <tenant/wdN/site>`. Not addable: CACI and Palo Alto Networks
-   (robots.txt disallows), SAIC and ServiceNow (no tenant found), ManTech (Avature), Peraton
-   (iCIMS), Parsons (Phenom); all in `needs_adapter.yaml`.
+   `python scripts/scrape_workday.py --push`. The site shows when it last ran. The 2026-11-22
+   checks of DMV employers are in `docs/adapters/workday.md` and `needs_adapter.yaml`.
+   Capital One alone adds about 560 roles (mostly McLean engineering); the interleaved sort
+   keeps it from crowding the first screen.
+   - **Next adapter to consider: Phenom.** It hosts RTX, BAE Systems, ICF, Freddie Mac and
+     Parsons. Avature (Deloitte, Maximus, ManTech) and iCIMS (Peraton, V2X) come after.
+     Investigate and document the endpoint in `docs/adapters/` first, as with Workday.
+   - Not addable: CACI, Palo Alto Networks and MITRE (robots.txt disallows).
 2. **Finish Phase 2's named companies.** 6 remain (CrowdStrike and Salesforce are in; Palo Alto
    Networks is blocked by robots.txt), none on Greenhouse, Ashby or Lever:
    - Hadrian, Govini, Castelion, Ask Sage, Istari: check each careers page by hand. Rippling or
@@ -85,7 +90,7 @@ Phase 6 (see each phase for why).
 - **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
 
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
-`ruff check . && pytest` (275 tests), `python -m scraper.main` (about 10 minutes; skips Workday) and `python scripts/scrape_workday.py` (Workday only), and
+`ruff check . && pytest` (287 tests), `python -m scraper.main` (about 10 minutes; skips Workday) and `python scripts/scrape_workday.py` (Workday only), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
 
 ## Goals

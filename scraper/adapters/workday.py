@@ -55,7 +55,8 @@ def normalize_location(descriptor: str | None) -> str | None:
     Handles the formats in docs/adapters/workday.md: leading site numbers ("0411 Vienna VA"),
     GDIT ("USA VA Reston - 12310 Sunrise Valley Dr (VAC074)"), Northrop Grumman
     ("United States-Virginia-McLean"), CrowdStrike ("USA - Remote, VA") and Salesforce
-    ("Virginia - Herndon"). "Home Office" (telework from that place) gets "(remote)".
+    ("Virginia - Herndon"), Amentum ("US-VA-Reston") and Guidehouse ("US - VA, McLean").
+    "Home Office" (telework from that place) gets "(remote)".
     Anything else passes through unchanged.
     """
     if not descriptor:
@@ -83,6 +84,14 @@ def _rewrite(s: str) -> str:
         return f"{city}, {state}" if city else state
     if s == "United States-Remote":
         return "Remote, US"
+    m = re.match(r"^US-([A-Z]{2})-(.+)$", s)  # Amentum: "US-VA-Reston"
+    if m:
+        return f"{m.group(2)}, {m.group(1)}"
+    if s in ("US-Remote", "US - Remote"):
+        return "Remote, US"
+    m = re.match(r"^US - ([A-Z]{2}), (.+)$", s)  # Guidehouse: "US - VA, McLean"
+    if m:
+        return f"{m.group(2)}, {m.group(1)}"
     m = re.match(r"^USA - (.+)$", s)  # CrowdStrike
     if m:
         rest = m.group(1)
