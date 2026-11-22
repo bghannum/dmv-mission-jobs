@@ -4,12 +4,14 @@ from __future__ import annotations
 
 import logging
 import sys
+from datetime import date
 from pathlib import Path
 
 from .adapters.base import HTTPClient
 from .adapters.registry import KNOWN_ATS, get_adapter
 from .config_loader import load_companies, load_locations, load_roles, load_settings, load_tags
 from .dedup import dedup
+from .health import alerts, board_health, load_meta
 from .location import OTHER, UNKNOWN, classify_location_type
 from .matching import apply_matching
 from .models import Company, Job, RoleUmbrella
@@ -24,12 +26,13 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def scrape_company(company: Company, client: HTTPClient) -> tuple[list[Job], dict]:
     """Fetch + normalize one company. Isolated: never raises on network errors."""
-    status = {"company": company.name, "ats": company.ats, "ok": False, "count": 0, "error": None}
+    status = {
+        "company": company.name, "ats": company.ats, "identifier": company.identifier,
+        "ok": False, "count": 0, "error": None,
+    }
     try:
         adapter = get_adapter(company.ats, client)
         jobs = adapter.run(company)
-        for job in jobs:
-            job.priority = company.priority
         status["ok"] = True
         status["count"] = len(jobs)
         return jobs, status
@@ -111,6 +114,7 @@ def run() -> int:
                 {
                     "company": company.name,
                     "ats": "getro",
+                    "identifier": company.identifier,
                     "ok": True,
                     "count": 0,
                     "error": "disabled",
@@ -144,7 +148,13 @@ def run() -> int:
         # Bare "Washington" locations (DC or the state?). Reviewed at the end of Phase 2.
         "ambiguous_locations": ambiguous,
         "taxonomy": taxonomy(umbrellas, tag_rules),
+        # Empty and failing boards, with the day each problem started (scraper/health.py).
+        "board_health": board_health(
+            adapter_status, load_meta(ROOT / settings.meta_path), date.today().isoformat()
+        ),
     }
+    for line in alerts(meta["board_health"]):
+        log.warning("Board health: %s", line)
     result = merge_and_write(
         deduped,
         meta,

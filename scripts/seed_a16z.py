@@ -142,7 +142,7 @@ def main() -> int:
                                            "note": "no Greenhouse/Lever/Ashby board found"})
         header = ("# Relevant companies whose jobs we can't fetch yet: their careers site is on\n"
                   "# an unsupported ATS (e.g. Workday) or a custom site, or no board was found.\n"
-                  "# Not scraped. See PLAN.md Phases 5-6.\n")
+                  "# Not scraped. See PLAN.md Phases 3 (Workday) and 5 (big tech).\n")
         NEEDS_ADAPTER.write_text(header + yaml.safe_dump(
             {"companies": sorted(entries.values(), key=lambda e: e["name"].lower())},
             sort_keys=False, allow_unicode=True))

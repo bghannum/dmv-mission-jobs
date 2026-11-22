@@ -38,13 +38,12 @@ allowlist. That is a single-file change to `config/companies.yaml`.
      homepage: "https://acme.example"   # optional
    ```
 
-   Leave `priority` off — it's an optional ordering tier (1–3) the maintainer sets; new
-   entries default to 3. Only DC-metro (DMV) and US-remote roles are listed; see
+   Only DC-metro (DMV) and US-remote roles are listed; see
    `config/locations.yaml`.
 
 3. Open a pull request. CI runs `ruff` and `pytest`; `tests/test_config.py` validates that
-   your entry has a known `ats`, a controlled-vocabulary `industry`, a valid
-   `priority`, and a non-empty `identifier`. Fix any failures and the next daily scrape picks
+   your entry has a known `ats`, a controlled-vocabulary `industry` and a non-empty
+   `identifier`. Fix any failures and the next daily scrape picks
    it up.
 
 ## Add or tune a role
