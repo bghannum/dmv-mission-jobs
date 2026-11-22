@@ -51,7 +51,10 @@ date, `YYYY-MM-DD`), `jobReqId`, `externalUrl` and on some tenants `remoteType`.
 The adapter rewrites each one to "City, ST" style (`normalize_location`) and then uses the
 board's own classifier (`scraper/location.py`) to decide which facet values are in the DMV or
 US remote. Those values become the server-side filter, and the same rewrite is applied to the
-locations stored on each job.
+locations stored on each job. Since 2026-11-22 the classifier only counts generic US remote or
+remote in VA/MD/DC, so per-state remote values ("USA - Remote, CA", "Alabama - Remote") are left
+out of the filter. The role counts in this doc's verify runs predate that and are lower now
+for CrowdStrike and Salesforce.
 
 ## How the adapter fetches
 

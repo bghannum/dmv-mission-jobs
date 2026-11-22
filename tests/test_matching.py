@@ -45,6 +45,15 @@ UMBRELLAS, LEVELS = load_roles()
         ("Customer Success Manager, Government", "customer", "customer_success"),
         ("Mission Success Manager", "customer", "customer_success"),
         ("Technical Account Manager", "customer", "customer_success"),
+        # Decided 2026-11-22: Mission Manager with Engagement Manager, Project Manager with
+        # Program Manager.
+        ("Mission Manager", "customer", "customer_success"),
+        ("Counternarcotics and Transnational Organized Crime Mission Manager", "customer",
+         "customer_success"),
+        ("Senior Project Manager", "program", "program_manager"),
+        ("IT Project Manager", "program", "program_manager"),
+        ("Project Management Support SME", "program", "program_manager"),
+        ("Technical Project Manager", "program", "technical_program_manager"),
     ],
 )
 def test_matches_expected_role(title, umbrella, role):
@@ -132,3 +141,10 @@ def test_exclude_departments_drops_growth_in_marketing_or_engineering():
         "growth"
     ]
     assert match_roles("Growth Engineer", UMBRELLAS) == ([], [])
+
+
+def test_project_manager_exclusions():
+    _, roles = match_roles("Marketing Project Manager", UMBRELLAS)
+    assert "program_manager" not in roles
+    _, roles = match_roles("Technical Project Manager", UMBRELLAS)
+    assert roles == ["technical_program_manager"]

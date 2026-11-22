@@ -41,21 +41,19 @@ Phase 6 (see each phase for why).
   when a board that had jobs goes to 0 or a board starts failing.
 - Removed Cedar (Ashby board 404).
 - Workday adapter (Phase 3) and its first 6 employers; senior capture titles in `roles.yaml`.
+- Remote scope narrowed for every ATS: only generic US remote or remote in VA/MD/DC counts.
+  About 320 of the 1,649 remote roles on the 2026-11-22 board were remote only in other states
+  (or "Remote - UK") and drop on the next scrape.
+- "Project Manager" titles now match Program Manager (relabeled "Program / Project Manager"),
+  and "Mission Manager" matches Customer Success with Engagement Manager.
 
 **Suggested next steps, in order:**
 1. **Finish Phase 3.** Watch the first week of Workday runs: the first run fetches every
    detail and takes about 30 minutes longer, later ones only new jobs (actions/cache). Then
-   decide the taxonomy questions it raised (below) and add more Workday employers with
+   add more Workday employers with
    `verify_company.py workday <tenant/wdN/site>`. Not addable: CACI and Palo Alto Networks
    (robots.txt disallows), SAIC and ServiceNow (no tenant found), ManTech (Avature), Peraton
    (iCIMS), Parsons (Phenom); all in `needs_adapter.yaml`.
-   - **Open: state-limited remote.** Many remote roles (Salesforce, CrowdStrike) are remote
-     only in listed states, e.g. "Remote, Arizona; Remote, Nevada". The board counts any remote
-     US role as `remote_us`, for every ATS. Decide whether to require a generic US remote or a
-     VA/MD/DC remote location.
-   - **Open: prime titles.** Leidos titles our roles miss: Project Manager, Proposal Manager,
-     Contracts Manager, Mission Manager, Portfolio Manager. Decide which categories they
-     belong in, if any. Senior capture titles were added 2026-11-22.
 2. **Finish Phase 2's named companies.** 6 remain (CrowdStrike and Salesforce are in; Palo Alto
    Networks is blocked by robots.txt), none on Greenhouse, Ashby or Lever:
    - Hadrian, Govini, Castelion, Ask Sage, Istari: check each careers page by hand. Rippling or
@@ -85,7 +83,7 @@ Phase 6 (see each phase for why).
 - **Data:** `data/jobs.json` and `data/meta.json`, refreshed by the daily Action. `meta.json` lists adapter failures and `ambiguous_locations`.
 
 **Run locally:** `uv venv -p 3.12 .venv && .venv/bin/pip install -r requirements-dev.txt`, then
-`ruff check . && pytest` (233 tests), `python -m scraper.main` (about 10 minutes for the ATS boards, plus the Workday boards: about 30 minutes on a first run, a few minutes with a warm `.cache/workday`), and
+`ruff check . && pytest` (270 tests), `python -m scraper.main` (about 10 minutes for the ATS boards, plus the Workday boards: about 30 minutes on a first run, a few minutes with a warm `.cache/workday`), and
 `python -m http.server 8000`, then open `http://localhost:8000/site/`.
 
 ## Goals
@@ -106,13 +104,15 @@ Phase 6 (see each phase for why).
 | Starting companies | Keep all of Shane's existing list, and add to it. |
 | Categories | Keep Shane's Design and Engineering categories alongside the new ones. |
 | "Washington" (no state) | **Decided 2026-11-21:** keep these roles (`location_type: unknown`) and label them "Location uncertain" on the card, with a "Washington (uncertain)" location filter. "City, Washington", Washington listed among other states, and a job title naming a Washington State place ("Seattle", "Pacific Northwest", "PNW", ...) all count as Washington State: dropped, or US remote if the role is remote. Still logged in `meta.json` `ambiguous_locations`. |
-| Bare "Remote" (no country) | Counts as US remote (`remote_us`). |
+| Bare "Remote" (no country) | Counts as US remote (`remote_us`). See also "Remote scope". |
 | Name and repo | "DMV Mission Jobs", `bghannum/dmv-mission-jobs`. It began as a private copy (GitHub can't make a private fork of a public repo) and is now public; see "Repo". Scraper User-Agent: `brians-job-bot`. |
 | Industries | `INDUSTRY_VOCAB` in `scraper/models.py`: Shane's original values, the Phase 2 values, and the a16z sectors (`american-dynamism`, `fintech`, `crypto`, `consumer`, `games`). `deftech` is strict because it tags every job at the company Public sector. Mission-first sort: `deftech`, `govtech`, `gov-it`, `space`, `american-dynamism`. |
 | Categories (site) | Category is a row of multi-select chips (`umbrella=gtm,customer`). Industry, Role and Company dropdowns are alphabetical; Level stays in seniority order. |
 | Recruiting roles | Dropped from the board in Phase 1 (not one of the categories above). |
 | a16z portfolio | Every a16z company with a confirmed Greenhouse/Lever/Ashby board is on the board (added 2026-11-21 with `scripts/seed_a16z.py`). The company list comes from a16z.com; the Consider-hosted portfoliojobs.a16z.com isn't used because Consider's terms forbid scrapers. See `docs/seed_sources.md`. |
 | Job descriptions | Not stored in `jobs.json` (pulled forward from the payload phase, now Phase 6); a 280-character `snippet` is kept. Tagging still reads full descriptions during the scrape. |
+| Remote scope | **Decided 2026-11-22:** a remote role counts (`remote_us`) only if it is generic US remote ("Remote", "Remote - US", "United States" with the ATS remote flag) or remote in VA, MD or DC. Remote limited to other states ("Remote, AZ; Remote, NV", "California, USA, Remote") or other countries is dropped. A DMV office plus remote elsewhere ("Herndon, VA; Remote, CA") is on-site. `remote_eligible` in `scraper/location.py`. |
+| Prime titles | **Decided 2026-11-22:** Project Manager goes with Program Manager; Mission Manager goes with Engagement Manager (Customer Success). Proposal, Contracts and Portfolio Manager stay out. |
 | Ordering | **Decided 2026-11-22:** no per-company priority tiers. The site's default sort puts mission-industry roles first and interleaves companies by their newest roles, so no single company fills the first screen. |
 | Board health | **Decided 2026-11-22:** empty and failing boards are tracked in `meta.json` `board_health`. The scrape workflow fails (one email) only when a board newly breaks; boards that have never had jobs are listed but not alerted on. |
 | Repo | Private through Phase 2, then public (see "Repo and hosting" below). **Went public 2026-11-21** as a fresh repo with cleaned history; the private original is `dmv-mission-jobs-archive`. |

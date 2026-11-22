@@ -28,9 +28,10 @@ umbrellas:
         include_keywords: ["technical program manager", "technical project manager", "tpm"]
         exclude_keywords: []
       program_manager:
-        label: "Program Manager"
-        include_keywords: ["program manager", "program director", "program lead", "program management"]
-        exclude_keywords: ["marketing program", "technical program"]
+        label: "Program / Project Manager"
+        # Project managers are lumped in with program managers (decided 2026-11-22).
+        include_keywords: ["program manager", "program director", "program lead", "program management", "project manager", "project director", "project management"]
+        exclude_keywords: ["marketing program", "technical program", "marketing project", "technical project"]
 
   architecture:
     label: "Solutions / Architecture"
@@ -79,7 +80,7 @@ umbrellas:
     roles:
       customer_success:
         label: "Customer Success"
-        include_keywords: ["customer success", "client success", "customer experience", "customer outcomes", "mission success", "customer operations", "implementation manager", "deployment manager", "engagement manager", "technical account manager"]
+        include_keywords: ["customer success", "client success", "customer experience", "customer outcomes", "mission success", "customer operations", "implementation manager", "deployment manager", "engagement manager", "mission manager", "technical account manager"]
         exclude_keywords: ["customer support specialist", "support engineer", "marketing"]
 
   design:
