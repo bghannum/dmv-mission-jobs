@@ -6,11 +6,10 @@
       "ats": "ashby",
       "identifier": "horizon3ai",
       "ok": true,
-      "count": 205,
+      "count": 209,
       "error": null,
-      "matched": 93,
-      "dropped_out_of_area": 43,
-      "carried": true
+      "matched": 94,
+      "dropped_out_of_area": 43
     },
     {
       "company": "Kion",
@@ -20,19 +19,17 @@
       "count": 4,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Rise8",
       "ats": "greenhouse",
       "identifier": "rise8",
       "ok": true,
-      "count": 9,
+      "count": 8,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 3,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Second Front Systems",
@@ -42,8 +39,7 @@
       "count": 23,
       "error": null,
       "matched": 13,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Defense Unicorns",
@@ -53,8 +49,7 @@
       "count": 44,
       "error": null,
       "matched": 24,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Vannevar Labs",
@@ -64,19 +59,17 @@
       "count": 35,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "LeoLabs",
       "ats": "greenhouse",
       "identifier": "leolabsinc",
       "ok": true,
-      "count": 25,
+      "count": 23,
       "error": null,
-      "matched": 7,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "matched": 6,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Skylight",
@@ -86,30 +79,27 @@
       "count": 12,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Raft",
       "ats": "greenhouse",
       "identifier": "raft",
       "ok": true,
-      "count": 34,
+      "count": 33,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Endor Labs",
       "ats": "greenhouse",
       "identifier": "endorlabs",
       "ok": true,
-      "count": 42,
+      "count": 44,
       "error": null,
-      "matched": 18,
-      "dropped_out_of_area": 15,
-      "carried": true
+      "matched": 17,
+      "dropped_out_of_area": 13
     },
     {
       "company": "SecurityScorecard",
@@ -119,63 +109,57 @@
       "count": 10,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Okta",
       "ats": "greenhouse",
       "identifier": "okta",
       "ok": true,
-      "count": 373,
+      "count": 372,
       "error": null,
-      "matched": 154,
-      "dropped_out_of_area": 124,
-      "carried": true
+      "matched": 152,
+      "dropped_out_of_area": 123
     },
     {
       "company": "Huntress",
       "ats": "greenhouse",
       "identifier": "huntress",
       "ok": true,
-      "count": 47,
+      "count": 45,
       "error": null,
-      "matched": 13,
-      "dropped_out_of_area": 13,
-      "carried": true
+      "matched": 12,
+      "dropped_out_of_area": 12
     },
     {
       "company": "Keeper Security",
       "ats": "greenhouse",
       "identifier": "keepersecurity",
       "ok": true,
-      "count": 94,
+      "count": 93,
       "error": null,
       "matched": 38,
-      "dropped_out_of_area": 18,
-      "carried": true
+      "dropped_out_of_area": 18
     },
     {
       "company": "OPSWAT",
       "ats": "greenhouse",
       "identifier": "opswat",
       "ok": true,
-      "count": 98,
+      "count": 99,
       "error": null,
       "matched": 30,
-      "dropped_out_of_area": 23,
-      "carried": true
+      "dropped_out_of_area": 23
     },
     {
       "company": "Doppel",
       "ats": "ashby",
       "identifier": "doppel",
       "ok": true,
-      "count": 23,
+      "count": 22,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "XBOW",
@@ -185,8 +169,7 @@
       "count": 3,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Method Security",
@@ -196,8 +179,7 @@
       "count": 11,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Wraithwatch",
@@ -207,8 +189,7 @@
       "count": 6,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Galvanick",
@@ -218,8 +199,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Safe Security",
@@ -229,8 +209,7 @@
       "count": 21,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "UltraViolet Cyber",
@@ -240,8 +219,7 @@
       "count": 15,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Spin.AI",
@@ -251,8 +229,7 @@
       "count": 9,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Abnormal AI",
@@ -261,31 +238,28 @@
       "ok": true,
       "count": 85,
       "error": null,
-      "matched": 22,
-      "dropped_out_of_area": 10,
-      "carried": true
+      "matched": 23,
+      "dropped_out_of_area": 12
     },
     {
       "company": "Chainguard",
       "ats": "greenhouse",
       "identifier": "chainguard",
       "ok": true,
-      "count": 109,
+      "count": 110,
       "error": null,
-      "matched": 66,
-      "dropped_out_of_area": 35,
-      "carried": true
+      "matched": 67,
+      "dropped_out_of_area": 37
     },
     {
       "company": "Vanta",
       "ats": "ashby",
       "identifier": "vanta",
       "ok": true,
-      "count": 69,
+      "count": 68,
       "error": null,
-      "matched": 44,
-      "dropped_out_of_area": 23,
-      "carried": true
+      "matched": 42,
+      "dropped_out_of_area": 23
     },
     {
       "company": "1Password",
@@ -295,30 +269,27 @@
       "count": 80,
       "error": null,
       "matched": 32,
-      "dropped_out_of_area": 23,
-      "carried": true
+      "dropped_out_of_area": 23
     },
     {
       "company": "Tailscale",
       "ats": "greenhouse",
       "identifier": "tailscale",
       "ok": true,
-      "count": 89,
+      "count": 85,
       "error": null,
       "matched": 41,
-      "dropped_out_of_area": 27,
-      "carried": true
+      "dropped_out_of_area": 27
     },
     {
       "company": "Axonius",
       "ats": "greenhouse",
       "identifier": "axonius",
       "ok": true,
-      "count": 20,
+      "count": 19,
       "error": null,
-      "matched": 9,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "matched": 8,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Semgrep",
@@ -328,19 +299,17 @@
       "count": 16,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Teleport",
       "ats": "ashby",
       "identifier": "goteleport",
       "ok": true,
-      "count": 25,
+      "count": 26,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Socket",
@@ -350,8 +319,7 @@
       "count": 23,
       "error": null,
       "matched": 13,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Material Security",
@@ -361,19 +329,17 @@
       "count": 6,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Persona",
       "ats": "ashby",
       "identifier": "persona",
       "ok": true,
-      "count": 12,
+      "count": 13,
       "error": null,
-      "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "matched": 6,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Adaptive Security",
@@ -382,9 +348,8 @@
       "ok": true,
       "count": 12,
       "error": null,
-      "matched": 10,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "matched": 11,
+      "dropped_out_of_area": 7
     },
     {
       "company": "HackerOne",
@@ -394,41 +359,37 @@
       "count": 13,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Corelight",
       "ats": "greenhouse",
       "identifier": "corelight",
       "ok": true,
-      "count": 14,
+      "count": 13,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Cribl",
       "ats": "greenhouse",
       "identifier": "cribl",
       "ok": true,
-      "count": 84,
+      "count": 86,
       "error": null,
       "matched": 25,
-      "dropped_out_of_area": 18,
-      "carried": true
+      "dropped_out_of_area": 18
     },
     {
       "company": "Socure",
       "ats": "ashby",
       "identifier": "socure",
       "ok": true,
-      "count": 84,
+      "count": 85,
       "error": null,
-      "matched": 25,
-      "dropped_out_of_area": 14,
-      "carried": true
+      "matched": 26,
+      "dropped_out_of_area": 16
     },
     {
       "company": "Censys",
@@ -438,8 +399,7 @@
       "count": 25,
       "error": null,
       "matched": 13,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Gray Swan AI",
@@ -449,8 +409,7 @@
       "count": 17,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Tracebit",
@@ -460,74 +419,67 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Cloudflare",
       "ats": "greenhouse",
       "identifier": "cloudflare",
       "ok": true,
-      "count": 504,
+      "count": 503,
       "error": null,
-      "matched": 272,
-      "dropped_out_of_area": 272,
-      "carried": true
+      "matched": 273,
+      "dropped_out_of_area": 273
     },
     {
       "company": "Rubrik",
       "ats": "greenhouse",
       "identifier": "rubrik",
       "ok": true,
-      "count": 208,
+      "count": 219,
       "error": null,
-      "matched": 103,
-      "dropped_out_of_area": 96,
-      "carried": true
+      "matched": 110,
+      "dropped_out_of_area": 102
     },
     {
       "company": "Fastly",
       "ats": "greenhouse",
       "identifier": "fastly",
       "ok": true,
-      "count": 48,
+      "count": 50,
       "error": null,
-      "matched": 15,
-      "dropped_out_of_area": 15,
-      "carried": true
+      "matched": 16,
+      "dropped_out_of_area": 16
     },
     {
       "company": "SentinelOne",
       "ats": "greenhouse",
       "identifier": "sentinellabs",
       "ok": true,
-      "count": 263,
+      "count": 257,
       "error": null,
-      "matched": 95,
-      "dropped_out_of_area": 59,
-      "carried": true
+      "matched": 90,
+      "dropped_out_of_area": 54
     },
     {
       "company": "Mach Industries",
       "ats": "greenhouse",
       "identifier": "machindustries",
       "ok": true,
-      "count": 191,
+      "count": 193,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "True Anomaly",
       "ats": "greenhouse",
       "identifier": "trueanomalyinc",
       "ok": true,
-      "count": 214,
+      "count": 213,
       "error": null,
-      "matched": 26,
-      "dropped_out_of_area": 21,
-      "carried": true
+      "matched": 27,
+      "dropped_out_of_area": 19
     },
     {
       "company": "Vatn Systems",
@@ -537,41 +489,37 @@
       "count": 20,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Skydio",
       "ats": "ashby",
       "identifier": "skydio",
       "ok": true,
-      "count": 185,
+      "count": 183,
       "error": null,
-      "matched": 50,
-      "dropped_out_of_area": 24,
-      "carried": true
+      "matched": 49,
+      "dropped_out_of_area": 24
     },
     {
       "company": "Applied Intuition",
       "ats": "ashby",
       "identifier": "applied",
       "ok": true,
-      "count": 333,
+      "count": 332,
       "error": null,
       "matched": 66,
-      "dropped_out_of_area": 66,
-      "carried": true
+      "dropped_out_of_area": 66
     },
     {
       "company": "Harmattan AI",
       "ats": "ashby",
       "identifier": "harmattan-ai",
       "ok": true,
-      "count": 179,
+      "count": 177,
       "error": null,
-      "matched": 14,
-      "dropped_out_of_area": 14,
-      "carried": true
+      "matched": 13,
+      "dropped_out_of_area": 13
     },
     {
       "company": "BRINC",
@@ -580,9 +528,8 @@
       "ok": true,
       "count": 29,
       "error": null,
-      "matched": 8,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "matched": 7,
+      "dropped_out_of_area": 4
     },
     {
       "company": "HavocAI",
@@ -592,8 +539,7 @@
       "count": 19,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "9 Mothers",
@@ -603,19 +549,17 @@
       "count": 10,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Shield AI",
       "ats": "ashby",
       "identifier": "shield",
       "ok": true,
-      "count": 665,
+      "count": 677,
       "error": null,
-      "matched": 94,
-      "dropped_out_of_area": 70,
-      "carried": true
+      "matched": 95,
+      "dropped_out_of_area": 72
     },
     {
       "company": "Skyways",
@@ -625,8 +569,7 @@
       "count": 18,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Elroy Air",
@@ -636,8 +579,7 @@
       "count": 7,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Enigma Aerospace",
@@ -647,19 +589,17 @@
       "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Helsing",
       "ats": "greenhouse",
       "identifier": "helsing",
       "ok": true,
-      "count": 175,
+      "count": 177,
       "error": null,
-      "matched": 17,
-      "dropped_out_of_area": 14,
-      "carried": true
+      "matched": 18,
+      "dropped_out_of_area": 15
     },
     {
       "company": "Oddball",
@@ -669,8 +609,7 @@
       "count": 20,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Nava",
@@ -680,19 +619,17 @@
       "count": 19,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Kitware",
       "ats": "lever",
       "identifier": "kitware",
       "ok": true,
-      "count": 23,
+      "count": 24,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "matched": 5,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Shift5",
@@ -702,19 +639,17 @@
       "count": 10,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Picogrid",
       "ats": "ashby",
       "identifier": "picogrid",
       "ok": true,
-      "count": 24,
+      "count": 25,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "matched": 5,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Quindar",
@@ -724,8 +659,7 @@
       "count": 15,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Scout AI",
@@ -735,8 +669,7 @@
       "count": 32,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Primer",
@@ -746,30 +679,27 @@
       "count": 15,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Abridge",
       "ats": "ashby",
       "identifier": "abridge",
       "ok": true,
-      "count": 29,
+      "count": 30,
       "error": null,
-      "matched": 2,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 1,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Ambience Healthcare",
       "ats": "ashby",
       "identifier": "ambiencehealthcare",
       "ok": true,
-      "count": 17,
+      "count": 18,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Commure",
@@ -779,8 +709,7 @@
       "count": 74,
       "error": null,
       "matched": 16,
-      "dropped_out_of_area": 12,
-      "carried": true
+      "dropped_out_of_area": 11
     },
     {
       "company": "Bayesian Health",
@@ -790,8 +719,7 @@
       "count": 12,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "HealthLeap",
@@ -801,8 +729,7 @@
       "count": 10,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Hello Patient",
@@ -812,19 +739,17 @@
       "count": 8,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Kivo Health",
       "ats": "ashby",
       "identifier": "kivo-health",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "AcuityMD",
@@ -834,19 +759,17 @@
       "count": 10,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Twin Health",
       "ats": "greenhouse",
       "identifier": "twinhealth",
       "ok": true,
-      "count": 38,
+      "count": 37,
       "error": null,
-      "matched": 13,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "matched": 12,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Form Health",
@@ -856,30 +779,27 @@
       "count": 14,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Ophelia",
       "ats": "greenhouse",
       "identifier": "ophelia",
       "ok": true,
-      "count": 13,
+      "count": 14,
       "error": null,
-      "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "matched": 4,
+      "dropped_out_of_area": 4
     },
     {
       "company": "Jukebox Health",
       "ats": "greenhouse",
       "identifier": "jukeboxhealth",
       "ok": true,
-      "count": 35,
+      "count": 34,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Daymark Health",
@@ -889,41 +809,37 @@
       "count": 29,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Medsien",
       "ats": "greenhouse",
       "identifier": "medsien",
       "ok": true,
-      "count": 31,
+      "count": 32,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Zocdoc",
       "ats": "greenhouse",
       "identifier": "zocdoc",
       "ok": true,
-      "count": 66,
+      "count": 65,
       "error": null,
-      "matched": 18,
-      "dropped_out_of_area": 13,
-      "carried": true
+      "matched": 16,
+      "dropped_out_of_area": 12
     },
     {
       "company": "Maven Clinic",
       "ats": "greenhouse",
       "identifier": "mavenclinic",
       "ok": true,
-      "count": 34,
+      "count": 35,
       "error": null,
-      "matched": 9,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 10,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Komodo Health",
@@ -933,8 +849,7 @@
       "count": 20,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Garner Health",
@@ -944,41 +859,37 @@
       "count": 59,
       "error": null,
       "matched": 20,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Included Health",
       "ats": "lever",
       "identifier": "includedhealth",
       "ok": true,
-      "count": 41,
+      "count": 42,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Talkiatry",
       "ats": "ashby",
       "identifier": "talkiatry",
       "ok": true,
-      "count": 188,
+      "count": 187,
       "error": null,
       "matched": 23,
-      "dropped_out_of_area": 14,
-      "carried": true
+      "dropped_out_of_area": 14
     },
     {
       "company": "Lyra Health",
       "ats": "lever",
       "identifier": "lyrahealth",
       "ok": true,
-      "count": 453,
+      "count": 446,
       "error": null,
-      "matched": 14,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "matched": 15,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Candid Health",
@@ -987,9 +898,8 @@
       "ok": true,
       "count": 30,
       "error": null,
-      "matched": 15,
-      "dropped_out_of_area": 15,
-      "carried": true
+      "matched": 13,
+      "dropped_out_of_area": 13
     },
     {
       "company": "Tennr",
@@ -999,52 +909,47 @@
       "count": 22,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 9,
-      "carried": true
+      "dropped_out_of_area": 9
     },
     {
       "company": "Palantir",
       "ats": "lever",
       "identifier": "palantir",
       "ok": true,
-      "count": 308,
+      "count": 306,
       "error": null,
-      "matched": 112,
-      "dropped_out_of_area": 79,
-      "carried": true
+      "matched": 110,
+      "dropped_out_of_area": 77
     },
     {
       "company": "Scale AI",
       "ats": "greenhouse",
       "identifier": "scaleai",
       "ok": true,
-      "count": 166,
+      "count": 161,
       "error": null,
-      "matched": 65,
-      "dropped_out_of_area": 47,
-      "carried": true
+      "matched": 64,
+      "dropped_out_of_area": 46
     },
     {
       "company": "Epirus",
       "ats": "greenhouse",
       "identifier": "epirus",
       "ok": true,
-      "count": 42,
+      "count": 41,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "matched": 3,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Chaos Industries",
       "ats": "greenhouse",
       "identifier": "chaosindustries",
       "ok": true,
-      "count": 187,
+      "count": 190,
       "error": null,
-      "matched": 18,
-      "dropped_out_of_area": 16,
-      "carried": true
+      "matched": 19,
+      "dropped_out_of_area": 16
     },
     {
       "company": "Rebellion Defense",
@@ -1054,8 +959,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Snowflake",
@@ -1064,64 +968,58 @@
       "ok": true,
       "count": 374,
       "error": null,
-      "matched": 118,
-      "dropped_out_of_area": 113,
-      "carried": true
+      "matched": 116,
+      "dropped_out_of_area": 110
     },
     {
       "company": "Zscaler",
       "ats": "greenhouse",
       "identifier": "zscaler",
       "ok": true,
-      "count": 387,
+      "count": 388,
       "error": null,
       "matched": 163,
-      "dropped_out_of_area": 137,
-      "carried": true
+      "dropped_out_of_area": 137
     },
     {
       "company": "Elastic",
       "ats": "greenhouse",
       "identifier": "elastic",
       "ok": true,
-      "count": 382,
+      "count": 384,
       "error": null,
-      "matched": 135,
-      "dropped_out_of_area": 127,
-      "carried": true
+      "matched": 130,
+      "dropped_out_of_area": 122
     },
     {
       "company": "MongoDB",
       "ats": "greenhouse",
       "identifier": "mongodb",
       "ok": true,
-      "count": 417,
+      "count": 421,
       "error": null,
-      "matched": 178,
-      "dropped_out_of_area": 173,
-      "carried": true
+      "matched": 173,
+      "dropped_out_of_area": 168
     },
     {
       "company": "Datadog",
       "ats": "greenhouse",
       "identifier": "datadog",
       "ok": true,
-      "count": 382,
+      "count": 384,
       "error": null,
-      "matched": 191,
-      "dropped_out_of_area": 187,
-      "carried": true
+      "matched": 187,
+      "dropped_out_of_area": 183
     },
     {
       "company": "GitLab",
       "ats": "greenhouse",
       "identifier": "gitlab",
       "ok": true,
-      "count": 246,
+      "count": 247,
       "error": null,
-      "matched": 133,
-      "dropped_out_of_area": 73,
-      "carried": true
+      "matched": 130,
+      "dropped_out_of_area": 73
     },
     {
       "company": "Leidos",
@@ -1131,7 +1029,8 @@
       "count": 950,
       "error": null,
       "matched": 141,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Booz Allen Hamilton",
@@ -1141,7 +1040,8 @@
       "count": 1149,
       "error": null,
       "matched": 226,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "GDIT",
@@ -1151,7 +1051,8 @@
       "count": 728,
       "error": null,
       "matched": 117,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Northrop Grumman",
@@ -1161,7 +1062,8 @@
       "count": 231,
       "error": null,
       "matched": 21,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "CrowdStrike",
@@ -1171,7 +1073,8 @@
       "count": 110,
       "error": null,
       "matched": 22,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Salesforce",
@@ -1181,7 +1084,8 @@
       "count": 132,
       "error": null,
       "matched": 65,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Amentum",
@@ -1191,7 +1095,8 @@
       "count": 496,
       "error": null,
       "matched": 40,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "KBR",
@@ -1201,7 +1106,8 @@
       "count": 281,
       "error": null,
       "matched": 27,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Guidehouse",
@@ -1211,7 +1117,8 @@
       "count": 532,
       "error": null,
       "matched": 56,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Boeing",
@@ -1221,7 +1128,8 @@
       "count": 34,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Capital One",
@@ -1231,7 +1139,8 @@
       "count": 1481,
       "error": null,
       "matched": 566,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Fannie Mae",
@@ -1241,7 +1150,8 @@
       "count": 53,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 0
+      "dropped_out_of_area": 0,
+      "carried": true
     },
     {
       "company": "Adaptive",
@@ -1251,8 +1161,7 @@
       "count": 8,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Addi",
@@ -1262,8 +1171,7 @@
       "count": 34,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "Aerodome",
@@ -1273,30 +1181,27 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Affirm",
       "ats": "greenhouse",
       "identifier": "affirm",
       "ok": true,
-      "count": 222,
+      "count": 218,
       "error": null,
-      "matched": 78,
-      "dropped_out_of_area": 50,
-      "carried": true
+      "matched": 76,
+      "dropped_out_of_area": 48
     },
     {
       "company": "Airbnb",
       "ats": "greenhouse",
       "identifier": "airbnb",
       "ok": true,
-      "count": 202,
+      "count": 199,
       "error": null,
       "matched": 39,
-      "dropped_out_of_area": 35,
-      "carried": true
+      "dropped_out_of_area": 35
     },
     {
       "company": "AirGarage",
@@ -1306,8 +1211,7 @@
       "count": 22,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "AKASA",
@@ -1317,8 +1221,7 @@
       "count": 6,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Alchemy",
@@ -1328,8 +1231,7 @@
       "count": 18,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Aleo",
@@ -1339,8 +1241,7 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Alleviate Health",
@@ -1350,8 +1251,7 @@
       "count": 7,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Alluxio",
@@ -1361,8 +1261,7 @@
       "count": 12,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Alpha-9 Oncology",
@@ -1372,8 +1271,7 @@
       "count": 3,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Alta",
@@ -1383,8 +1281,7 @@
       "count": 8,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Amber",
@@ -1394,41 +1291,37 @@
       "count": 24,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Amca",
       "ats": "greenhouse",
       "identifier": "amca",
       "ok": true,
-      "count": 52,
+      "count": 51,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 9,
-      "carried": true
+      "dropped_out_of_area": 9
     },
     {
       "company": "Anchorage",
       "ats": "lever",
       "identifier": "anchorage",
       "ok": true,
-      "count": 20,
+      "count": 19,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Anduril",
       "ats": "greenhouse",
       "identifier": "andurilindustries",
       "ok": true,
-      "count": 2633,
+      "count": 2610,
       "error": null,
-      "matched": 322,
-      "dropped_out_of_area": 266,
-      "carried": true
+      "matched": 312,
+      "dropped_out_of_area": 257
     },
     {
       "company": "Anyscale",
@@ -1438,8 +1331,7 @@
       "count": 24,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "Apollo",
@@ -1449,8 +1341,7 @@
       "count": 46,
       "error": null,
       "matched": 16,
-      "dropped_out_of_area": 16,
-      "carried": true
+      "dropped_out_of_area": 16
     },
     {
       "company": "Aptos",
@@ -1460,8 +1351,7 @@
       "count": 7,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Arda Therapeutics",
@@ -1471,8 +1361,7 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Arena",
@@ -1482,8 +1371,7 @@
       "count": 21,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Armadin",
@@ -1493,19 +1381,17 @@
       "count": 24,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Asana",
       "ats": "greenhouse",
       "identifier": "asana",
       "ok": true,
-      "count": 111,
+      "count": 109,
       "error": null,
-      "matched": 43,
-      "dropped_out_of_area": 42,
-      "carried": true
+      "matched": 41,
+      "dropped_out_of_area": 40
     },
     {
       "company": "ASI",
@@ -1515,8 +1401,7 @@
       "count": 10,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Asimov",
@@ -1526,52 +1411,47 @@
       "count": 9,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Astranis",
       "ats": "greenhouse",
       "identifier": "astranis",
       "ok": true,
-      "count": 168,
+      "count": 165,
       "error": null,
       "matched": 12,
-      "dropped_out_of_area": 12,
-      "carried": true
+      "dropped_out_of_area": 12
     },
     {
       "company": "Astro Mechanica",
       "ats": "ashby",
       "identifier": "astro-mechanica",
       "ok": true,
-      "count": 42,
+      "count": 41,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Atlys",
       "ats": "ashby",
       "identifier": "atlys",
       "ok": true,
-      "count": 33,
+      "count": 34,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Atoms",
       "ats": "greenhouse",
       "identifier": "atoms",
       "ok": true,
-      "count": 167,
+      "count": 164,
       "error": null,
-      "matched": 28,
-      "dropped_out_of_area": 28,
-      "carried": true
+      "matched": 27,
+      "dropped_out_of_area": 27
     },
     {
       "company": "Azra Games",
@@ -1581,8 +1461,7 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Backflip AI",
@@ -1592,8 +1471,7 @@
       "count": 2,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Bastion",
@@ -1603,8 +1481,7 @@
       "count": 6,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Believer",
@@ -1614,8 +1491,7 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Belisar",
@@ -1625,30 +1501,27 @@
       "count": 4,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Benchling",
       "ats": "ashby",
       "identifier": "benchling",
       "ok": true,
-      "count": 60,
+      "count": 61,
       "error": null,
       "matched": 27,
-      "dropped_out_of_area": 26,
-      "carried": true
+      "dropped_out_of_area": 26
     },
     {
       "company": "Boku",
       "ats": "greenhouse",
       "identifier": "boku",
       "ok": true,
-      "count": 11,
+      "count": 13,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "matched": 5,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Bold",
@@ -1658,8 +1531,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Boltz",
@@ -1669,8 +1541,7 @@
       "count": 12,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Bounce",
@@ -1680,8 +1551,7 @@
       "count": 10,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "Braintrust",
@@ -1691,30 +1561,27 @@
       "count": 32,
       "error": null,
       "matched": 16,
-      "dropped_out_of_area": 12,
-      "carried": true
+      "dropped_out_of_area": 12
     },
     {
       "company": "Branch.co",
       "ats": "greenhouse",
       "identifier": "branch",
       "ok": true,
-      "count": 7,
+      "count": 8,
       "error": null,
-      "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 2,
+      "dropped_out_of_area": 0
     },
     {
       "company": "BuzzFeed",
       "ats": "greenhouse",
       "identifier": "buzzfeed",
       "ok": true,
-      "count": 2,
+      "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Camber",
@@ -1724,8 +1591,7 @@
       "count": 14,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Cape",
@@ -1735,8 +1601,7 @@
       "count": 22,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Capitolis",
@@ -1746,8 +1611,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Carta",
@@ -1757,8 +1621,7 @@
       "count": 80,
       "error": null,
       "matched": 20,
-      "dropped_out_of_area": 20,
-      "carried": true
+      "dropped_out_of_area": 20
     },
     {
       "company": "Character.AI",
@@ -1768,8 +1631,7 @@
       "count": 13,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Chariot Defense",
@@ -1779,8 +1641,7 @@
       "count": 10,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Charthop",
@@ -1790,8 +1651,7 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Chestnut",
@@ -1801,19 +1661,17 @@
       "count": 4,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Circle",
       "ats": "ashby",
       "identifier": "circle",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Clerk",
@@ -1823,8 +1681,7 @@
       "count": 2,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "ClickUp",
@@ -1834,8 +1691,7 @@
       "count": 48,
       "error": null,
       "matched": 29,
-      "dropped_out_of_area": 11,
-      "carried": true
+      "dropped_out_of_area": 11
     },
     {
       "company": "Clubhouse",
@@ -1845,8 +1701,7 @@
       "count": 3,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Cluely",
@@ -1856,19 +1711,17 @@
       "count": 4,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Clutch",
       "ats": "greenhouse",
       "identifier": "clutch",
       "ok": true,
-      "count": 85,
+      "count": 84,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 9,
-      "carried": true
+      "dropped_out_of_area": 9
     },
     {
       "company": "Coactive",
@@ -1878,41 +1731,37 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Cognition",
       "ats": "ashby",
       "identifier": "cognition",
       "ok": true,
-      "count": 108,
+      "count": 110,
       "error": null,
-      "matched": 38,
-      "dropped_out_of_area": 32,
-      "carried": true
+      "matched": 36,
+      "dropped_out_of_area": 30
     },
     {
       "company": "Coinbase",
       "ats": "greenhouse",
       "identifier": "coinbase",
       "ok": true,
-      "count": 252,
+      "count": 250,
       "error": null,
       "matched": 55,
-      "dropped_out_of_area": 11,
-      "carried": true
+      "dropped_out_of_area": 11
     },
     {
       "company": "Compound",
       "ats": "ashby",
       "identifier": "compound",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Concourse",
@@ -1922,8 +1771,7 @@
       "count": 7,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Convex",
@@ -1933,30 +1781,27 @@
       "count": 10,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Cowboy Space Corporation",
       "ats": "ashby",
       "identifier": "cowboyspace",
       "ok": true,
-      "count": 61,
+      "count": 62,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Cresta",
       "ats": "greenhouse",
       "identifier": "cresta",
       "ok": true,
-      "count": 84,
+      "count": 81,
       "error": null,
-      "matched": 33,
-      "dropped_out_of_area": 18,
-      "carried": true
+      "matched": 31,
+      "dropped_out_of_area": 18
     },
     {
       "company": "Cross River Bank",
@@ -1966,8 +1811,7 @@
       "count": 35,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Crux",
@@ -1977,8 +1821,7 @@
       "count": 34,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Current",
@@ -1988,30 +1831,27 @@
       "count": 4,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "CX2",
       "ats": "lever",
       "identifier": "cx2",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": null,
-      "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 1,
+      "dropped_out_of_area": 1
     },
     {
       "company": "Databricks",
       "ats": "greenhouse",
       "identifier": "databricks",
       "ok": true,
-      "count": 893,
+      "count": 882,
       "error": null,
-      "matched": 543,
-      "dropped_out_of_area": 504,
-      "carried": true
+      "matched": 534,
+      "dropped_out_of_area": 495
     },
     {
       "company": "Daylight",
@@ -2021,19 +1861,17 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Decagon",
       "ats": "ashby",
       "identifier": "decagon",
       "ok": true,
-      "count": 109,
+      "count": 112,
       "error": null,
       "matched": 44,
-      "dropped_out_of_area": 41,
-      "carried": true
+      "dropped_out_of_area": 41
     },
     {
       "company": "Descript",
@@ -2043,8 +1881,7 @@
       "count": 10,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Dfinity",
@@ -2054,8 +1891,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Dialpad",
@@ -2065,8 +1901,7 @@
       "count": 16,
       "error": null,
       "matched": 12,
-      "dropped_out_of_area": 12,
-      "carried": true
+      "dropped_out_of_area": 12
     },
     {
       "company": "Diode",
@@ -2076,8 +1911,7 @@
       "count": 5,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Dispatch",
@@ -2087,8 +1921,7 @@
       "count": 7,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Doxel",
@@ -2098,8 +1931,7 @@
       "count": 16,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Dyno Therapeutics",
@@ -2109,8 +1941,7 @@
       "count": 1,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Earli",
@@ -2120,8 +1951,7 @@
       "count": 3,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Earnin",
@@ -2131,8 +1961,7 @@
       "count": 26,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 10,
-      "carried": true
+      "dropped_out_of_area": 10
     },
     {
       "company": "Ease Health",
@@ -2142,8 +1971,7 @@
       "count": 14,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Eka Robotics",
@@ -2153,30 +1981,27 @@
       "count": 13,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "ElevenLabs",
       "ats": "ashby",
       "identifier": "elevenlabs",
       "ok": true,
-      "count": 122,
+      "count": 123,
       "error": null,
-      "matched": 61,
-      "dropped_out_of_area": 31,
-      "carried": true
+      "matched": 62,
+      "dropped_out_of_area": 32
     },
     {
       "company": "EliseAI",
       "ats": "ashby",
       "identifier": "eliseai",
       "ok": true,
-      "count": 104,
+      "count": 105,
       "error": null,
       "matched": 48,
-      "dropped_out_of_area": 47,
-      "carried": true
+      "dropped_out_of_area": 47
     },
     {
       "company": "Endra",
@@ -2186,8 +2011,7 @@
       "count": 17,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "EngFlow",
@@ -2197,8 +2021,7 @@
       "count": 9,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Envoy",
@@ -2208,8 +2031,7 @@
       "count": 23,
       "error": null,
       "matched": 11,
-      "dropped_out_of_area": 11,
-      "carried": true
+      "dropped_out_of_area": 11
     },
     {
       "company": "Erasca",
@@ -2219,8 +2041,7 @@
       "count": 4,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Espresso (Translucence Research Inc)",
@@ -2230,8 +2051,7 @@
       "count": 2,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Ethos",
@@ -2241,63 +2061,57 @@
       "count": 2,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Eve",
       "ats": "greenhouse",
       "identifier": "eve",
       "ok": true,
-      "count": 18,
+      "count": 19,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Everlaw",
       "ats": "greenhouse",
       "identifier": "everlaw",
       "ok": true,
-      "count": 37,
+      "count": 39,
       "error": null,
       "matched": 20,
-      "dropped_out_of_area": 19,
-      "carried": true
+      "dropped_out_of_area": 19
     },
     {
       "company": "Exa",
       "ats": "ashby",
       "identifier": "exa",
       "ok": true,
-      "count": 67,
+      "count": 73,
       "error": null,
-      "matched": 20,
-      "dropped_out_of_area": 19,
-      "carried": true
+      "matched": 19,
+      "dropped_out_of_area": 18
     },
     {
       "company": "Exowatt",
       "ats": "lever",
       "identifier": "exowatt",
       "ok": true,
-      "count": 17,
+      "count": 19,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "fal",
       "ats": "ashby",
       "identifier": "fal-ai",
       "ok": true,
-      "count": 50,
+      "count": 49,
       "error": null,
-      "matched": 17,
-      "dropped_out_of_area": 15,
-      "carried": true
+      "matched": 16,
+      "dropped_out_of_area": 14
     },
     {
       "company": "Ferry Health",
@@ -2307,19 +2121,17 @@
       "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Figma",
       "ats": "greenhouse",
       "identifier": "figma",
       "ok": true,
-      "count": 147,
+      "count": 148,
       "error": null,
       "matched": 53,
-      "dropped_out_of_area": 53,
-      "carried": true
+      "dropped_out_of_area": 53
     },
     {
       "company": "Filmhub",
@@ -2329,8 +2141,7 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "First Person Labs",
@@ -2340,41 +2151,37 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Fivetran",
       "ats": "greenhouse",
       "identifier": "fivetran",
       "ok": true,
-      "count": 196,
+      "count": 202,
       "error": null,
-      "matched": 62,
-      "dropped_out_of_area": 61,
-      "carried": true
+      "matched": 67,
+      "dropped_out_of_area": 65
     },
     {
       "company": "Fleek",
       "ats": "ashby",
       "identifier": "fleek",
       "ok": true,
-      "count": 6,
+      "count": 8,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Flexport",
       "ats": "greenhouse",
       "identifier": "flexport",
       "ok": true,
-      "count": 212,
+      "count": 209,
       "error": null,
-      "matched": 45,
-      "dropped_out_of_area": 45,
-      "carried": true
+      "matched": 44,
+      "dropped_out_of_area": 44
     },
     {
       "company": "Flock",
@@ -2384,8 +2191,7 @@
       "count": 12,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Flock Homes",
@@ -2395,8 +2201,7 @@
       "count": 7,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Fly.io",
@@ -2406,19 +2211,17 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Formation Bio",
       "ats": "greenhouse",
       "identifier": "formationbio",
       "ok": true,
-      "count": 23,
+      "count": 22,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Fortuna Health",
@@ -2428,8 +2231,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Forward",
@@ -2439,8 +2241,7 @@
       "count": 22,
       "error": null,
       "matched": 11,
-      "dropped_out_of_area": 9,
-      "carried": true
+      "dropped_out_of_area": 9
     },
     {
       "company": "Foundation",
@@ -2450,8 +2251,7 @@
       "count": 4,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Freenome",
@@ -2460,9 +2260,8 @@
       "ok": true,
       "count": 25,
       "error": null,
-      "matched": 5,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "matched": 6,
+      "dropped_out_of_area": 1
     },
     {
       "company": "FurtherAI",
@@ -2471,20 +2270,18 @@
       "ok": true,
       "count": 12,
       "error": null,
-      "matched": 7,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "matched": 5,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Gamma.app",
       "ats": "ashby",
       "identifier": "gamma",
       "ok": true,
-      "count": 20,
+      "count": 19,
       "error": null,
-      "matched": 8,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "matched": 7,
+      "dropped_out_of_area": 7
     },
     {
       "company": "General Medicine",
@@ -2494,8 +2291,7 @@
       "count": 8,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "General Translation",
@@ -2505,8 +2301,7 @@
       "count": 3,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Gensyn",
@@ -2516,8 +2311,7 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Gimlet Labs",
@@ -2527,8 +2321,7 @@
       "count": 16,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Glimpse",
@@ -2538,30 +2331,27 @@
       "count": 6,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Glow",
       "ats": "ashby",
       "identifier": "glow",
       "ok": true,
-      "count": 14,
+      "count": 15,
       "error": null,
-      "matched": 10,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "matched": 11,
+      "dropped_out_of_area": 4
     },
     {
       "company": "gooddata.ai",
       "ats": "ashby",
       "identifier": "gooddata",
       "ok": true,
-      "count": 8,
+      "count": 9,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "matched": 5,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Greenlight",
@@ -2571,8 +2361,7 @@
       "count": 15,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Groupon, Inc.",
@@ -2582,8 +2371,7 @@
       "count": 27,
       "error": null,
       "matched": 11,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Harbor",
@@ -2593,30 +2381,27 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Harvey",
       "ats": "ashby",
       "identifier": "harvey",
       "ok": true,
-      "count": 390,
+      "count": 391,
       "error": null,
-      "matched": 143,
-      "dropped_out_of_area": 137,
-      "carried": true
+      "matched": 142,
+      "dropped_out_of_area": 136
     },
     {
       "company": "Headway",
       "ats": "ashby",
       "identifier": "headway",
       "ok": true,
-      "count": 94,
+      "count": 92,
       "error": null,
-      "matched": 28,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "matched": 27,
+      "dropped_out_of_area": 6
     },
     {
       "company": "Hedra",
@@ -2626,8 +2411,7 @@
       "count": 9,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Heron Power",
@@ -2637,8 +2421,7 @@
       "count": 60,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Hex",
@@ -2648,19 +2431,17 @@
       "count": 42,
       "error": null,
       "matched": 14,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Honor",
       "ats": "greenhouse",
       "identifier": "honor",
       "ok": true,
-      "count": 17,
+      "count": 16,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "hyperexponential",
@@ -2670,8 +2451,7 @@
       "count": 39,
       "error": null,
       "matched": 14,
-      "dropped_out_of_area": 14,
-      "carried": true
+      "dropped_out_of_area": 14
     },
     {
       "company": "Ideogram",
@@ -2681,8 +2461,7 @@
       "count": 3,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Illumio",
@@ -2692,8 +2471,7 @@
       "count": 74,
       "error": null,
       "matched": 21,
-      "dropped_out_of_area": 20,
-      "carried": true
+      "dropped_out_of_area": 20
     },
     {
       "company": "Imply",
@@ -2703,8 +2481,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Improbable",
@@ -2714,8 +2491,7 @@
       "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Inceptive",
@@ -2725,8 +2501,7 @@
       "count": 7,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Inductive Bio",
@@ -2736,8 +2511,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Inferact",
@@ -2747,8 +2521,7 @@
       "count": 32,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Infinite Machine",
@@ -2758,8 +2531,7 @@
       "count": 5,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Infinitus",
@@ -2769,8 +2541,7 @@
       "count": 10,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Inngest",
@@ -2780,8 +2551,7 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Insitro",
@@ -2791,19 +2561,17 @@
       "count": 14,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Instacart",
       "ats": "greenhouse",
       "identifier": "instacart",
       "ok": true,
-      "count": 92,
+      "count": 96,
       "error": null,
       "matched": 36,
-      "dropped_out_of_area": 13,
-      "carried": true
+      "dropped_out_of_area": 13
     },
     {
       "company": "Intro",
@@ -2813,19 +2581,17 @@
       "count": 9,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Jeeves",
       "ats": "lever",
       "identifier": "tryjeeves",
       "ok": true,
-      "count": 79,
+      "count": 81,
       "error": null,
-      "matched": 47,
-      "dropped_out_of_area": 43,
-      "carried": true
+      "matched": 48,
+      "dropped_out_of_area": 44
     },
     {
       "company": "Jito",
@@ -2835,8 +2601,7 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "k-ID",
@@ -2846,8 +2611,7 @@
       "count": 9,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Kaizen",
@@ -2857,8 +2621,7 @@
       "count": 23,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Kalshi",
@@ -2868,19 +2631,17 @@
       "count": 41,
       "error": null,
       "matched": 12,
-      "dropped_out_of_area": 11,
-      "carried": true
+      "dropped_out_of_area": 11
     },
     {
       "company": "Kavak",
       "ats": "lever",
       "identifier": "kavak",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Keycard",
@@ -2890,8 +2651,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Kindred",
@@ -2901,19 +2661,17 @@
       "count": 6,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Knownwell",
       "ats": "ashby",
       "identifier": "knownwell",
       "ok": true,
-      "count": 10,
+      "count": 9,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "KoBold Metals",
@@ -2923,8 +2681,7 @@
       "count": 28,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Kodex",
@@ -2934,19 +2691,17 @@
       "count": 6,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Kong",
       "ats": "ashby",
       "identifier": "kong",
       "ok": true,
-      "count": 126,
+      "count": 128,
       "error": null,
-      "matched": 79,
-      "dropped_out_of_area": 73,
-      "carried": true
+      "matched": 81,
+      "dropped_out_of_area": 75
     },
     {
       "company": "Krea",
@@ -2956,8 +2711,7 @@
       "count": 14,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Labelbox",
@@ -2967,8 +2721,7 @@
       "count": 13,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Lassie",
@@ -2978,8 +2731,7 @@
       "count": 15,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "LayerZero",
@@ -2989,8 +2741,7 @@
       "count": 2,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Leona Health",
@@ -3000,8 +2751,7 @@
       "count": 4,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Lightfield",
@@ -3010,9 +2760,8 @@
       "ok": true,
       "count": 20,
       "error": null,
-      "matched": 8,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "matched": 7,
+      "dropped_out_of_area": 7
     },
     {
       "company": "Lightspark",
@@ -3022,8 +2771,7 @@
       "count": 8,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Linq",
@@ -3033,19 +2781,17 @@
       "count": 13,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Lio",
       "ats": "ashby",
       "identifier": "lio",
       "ok": true,
-      "count": 30,
+      "count": 28,
       "error": null,
-      "matched": 13,
-      "dropped_out_of_area": 13,
-      "carried": true
+      "matched": 12,
+      "dropped_out_of_area": 12
     },
     {
       "company": "Longitude Labs",
@@ -3055,8 +2801,7 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Lookout",
@@ -3066,8 +2811,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "LTSE Services, Inc.",
@@ -3077,8 +2821,7 @@
       "count": 2,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Lumos",
@@ -3088,30 +2831,27 @@
       "count": 9,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Lyft",
       "ats": "greenhouse",
       "identifier": "lyft",
       "ok": true,
-      "count": 145,
+      "count": 144,
       "error": null,
       "matched": 34,
-      "dropped_out_of_area": 34,
-      "carried": true
+      "dropped_out_of_area": 34
     },
     {
       "company": "Mariana Minerals",
       "ats": "ashby",
       "identifier": "marianaminerals",
       "ok": true,
-      "count": 101,
+      "count": 99,
       "error": null,
-      "matched": 13,
-      "dropped_out_of_area": 13,
-      "carried": true
+      "matched": 12,
+      "dropped_out_of_area": 12
     },
     {
       "company": "Matik",
@@ -3121,8 +2861,7 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Matter Labs",
@@ -3132,8 +2871,7 @@
       "count": 2,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Maven",
@@ -3143,8 +2881,7 @@
       "count": 3,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Maze Therapeutics",
@@ -3154,8 +2891,7 @@
       "count": 13,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Medium",
@@ -3165,30 +2901,27 @@
       "count": 2,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Mercury",
       "ats": "greenhouse",
       "identifier": "mercury",
       "ok": true,
-      "count": 70,
+      "count": 69,
       "error": null,
-      "matched": 21,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "matched": 20,
+      "dropped_out_of_area": 4
     },
     {
       "company": "Method",
       "ats": "greenhouse",
       "identifier": "method",
       "ok": true,
-      "count": 14,
+      "count": 13,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "matched": 3,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Midstream Health",
@@ -3198,19 +2931,17 @@
       "count": 9,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Mind Robotics",
       "ats": "ashby",
       "identifier": "mindrobotics",
       "ok": true,
-      "count": 35,
+      "count": 34,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Mintlify",
@@ -3220,8 +2951,7 @@
       "count": 5,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Mirage",
@@ -3231,8 +2961,7 @@
       "count": 16,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Mirelo AI",
@@ -3242,8 +2971,7 @@
       "count": 8,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Mirendil",
@@ -3253,19 +2981,17 @@
       "count": 16,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Mixpanel",
       "ats": "greenhouse",
       "identifier": "mixpanel",
       "ok": true,
-      "count": 40,
+      "count": 39,
       "error": null,
-      "matched": 21,
-      "dropped_out_of_area": 17,
-      "carried": true
+      "matched": 22,
+      "dropped_out_of_area": 18
     },
     {
       "company": "ModernFi",
@@ -3275,19 +3001,17 @@
       "count": 7,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Moment",
       "ats": "ashby",
       "identifier": "moment",
       "ok": true,
-      "count": 11,
+      "count": 12,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Morpho",
@@ -3297,8 +3021,7 @@
       "count": 12,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Mosaic",
@@ -3308,8 +3031,7 @@
       "count": 5,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Motherduck",
@@ -3319,8 +3041,7 @@
       "count": 6,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Mux",
@@ -3330,8 +3051,7 @@
       "count": 2,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Mysten Labs",
@@ -3341,8 +3061,7 @@
       "count": 9,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Nash",
@@ -3352,8 +3071,7 @@
       "count": 26,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Neighbor",
@@ -3363,8 +3081,7 @@
       "count": 12,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Netlify",
@@ -3374,8 +3091,7 @@
       "count": 6,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Northwood Space",
@@ -3385,8 +3101,7 @@
       "count": 64,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Octant Bio",
@@ -3396,8 +3111,7 @@
       "count": 6,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Odyssey",
@@ -3407,8 +3121,7 @@
       "count": 3,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "OfferUp",
@@ -3418,30 +3131,27 @@
       "count": 4,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Omada Health",
       "ats": "greenhouse",
       "identifier": "omadahealth",
       "ok": true,
-      "count": 23,
+      "count": 25,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "OpenAI",
       "ats": "ashby",
       "identifier": "openai",
       "ok": true,
-      "count": 852,
+      "count": 857,
       "error": null,
-      "matched": 314,
-      "dropped_out_of_area": 292,
-      "carried": true
+      "matched": 319,
+      "dropped_out_of_area": 296
     },
     {
       "company": "OpenEvidence",
@@ -3451,8 +3161,7 @@
       "count": 7,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Orderful",
@@ -3462,8 +3171,7 @@
       "count": 8,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Ornn",
@@ -3473,8 +3181,7 @@
       "count": 11,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Otter",
@@ -3484,8 +3191,7 @@
       "count": 25,
       "error": null,
       "matched": 15,
-      "dropped_out_of_area": 15,
-      "carried": true
+      "dropped_out_of_area": 15
     },
     {
       "company": "PagerDuty",
@@ -3495,8 +3201,7 @@
       "count": 48,
       "error": null,
       "matched": 23,
-      "dropped_out_of_area": 21,
-      "carried": true
+      "dropped_out_of_area": 21
     },
     {
       "company": "Palmstreet",
@@ -3506,8 +3211,7 @@
       "count": 6,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Patch",
@@ -3517,8 +3221,7 @@
       "count": 4,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Payrails",
@@ -3528,8 +3231,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Pearl Health",
@@ -3539,8 +3241,7 @@
       "count": 8,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Periodic Labs",
@@ -3550,8 +3251,7 @@
       "count": 30,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Petual",
@@ -3561,8 +3261,7 @@
       "count": 8,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Phantom",
@@ -3572,8 +3271,7 @@
       "count": 17,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Phylo",
@@ -3583,8 +3281,7 @@
       "count": 8,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Pinecone",
@@ -3594,30 +3291,27 @@
       "count": 8,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Pinterest",
       "ats": "greenhouse",
       "identifier": "pinterest",
       "ok": true,
-      "count": 174,
+      "count": 171,
       "error": null,
       "matched": 77,
-      "dropped_out_of_area": 52,
-      "carried": true
+      "dropped_out_of_area": 50
     },
     {
       "company": "Plaid",
       "ats": "ashby",
       "identifier": "plaid",
       "ok": true,
-      "count": 147,
+      "count": 145,
       "error": null,
-      "matched": 64,
-      "dropped_out_of_area": 60,
-      "carried": true
+      "matched": 60,
+      "dropped_out_of_area": 59
     },
     {
       "company": "PlanetScale",
@@ -3627,8 +3321,7 @@
       "count": 12,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Podium Automation",
@@ -3638,8 +3331,7 @@
       "count": 7,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Pomelo Care",
@@ -3649,8 +3341,7 @@
       "count": 94,
       "error": null,
       "matched": 11,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Preference Model",
@@ -3660,8 +3351,7 @@
       "count": 6,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Probook",
@@ -3671,8 +3361,7 @@
       "count": 5,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Promise",
@@ -3682,19 +3371,17 @@
       "count": 14,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Proof Holdings",
       "ats": "greenhouse",
       "identifier": "proof",
       "ok": true,
-      "count": 124,
+      "count": 125,
       "error": null,
-      "matched": 4,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "matched": 5,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Propel",
@@ -3704,19 +3391,17 @@
       "count": 8,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Prosper AI",
       "ats": "ashby",
       "identifier": "prosper-ai",
       "ok": true,
-      "count": 14,
+      "count": 16,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 9,
-      "carried": true
+      "dropped_out_of_area": 9
     },
     {
       "company": "Protege",
@@ -3726,8 +3411,7 @@
       "count": 21,
       "error": null,
       "matched": 8,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Pylon",
@@ -3737,8 +3421,7 @@
       "count": 26,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "Quora",
@@ -3748,19 +3431,17 @@
       "count": 8,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Radiant",
       "ats": "ashby",
       "identifier": "radiant",
       "ok": true,
-      "count": 44,
+      "count": 45,
       "error": null,
       "matched": 14,
-      "dropped_out_of_area": 10,
-      "carried": true
+      "dropped_out_of_area": 10
     },
     {
       "company": "Rasa",
@@ -3770,8 +3451,7 @@
       "count": 3,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Raspberry AI",
@@ -3781,19 +3461,17 @@
       "count": 12,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Reddit",
       "ats": "greenhouse",
       "identifier": "reddit",
       "ok": true,
-      "count": 148,
+      "count": 147,
       "error": null,
-      "matched": 62,
-      "dropped_out_of_area": 21,
-      "carried": true
+      "matched": 61,
+      "dropped_out_of_area": 20
     },
     {
       "company": "Reducto",
@@ -3803,8 +3481,7 @@
       "count": 38,
       "error": null,
       "matched": 18,
-      "dropped_out_of_area": 17,
-      "carried": true
+      "dropped_out_of_area": 17
     },
     {
       "company": "Relace",
@@ -3814,19 +3491,17 @@
       "count": 2,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Relay",
       "ats": "ashby",
       "identifier": "relay",
       "ok": true,
-      "count": 37,
+      "count": 36,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "Replit",
@@ -3836,8 +3511,7 @@
       "count": 38,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "Resend",
@@ -3847,8 +3521,7 @@
       "count": 13,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Rezo Therapeutics",
@@ -3858,8 +3531,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Rigetti Quantum Computing",
@@ -3869,8 +3541,7 @@
       "count": 12,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Rigup",
@@ -3880,8 +3551,7 @@
       "count": 3,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Rillet",
@@ -3890,31 +3560,28 @@
       "ok": true,
       "count": 46,
       "error": null,
-      "matched": 20,
-      "dropped_out_of_area": 16,
-      "carried": true
+      "matched": 19,
+      "dropped_out_of_area": 15
     },
     {
       "company": "Robinhood",
       "ats": "greenhouse",
       "identifier": "robinhood",
       "ok": true,
-      "count": 163,
+      "count": 160,
       "error": null,
-      "matched": 47,
-      "dropped_out_of_area": 46,
-      "carried": true
+      "matched": 46,
+      "dropped_out_of_area": 45
     },
     {
       "company": "Roblox",
       "ats": "greenhouse",
       "identifier": "roblox",
       "ok": true,
-      "count": 259,
+      "count": 257,
       "error": null,
       "matched": 41,
-      "dropped_out_of_area": 41,
-      "carried": true
+      "dropped_out_of_area": 41
     },
     {
       "company": "ROME Therapeutics",
@@ -3924,8 +3591,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Rune Technologies",
@@ -3935,8 +3601,7 @@
       "count": 17,
       "error": null,
       "matched": 9,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Runta",
@@ -3946,8 +3611,7 @@
       "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Salient",
@@ -3957,19 +3621,17 @@
       "count": 12,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Samsara",
       "ats": "greenhouse",
       "identifier": "samsara",
       "ok": true,
-      "count": 300,
+      "count": 286,
       "error": null,
-      "matched": 144,
-      "dropped_out_of_area": 84,
-      "carried": true
+      "matched": 141,
+      "dropped_out_of_area": 82
     },
     {
       "company": "Sandbox VR",
@@ -3979,8 +3641,7 @@
       "count": 36,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Sardine",
@@ -3989,31 +3650,28 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "matched": 23,
-      "dropped_out_of_area": 9,
-      "carried": true
+      "matched": 22,
+      "dropped_out_of_area": 9
     },
     {
       "company": "Saronic",
       "ats": "ashby",
       "identifier": "saronic",
       "ok": true,
-      "count": 294,
+      "count": 296,
       "error": null,
-      "matched": 42,
-      "dropped_out_of_area": 33,
-      "carried": true
+      "matched": 43,
+      "dropped_out_of_area": 33
     },
     {
       "company": "Senra Systems",
       "ats": "greenhouse",
       "identifier": "senrasystems",
       "ok": true,
-      "count": 23,
+      "count": 24,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "SentiLink",
@@ -4022,9 +3680,8 @@
       "ok": true,
       "count": 46,
       "error": null,
-      "matched": 22,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 21,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Sesame",
@@ -4034,8 +3691,7 @@
       "count": 17,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Setpoint.io",
@@ -4045,8 +3701,7 @@
       "count": 7,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Sky Mavis",
@@ -4056,19 +3711,17 @@
       "count": 6,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Sleeper",
       "ats": "ashby",
       "identifier": "sleeper",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "error": null,
-      "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 0,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Slingshot AI",
@@ -4078,8 +3731,7 @@
       "count": 5,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Snackpass",
@@ -4089,8 +3741,7 @@
       "count": 1,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "SnapLogic",
@@ -4100,8 +3751,7 @@
       "count": 8,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Sola",
@@ -4111,19 +3761,17 @@
       "count": 7,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "SpaceXSI",
       "ats": "greenhouse",
       "identifier": "spacex",
       "ok": true,
-      "count": 2845,
+      "count": 2853,
       "error": null,
-      "matched": 248,
-      "dropped_out_of_area": 243,
-      "carried": true
+      "matched": 244,
+      "dropped_out_of_area": 239
     },
     {
       "company": "Spade",
@@ -4133,8 +3781,7 @@
       "count": 11,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Specter",
@@ -4144,8 +3791,7 @@
       "count": 36,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Sphere",
@@ -4155,19 +3801,17 @@
       "count": 17,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "SpotOn",
       "ats": "ashby",
       "identifier": "spoton",
       "ok": true,
-      "count": 77,
+      "count": 73,
       "error": null,
-      "matched": 7,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "matched": 6,
+      "dropped_out_of_area": 6
     },
     {
       "company": "Sprig",
@@ -4177,19 +3821,17 @@
       "count": 7,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Sprinter Health",
       "ats": "ashby",
       "identifier": "sprinter-health",
       "ok": true,
-      "count": 65,
+      "count": 64,
       "error": null,
       "matched": 7,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "dropped_out_of_area": 7
     },
     {
       "company": "Spruce Systems",
@@ -4199,19 +3841,17 @@
       "count": 8,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Stacker",
       "ats": "ashby",
       "identifier": "stacker",
       "ok": true,
-      "count": 3,
+      "count": 2,
       "error": null,
-      "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 2,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Starburst",
@@ -4221,19 +3861,17 @@
       "count": 36,
       "error": null,
       "matched": 13,
-      "dropped_out_of_area": 13,
-      "carried": true
+      "dropped_out_of_area": 13
     },
     {
       "company": "Stripe",
       "ats": "greenhouse",
       "identifier": "stripe",
       "ok": true,
-      "count": 777,
+      "count": 769,
       "error": null,
-      "matched": 377,
-      "dropped_out_of_area": 318,
-      "carried": true
+      "matched": 369,
+      "dropped_out_of_area": 313
     },
     {
       "company": "Substack",
@@ -4243,8 +3881,7 @@
       "count": 20,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "SuperApp",
@@ -4254,8 +3891,7 @@
       "count": 7,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Supermove",
@@ -4265,8 +3901,7 @@
       "count": 5,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Svix",
@@ -4276,8 +3911,7 @@
       "count": 3,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Swan",
@@ -4287,8 +3921,7 @@
       "count": 4,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Tako",
@@ -4298,8 +3931,7 @@
       "count": 14,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Talos",
@@ -4309,8 +3941,7 @@
       "count": 19,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 5,
-      "carried": true
+      "dropped_out_of_area": 5
     },
     {
       "company": "Tanium",
@@ -4319,20 +3950,18 @@
       "ok": true,
       "count": 65,
       "error": null,
-      "matched": 25,
-      "dropped_out_of_area": 12,
-      "carried": true
+      "matched": 26,
+      "dropped_out_of_area": 13
     },
     {
       "company": "Temporal",
       "ats": "ashby",
       "identifier": "temporal",
       "ok": true,
-      "count": 92,
+      "count": 91,
       "error": null,
       "matched": 38,
-      "dropped_out_of_area": 21,
-      "carried": true
+      "dropped_out_of_area": 21
     },
     {
       "company": "Tessera Labs",
@@ -4342,19 +3971,17 @@
       "count": 37,
       "error": null,
       "matched": 10,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Thatch Health",
       "ats": "greenhouse",
       "identifier": "thatch",
       "ok": true,
-      "count": 28,
+      "count": 29,
       "error": null,
       "matched": 11,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "The Horowitz Andreessen Academy (HAA)",
@@ -4364,19 +3991,17 @@
       "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Thyme Care",
       "ats": "ashby",
       "identifier": "thyme-care",
       "ok": true,
-      "count": 44,
+      "count": 42,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Titan",
@@ -4386,8 +4011,7 @@
       "count": 7,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Tomorrow Health",
@@ -4397,8 +4021,7 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Town",
@@ -4407,9 +4030,8 @@
       "ok": true,
       "count": 16,
       "error": null,
-      "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "matched": 2,
+      "dropped_out_of_area": 2
     },
     {
       "company": "Truemed",
@@ -4418,42 +4040,38 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "matched": 6,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "matched": 5,
+      "dropped_out_of_area": 4
     },
     {
       "company": "Truffle Security",
       "ats": "greenhouse",
       "identifier": "trufflesecurity",
       "ok": true,
-      "count": 1,
+      "count": 0,
       "error": null,
-      "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 0,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Turquoise Health",
       "ats": "ashby",
       "identifier": "turquoise-health",
       "ok": true,
-      "count": 8,
+      "count": 6,
       "error": null,
-      "matched": 5,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 3,
+      "dropped_out_of_area": 0
     },
     {
       "company": "Tutor Intelligence",
       "ats": "ashby",
       "identifier": "tutor-intelligence",
       "ok": true,
-      "count": 82,
+      "count": 80,
       "error": null,
       "matched": 22,
-      "dropped_out_of_area": 22,
-      "carried": true
+      "dropped_out_of_area": 22
     },
     {
       "company": "TypeSafe AI",
@@ -4463,8 +4081,7 @@
       "count": 20,
       "error": null,
       "matched": 6,
-      "dropped_out_of_area": 6,
-      "carried": true
+      "dropped_out_of_area": 6
     },
     {
       "company": "Udio",
@@ -4474,19 +4091,17 @@
       "count": 5,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Ultima Genomics",
       "ats": "greenhouse",
       "identifier": "ultimagenomics",
       "ok": true,
-      "count": 20,
+      "count": 19,
       "error": null,
-      "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "matched": 0,
+      "dropped_out_of_area": 0
     },
     {
       "company": "UnifyID",
@@ -4496,19 +4111,17 @@
       "count": 13,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Uniswap",
       "ats": "ashby",
       "identifier": "uniswap",
       "ok": true,
-      "count": 9,
+      "count": 8,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Universal",
@@ -4518,8 +4131,7 @@
       "count": 4,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Uplift",
@@ -4529,8 +4141,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Valkryn",
@@ -4540,8 +4151,7 @@
       "count": 12,
       "error": null,
       "matched": 5,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Valon",
@@ -4551,8 +4161,7 @@
       "count": 30,
       "error": null,
       "matched": 13,
-      "dropped_out_of_area": 8,
-      "carried": true
+      "dropped_out_of_area": 8
     },
     {
       "company": "Vals AI",
@@ -4562,8 +4171,7 @@
       "count": 6,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Vantage",
@@ -4573,8 +4181,7 @@
       "count": 7,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Ventus Therapeutics",
@@ -4584,8 +4191,7 @@
       "count": 0,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Vesta",
@@ -4595,19 +4201,17 @@
       "count": 13,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Viggle",
       "ats": "ashby",
       "identifier": "viggle",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     },
     {
       "company": "Vitally",
@@ -4617,8 +4221,7 @@
       "count": 3,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Voldex",
@@ -4628,8 +4231,7 @@
       "count": 3,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Volta",
@@ -4639,8 +4241,7 @@
       "count": 46,
       "error": null,
       "matched": 15,
-      "dropped_out_of_area": 14,
-      "carried": true
+      "dropped_out_of_area": 14
     },
     {
       "company": "Waymark",
@@ -4650,19 +4251,17 @@
       "count": 19,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Waymo",
       "ats": "greenhouse",
       "identifier": "waymo",
       "ok": true,
-      "count": 363,
+      "count": 358,
       "error": null,
-      "matched": 91,
-      "dropped_out_of_area": 88,
-      "carried": true
+      "matched": 90,
+      "dropped_out_of_area": 87
     },
     {
       "company": "Westmag",
@@ -4672,8 +4271,7 @@
       "count": 13,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Wingspan",
@@ -4683,8 +4281,7 @@
       "count": 1,
       "error": null,
       "matched": 0,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Wise",
@@ -4694,8 +4291,7 @@
       "count": 18,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Wonderschool",
@@ -4705,8 +4301,7 @@
       "count": 40,
       "error": null,
       "matched": 18,
-      "dropped_out_of_area": 14,
-      "carried": true
+      "dropped_out_of_area": 14
     },
     {
       "company": "WorkBoard",
@@ -4716,8 +4311,7 @@
       "count": 5,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "Wrapbook",
@@ -4726,9 +4320,8 @@
       "ok": true,
       "count": 13,
       "error": null,
-      "matched": 7,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "matched": 6,
+      "dropped_out_of_area": 1
     },
     {
       "company": "XDOF",
@@ -4738,19 +4331,17 @@
       "count": 28,
       "error": null,
       "matched": 4,
-      "dropped_out_of_area": 4,
-      "carried": true
+      "dropped_out_of_area": 4
     },
     {
       "company": "Yubico",
       "ats": "greenhouse",
       "identifier": "yubico",
       "ok": true,
-      "count": 21,
+      "count": 19,
       "error": null,
-      "matched": 10,
-      "dropped_out_of_area": 7,
-      "carried": true
+      "matched": 9,
+      "dropped_out_of_area": 6
     },
     {
       "company": "Yuno",
@@ -4760,8 +4351,7 @@
       "count": 7,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 1,
-      "carried": true
+      "dropped_out_of_area": 1
     },
     {
       "company": "ZeroMark",
@@ -4771,19 +4361,17 @@
       "count": 10,
       "error": null,
       "matched": 1,
-      "dropped_out_of_area": 0,
-      "carried": true
+      "dropped_out_of_area": 0
     },
     {
       "company": "Zipline",
       "ats": "greenhouse",
       "identifier": "flyzipline",
       "ok": true,
-      "count": 314,
+      "count": 317,
       "error": null,
-      "matched": 30,
-      "dropped_out_of_area": 28,
-      "carried": true
+      "matched": 31,
+      "dropped_out_of_area": 29
     },
     {
       "company": "Zuma",
@@ -4793,8 +4381,7 @@
       "count": 6,
       "error": null,
       "matched": 3,
-      "dropped_out_of_area": 3,
-      "carried": true
+      "dropped_out_of_area": 3
     },
     {
       "company": "Zus Health",
@@ -4804,13 +4391,12 @@
       "count": 5,
       "error": null,
       "matched": 2,
-      "dropped_out_of_area": 2,
-      "carried": true
+      "dropped_out_of_area": 2
     }
   ],
   "any_failures": false,
   "drop_out_of_area": true,
-  "dropped_out_of_area": 6066,
+  "dropped_out_of_area": 6010,
   "ambiguous_locations": [
     {
       "company": "Elastic",
@@ -4926,7 +4512,7 @@
         "ats": "greenhouse",
         "identifier": "rebelliondefense",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       },
       {
@@ -4934,7 +4520,7 @@
         "ats": "greenhouse",
         "identifier": "aerodome",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       },
       {
@@ -4942,7 +4528,7 @@
         "ats": "greenhouse",
         "identifier": "capitolis",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       },
       {
@@ -4950,7 +4536,7 @@
         "ats": "greenhouse",
         "identifier": "dfinity",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       },
       {
@@ -4958,7 +4544,7 @@
         "ats": "greenhouse",
         "identifier": "keycard",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       },
       {
@@ -4966,7 +4552,7 @@
         "ats": "greenhouse",
         "identifier": "lookout",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       },
       {
@@ -4974,15 +4560,23 @@
         "ats": "greenhouse",
         "identifier": "rometherapeutics",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
+      },
+      {
+        "company": "Truffle Security",
+        "ats": "greenhouse",
+        "identifier": "trufflesecurity",
+        "since": "2026-11-23",
+        "new": true,
+        "had_jobs": true
       },
       {
         "company": "Uplift",
         "ats": "greenhouse",
         "identifier": "uplift",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       },
       {
@@ -4990,21 +4584,25 @@
         "ats": "greenhouse",
         "identifier": "ventustherapeutics",
         "since": "2026-11-22",
-        "new": true,
+        "new": false,
         "had_jobs": false
       }
     ],
     "failing": []
   },
   "last_run_by_ats": {
-    "workday": "2026-11-22T21:19:49.452177+00:00"
+    "workday": "2026-11-22T21:19:49.452177+00:00",
+    "rippling": "2026-11-23T22:37:37.325489+00:00",
+    "greenhouse": "2026-11-23T22:37:37.325489+00:00",
+    "lever": "2026-11-23T22:37:37.325489+00:00",
+    "ashby": "2026-11-23T22:37:37.325489+00:00"
   },
   "local_only_ats": [
     "workday"
   ],
-  "generated_at": "2026-11-22T21:19:49.673772+00:00",
-  "prior_job_count": 2149,
-  "fresh_job_count": 1082,
-  "total_job_count": 2719,
+  "generated_at": "2026-11-23T22:37:37.771301+00:00",
+  "prior_job_count": 2719,
+  "fresh_job_count": 1619,
+  "total_job_count": 2701,
   "shrink_blocked": false
 }
