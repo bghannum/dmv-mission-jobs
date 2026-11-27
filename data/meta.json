@@ -96,7 +96,7 @@
       "ats": "greenhouse",
       "identifier": "endorlabs",
       "ok": true,
-      "count": 41,
+      "count": 37,
       "error": null,
       "matched": 15,
       "dropped_out_of_area": 11
@@ -118,8 +118,8 @@
       "ok": true,
       "count": 360,
       "error": null,
-      "matched": 144,
-      "dropped_out_of_area": 118
+      "matched": 143,
+      "dropped_out_of_area": 117
     },
     {
       "company": "Huntress",
@@ -146,10 +146,10 @@
       "ats": "greenhouse",
       "identifier": "opswat",
       "ok": true,
-      "count": 94,
+      "count": 91,
       "error": null,
-      "matched": 32,
-      "dropped_out_of_area": 25
+      "matched": 31,
+      "dropped_out_of_area": 24
     },
     {
       "company": "Doppel",
@@ -216,9 +216,9 @@
       "ats": "lever",
       "identifier": "uvcyber",
       "ok": true,
-      "count": 15,
+      "count": 14,
       "error": null,
-      "matched": 3,
+      "matched": 2,
       "dropped_out_of_area": 0
     },
     {
@@ -246,10 +246,10 @@
       "ats": "greenhouse",
       "identifier": "chainguard",
       "ok": true,
-      "count": 106,
+      "count": 105,
       "error": null,
-      "matched": 63,
-      "dropped_out_of_area": 35
+      "matched": 62,
+      "dropped_out_of_area": 34
     },
     {
       "company": "Vanta",
@@ -266,9 +266,9 @@
       "ats": "ashby",
       "identifier": "1password",
       "ok": true,
-      "count": 78,
+      "count": 79,
       "error": null,
-      "matched": 31,
+      "matched": 30,
       "dropped_out_of_area": 21
     },
     {
@@ -376,7 +376,7 @@
       "ats": "greenhouse",
       "identifier": "cribl",
       "ok": true,
-      "count": 77,
+      "count": 76,
       "error": null,
       "matched": 21,
       "dropped_out_of_area": 15
@@ -386,7 +386,7 @@
       "ats": "ashby",
       "identifier": "socure",
       "ok": true,
-      "count": 81,
+      "count": 80,
       "error": null,
       "matched": 24,
       "dropped_out_of_area": 15
@@ -426,20 +426,20 @@
       "ats": "greenhouse",
       "identifier": "cloudflare",
       "ok": true,
-      "count": 528,
+      "count": 533,
       "error": null,
-      "matched": 296,
-      "dropped_out_of_area": 296
+      "matched": 301,
+      "dropped_out_of_area": 301
     },
     {
       "company": "Rubrik",
       "ats": "greenhouse",
       "identifier": "rubrik",
       "ok": true,
-      "count": 223,
+      "count": 232,
       "error": null,
-      "matched": 118,
-      "dropped_out_of_area": 110
+      "matched": 119,
+      "dropped_out_of_area": 111
     },
     {
       "company": "Fastly",
@@ -456,7 +456,7 @@
       "ats": "greenhouse",
       "identifier": "sentinellabs",
       "ok": true,
-      "count": 249,
+      "count": 250,
       "error": null,
       "matched": 92,
       "dropped_out_of_area": 56
@@ -466,7 +466,7 @@
       "ats": "greenhouse",
       "identifier": "machindustries",
       "ok": true,
-      "count": 190,
+      "count": 189,
       "error": null,
       "matched": 8,
       "dropped_out_of_area": 8
@@ -516,7 +516,7 @@
       "ats": "ashby",
       "identifier": "harmattan-ai",
       "ok": true,
-      "count": 183,
+      "count": 190,
       "error": null,
       "matched": 15,
       "dropped_out_of_area": 15
@@ -596,10 +596,10 @@
       "ats": "greenhouse",
       "identifier": "helsing",
       "ok": true,
-      "count": 175,
+      "count": 176,
       "error": null,
-      "matched": 16,
-      "dropped_out_of_area": 13
+      "matched": 17,
+      "dropped_out_of_area": 14
     },
     {
       "company": "Oddball",
@@ -826,9 +826,9 @@
       "ats": "greenhouse",
       "identifier": "zocdoc",
       "ok": true,
-      "count": 64,
+      "count": 63,
       "error": null,
-      "matched": 14,
+      "matched": 13,
       "dropped_out_of_area": 11
     },
     {
@@ -886,7 +886,7 @@
       "ats": "lever",
       "identifier": "lyrahealth",
       "ok": true,
-      "count": 420,
+      "count": 419,
       "error": null,
       "matched": 15,
       "dropped_out_of_area": 1
@@ -966,47 +966,47 @@
       "ats": "ashby",
       "identifier": "snowflake",
       "ok": true,
-      "count": 376,
+      "count": 380,
       "error": null,
-      "matched": 118,
-      "dropped_out_of_area": 113
+      "matched": 119,
+      "dropped_out_of_area": 114
     },
     {
       "company": "Zscaler",
       "ats": "greenhouse",
       "identifier": "zscaler",
       "ok": true,
-      "count": 390,
+      "count": 386,
       "error": null,
-      "matched": 172,
-      "dropped_out_of_area": 146
+      "matched": 171,
+      "dropped_out_of_area": 145
     },
     {
       "company": "Elastic",
       "ats": "greenhouse",
       "identifier": "elastic",
       "ok": true,
-      "count": 375,
+      "count": 369,
       "error": null,
-      "matched": 140,
-      "dropped_out_of_area": 132
+      "matched": 139,
+      "dropped_out_of_area": 131
     },
     {
       "company": "MongoDB",
       "ats": "greenhouse",
       "identifier": "mongodb",
       "ok": true,
-      "count": 421,
+      "count": 424,
       "error": null,
-      "matched": 174,
-      "dropped_out_of_area": 169
+      "matched": 177,
+      "dropped_out_of_area": 172
     },
     {
       "company": "Datadog",
       "ats": "greenhouse",
       "identifier": "datadog",
       "ok": true,
-      "count": 391,
+      "count": 390,
       "error": null,
       "matched": 196,
       "dropped_out_of_area": 192
@@ -1016,7 +1016,7 @@
       "ats": "greenhouse",
       "identifier": "gitlab",
       "ok": true,
-      "count": 241,
+      "count": 243,
       "error": null,
       "matched": 124,
       "dropped_out_of_area": 67
@@ -1168,7 +1168,7 @@
       "ats": "ashby",
       "identifier": "addi",
       "ok": true,
-      "count": 33,
+      "count": 31,
       "error": null,
       "matched": 7,
       "dropped_out_of_area": 7
@@ -1188,7 +1188,7 @@
       "ats": "greenhouse",
       "identifier": "affirm",
       "ok": true,
-      "count": 216,
+      "count": 218,
       "error": null,
       "matched": 76,
       "dropped_out_of_area": 48
@@ -1198,10 +1198,10 @@
       "ats": "greenhouse",
       "identifier": "airbnb",
       "ok": true,
-      "count": 201,
+      "count": 200,
       "error": null,
-      "matched": 39,
-      "dropped_out_of_area": 36
+      "matched": 38,
+      "dropped_out_of_area": 35
     },
     {
       "company": "AirGarage",
@@ -1378,7 +1378,7 @@
       "ats": "ashby",
       "identifier": "armadin",
       "ok": true,
-      "count": 24,
+      "count": 25,
       "error": null,
       "matched": 5,
       "dropped_out_of_area": 5
@@ -1388,7 +1388,7 @@
       "ats": "greenhouse",
       "identifier": "asana",
       "ok": true,
-      "count": 109,
+      "count": 107,
       "error": null,
       "matched": 42,
       "dropped_out_of_area": 41
@@ -1538,17 +1538,17 @@
       "ats": "ashby",
       "identifier": "boltz",
       "ok": true,
-      "count": 9,
+      "count": 11,
       "error": null,
-      "matched": 2,
-      "dropped_out_of_area": 2
+      "matched": 3,
+      "dropped_out_of_area": 3
     },
     {
       "company": "Bounce",
       "ats": "ashby",
       "identifier": "bounce",
       "ok": true,
-      "count": 10,
+      "count": 11,
       "error": null,
       "matched": 8,
       "dropped_out_of_area": 7
@@ -1618,7 +1618,7 @@
       "ats": "greenhouse",
       "identifier": "carta",
       "ok": true,
-      "count": 81,
+      "count": 82,
       "error": null,
       "matched": 20,
       "dropped_out_of_area": 20
@@ -1738,10 +1738,10 @@
       "ats": "ashby",
       "identifier": "cognition",
       "ok": true,
-      "count": 116,
+      "count": 120,
       "error": null,
-      "matched": 39,
-      "dropped_out_of_area": 32
+      "matched": 43,
+      "dropped_out_of_area": 36
     },
     {
       "company": "Coinbase",
@@ -1848,10 +1848,10 @@
       "ats": "greenhouse",
       "identifier": "databricks",
       "ok": true,
-      "count": 882,
+      "count": 889,
       "error": null,
-      "matched": 538,
-      "dropped_out_of_area": 499
+      "matched": 543,
+      "dropped_out_of_area": 504
     },
     {
       "company": "Daylight",
@@ -1958,17 +1958,17 @@
       "ats": "greenhouse",
       "identifier": "earnin",
       "ok": true,
-      "count": 27,
+      "count": 26,
       "error": null,
-      "matched": 11,
-      "dropped_out_of_area": 11
+      "matched": 10,
+      "dropped_out_of_area": 10
     },
     {
       "company": "Ease Health",
       "ats": "ashby",
       "identifier": "ease-health",
       "ok": true,
-      "count": 14,
+      "count": 13,
       "error": null,
       "matched": 1,
       "dropped_out_of_area": 1
@@ -1988,10 +1988,10 @@
       "ats": "ashby",
       "identifier": "elevenlabs",
       "ok": true,
-      "count": 114,
+      "count": 109,
       "error": null,
-      "matched": 53,
-      "dropped_out_of_area": 29
+      "matched": 51,
+      "dropped_out_of_area": 28
     },
     {
       "company": "EliseAI",
@@ -2128,7 +2128,7 @@
       "ats": "greenhouse",
       "identifier": "figma",
       "ok": true,
-      "count": 141,
+      "count": 140,
       "error": null,
       "matched": 51,
       "dropped_out_of_area": 51
@@ -2158,7 +2158,7 @@
       "ats": "greenhouse",
       "identifier": "fivetran",
       "ok": true,
-      "count": 201,
+      "count": 200,
       "error": null,
       "matched": 70,
       "dropped_out_of_area": 68
@@ -2178,17 +2178,17 @@
       "ats": "greenhouse",
       "identifier": "flexport",
       "ok": true,
-      "count": 212,
+      "count": 210,
       "error": null,
-      "matched": 43,
-      "dropped_out_of_area": 43
+      "matched": 44,
+      "dropped_out_of_area": 44
     },
     {
       "company": "Flock",
       "ats": "ashby",
       "identifier": "flock",
       "ok": true,
-      "count": 12,
+      "count": 11,
       "error": null,
       "matched": 1,
       "dropped_out_of_area": 1
@@ -2388,17 +2388,17 @@
       "ats": "ashby",
       "identifier": "harvey",
       "ok": true,
-      "count": 390,
+      "count": 387,
       "error": null,
-      "matched": 138,
-      "dropped_out_of_area": 133
+      "matched": 141,
+      "dropped_out_of_area": 136
     },
     {
       "company": "Headway",
       "ats": "ashby",
       "identifier": "headway",
       "ok": true,
-      "count": 88,
+      "count": 87,
       "error": null,
       "matched": 26,
       "dropped_out_of_area": 6
@@ -2448,7 +2448,7 @@
       "ats": "ashby",
       "identifier": "hyperexponential",
       "ok": true,
-      "count": 39,
+      "count": 38,
       "error": null,
       "matched": 13,
       "dropped_out_of_area": 13
@@ -2468,7 +2468,7 @@
       "ats": "ashby",
       "identifier": "illumio",
       "ok": true,
-      "count": 84,
+      "count": 83,
       "error": null,
       "matched": 24,
       "dropped_out_of_area": 22
@@ -2698,10 +2698,10 @@
       "ats": "ashby",
       "identifier": "kong",
       "ok": true,
-      "count": 122,
+      "count": 121,
       "error": null,
-      "matched": 79,
-      "dropped_out_of_area": 73
+      "matched": 80,
+      "dropped_out_of_area": 74
     },
     {
       "company": "Krea",
@@ -2788,7 +2788,7 @@
       "ats": "ashby",
       "identifier": "lio",
       "ok": true,
-      "count": 27,
+      "count": 28,
       "error": null,
       "matched": 10,
       "dropped_out_of_area": 10
@@ -2838,7 +2838,7 @@
       "ats": "greenhouse",
       "identifier": "lyft",
       "ok": true,
-      "count": 144,
+      "count": 143,
       "error": null,
       "matched": 34,
       "dropped_out_of_area": 34
@@ -3018,7 +3018,7 @@
       "ats": "ashby",
       "identifier": "morpho",
       "ok": true,
-      "count": 12,
+      "count": 13,
       "error": null,
       "matched": 6,
       "dropped_out_of_area": 2
@@ -3150,8 +3150,8 @@
       "ok": true,
       "count": 876,
       "error": null,
-      "matched": 335,
-      "dropped_out_of_area": 309
+      "matched": 334,
+      "dropped_out_of_area": 308
     },
     {
       "company": "OpenEvidence",
@@ -3228,7 +3228,7 @@
       "ats": "ashby",
       "identifier": "payrails",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "error": null,
       "matched": 1,
       "dropped_out_of_area": 1
@@ -3298,10 +3298,10 @@
       "ats": "greenhouse",
       "identifier": "pinterest",
       "ok": true,
-      "count": 167,
+      "count": 165,
       "error": null,
-      "matched": 74,
-      "dropped_out_of_area": 47
+      "matched": 73,
+      "dropped_out_of_area": 46
     },
     {
       "company": "Plaid",
@@ -3528,7 +3528,7 @@
       "ats": "lever",
       "identifier": "rezotx",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": null,
       "matched": 1,
       "dropped_out_of_area": 1
@@ -3568,17 +3568,17 @@
       "ats": "greenhouse",
       "identifier": "robinhood",
       "ok": true,
-      "count": 162,
+      "count": 161,
       "error": null,
-      "matched": 44,
-      "dropped_out_of_area": 43
+      "matched": 43,
+      "dropped_out_of_area": 42
     },
     {
       "company": "Roblox",
       "ats": "greenhouse",
       "identifier": "roblox",
       "ok": true,
-      "count": 254,
+      "count": 259,
       "error": null,
       "matched": 40,
       "dropped_out_of_area": 40
@@ -3628,10 +3628,10 @@
       "ats": "greenhouse",
       "identifier": "samsara",
       "ok": true,
-      "count": 299,
+      "count": 295,
       "error": null,
-      "matched": 149,
-      "dropped_out_of_area": 90
+      "matched": 143,
+      "dropped_out_of_area": 84
     },
     {
       "company": "Sandbox VR",
@@ -3728,7 +3728,7 @@
       "ats": "ashby",
       "identifier": "slingshotai",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": null,
       "matched": 0,
       "dropped_out_of_area": 0
@@ -3768,7 +3768,7 @@
       "ats": "greenhouse",
       "identifier": "spacex",
       "ok": true,
-      "count": 2889,
+      "count": 2890,
       "error": null,
       "matched": 237,
       "dropped_out_of_area": 232
@@ -3868,7 +3868,7 @@
       "ats": "greenhouse",
       "identifier": "stripe",
       "ok": true,
-      "count": 768,
+      "count": 770,
       "error": null,
       "matched": 370,
       "dropped_out_of_area": 314
@@ -3938,7 +3938,7 @@
       "ats": "ashby",
       "identifier": "talos-trading",
       "ok": true,
-      "count": 20,
+      "count": 19,
       "error": null,
       "matched": 5,
       "dropped_out_of_area": 5
@@ -4238,7 +4238,7 @@
       "ats": "ashby",
       "identifier": "volta",
       "ok": true,
-      "count": 47,
+      "count": 46,
       "error": null,
       "matched": 16,
       "dropped_out_of_area": 15
@@ -4338,10 +4338,10 @@
       "ats": "greenhouse",
       "identifier": "yubico",
       "ok": true,
-      "count": 20,
+      "count": 18,
       "error": null,
-      "matched": 10,
-      "dropped_out_of_area": 6
+      "matched": 8,
+      "dropped_out_of_area": 5
     },
     {
       "company": "Yuno",
@@ -4368,10 +4368,10 @@
       "ats": "greenhouse",
       "identifier": "flyzipline",
       "ok": true,
-      "count": 312,
+      "count": 316,
       "error": null,
-      "matched": 31,
-      "dropped_out_of_area": 29
+      "matched": 32,
+      "dropped_out_of_area": 30
     },
     {
       "company": "Zuma",
@@ -4396,7 +4396,7 @@
   ],
   "any_failures": false,
   "drop_out_of_area": true,
-  "dropped_out_of_area": 6073,
+  "dropped_out_of_area": 6082,
   "ambiguous_locations": [
     {
       "company": "Elastic",
@@ -4552,7 +4552,7 @@
         "ats": "ashby",
         "identifier": "longitudelabs",
         "since": "2026-11-26",
-        "new": true,
+        "new": false,
         "had_jobs": true
       },
       {
@@ -4608,17 +4608,17 @@
   },
   "last_run_by_ats": {
     "workday": "2026-11-22T21:19:49.452177+00:00",
-    "rippling": "2026-11-26T20:08:46.794807+00:00",
-    "greenhouse": "2026-11-26T20:08:46.794807+00:00",
-    "lever": "2026-11-26T20:08:46.794807+00:00",
-    "ashby": "2026-11-26T20:08:46.794807+00:00"
+    "rippling": "2026-11-27T19:59:19.758333+00:00",
+    "greenhouse": "2026-11-27T19:59:19.758333+00:00",
+    "lever": "2026-11-27T19:59:19.758333+00:00",
+    "ashby": "2026-11-27T19:59:19.758333+00:00"
   },
   "local_only_ats": [
     "workday"
   ],
-  "generated_at": "2026-11-26T20:08:47.161671+00:00",
-  "prior_job_count": 2704,
-  "fresh_job_count": 1615,
-  "total_job_count": 2697,
+  "generated_at": "2026-11-27T19:59:20.324343+00:00",
+  "prior_job_count": 2697,
+  "fresh_job_count": 1610,
+  "total_job_count": 2692,
   "shrink_blocked": false
 }
